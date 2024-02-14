@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* common style */
+body { font-size: 14px; }
+
+.p-button:focus, .p-dropdown:not(.p-disabled).p-focus, .p-inputtext:enabled:focus, .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus, .p-radiobutton .p-radiobutton-box:not(.p-disabled).p-focus, .p-calendar:not(.p-calendar-disabled).p-focus > .p-inputtext { box-shadow: none !important; }
+/* common style End */
+
+/* V.K style */
+
+/* V.K style End */
+
+
+/***********************************************
+            Responsive
+***********************************************/
+
+@media (min-width:1800px) { 
+    body { font-size: 0.729vw; }
+}
+
+@media (max-width:1280px) {  }
+
+@media (max-width:1024px) {  }
+
+@media (max-width:991px) {  }
+
+@media (max-width:767px) {  }
+
+@media (max-width:575px) {  }
+
