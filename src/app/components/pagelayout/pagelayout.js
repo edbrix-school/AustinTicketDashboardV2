@@ -1,7 +1,7 @@
 import Top from "./top";
 import Left from "./left";
 
-export default function Layout({ children, ...pageProps }) {
+export default function PageLayout({ children, ...pageProps }) {
   return (
     <>
       <Top />
