@@ -58,17 +58,17 @@ export default function Left(props) {
                       <span>Dashboard</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('') ? 'active' : ''} ico-software`}>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-assets`}>
                     <Link href=''>
                       <span>Assets</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('') ? 'active' : ''} ico-programs`}>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-students`}>
                     <Link href=''>
                       <span>Students</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/placement') ? 'active' : ''} ico-placements`}>
+                  <li className={`${isLinkActive('/placement') ? 'active' : ''} ico-employee`}>
                     <Link href='/placement'>
                       <span>Employee</span>
                     </Link>

@@ -51,10 +51,11 @@ ul.left-menu li:before { content: ""; position: absolute; left: 16px; top: 50%; 
 .divide { border-top: 1px solid #eeeeee; }
 ul.left-menu li.lock:before {  background: no-repeat url("/assets/images/left-menu-icons/lock.svg"); }
 ul.left-menu li.ico-dashboard:before {  background: no-repeat url("/assets/images/left-menu-icons/dashboard.svg"); }
+ul.left-menu li.ico-students:before {  background: no-repeat url("/assets/images/left-menu-icons/students.svg"); }
+ul.left-menu li.ico-assets:before {  background: no-repeat url("/assets/images/left-menu-icons/assets.svg"); }
+ul.left-menu li.ico-employee:before {  background: no-repeat url("/assets/images/left-menu-icons/employee.svg"); }
 ul.left-menu li.ico-software:before {  background: no-repeat url("/assets/images/left-menu-icons/software.svg"); }
-ul.left-menu li.ico-programs:before {  background: no-repeat url("/assets/images/left-menu-icons/programs.svg"); }
-ul.left-menu li.ico-placements:before {  background: no-repeat url("/assets/images/left-menu-icons/placements.svg"); }
-ul.left-menu li.ico-personnel:before {  background: no-repeat url("/assets/images/left-menu-icons/personnel.svg"); }
+
 ul.left-menu li.ico-school:before {  background: no-repeat url("/assets/images/left-menu-icons/school.svg"); }
 ul.left-menu li.ico-groups:before {  background: no-repeat url("/assets/images/left-menu-icons/groups.svg"); }
 ul.left-menu li.ico-users:before {  background: no-repeat url("/assets/images/left-menu-icons/users.svg"); }
@@ -62,11 +63,13 @@ ul.left-menu li.ico-csjpod:before {  background: no-repeat url("/assets/images/l
 ul.left-menu li.ico-competency:before {  background: no-repeat url("/assets/images/left-menu-icons/competency.svg"); }
 ul.left-menu li.ico-assignments:before {  background: no-repeat url("/assets/images/left-menu-icons/assignments.svg"); }
 
+/* active icons */
 ul.left-menu li.active.ico-dashboard:before {  background: no-repeat url("/assets/images/left-menu-icons/active-dashboard.svg"); }
+ul.left-menu li.active.ico-students:before {  background: no-repeat url("/assets/images/left-menu-icons/active-students.svg"); }
+ul.left-menu li.active.ico-assets:before {  background: no-repeat url("/assets/images/left-menu-icons/active-assets.svg"); }
+ul.left-menu li.active.ico-employee:before {  background: no-repeat url("/assets/images/left-menu-icons/active-employee.svg"); }
 ul.left-menu li.active.ico-software:before {  background: no-repeat url("/assets/images/left-menu-icons/active-software.svg"); }
-ul.left-menu li.active.ico-programs:before {  background: no-repeat url("/assets/images/left-menu-icons/active-programs.svg"); }
-ul.left-menu li.active.ico-placements:before {  background: no-repeat url("/assets/images/left-menu-icons/active-placements.svg"); }
-ul.left-menu li.active.ico-personnel:before {  background: no-repeat url("/assets/images/left-menu-icons/active-personnel.svg"); }
+
 ul.left-menu li.active.ico-school:before {  background: no-repeat url("/assets/images/left-menu-icons/active-school.svg"); }
 ul.left-menu li.active.ico-groups:before {  background: no-repeat url("/assets/images/left-menu-icons/active-groups.svg"); }
 ul.left-menu li.active.ico-users:before {  background: no-repeat url("/assets/images/left-menu-icons/active-users.svg"); }
