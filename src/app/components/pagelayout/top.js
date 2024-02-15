@@ -13,10 +13,12 @@ export default function Top({ ...pageProps }) {
         <header className="sticky top-0 z-[3]">
             <div className={`${ pageProps.topTab ? 'xl:min-h-[4.27vw] min-h-[82px] pb-[12px] xl:pb-[0.625vw]' : 'xl:min-h-[5.96vw] min-h-[114px] pb-[44px] xl:pb-[2.299vw]'} bg-white flex items-center justify-between pt-[20px] xl:pt-[1.04vw] pb-[12px] xl:pb-[0.625vw] pr-4 xl:pr-[1.667vw] pl-[118px] xl:pl-[128px] dark:bg-[#191A1E] `}>
                 <div className="">
-                    <div className="flex items-center gap-2 text-[12px] xl:text-[0.625vw] text-[#888] mb-1 xl:mb-[0.208vw]">
-                        <div className="cursor-pointer">Teacher Management</div>
-                        <i className="cgupod-right-arrow text-[8px] xl:text-[0.417vw]"></i>
-                        <div className="text-[#262626] dark:text-[#888]">{pageProps.pageName}</div>
+                    <div className="flex items-center gap-3 text-[12px] xl:text-[0.625vw] text-[#84878D] mb-1 xl:mb-[0.208vw]">
+                        <div className="cursor-pointer">Home</div>
+                        <i className="asetsmng-arrow-right text-[8px] xl:text-[0.417vw]"></i>
+                        <div className="cursor-pointer">Assets</div>
+                        <i className="asetsmng-arrow-right text-[8px] xl:text-[0.417vw]"></i>
+                        <div className="text-[#262626] dark:text-[#84878D]">{pageProps.pageName}</div>
                     </div>
                     <div className={`text-[#262626] xl:text-[1.250vw] text-[24px] leading-7 dark:text-[#fff]`}>{pageProps.pageTitle}</div>
                 </div>
