@@ -17,7 +17,7 @@ export default function Index() {
     <PageLayout pageTitle="Manage Assets">
      <div className="">
      <Tabs className={'custTavbview'}>
-      <div className='flex items-center justify-between xl:pb-[0.833vw] pb-4'>
+      <div className='flex flex-wrap items-center justify-between gap-y-3 xl:pb-[0.833vw] pb-4'>
         <div>
     <TabList>
       <Tab>Manage Assets</Tab>
