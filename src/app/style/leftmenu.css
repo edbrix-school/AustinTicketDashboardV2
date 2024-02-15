@@ -50,7 +50,6 @@ ul.left-menu li:not(:first-child) { display: block; } /* margin-top: 12px; */
 ul.left-menu li:before { content: ""; position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; pointer-events: none;}
 .divide { border-top: 1px solid #eeeeee; }
 ul.left-menu li.lock:before {  background: no-repeat url("/assets/images/left-menu-icons/lock.svg"); }
-ul.left-menu li.ico-home:before {  background: no-repeat url("/assets/images/left-menu-icons/home.svg"); }
 ul.left-menu li.ico-dashboard:before {  background: no-repeat url("/assets/images/left-menu-icons/dashboard.svg"); }
 ul.left-menu li.ico-applications:before {  background: no-repeat url("/assets/images/left-menu-icons/applications.svg"); }
 ul.left-menu li.ico-programs:before {  background: no-repeat url("/assets/images/left-menu-icons/programs.svg"); }
@@ -63,7 +62,6 @@ ul.left-menu li.ico-csjpod:before {  background: no-repeat url("/assets/images/l
 ul.left-menu li.ico-competency:before {  background: no-repeat url("/assets/images/left-menu-icons/competency.svg"); }
 ul.left-menu li.ico-assignments:before {  background: no-repeat url("/assets/images/left-menu-icons/assignments.svg"); }
 
-ul.left-menu li.active.ico-home:before {  background: no-repeat url("/assets/images/left-menu-icons/active-home.svg"); }
 ul.left-menu li.active.ico-dashboard:before {  background: no-repeat url("/assets/images/left-menu-icons/active-dashboard.svg"); }
 ul.left-menu li.active.ico-applications:before {  background: no-repeat url("/assets/images/left-menu-icons/active-applications.svg"); }
 ul.left-menu li.active.ico-programs:before {  background: no-repeat url("/assets/images/left-menu-icons/active-programs.svg"); }
@@ -80,9 +78,9 @@ ul.left-menu li.settings:before {  background: no-repeat url("/assets/images/lef
 ul.left-menu li.dark-mode:before {  background: no-repeat url("/assets/images/left-menu-icons/dark-mode.svg"); }
 ul.left-menu li.support:before {  background: no-repeat url("/assets/images/left-menu-icons/support-tickets.svg"); }
 
-ul.left-menu li a.supportBg { background-color: #AF1E27; color: #FFF; border-radius: 8px; }
+ul.left-menu li a.supportBg { background-color: #1570EF; color: #FFF; border-radius: 10px; }
 ul.left-menu li a.supportBg span { color: #FFF; }
-.left-menu-h ul.left-menu.hoverNone>li:hover>a.supportBg { background-color: #1F2A37; }
+.left-menu-h ul.left-menu.hoverNone>li:hover>a.supportBg { background-color: #1570EF; }
 .left-menu-h.active .simplebar-track.simplebar-vertical .simplebar-scrollbar:before, .left-menu-h.active .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before { width: 2px; }
 .left-menu-h .simplebar-track.simplebar-vertical .simplebar-scrollbar:before, .left-menu-h .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before { width: 0; }
 .profile img { min-width: 48px; }
@@ -113,9 +111,7 @@ ul.left-menu li .theme-cust a{ padding-top: 0; padding-bottom: 0;}
     background-color: #0E2511;
     border-radius: 8px;
 }
-.dark ul.left-menu li.ico-home:before {
-    background: no-repeat url(/assets/images/left-menu-icons/dark-home.svg);
-}
+
 
 .dark ul.left-menu li.dark-mode:before {
     background-image: url(/assets/images/left-menu-icons/light-mode.svg);
