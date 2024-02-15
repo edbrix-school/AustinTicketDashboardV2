@@ -3,7 +3,7 @@ import React from 'react'
 function Finacialanalysis() {
   return (
     <>
-      <div className='grid grid-cols-5 gap-[20px] xl:gap-[1.042vw] ml-[32px] xl:ml-[1.667vw]'>
+      <div className='grid grid-cols-5 gap-[20px] xl:gap-[1.042vw] '>
         <div className='col-span-1 '>
           <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] xl:pl-[0.833vw]'>
             <div className='text-[#20232E] text-[16px] xl:text-[0.866vw] py-[12px]  xl:py-[0.625vw] ' >Total Value of All Assets</div>
