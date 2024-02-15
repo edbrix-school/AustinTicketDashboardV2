@@ -15,7 +15,7 @@ import InventoryAudit from "./inventoryaudit/inventoryaudit"
 export default function Index() {
   return (
     <PageLayout pageTitle="Manage Assets">
-     <div className="">
+     <div className="xl:mt-[1.198vw] mt-5">
      <Tabs className={'custTavbview'}>
       <div className='flex flex-wrap items-center justify-between gap-y-3 xl:pb-[0.833vw] pb-4'>
         <div>
