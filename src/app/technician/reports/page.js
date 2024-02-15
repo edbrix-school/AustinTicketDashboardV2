@@ -69,7 +69,7 @@ function Index() {
                         </div>
                     </div>
                     <div className='col-span-3'>
-                        <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px]'>
+                        <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px] mt-[10px] xl:mt-[0.521vw]'>
                             <div className='flex items-center '>
                                 <div className='px-[25px] xl:px-[1.302vw]'>
                                     <div className='text-[#667085] text-[12px] xl:text-[0.625vw] uppercase'> Standard Reports</div>
@@ -84,7 +84,7 @@ function Index() {
                         </div>
                     </div>
                     <div className='col-span-3'>
-                        <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px]'>
+                        <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px] mt-[10px] xl:mt-[0.521vw]'>
                             <div className='flex items-center '>
                                 <div className='px-[25px] xl:px-[1.302vw]'>
                                     <div className='text-[#667085] text-[12px] xl:text-[0.625vw] uppercase'> Standard Reports</div>
@@ -99,7 +99,7 @@ function Index() {
                         </div>
                     </div>
                     <div className='col-span-3'>
-                        <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px]'>
+                        <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px] mt-[10px] xl:mt-[0.521vw]'>
                             <div className='flex items-center '>
                                 <div className='px-[25px] xl:px-[1.302vw]'>
                                     <div className='text-[#667085] text-[12px] xl:text-[0.625vw] uppercase'> Standard Reports</div>
@@ -114,7 +114,7 @@ function Index() {
                         </div>
                     </div>
                     <div className='col-span-3'>
-                        <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px]'>
+                        <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px] mt-[10px] xl:mt-[0.521vw]'>
                             <div className='flex items-center '>
                                 <div className='px-[25px] xl:px-[1.302vw]'>
                                     <div className='text-[#667085] text-[12px] xl:text-[0.625vw] uppercase'> Standard Reports</div>
