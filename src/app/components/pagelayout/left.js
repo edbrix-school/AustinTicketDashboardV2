@@ -68,28 +68,28 @@ export default function Left(props) {
                       <span>Students</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/placement') ? 'active' : ''} ico-employee`}>
-                    <Link href='/placement'>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-employee`}>
+                    <Link href=''>
                       <span>Employee</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/personnel') ? 'active' : ''} ico-software`}>
-                    <Link href='/personnel'>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-software`}>
+                    <Link href=''>
                       <span>Software</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/school') ? 'active' : ''} ico-school`}>
-                    <Link href='/school'>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-location`}>
+                    <Link href=''>
                       <span>Locations</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/groups') ? 'active' : ''} ico-groups`}>
-                    <Link href='/groups'>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-help_desk`}>
+                    <Link href=''>
                       <span>Help Desk</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/users') ? 'active' : ''} ico-users`}>
-                    <Link href='/users'>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-invoices`}>
+                    <Link href=''>
                       <span>Invoices</span>
                     </Link>
                   </li>
@@ -98,13 +98,13 @@ export default function Left(props) {
                       <span>Settings</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/competency') ? 'active' : ''} ico-competency`}>
-                    <Link href='/competency'>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-reports`}>
+                    <Link href=''>
                       <span>Reports</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/assignments') ? 'active' : ''} ico-assignments`}>
-                    <Link href='/assignments'>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-eliabrary`}>
+                    <Link href=''>
                       <span>E- Library</span>
                     </Link>
                   </li>

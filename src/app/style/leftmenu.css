@@ -55,13 +55,11 @@ ul.left-menu li.ico-students:before {  background: no-repeat url("/assets/images
 ul.left-menu li.ico-assets:before {  background: no-repeat url("/assets/images/left-menu-icons/assets.svg"); }
 ul.left-menu li.ico-employee:before {  background: no-repeat url("/assets/images/left-menu-icons/employee.svg"); }
 ul.left-menu li.ico-software:before {  background: no-repeat url("/assets/images/left-menu-icons/software.svg"); }
-
-ul.left-menu li.ico-school:before {  background: no-repeat url("/assets/images/left-menu-icons/school.svg"); }
-ul.left-menu li.ico-groups:before {  background: no-repeat url("/assets/images/left-menu-icons/groups.svg"); }
-ul.left-menu li.ico-users:before {  background: no-repeat url("/assets/images/left-menu-icons/users.svg"); }
-ul.left-menu li.ico-csjpod:before {  background: no-repeat url("/assets/images/left-menu-icons/csjpod.svg"); }
-ul.left-menu li.ico-competency:before {  background: no-repeat url("/assets/images/left-menu-icons/competency.svg"); }
-ul.left-menu li.ico-assignments:before {  background: no-repeat url("/assets/images/left-menu-icons/assignments.svg"); }
+ul.left-menu li.ico-location:before {  background: no-repeat url("/assets/images/left-menu-icons/location.svg"); }
+ul.left-menu li.ico-help_desk:before {  background: no-repeat url("/assets/images/left-menu-icons/help_desk.svg"); }
+ul.left-menu li.ico-invoices:before {  background: no-repeat url("/assets/images/left-menu-icons/invoices.svg"); }
+ul.left-menu li.ico-reports:before {  background: no-repeat url("/assets/images/left-menu-icons/reports.svg"); }
+ul.left-menu li.ico-eliabrary:before {  background: no-repeat url("/assets/images/left-menu-icons/eliabrary.svg"); }
 
 /* active icons */
 ul.left-menu li.active.ico-dashboard:before {  background: no-repeat url("/assets/images/left-menu-icons/active-dashboard.svg"); }
@@ -69,13 +67,12 @@ ul.left-menu li.active.ico-students:before {  background: no-repeat url("/assets
 ul.left-menu li.active.ico-assets:before {  background: no-repeat url("/assets/images/left-menu-icons/active-assets.svg"); }
 ul.left-menu li.active.ico-employee:before {  background: no-repeat url("/assets/images/left-menu-icons/active-employee.svg"); }
 ul.left-menu li.active.ico-software:before {  background: no-repeat url("/assets/images/left-menu-icons/active-software.svg"); }
+ul.left-menu li.active.ico-location:before {  background: no-repeat url("/assets/images/left-menu-icons/active-location.svg"); }
+ul.left-menu li.active.ico-help_desk:before {  background: no-repeat url("/assets/images/left-menu-icons/active-help_desk.svg"); }
+ul.left-menu li.active.ico-invoices:before {  background: no-repeat url("/assets/images/left-menu-icons/active-invoices.svg"); }
+ul.left-menu li.active.ico-reports:before {  background: no-repeat url("/assets/images/left-menu-icons/active-reports.svg"); }
+ul.left-menu li.active.ico-eliabrary:before {  background: no-repeat url("/assets/images/left-menu-icons/active-eliabrary.svg"); }
 
-ul.left-menu li.active.ico-school:before {  background: no-repeat url("/assets/images/left-menu-icons/active-school.svg"); }
-ul.left-menu li.active.ico-groups:before {  background: no-repeat url("/assets/images/left-menu-icons/active-groups.svg"); }
-ul.left-menu li.active.ico-users:before {  background: no-repeat url("/assets/images/left-menu-icons/active-users.svg"); }
-ul.left-menu li.active.ico-csjpod:before {  background: no-repeat url("/assets/images/left-menu-icons/active-csjpod.svg"); }
-ul.left-menu li.active.ico-competency:before {  background: no-repeat url("/assets/images/left-menu-icons/active-competency.svg"); }
-ul.left-menu li.active.ico-assignments:before {  background: no-repeat url("/assets/images/left-menu-icons/active-assignments.svg"); }
 
 ul.left-menu li.settings:before {  background: no-repeat url("/assets/images/left-menu-icons/settings.svg"); }
 ul.left-menu li.dark-mode:before {  background: no-repeat url("/assets/images/left-menu-icons/dark-mode.svg"); }
@@ -111,7 +108,7 @@ ul.left-menu li .theme-cust a{ padding-top: 0; padding-bottom: 0;}
     color: #fff;
 }
 .dark .left-menu-h ul.left-menu>li:hover>a {
-    background-color: #0E2511;
+    background-color: #1570EF;
     border-radius: 8px;
 }
 
