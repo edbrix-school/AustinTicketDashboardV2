@@ -2,13 +2,9 @@ import React, { useRef } from "react";
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
 import { OverlayPanel } from 'primereact/overlaypanel';
-import { Gelasio } from "next/font/google";
+import Link from "next/link";
+import Image from "next/image";
 
-const myGelasio = Gelasio({
-    weight: ['400', '500', '600', '700', ],
-    subsets: ['latin'],
-    display: "swap",
-})
 
 export default function Top({ ...pageProps }) {
     const notificatio = useRef(null);
@@ -22,14 +18,22 @@ export default function Top({ ...pageProps }) {
                         <i className="cgupod-right-arrow text-[8px] xl:text-[0.417vw]"></i>
                         <div className="text-[#262626] dark:text-[#888]">{pageProps.pageName}</div>
                     </div>
-                    <div className={`${myGelasio.className} text-[#262626] xl:text-[1.250vw] text-[24px] leading-7 dark:text-[#fff]`}>{pageProps.pageTitle}</div>
+                    <div className={`text-[#262626] xl:text-[1.250vw] text-[24px] leading-7 dark:text-[#fff]`}>{pageProps.pageTitle}</div>
                 </div>
                 <div className="flex items-center gap-2">
-                    <button className="xl:px-[0.625vw] px-[12px] xl:py-[0.417vw] py-[8px] border border-[#F2EEEE] rounded-lg dark:border-[#1F2A37]" title="Search">
-                        <i className="cgupod-search text-[#9CA1AB]"></i>
-                    </button>
-                    {/* <Link href={''} className="xl:p-[0.625vw]" title="Message"><Image src={'/assets/images/svg/messages.svg'} width={24} height={28} alt="Message" /></Link>
-                    <Link href={''} className="xl:p-[0.625vw]" onClick={(e) => notificatio.current.toggle(e)} title="Notification"><Image src={'/assets/images/svg/notificatio-bell.svg'} width={24} height={28} alt="Notification" /></Link> */}
+                    <Link href={''} className="xl:p-[0.625vw] relative" title="shopping-cart">
+                        <div className="bg-[#D92D20] rounded-full h-1.5 w-1.5 absolute top-1 right-1"></div>
+                        <Image src={'/assets/images/shopping-cart.svg'} width={24} height={28} alt="shopping-cart" />
+                    </Link>
+                    <Link href={''} className="xl:p-[0.625vw]" title="Message">
+                        <Image src={'/assets/images/messages.svg'} width={24} height={28} alt="Message" />
+                    </Link>
+
+                    {/* <i className="pi "></i> */}
+                    <Link href={''} className="xl:p-[0.625vw] relative" onClick={(e) => notificatio.current.toggle(e)} title="Notification">
+                        <div className="bg-[#D92D20] rounded-full h-1.5 w-1.5 absolute top-1 right-1"></div>
+                        <Image src={'/assets/images/notificatio-bell.svg'} width={24} height={28} alt="Notification" />
+                    </Link>
                 </div>
             </div>
 
