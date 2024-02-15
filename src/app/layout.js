@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./style/globals.css";
 import "./style/leftmenu.css";
+import "./style/systyle.css";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 
