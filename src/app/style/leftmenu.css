@@ -30,10 +30,10 @@
 }
 
 ul.left-menu li { position: relative; }
-ul.left-menu li a{ color: #424242; font-size: 14px; padding: 0.625vw 0; display: block; }
+ul.left-menu li a{ color: #9CA1AB; font-size: 14px; padding: 0.625vw 0; display: block; }
 ul.left-menu li.p-l-15 a{ padding-left: 15px; }
 
-.left-menu-h ul.left-menu>li:hover>a{ background-color: #FEF2F3; border-radius: 10px; }
+.left-menu-h ul.left-menu>li:hover>a{ background-color: #EFF8FF; border-radius: 10px; }
 .left-menu-h ul.left-menu li a span  { min-width: 180px; display: inline-flex; white-space: nowrap;}
 .left-menu-h ul.left-menu li a span, .left-menu-h ul.left-menu li a span i { font-size: 0; padding-left: 60px; }
 
@@ -44,14 +44,14 @@ ul.left-menu li.p-l-15 a{ padding-left: 15px; }
 .left-menu-h ul.left-menu .sub-menu li a:hover{ background-color: white; border-radius: 8px; }
 
 ul.left-menu li ul.sub-menu li a{ padding:0; }
-/* ul.left-menu li.active a { color: #D73F09; } */
+ul.left-menu li.active a { color: #1570EF; font-weight: 600; }
 ul.left-menu li:not(:first-child) { display: block; } /* margin-top: 12px; */
 .left-menu-h:hover .sub-menu li:not(:first-child) { margin-top: 0px; }
 ul.left-menu li:before { content: ""; position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; pointer-events: none;}
 .divide { border-top: 1px solid #eeeeee; }
 ul.left-menu li.lock:before {  background: no-repeat url("/assets/images/left-menu-icons/lock.svg"); }
 ul.left-menu li.ico-dashboard:before {  background: no-repeat url("/assets/images/left-menu-icons/dashboard.svg"); }
-ul.left-menu li.ico-applications:before {  background: no-repeat url("/assets/images/left-menu-icons/applications.svg"); }
+ul.left-menu li.ico-software:before {  background: no-repeat url("/assets/images/left-menu-icons/software.svg"); }
 ul.left-menu li.ico-programs:before {  background: no-repeat url("/assets/images/left-menu-icons/programs.svg"); }
 ul.left-menu li.ico-placements:before {  background: no-repeat url("/assets/images/left-menu-icons/placements.svg"); }
 ul.left-menu li.ico-personnel:before {  background: no-repeat url("/assets/images/left-menu-icons/personnel.svg"); }
@@ -63,7 +63,7 @@ ul.left-menu li.ico-competency:before {  background: no-repeat url("/assets/imag
 ul.left-menu li.ico-assignments:before {  background: no-repeat url("/assets/images/left-menu-icons/assignments.svg"); }
 
 ul.left-menu li.active.ico-dashboard:before {  background: no-repeat url("/assets/images/left-menu-icons/active-dashboard.svg"); }
-ul.left-menu li.active.ico-applications:before {  background: no-repeat url("/assets/images/left-menu-icons/active-applications.svg"); }
+ul.left-menu li.active.ico-software:before {  background: no-repeat url("/assets/images/left-menu-icons/active-software.svg"); }
 ul.left-menu li.active.ico-programs:before {  background: no-repeat url("/assets/images/left-menu-icons/active-programs.svg"); }
 ul.left-menu li.active.ico-placements:before {  background: no-repeat url("/assets/images/left-menu-icons/active-placements.svg"); }
 ul.left-menu li.active.ico-personnel:before {  background: no-repeat url("/assets/images/left-menu-icons/active-personnel.svg"); }

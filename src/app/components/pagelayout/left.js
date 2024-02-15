@@ -1,35 +1,21 @@
-import React, { useLayoutEffect, useState } from 'react'
+import React from 'react'
 import Link from 'next/link';
 import Image from "next/image";
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
 import { useTheme } from 'next-themes';
-import { Tooltip } from 'primereact/tooltip';
+import { usePathname } from 'next/navigation';
 
 export default function Left(props) {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
-  const [usermail, setusermail] = useState();
-  const [userName, setUserName] = useState();
-  const [profilePicture, setProfilePicture] = useState();
-
-
-  useLayoutEffect(() => {
-    let userInfo = JSON.parse(sessionStorage.getItem("userInfo"))
-    setusermail(userInfo?.email)
-    setUserName(userInfo?.name)
-    setProfilePicture(userInfo?.picture)
-  }, [])
-  let UserUnit = "";
-  var userinfo = usermail
-  var PickLetter = userinfo?.match(/\b(\w)/g)
-  var acronym = PickLetter?.join(''); // JSON
-  UserUnit = acronym?.slice(0, 1);
+  const rourter = usePathname()
 
   // Define a function to check if a given link is active
   const isLinkActive = (href) => {
-    // const { pathname } = useRouter();
-    // return pathname === href;
+
+    const pathname = usePathname();
+    return pathname === href;
   };
 
 
@@ -67,59 +53,59 @@ export default function Left(props) {
               <div data-simplebar>
                 <div className="visible lg:hidden"></div>
                 <ul className="left-menu h-full">
-                  <li className={`${isLinkActive('/') ? 'active' : ''} ico-dashboard`}>
-                    <Link href='#'>
+                  <li className={`${isLinkActive('/technician/dashboard') ? 'active' : ''} ico-dashboard`}>
+                    <Link href='/technician/dashboard'>
                       <span>Dashboard</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/applicants') ? 'active' : ''} ico-applications`}>
-                    <Link href='/applicants'>
-                      <span>Applications</span>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-software`}>
+                    <Link href=''>
+                      <span>Assets</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/programs') ? 'active' : ''} ico-programs`}>
-                    <Link href='/programs'>
-                      <span>Programs</span>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-programs`}>
+                    <Link href=''>
+                      <span>Students</span>
                     </Link>
                   </li>
                   <li className={`${isLinkActive('/placement') ? 'active' : ''} ico-placements`}>
                     <Link href='/placement'>
-                      <span>Placements</span>
+                      <span>Employee</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/personnel') ? 'active' : ''} ico-personnel`}>
+                  <li className={`${isLinkActive('/personnel') ? 'active' : ''} ico-software`}>
                     <Link href='/personnel'>
-                      <span>Personnel</span>
+                      <span>Software</span>
                     </Link>
                   </li>
                   <li className={`${isLinkActive('/school') ? 'active' : ''} ico-school`}>
                     <Link href='/school'>
-                      <span>School</span>
+                      <span>Locations</span>
                     </Link>
                   </li>
                   <li className={`${isLinkActive('/groups') ? 'active' : ''} ico-groups`}>
                     <Link href='/groups'>
-                      <span>Groups</span>
+                      <span>Help Desk</span>
                     </Link>
                   </li>
                   <li className={`${isLinkActive('/users') ? 'active' : ''} ico-users`}>
                     <Link href='/users'>
-                      <span>Users</span>
+                      <span>Invoices</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/csjpod') ? 'active' : ''} ico-csjpod`}>
+                  <li className={`${isLinkActive('/csjpod') ? 'active' : ''} settings`}>
                     <Link href='/csjpod'>
-                      <span>CSJ POD</span>
+                      <span>Settings</span>
                     </Link>
                   </li>
                   <li className={`${isLinkActive('/competency') ? 'active' : ''} ico-competency`}>
                     <Link href='/competency'>
-                      <span>Competency</span>
+                      <span>Reports</span>
                     </Link>
                   </li>
                   <li className={`${isLinkActive('/assignments') ? 'active' : ''} ico-assignments`}>
                     <Link href='/assignments'>
-                      <span>Assignments</span>
+                      <span>E- Library</span>
                     </Link>
                   </li>
                 </ul>
