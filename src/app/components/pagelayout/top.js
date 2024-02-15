@@ -18,9 +18,9 @@ export default function Top({ ...pageProps }) {
                         <i className="asetsmng-arrow-right text-[8px] xl:text-[0.417vw]"></i>
                         <div className="cursor-pointer">Assets</div>
                         <i className="asetsmng-arrow-right text-[8px] xl:text-[0.417vw]"></i>
-                        <div className="text-[#262626] dark:text-[#84878D]">{pageProps.pageName}</div>
+                        <div className="text-[#3A3E49] dark:text-[#84878D]">{pageProps.pageTitle}</div>
                     </div>
-                    <div className={`text-[#262626] xl:text-[1.250vw] text-[24px] leading-7 dark:text-[#fff]`}>{pageProps.pageTitle}</div>
+                    <div className={`text-[#3A3E49] xl:text-[1.250vw] text-[24px] font-medium leading-7 dark:text-[#fff]`}>{pageProps.pageTitle}</div>
                 </div>
                 <div className="flex items-center gap-2">
                     <Link href={''} className="xl:p-[0.625vw] relative" title="shopping-cart">
