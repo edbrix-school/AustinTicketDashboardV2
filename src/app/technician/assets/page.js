@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { InputText } from "primereact/inputtext";
 import PageLayout from '@/app/components/pagelayout/pagelayout';
 import ManageAssets from './manageassets/manageassets';
 import Quickadd from './quickadd/quickadd';
@@ -15,7 +16,9 @@ export default function Index() {
   return (
     <PageLayout pageTitle="Manage Assets">
      <div className="">
-     <Tabs>
+     <Tabs className={'custTavbview'}>
+      <div className='flex items-center justify-between xl:pb-[0.833vw] pb-4'>
+        <div>
     <TabList>
       <Tab>Manage Assets</Tab>
       <Tab>Quick Add</Tab>
@@ -26,7 +29,15 @@ export default function Index() {
       <Tab>Market Alerts</Tab>
       <Tab>Inventory Audit</Tab>
     </TabList>
-
+    </div>
+    <div>
+    <div className="p-input-icon-right custInputsearch">
+    <i className="asetsmng-search-big text-[#84878D] xl:text-[1.042vw]" />
+    <InputText placeholder="Quick Search" className='placeholder:text-[#84878D] placeholder:xl:text-[0.833vw] placeholder:text-sm placeholder:font-normal' />
+    </div>
+    </div>
+    </div>
+    <div>
     <TabPanel>
     <ManageAssets />
     </TabPanel>
@@ -51,6 +62,7 @@ export default function Index() {
     <TabPanel>
     <InventoryAudit />
     </TabPanel>
+    </div>
   </Tabs>
      </div>
     </PageLayout>
