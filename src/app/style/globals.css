@@ -2,6 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'assetsmanage';
+  src:  url('/assets/fonts/assetsmanage.eot?ibrc4u');
+  src:  url('/assets/fonts/assetsmanage.eot?ibrc4u#iefix') format('embedded-opentype'),
+    url('/assets/fonts/assetsmanage.ttf?ibrc4u') format('truetype'),
+    url('/assets/fonts/assetsmanage.woff?ibrc4u') format('woff'),
+    url('/assets/fonts/assetsmanage.svg?ibrc4u#assetsmanage') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="asetsmng-"], [class*=" asetsmng-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'assetsmanage' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.asetsmng-arrow-down-circle-fill:before {content: "\e900";}
+.asetsmng-arrow-down-circle-outline:before {content: "\e901";}
+.asetsmng-arrow-down-line:before {content: "\e902";}
+.asetsmng-arrow-down-think:before {content: "\e903";}
+.asetsmng-arrow-left-line:before {content: "\e904";}
+.asetsmng-arrow-left-think:before {content: "\e905";}
+.asetsmng-arrow-right:before {content: "\e906";}
+.asetsmng-arrow-right-think:before {content: "\e907";}
+.asetsmng-arrow-up:before {content: "\e908";}
+.asetsmng-arrow-up-circle-fill:before {content: "\e909";}
+.asetsmng-arrow-up-circle-outline:before {content: "\e90a";}
+.asetsmng-arrow-up-line:before {content: "\e90b";}
+.asetsmng-calendar:before {content: "\e90c";}
+.asetsmng-calendar-fill:before {content: "\e90d";}
+.asetsmng-close-circle:before {content: "\e90e";}
+.asetsmng-cross:before {content: "\e90f";}
+.asetsmng-download:before {content: "\e910";}
+.asetsmng-dropdown-arrow:before {content: "\e911";}
+.asetsmng-dropdown-search:before {content: "\e912";}
+.asetsmng-edit-rounded-box:before {content: "\e913";}
+.asetsmng-export:before {content: "\e914";}
+.asetsmng-eye:before {content: "\e915";}
+.asetsmng-filter-add:before {content: "\e916";}
+.asetsmng-filter-search:before {content: "\e917";}
+.asetsmng-folder:before {content: "\e918";}
+.asetsmng-folder-fill:before {content: "\e919";}
+.asetsmng-grid-outline:before {content: "\e91a";}
+.asetsmng-home:before {content: "\e91b";}
+.asetsmng-id-fill:before {content: "\e91c";}
+.asetsmng-import:before {content: "\e91d";}
+.asetsmng-Info-circle:before {content: "\e91e";}
+.asetsmng-info-i:before {content: "\e91f";}
+.asetsmng-lamp:before {content: "\e920";}
+.asetsmng-linechart-outline:before {content: "\e921";}
+.asetsmng-loaction:before {content: "\e922";}
+.asetsmng-map-view:before {content: "\e923";}
+.asetsmng-menu:before {content: "\e924";}
+.asetsmng-microphone:before {content: "\e925";}
+.asetsmng-open-folder:before {content: "\e926";}
+.asetsmng-pdf-format:before {content: "\e927";}
+.asetsmng-plus:before {content: "\e928";}
+.asetsmng-plus-rounded-box:before {content: "\e929";}
+.asetsmng-printer:before {content: "\e92a";}
+.asetsmng-right-tick:before {content: "\e92b";}
+.asetsmng-right-tick-fill:before {content: "\e92c";}
+.asetsmng-search-big:before {content: "\e92d";}
+.asetsmng-share:before {content: "\e92e";}
+.asetsmng-sortable:before {content: "\e92f";}
+.asetsmng-td-filter:before {content: "\e930";}
+.asetsmng-td-search:before {content: "\e931";}
+.asetsmng-text-doc:before {content: "\e932";}
+.asetsmng-three-dots-box:before {content: "\e933";}
+.asetsmng-three-dots-circle:before {content: "\e934";}
+.asetsmng-trash:before {content: "\e935";}
+.asetsmng-unlock:before {content: "\e936";}
+.asetsmng-upload:before {content: "\e937";}
+
+
 /* common style */
 body { font-size: 14px; }
 
