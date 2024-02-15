@@ -1,3 +1,4 @@
+"use client";
 import Top from "./top";
 import Left from "./left";
 import Head from "next/head";
