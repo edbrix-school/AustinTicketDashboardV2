@@ -4,11 +4,11 @@ import Image from 'next/image';
 function Index() {
     return (
         <>
-        {/* <PageLayout pageTitle="Reports" topTab={true}> */}
-        <PageLayout topTab={true} pageTitle="Reports" parentPageName="Assets" >
+        
+        <PageLayout topTab={true} pageTitle="Reports" parentPageName="Reports" >
             <div className=''>
                 {/* <div className='text-[#131D32] text-[24px] font-medium xl:text-[1.25vw] pb-[42px] xl:pb-[2.188vw]  '>Standard Reports</div> */}
-                <div className='grid grid-cols-12 gap-[45px] xl:gap-[2.344vw]'>
+                <div className='grid grid-cols-12 gap-[45px] xl:gap-[2.344vw] mt-[32px] xl:mt-[1.667vw]'>
                     <div className='col-span-12 md:col-span-6 xl:col-span-3'>
                         <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px]'>
                             <div className='flex items-center '>
