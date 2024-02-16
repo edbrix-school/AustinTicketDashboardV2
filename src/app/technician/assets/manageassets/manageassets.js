@@ -363,7 +363,7 @@ export default function ManageAssets() {
               paginatorTemplate="CurrentPageReport RowsPerPageDropdown PrevPageLink PageLinks NextPageLink custmpaginator"
               currentPageReportTemplate="Rows per page  {first}-{last} of {totalRecords}"
               rowsPerPageOptions={[5, 10, 25, 50]}
-              rows={10}
+              rows={9}
               onSelectionChange={(e) => setSelectedProducts(e.value)}
               selectionMode={rowClick ? null : "checkbox"}
               selection={selectedProducts}
