@@ -5,7 +5,7 @@ function Index() {
     return (
         <>
         <PageLayout pageTitle="Reports">
-            <div className='bg-[#ccd3e2] p-[50px] xl:p-[2.604vw]'>
+            <div className=' p-[50px] xl:p-[2.604vw]'>
                 <div className='text-[#131D32] text-[24px] font-medium xl:text-[1.25vw] pb-[42px] xl:pb-[2.188vw]  '>Standard Reports</div>
                 <div className='grid grid-cols-12 gap-[45px] xl:gap-[2.344vw]'>
                     <div className='col-span-3'>
