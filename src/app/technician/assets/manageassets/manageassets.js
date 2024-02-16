@@ -5,8 +5,10 @@ import { Column } from "primereact/column";
 import { DataTable } from "primereact/datatable";
 import { InputText } from "primereact/inputtext";
 import { Checkbox } from "primereact/checkbox";
+import LogincoordinatesMap from "./logincoordinates";
 
 export default function ManageAssets() {
+  const [logincoordinates, setlogincoordinates] = useState(false);
     // Data table
   const [rowClick, setRowClick] = useState(true);
   const [selectedProducts, setSelectedProducts] = useState(null);
@@ -233,6 +235,16 @@ export default function ManageAssets() {
         );
       };
 
+      const LastlogincoordinatesTemplate = (rowData) => {
+        return (
+          <>
+            <div className="text-[#3A3E49] 3xl:text-[0.729vw] text-xs font-normal" onClick={() => setlogincoordinates(true)}>
+            37.0902° N, 95.7129° W
+            </div>
+          </>
+        );
+      };
+
       const categories = [
         { name: "Option 1", key: "A" },
         { name: "Option 2", key: "M" },
@@ -306,7 +318,7 @@ export default function ManageAssets() {
                     value={inputValue}
                     onChange={handleChange}
                       placeholder="Search"
-                      className="p-inputtext p-component 3xl:h-[1.875vw] h-[33px] 3xl:w-[16.927vw] placeholder:text-[#888888] placeholder:font-normal placeholder:3xl:text-[0.833vw] "
+                      className="p-inputtext p-component 3xl:h-[1.875vw] h-[33px] w-[300px] 3xl:w-[16.927vw] placeholder:text-[#888888] placeholder:font-normal placeholder:3xl:text-[0.833vw] "
                     />
                     {inputValue && (
                     <i onClick={clearInput} className="asetsmng-cross 3xl:text-[0.521vw] text-[10px] leading-4 text-[#84878D] cursor-pointer" />
@@ -363,7 +375,7 @@ export default function ManageAssets() {
               paginatorTemplate="CurrentPageReport RowsPerPageDropdown PrevPageLink PageLinks NextPageLink custmpaginator"
               currentPageReportTemplate="Rows per page  {first}-{last} of {totalRecords}"
               rowsPerPageOptions={[5, 10, 25, 50]}
-              rows={9}
+              rows={10}
               onSelectionChange={(e) => setSelectedProducts(e.value)}
               selectionMode={rowClick ? null : "checkbox"}
               selection={selectedProducts}
@@ -454,6 +466,7 @@ export default function ManageAssets() {
                 filter
                 filterElement={SearchFilterTemplate}
                 style={{ minWidth: "12rem" }}
+                body={LastlogincoordinatesTemplate}
               ></Column>
               <Column
                 field="Action"
@@ -467,6 +480,11 @@ export default function ManageAssets() {
               ></Column>
             </DataTable>
           </div>
+
+          <LogincoordinatesMap
+        visible={logincoordinates}
+        onHides={() => setlogincoordinates(false)}
+      />
     </>
   );
 }

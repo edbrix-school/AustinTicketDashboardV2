@@ -1,52 +1,54 @@
 .custTavbview .react-tabs__tab-list {
     display: flex;
     align-items: center;
-    gap: 0.417vw;
+    gap: 8px;
 }
 .custTavbview .react-tabs__tab-list .react-tabs__tab {
     border-radius: var(--border-radius-rounded-full, 9999px);
     border: 1px solid var(--stroke-soft, #E4E7EC);
-    padding: 0.417vw 0.521vw;
-    font-size: 0.729vw;
     font-weight: 400;
-    line-height: 0.938vw;
+    font-size: 12px;
+    line-height: 18px;
     cursor: pointer;
+    padding: 6px 10px;
 }
 
 .custTavbview .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {background: #1570EF;color: #FFFFFF;}
 
 .custInputsearch .p-inputtext {
-    width: 17.708vw;
-    height: 2.5vw;
+    width: 300px;
+    height: 40px;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.32px;
     border-radius: var(--rounded-full, 9999px);
     border: 1px solid var(--stroke-default, #D3D3CE);
     background: var(--surface-component, #FFF);
-    padding: 0 0.625vw;
 }
 .custm-tdsearch .p-inputtext {
-    border-radius: 0.417vw;
     border: 1px solid var(--stroke-default, #D3D3CE);
     background: var(--surface-component, #FFF);
-    padding-left: 2.188vw;
-    padding-right: 1.979vw;
-    font-size: 0.729vw;
     font-weight: 400;
+    padding-left: 42px;
+    padding-right: 38px;
 }
 
 /* Data Table start */
 .custTable .p-datatable-tbody .p-checkbox.p-component {
-    width: 0.938vw;
-    height: 0.938vw;
+    width: 16px;
+    height: 16px;
 }
 .custTable .p-datatable-tbody .p-checkbox.p-component {
-    width: 0.938vw;
-    height: 0.938vw;
+    width: 16px;
+    height: 16px;
 }
 .custTable .p-datatable-tbody .p-checkbox .p-checkbox-box {
     border: 1px solid #E4E7EC;
     background: #ffffff;
-    width: 0.938vw !important;
-    height: 0.938vw !important;
+    width: 16px !important;
+    height: 16px !important;
     color: #495057;
     border-radius: 4px;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
@@ -80,15 +82,15 @@
     background: #F5F6F8;
 }
 .custTable.p-datatable .p-datatable-thead>tr>th .p-column-filter-menu-button {
-    width: 0.833vw;
-    height: 0.933vw;
+    width: 16px;
+    height: 16px;
     border-radius: 0;
 }
 .custTable.p-datatable .p-datatable-thead>tr>th .p-column-filter-menu-button::after {
     content: '\e930';
     font-family: 'assetsmanage' !important;
     display: block;
-    font-size: 0.729vw;
+    font-size: 13px;
 }
 .custTable.p-datatable .p-sortable-column .p-column-title{
     padding-right: 15px;
@@ -101,9 +103,9 @@
 }
 .custTable.p-datatable .p-datatable-tbody>tr>td {
     color: #424242;
-    font-size: 0.729vw;
+    font-size: 12px;
     font-weight: 400;
-    padding: 0.417vw 1.042vw;
+    padding: 8px 14px;
     border-bottom: 1px solid #F2EEEE;
 }
 .custTable.p-datatable.p-datatable-selectable .p-datatable-tbody > tr.p-selectable-row:not(.p-highlight):not(.p-datatable-emptymessage):hover {
@@ -112,14 +114,12 @@
 }
 .custTable.p-datatable .pi-filter-icon.pi-filter, .custTable.p-datatable .p-sortable-column-icon.pi-sort-alt {
     color: #424242;    
-    font-size: 0.729vw;
+    font-size: 12px;
     font-weight: 500;
 }
 .custTable.p-datatable .p-sortable-column-icon {
-    /* position: absolute;
-    right: 0; */
-    height: 0.625vw;
-    width: 0.625vw;
+    width: 10px;
+    height: 10px;
 }
 .custTable.p-datatable .p-datatable-tbody>tr:nth-child(even) {
     background: #F9F9FC;
@@ -129,8 +129,8 @@
     background: #DFE7FA;
     color: #3A3E49;
     font-weight: 500;
-    font-size: 0.729vw;
-    padding: 0.625vw 1.042vw;
+    font-size: 12px;
+    padding: 8px 14px;
 }
 .custTable.p-datatable .p-sortable-column:not(.p-highlight):not(.p-sortable-disabled):hover {
     background: #DFE7FA;
@@ -143,18 +143,6 @@
 }
 .action-shadow-table {
     box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
-}
-.rememberme .p-checkbox .p-checkbox-box {
-    border: 2px solid #ced4da !important;
-    background: #ffffff;
-    width: 1.938vw !important;
-    height: 1.3vw !important;
-    color: #495057;
-    border-radius: 4px;
-    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
-}
-.rememberme .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box:hover {
-    border-color: #AF1E27 !important;
 }
 .custTable .p-datatable-tbody .p-checkbox .p-checkbox-box .p-checkbox-icon{
     width: 10px;
@@ -169,16 +157,16 @@
     font-size: 8px;
 }
 .custTable .p-checkbox.p-component {
-    width: 0.938vw;
-    height: 0.938vw;
+    width: 16px;
+    height: 16px;
 }
 .custTable .p-datatable-thead .p-checkbox .p-checkbox-box {
     border: 1px solid #ced4da;
     color: #495057;
     border-radius: 4px;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
-    width: 0.938vw;
-    height: 0.938vw;
+    width: 16px;
+    height: 16px;
 }
 .custTable .p-datatable-thead .p-checkbox .p-checkbox-box .p-checkbox-icon {
     transition-duration: 0.2s;
@@ -195,11 +183,11 @@
 .tableCust .p-paginator .p-paginator-first, .tableCust .p-paginator .p-paginator-prev, .tableCust .p-paginator .p-paginator-next, .tableCust .p-paginator .p-paginator-last, .tableCust .p-paginator .p-paginator-pages .p-paginator-page {
     border: 1px solid #D3D3CE;
     border-radius: 0;
-    width: 1.719vw;
-    height: 1.819vw;
+    width: 31px;
+    height: 33px;
     margin: 0;
     min-width: inherit;    
-    font-size: 0.833vw;
+    font-size: 14px;
 }
 .tableCust .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
     border: 1px solid #D3D3CE;
@@ -216,24 +204,24 @@
 }
 .tableCust .p-paginator .p-paginator-prev {
     border-radius: 4px 0 0 4px;
-    width: 4.271vw;
+    width: 82px;
 }
 .tableCust .p-paginator .p-paginator-next {
     border-radius: 0 4px 4px 0;
-    width: 2.917vw;
+    width: 56px;
 }
 
 .tableCust .p-paginator .p-paginator-prev::after {
     content: 'Preview';
     display: block;
-    font-size: 0.729vw;
+    font-size: 14px;
     font-weight: 500;
     color: #84878D;
 }
 .tableCust .p-paginator .p-paginator-next::before {
     content: 'Next';
     display: block;
-    font-size: 0.729vw;
+    font-size: 14px;
     font-weight: 500;
     color: #84878D;
 }
@@ -246,15 +234,15 @@
 .tableCust .pi-angle-left:before{
     font-family: 'Inter', sans-serif !important;
     content: "Previous" !important;
-    font-size: 0.833vw;
+    font-size: 16px;
 }
 .tableCust .pi-angle-right:before {
     font-family: 'Inter', sans-serif !important;
     content: "Next" !important;
-    font-size: 0.833vw;
+    font-size: 16px;
 }
 .tableCust .p-paginator-pages button {
-    font-size: 0.833vw;
+    font-size: 16px;
 }
 .custTable.p-datatable .p-paginator-bottom{
     border: 0;
@@ -267,7 +255,7 @@
     left: 0;
     color: #888888;
     font-weight: 400;
-    font-size: 0.833vw;
+    font-size: 16px;
 }
 .custTable .p-paginator .p-dropdown{
    /* position: absolute;
@@ -279,9 +267,9 @@
     width: 2rem;
 }
 .custTable .p-paginator .p-dropdown {
-    height: 2.083vw;
+    height: 40px;
     position: absolute;
-    left: 11.021vw;
+    left: 212px;
     border: 1px solid #EAE0E0;
 }
 .custTable .p-inputtext {
@@ -292,7 +280,7 @@
 .custTable .p-dropdown .p-dropdown-label {
     background: #FFF;
     color: #888888;
-    font-size: 0.833vw;
+    font-size: 16px;
     font-weight: 400;
     justify-content: flex-start;
 }
@@ -303,7 +291,7 @@
 .custmdropdown .p-dropdown .p-dropdown-label {
     background: #FFF;
     color: #888888;
-    font-size: 0.833vw;
+    font-size: 16px;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -322,7 +310,7 @@
     border-radius: 100%;
 }
 .p-column-filter-overlay {
-    width: 8.333vw !important;
+    width: 160px !important;
 }
 .p-column-filter-constraint {
     padding: 0 !important;
@@ -342,18 +330,13 @@
 .dark .p-datatable .p-datatable-tbody > tr.p-highlight {
     background: #13161B;
     color: #495057;
-  }
-  
-.custTable.p-datatable .p-tag.p-component .p-tag-value {
-    display: flex;
-    align-items: center;
-    gap: 0.521vw;
 }
+  
 .custTable.p-datatable .p-tag.p-tag-success, .custTable.p-datatable .p-tag.p-tag-warning {
     border-radius: var(--border-radius-rounded-2xl, 6px);
-    font-size: 0.625vw;
+    font-size: 12px;
     font-weight: 500;
-    padding: 0.104vw 0.417vw;
+    padding: 2px 10px;
 }
 .custTable.p-datatable .p-tag.p-tag-success {
     background: var(--brand-highlight-50, #D1FAE4);
@@ -368,24 +351,24 @@
     font-family: 'assetsmanage' !important;
     content: "\e92f";
 }
-.custm-td-filterserach input {
+.custm-td-filterserach .p-inputtext {
     border-radius: 8px;
     border: var(--spacing-0, 1px) solid var(--interface-stroke-default, #BECDE3);
     background: var(--brand-neutral-50, #F5F6F8);
-    padding-left: 2.188vw;
-    font-size: 0.729vw;
+    padding-left: 35px;
+    font-size: 14px;
 }
 /* Data table end */
 .boxshadow01 {box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);}
 .cutsm_checkbox {
-    width: 0.833vw;
-    height: 0.833vw;
+    width: 16px;
+    height: 16px;
 }
 .cutsm_checkbox.p-checkbox .p-checkbox-box {
     border: 0.5px solid #BECDE3;
     background: #F5F6F8;
-    width: 0.833vw;
-    height: 0.833vw;
+    width: 16px;
+    height: 16px;
     color: #495057;
     border-radius: 4px;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
@@ -405,8 +388,8 @@
     margin-top: -0.4rem;
 }
 .custm-search .p-inputtext {
-    border-radius: 0.521vw;
-    padding-left: 2.208vw;
+    border-radius: 10px;
+    padding-left: 40px;
     font-size: 12px;
 }
 
@@ -419,7 +402,137 @@
 /***********************************************
             Responsive
 ***********************************************/
-@media only screen and (max-width: 1920px),(min-width: 1920px) {}
+@media only screen and (min-width: 1800px) {
+    .custTavbview .react-tabs__tab-list {
+        gap: 0.417vw;
+    }
+    .custTavbview .react-tabs__tab-list .react-tabs__tab {
+        padding: 0.417vw 0.521vw;
+        font-size: 0.729vw;
+        line-height: 0.938vw;
+    }
+       
+    .custInputsearch .p-inputtext {
+        width: 17.708vw;
+        height: 2.5vw;
+        padding: 0 0.625vw;
+    }
+    .custm-tdsearch .p-inputtext {
+        border-radius: 0.417vw;
+        padding-left: 2.188vw;
+        padding-right: 1.979vw;
+        font-size: 0.729vw;
+    }
+    .custTable .p-datatable-tbody .p-checkbox.p-component {
+        width: 0.938vw;
+        height: 0.938vw;
+    }
+    .custTable .p-datatable-tbody .p-checkbox.p-component {
+        width: 0.938vw;
+        height: 0.938vw;
+    }
+    .custTable .p-datatable-tbody .p-checkbox .p-checkbox-box {
+        width: 0.938vw !important;
+        height: 0.938vw !important;
+    }
+    .custTable.p-datatable .p-datatable-thead>tr>th .p-column-filter-menu-button {
+        width: 0.833vw;
+        height: 0.933vw;
+    }
+    .custTable.p-datatable .p-datatable-thead>tr>th .p-column-filter-menu-button::after {
+        font-size: 0.729vw;
+    }
+    .custTable.p-datatable .p-datatable-tbody>tr>td {
+        font-size: 0.729vw;
+        padding: 0.417vw 1.042vw;
+    }
+    .custTable.p-datatable .pi-filter-icon.pi-filter, .custTable.p-datatable .p-sortable-column-icon.pi-sort-alt {
+        font-size: 0.729vw;
+    }
+    .custTable.p-datatable .p-sortable-column-icon {
+        /* position: absolute;
+        right: 0; */
+        height: 0.625vw;
+        width: 0.625vw;
+    }
+    .custTable.p-datatable .p-datatable-thead>tr>th {
+        font-size: 0.729vw;
+        padding: 0.625vw 1.042vw;
+    }
+    .rememberme .p-checkbox .p-checkbox-box {
+        width: 1.938vw !important;
+        height: 1.3vw !important;
+    }
+    .custTable .p-checkbox.p-component {
+        width: 0.938vw;
+        height: 0.938vw;
+    }
+    .custTable .p-datatable-thead .p-checkbox .p-checkbox-box {
+        width: 0.938vw;
+        height: 0.938vw;
+    }
+    .tableCust .p-paginator .p-paginator-first, .tableCust .p-paginator .p-paginator-prev, .tableCust .p-paginator .p-paginator-next, .tableCust .p-paginator .p-paginator-last, .tableCust .p-paginator .p-paginator-pages .p-paginator-page {
+        border: 1px solid #D3D3CE;
+        width: 1.719vw;
+        height: 1.819vw;
+        font-size: 0.833vw;
+    }
+    .tableCust .p-paginator .p-paginator-prev {
+        width: 4.271vw;
+    }
+    .tableCust .p-paginator .p-paginator-next {
+        width: 2.917vw;
+    }
+    
+    .tableCust .p-paginator .p-paginator-prev::after {
+        font-size: 0.729vw;
+    }
+    .tableCust .p-paginator .p-paginator-next::before {
+        font-size: 0.729vw;
+    }
+    .tableCust .pi-angle-left:before{
+        font-size: 0.833vw;
+    }
+    .tableCust .pi-angle-right:before {
+        font-size: 0.833vw;
+    }
+    .tableCust .p-paginator-pages button {
+        font-size: 0.833vw;
+    }
+    .custTable.p-datatable .p-paginator-current{
+        font-size: 0.833vw;
+    }
+    .custTable .p-paginator .p-dropdown {
+        height: 2.083vw;
+        left: 11.021vw;
+    }
+    .custTable .p-dropdown .p-dropdown-label {
+        font-size: 0.833vw;
+    }
+    .custmdropdown .p-dropdown .p-dropdown-label {
+        font-size: 0.833vw;
+    }
+    .p-column-filter-overlay {
+        width: 8.333vw !important;
+    }
+    .custTable.p-datatable .p-tag.p-component .p-tag-value {
+        gap: 0.521vw;
+    }
+    .custTable.p-datatable .p-tag.p-tag-success, .custTable.p-datatable .p-tag.p-tag-warning {
+        font-size: 0.625vw;
+        padding: 0.104vw 0.417vw;
+    }
+    .custTable.p-datatable .pi-filter:before {
+        font-family: 'assetsmanage' !important;
+        content: "\e92f";
+    }
+    .custm-td-filterserach input {
+        border-radius: 8px;
+        padding-left: 2.188vw;
+        font-size: 0.729vw;
+    }
+    /* Data table end */
+}
 @media only screen and (max-width: 1600px) {
 }
 @media only screen and (max-width: 1024px) {
@@ -427,73 +540,6 @@
 }
 
 @media only screen and (max-width: 1280px) {
-    .custm-tdsearch .p-inputtext {
-        border-radius: 8px;
-        padding-left: 33px;
-        padding-right: 32px;
-        font-size: 12px;
-        font-weight: 400;
-    }
-    .custInputsearch .p-inputtext {
-        width: 200px;
-        height: 33px;
-        padding: 0 20px;
-    }
-    .custTavbview .react-tabs__tab-list {
-        gap: 8px;
-        flex-wrap: wrap;
-    }
-    .custTavbview .react-tabs__tab-list .react-tabs__tab {
-        padding: 8px 10px;
-        font-size: 10px;
-        line-height: 14px;
-        white-space: nowrap;
-    }
-    .custTable.p-datatable .p-datatable-thead>tr>th, .custTable.p-datatable .p-datatable-tbody>tr>td {
-        font-size: 10px;
-        padding: 8px 12px;
-    }
-    .custTable.p-datatable .p-datatable-thead>tr>th .p-column-filter-menu-button {
-        width: 15px;
-        height: 15px;
-    }
-    .tableCust .p-paginator .p-paginator-first, .tableCust .p-paginator .p-paginator-prev, .tableCust .p-paginator .p-paginator-next, .tableCust .p-paginator .p-paginator-last, .tableCust .p-paginator .p-paginator-pages .p-paginator-page {
-        width: 27px;
-        height: 27px;
-        font-size: 0.833vw;
-    }
-    .tableCust .p-paginator .p-paginator-prev {
-        border-radius: 4px 0 0 4px;
-        width: 58px !important;
-    }
-    .tableCust .p-paginator .p-paginator-next {
-        border-radius: 0 4px 4px 0;
-        width: 40px !important;
-    }
-    .custTable .p-checkbox.p-component, .custTable .p-datatable-tbody .p-checkbox.p-component {
-        width: 14px;
-        height: 14px;
-    }
-    .custTable .p-datatable-thead .p-checkbox .p-checkbox-box {
-        width: 14px;
-        height: 14px;
-    }
-    .custTable .p-datatable-tbody .p-checkbox .p-checkbox-box {
-        width: 14px !important;
-        height: 14px !important;
-    }
-    .custm-td-filterserach input {
-        padding-left: 30px !important;
-        font-size: 12px;
-    }
-    .cutsm_checkbox {
-        width: 14px;
-        height: 14px;
-    }
-    .cutsm_checkbox.p-checkbox .p-checkbox-box {
-        width: 14px;
-        height: 14px;
-    }
 }
 
 @media only screen and (max-width: 991px) {
