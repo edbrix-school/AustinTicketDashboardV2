@@ -115,7 +115,7 @@ padding: 0.25rem !important;
 
 }
 
-.assetspoups button, [type='button'], [type='reset'], [type='submit']{
+.assetspoups button,.assetspoups [type='button'],.assetspoups [type='reset'],.assetspoups [type='submit']{
     display: none !important;
 }
 .parent-div:hover > .child-div:first-child {
