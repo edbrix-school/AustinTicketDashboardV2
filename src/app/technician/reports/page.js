@@ -9,7 +9,7 @@ function Index() {
             <div className=''>
                 {/* <div className='text-[#131D32] text-[24px] font-medium xl:text-[1.25vw] pb-[42px] xl:pb-[2.188vw]  '>Standard Reports</div> */}
                 <div className='grid grid-cols-12 gap-[45px] xl:gap-[2.344vw]'>
-                    <div className='col-span-3'>
+                    <div className='col-span-12 md:col-span-6 xl:col-span-3'>
                         <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px]'>
                             <div className='flex items-center '>
                                 <div className='px-[25px] xl:px-[1.302vw]'>
@@ -24,7 +24,7 @@ function Index() {
 
                         </div>
                     </div>
-                    <div className='col-span-3'>
+                    <div className='col-span-12 md:col-span-6 xl:col-span-3'>
                         <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px]'>
                             <div className='flex items-center '>
                                 <div className='px-[25px] xl:px-[1.302vw]'>
@@ -39,7 +39,7 @@ function Index() {
 
                         </div>
                     </div>
-                    <div className='col-span-3'>
+                    <div className='col-span-12 md:col-span-6 xl:col-span-3'>
                         <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px]'>
                             <div className='flex items-center '>
                                 <div className='px-[25px] xl:px-[1.302vw]'>
@@ -54,7 +54,7 @@ function Index() {
 
                         </div>
                     </div>
-                    <div className='col-span-3'>
+                    <div className='col-span-12 md:col-span-6 xl:col-span-3'>
                         <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px]'>
                             <div className='flex items-center '>
                                 <div className='px-[25px] xl:px-[1.302vw]'>
@@ -69,7 +69,7 @@ function Index() {
 
                         </div>
                     </div>
-                    <div className='col-span-3'>
+                    <div className='col-span-12 md:col-span-6 xl:col-span-3'>
                         <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px] mt-[10px] xl:mt-[0.521vw]'>
                             <div className='flex items-center '>
                                 <div className='px-[25px] xl:px-[1.302vw]'>
@@ -84,7 +84,7 @@ function Index() {
 
                         </div>
                     </div>
-                    <div className='col-span-3'>
+                    <div className='col-span-12 md:col-span-6 xl:col-span-3'>
                         <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px] mt-[10px] xl:mt-[0.521vw]'>
                             <div className='flex items-center '>
                                 <div className='px-[25px] xl:px-[1.302vw]'>
@@ -99,7 +99,7 @@ function Index() {
 
                         </div>
                     </div>
-                    <div className='col-span-3'>
+                    <div className='col-span-12 md:col-span-6 xl:col-span-3'>
                         <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px] mt-[10px] xl:mt-[0.521vw]'>
                             <div className='flex items-center '>
                                 <div className='px-[25px] xl:px-[1.302vw]'>
@@ -114,7 +114,7 @@ function Index() {
 
                         </div>
                     </div>
-                    <div className='col-span-3'>
+                    <div className='col-span-12 md:col-span-6 xl:col-span-3'>
                         <div className='shadow-xl shadow-[#1018281A] bg-white  rounded-[4px] mt-[10px] xl:mt-[0.521vw]'>
                             <div className='flex items-center '>
                                 <div className='px-[25px] xl:px-[1.302vw]'>
