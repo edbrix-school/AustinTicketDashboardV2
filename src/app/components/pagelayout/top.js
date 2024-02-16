@@ -11,29 +11,29 @@ export default function Top({ ...pageProps }) {
 
     return (
         <header className="sticky top-0 z-[3]">
-            <div className={`${ pageProps.topTab ? 'xl:min-h-[4.27vw] min-h-[82px] pb-[12px] xl:pb-[0.625vw]' : 'xl:min-h-[5.96vw] min-h-[114px] pb-[44px] xl:pb-[2.299vw]'} bg-white flex items-center justify-between pt-[20px] xl:pt-[1.04vw] pb-[12px] xl:pb-[0.625vw] pr-4 xl:pr-[1.667vw] pl-[118px] xl:pl-[128px] dark:bg-[#191A1E] `}>
+            <div className={`${ pageProps.topTab ? '3xl:min-h-[4.27vw] min-h-[82px] pb-[12px] 3xl:pb-[0.625vw]' : '3xl:min-h-[5.96vw] min-h-[114px] pb-[44px] 3xl:pb-[2.299vw]'} bg-white flex flex-wrap gap-2 items-center justify-between pt-[20px] 3xl:pt-[1.04vw] pb-[12px] 3xl:pb-[0.625vw] pr-4 3xl:pr-[1.667vw] pl-[118px] 3xl:pl-[128px] dark:bg-[#191A1E] `}>
                 <div className="">
-                    <div className="flex items-center gap-3 text-[12px] xl:text-[0.625vw] text-[#84878D] mb-1 xl:mb-[0.208vw]">
+                    <div className="flex items-center gap-3 text-[12px] 3xl:text-[0.625vw] text-[#84878D] mb-1 3xl:mb-[0.208vw]">
                         <div className="cursor-pointer">Home</div>
-                        <i className="asetsmng-arrow-right text-[8px] xl:text-[0.417vw]"></i>
+                        <i className="asetsmng-arrow-right text-[8px] 3xl:text-[0.417vw]"></i>
                         <div className="cursor-pointer">Assets</div>
-                        <i className="asetsmng-arrow-right text-[8px] xl:text-[0.417vw]"></i>
+                        <i className="asetsmng-arrow-right text-[8px] 3xl:text-[0.417vw]"></i>
                         <div className="text-[#3A3E49] dark:text-[#84878D]">{pageProps.pageTitle}</div>
                     </div>
-                    <div className={`text-[#3A3E49] xl:text-[1.250vw] text-[24px] font-medium leading-7 dark:text-[#fff]`}>{pageProps.pageTitle}</div>
+                    <div className={`text-[#3A3E49] 3xl:text-[1.250vw] text-[24px] font-medium leading-7 dark:text-[#fff]`}>{pageProps.pageTitle}</div>
                 </div>
-                <div className="flex items-center gap-2">
-                    <Link href={''} className="xl:p-[0.625vw] relative" title="shopping-cart">
-                        <div className="bg-[#D92D20] rounded-full h-1.5 w-1.5 absolute top-1 right-1"></div>
+                <div className="flex items-center gap-[16px] 3xl:gap-[0.833vw]">
+                    <Link href={''} className="3xl:p-[0.625vw] relative" title="shopping-cart">
+                        <div className="bg-[#D92D20] rounded-full h-1.5 w-1.5 absolute 3xl:top-1 3xl:right-1 -top-2 -right-2"></div>
                         <Image src={'/assets/images/shopping-cart.svg'} width={24} height={28} alt="shopping-cart" />
                     </Link>
-                    <Link href={''} className="xl:p-[0.625vw]" title="Message">
+                    <Link href={''} className="3xl:p-[0.625vw]" title="Message">
                         <Image src={'/assets/images/messages.svg'} width={24} height={28} alt="Message" />
                     </Link>
 
                     {/* <i className="pi "></i> */}
-                    <Link href={''} className="xl:p-[0.625vw] relative" onClick={(e) => notificatio.current.toggle(e)} title="Notification">
-                        <div className="bg-[#D92D20] rounded-full h-1.5 w-1.5 absolute top-1 right-1"></div>
+                    <Link href={''} className="3xl:p-[0.625vw] relative" onClick={(e) => notificatio.current.toggle(e)} title="Notification">
+                        <div className="bg-[#D92D20] rounded-full h-1.5 w-1.5 absolute 3xl:top-1 3xl:right-1 -top-2 -right-2"></div>
                         <Image src={'/assets/images/notificatio-bell.svg'} width={24} height={28} alt="Notification" />
                     </Link>
                 </div>
