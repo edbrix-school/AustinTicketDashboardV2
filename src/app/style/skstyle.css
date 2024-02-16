@@ -390,8 +390,8 @@
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 .cutsm_checkbox.p-checkbox-checked .p-checkbox-box.p-highlight {
-    border-color: #AF1E27;
-    background: #AF1E27;
+    border-color: #66B36A;
+    background: #0E2511;
     color: #ffffff;
 }
 .cutsm_checkbox.p-checkbox .p-checkbox-box .p-checkbox-icon {
