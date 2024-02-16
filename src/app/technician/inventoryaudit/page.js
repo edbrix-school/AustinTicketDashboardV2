@@ -7,26 +7,16 @@ import Link from "next/link";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import { Checkbox } from "primereact/checkbox";
+import 'primeicons/primeicons.css';
+import Viewpopup from '@/app/components/popup/viewpopup';
 
-import Viewpopup from "@/app/components/popup/viewpopup";
-
-export default function InventoryAudit() {
+export default function Index() {
   const [visibleRight, setVisibleRight] = useState(false);
   const [show, setShow] = useState(false);
   const [selectedProducts, setSelectedProducts] = useState(null);
   const [rowClick, setRowClick] = useState(true);
   const [filters, setFilters] = useState(null);
   const [checked, setChecked] = useState(false);
-  const [inputValue, setInputValue] = useState('');
-
-  
-  const handleChange = (event) => {
-    setInputValue(event.target.value);
-  };
-
-  const clearInput = () => {
-    setInputValue('');
-  };
 
   // Data table
   const products = [
@@ -291,74 +281,73 @@ export default function InventoryAudit() {
     setSelectedCategories(_selectedCategories);
   };
 
-
   return (
-    <>
-    <div>
-    <div className="mt-[16px] xl:mt-[0.833vw]">
+    <PageLayout pageTitle="Dashboard">
+      
+
+        <div className="mt-[16px] xl:mt-[0.833vw]">
           <div className="bg-white border border-[#F2EEEE] rounded-lg xl:rounded-[0.521vw] dark:bg-[#13161B] dark:border-[#1F2A37]">
-             <div className="flex flex-wrap items-center justify-between 3xl:px-[1.042vw] px-4 3xl:pt-[1.042vw] pt-4 3xl:pb-[0.990vw] pb-4">
-              <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
-                <div className="text-[#3A3E49] dark:text-white 3xl:text-[0.833vw] text-sm font-medium 3xl:leading-[1.042vw] leading-5">
-                Manage Assets
+            <div className="flex items-center justify-between xl:px-[1.042vw] px-4 xl:pt-[1.042vw] pt-4 xl:pb-[0.990vw] pb-4 border-b border-b-[#F2EEEE] dark:border-b-[#1F2A37]">
+              <div className="flex flex-wrap items-center xl:gap-[0.521vw] gap-2">
+                <div className="text-[#262626] xl:text-[0.833vw] text-sm font-medium xl:leading-[1.042vw] leading-5 dark:text-[#fff]">
+                  Manage Assets
                 </div>
-                <div className="text-[#84878D] 3xl:text-[0.625vw] text-xs font-medium 3xl:leading-[0.938vw] leading-5 bg-[#F9F9FC] dark:bg-[#1C2026] 3xl:rounded-[0.938vw] rounded-2xl 3xl:px-[0.729vw] px-3 3xl:py-[0.313vw] py-1">
+                <div className="text-[#888888] xl:text-[0.625vw] text-xs font-medium xl:leading-[0.938vw] leading-5 bg-[#FCF5F6] xl:rounded-[0.938vw] rounded-2xl xl:px-[0.729vw] px-3 xl:py-[0.313vw] py-1 dark:bg-[#1C2026] dark:text-[#818181]">
                   Display 1 to 10 of 150
                 </div>
               </div>
-              <div className="flex flex-wrap items-center 3xl:gap-[0.833vw] gap-4">
-                <div className="flex flex-wrap items-center 3xl:gap-[1.25vw] gap-5">
-                <div>
-                  <span className="p-input-icon-left custm-tdsearch p-input-icon-right">
-                    <i className="asetsmng-td-search 3xl:text-[0.833vw] text-xs text-[#84878D] cursor-pointer w-fit" />
+              <div className="flex flex-wrap items-center xl:gap-[1.250vw] gap-5">
+                <div className="custom_search">
+                  <span className="p-input-icon-left custm-search p-input-icon-right flex justify-center">
+                    <i className="pi pi-search xl:text-[0.833vw] text-xs text-[#888888] cursor-pointer " />
                     <InputText
-                    value={inputValue}
-                    onChange={handleChange}
                       placeholder="Search"
-                      className="p-inputtext p-component 3xl:h-[1.875vw] h-[33px] 3xl:w-[16.927vw] placeholder:text-[#888888] placeholder:font-normal placeholder:3xl:text-[0.833vw] "
+                      className=" border p-inputtext p-component xl:h-[2.083vw] h-[36px] xl:w-[16.927vw] placeholder:text-[#888888] placeholder:font-normal placeholder:xl:text-[0.833vw] "
                     />
-                    {inputValue && (
-                    <i onClick={clearInput} className="asetsmng-cross 3xl:text-[0.521vw] text-[10px] leading-4 text-[#84878D] cursor-pointer" />
-                    )}  
+
+                    <i className="pi pi-times xl:text-[0.677vw] text-xs text-[#888888] cursor-pointer" />
                   </span>
                 </div>
-                <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
-                <Link
+                <div className="flex items-center xl:gap-[0.521vw] gap-2">
+                  <Link
                     href={""}
-                    className="text-[#4169E1] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#4169E1] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw]"
+                    className="text-[#888888] font-normal xl:text-[0.729vw] text-xs bg-white border border-[#EAE0E0] xl:py-[0.521vw] py-2 xl:px-[0.833vw] px-3 xl:rounded-[0.521vw] rounded-lg dark:bg-[#13161B]  dark:border-[#374151] dark:text-[#AAAAAA]"
                   >
-                    <i className="asetsmng-plus-rounded-box"></i>
-                    <span>Add Assets</span>
+                    <i className="asetsmng-plus-rounded-box mr-2"></i>
+                    <span>Add Inventory Audit</span>
                   </Link>
                   <Link
                     href={""}
-                    className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
+                    className="text-[#888888] font-normal xl:text-[0.729vw] text-xs bg-white border border-[#EAE0E0] xl:py-[0.521vw] py-2 xl:px-[0.833vw] px-3 xl:rounded-[0.521vw] rounded-lg dark:bg-[#13161B]  dark:border-[#374151] dark:text-[#AAAAAA]"
                   >
-                    <i className="asetsmng-import"></i>
+                    <i className="asetsmng-import mr-2 "></i>
                     <span>Import</span>
                   </Link>
                   <Link
                     href={""}
-                    className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
+                    className="text-[#888888] font-normal xl:text-[0.729vw] text-xs bg-white border border-[#EAE0E0] xl:py-[0.521vw] py-2 xl:px-[0.833vw] px-3 xl:rounded-[0.521vw] rounded-lg dark:bg-[#13161B] dark:border-[#374151] dark:text-[#AAAAAA]"
                   >
-                    <i className="asetsmng-export"></i>
+                    <i className="pi pi-sign-out mr-2 rotated-icon-expot"></i>
                     <span>Export</span>
                   </Link>
-                </div>
-                </div>
-                <div className="flex items-center 3xl:gap-[0.417vw] gap-1.5">
-                <Link
-                  href={""}
-                  className="bg-white rounded border border-[#D3D3CE] text-[#84878D] 3xl:text-[1.042vw] flex items-center justify-center text-base 3xl:p-[0.417vw] p-2 3xl:h-[1.875vw] h-[33px] 3xl:rounded-[0.417vw] hover:bg-[#4169E1] hover:text-white hover:border-[#4169E1]"
-                >
-                  <i className="asetsmng-map-view"></i>
-                </Link>
-                <Link
-                  href={""}
-                  className="bg-[#4169E1] rounded border text-white 3xl:text-[1.042vw] flex items-center justify-center text-base 3xl:p-[0.417vw] p-2 3xl:h-[1.875vw] h-[33px] 3xl:rounded-[0.417vw]"
-                >
-                  <i className="asetsmng-grid-outline"></i>
-                </Link>
+                  <Link
+                    href={""}
+                    className="text-[#888888] font-normal xl:text-[0.729vw] text-xs bg-white border border-[#EAE0E0] xl:py-[0.521vw] py-2 xl:px-[0.833vw] px-3 xl:rounded-[0.521vw] rounded-lg dark:bg-[#13161B]  dark:border-[#374151] dark:text-[#AAAAAA]"
+                  >
+                    <i className="asetsmng-map-view"></i>
+                    
+                  </Link>
+
+                 
+                  <Link
+                    href={""}
+                    className="text-[#888888] font-normal xl:text-[0.729vw] text-xs bg-white border border-[#EAE0E0] xl:py-[0.521vw] py-2 xl:px-[0.833vw] px-3 xl:rounded-[0.521vw] rounded-lg dark:bg-[#13161B] dark:border-[#374151] dark:text-[#AAAAAA]"
+                  >
+                    <i className="asetsmng-grid-outline font-light"></i>
+                    
+                  </Link>
+
+                
                 </div>
               </div>
             </div>
@@ -443,7 +432,7 @@ export default function InventoryAudit() {
             </DataTable>
           </div>
         </div>
-        
+
         <Viewpopup
         visible={visibleRight}
         position="right"
@@ -451,7 +440,8 @@ export default function InventoryAudit() {
         
         
         />
-    </div>
-    </>
-  );
+
+      
+    </PageLayout>
+  )
 }
