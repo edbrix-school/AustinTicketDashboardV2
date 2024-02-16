@@ -6,6 +6,7 @@ import "./style/leftmenu.css";
 import "./style/systyle.css";
 import "./style/skstyle.css";
 import "./style/filtercomponent.css";
+import "./style/pstyle.css"
 
 const inter = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -19,7 +20,7 @@ export const metadata = {
   description: "Welcome to Austin Asset Management",
   icon: [
     {
-      media:'(prefer-color-theme: light)',
+      media: '(prefer-color-theme: light)',
       url: '/public/assets/images/logo.svg',
       href: '/public/assets/images/logo.svg'
     }
@@ -29,11 +30,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <>
-    <html lang="en">
-      <body className={inter.className}>
-        {children}
-      </body>
-    </html>
+      <html lang="en">
+        <body className={inter.className}>
+          {children}
+        </body>
+      </html>
     </>
   );
 }

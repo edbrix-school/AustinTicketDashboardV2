@@ -1,0 +1,144 @@
+.custmSidebar.p-sidebar .p-sidebar-content {
+    padding: 0 !important;
+}
+
+.custmSidebar.p-sidebar .p-sidebar-header {
+    padding: 0 !important;
+}
+
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close.p-sidebar-icon {
+    position: absolute;
+    left: -75px;
+    top: 50%;
+    bottom: 50%;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+
+    font-family: "austin" !important;
+    content: "\e80c" !important;
+    background-image: url(/assets/images/Close_button.svg);
+    /* C:\Users\admin\Documents\Hexalytics Projects\AustinTicketDashboardV2\public\assets\images\Close button.svg */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 4.427vw;
+    color: #6c768b;
+    content: "";
+    width: 62px;
+    height: 55px;
+    display: block;
+}
+
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close:enabled:hover,
+.p-sidebar .p-sidebar-header .p-sidebar-icon:enabled:hover {
+    color: #343a40;
+    border-color: transparent;
+    background: transparent;
+    background-image: url(/assets/images/Close_button.svg);
+    position: absolute;
+    left: -75px;
+    top: 50%;
+    bottom: 50%;
+    width: 62px;
+    height: 55px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 4.427vw;
+}
+
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close.p-sidebar-icon svg {
+    display: none;
+}
+
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close,
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icon {
+    border-radius: 14px;
+}
+
+.custmSidebar.p-sidebar-mask {
+    background-color: #ffffffbd !important;
+}
+
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close:enabled:hover,
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icon:enabled:hover {
+    /* color: #6c768b; */
+    border-color: transparent !important;
+}
+
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close:focus,
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icon:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0rem transparent !important;
+}
+
+.custmSidebar.p-sidebar.p-component.kpisidebar {
+    width: 40vw;
+}
+
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close:enabled:hover,
+.kpisidebar.p-sidebar .p-sidebar-header .p-sidebar-icon:enabled:hover {
+    /* color: #6c768b; */
+    border-color: transparent !important;
+}
+
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close:focus,
+.kpisidebar.p-sidebar .p-sidebar-header .p-sidebar-icon:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0rem transparent !important;
+}
+
+
+
+/* AssetPopup CSS  Start*/
+
+
+.header{
+    
+    min-height:5vw ;
+    background-color: #F9F9FC;
+}
+
+
+.assetspoups .p-sidebar-content{
+padding: 0px !important;
+
+}
+
+.assetspoups .p-sidebar-header{
+background-color:#F9F9FC !important;
+border-radius: 30px !important;
+padding: 0.25rem !important;
+
+}
+@media screen and (min-width:220px) and (max-width:768px) {
+   .assetspoups{
+    width: 90% !important;
+   } 
+    
+}
+
+
+.assetspoups button, [type='button'], [type='reset'], [type='submit']{
+    display: none !important;
+}
+.parent-div:hover > .child-div:first-child {
+    color: #4169E1; 
+  }
+/* AssetPopup CSS  End */
+
+
+
+
+
+
+
+
+
+
+
+
+
