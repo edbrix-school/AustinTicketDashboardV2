@@ -245,7 +245,7 @@ function Finacialanalysis() {
       const actionBodyTemplate = (rowData) => {
         return (
           <>
-            <div className="flex justify-center items-center xl:gap-[0.833vw] gap-3 text-[#888888] xl:text-[0.938vw] text-sm">
+            <div className="flex  items-center xl:gap-[0.833vw] gap-3 text-[#888888] xl:text-[0.938vw] text-sm">
               <Link href={""}>
                 <i className="cgupod-user-tick"></i>
               </Link>
@@ -592,7 +592,7 @@ function Finacialanalysis() {
               showApplyButton={false}
               filter
               filterElement={SearchFilterTemplate}
-              style={{ minWidth: "10rem" }}
+              style={{ minWidth: "8rem" }}
             ></Column>
 
             <Column
@@ -604,7 +604,7 @@ function Finacialanalysis() {
               showApplyButton={false}
               filter
               filterElement={SearchFilterTemplate}
-              style={{ minWidth: "12rem" }}
+              style={{ minWidth: "8rem" }}
             ></Column>
              <Column
               field="School"
