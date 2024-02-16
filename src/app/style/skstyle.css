@@ -8,7 +8,7 @@
     border: 1px solid var(--stroke-soft, #E4E7EC);
     font-weight: 400;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 16px;
     cursor: pointer;
     padding: 6px 10px;
 }
@@ -398,12 +398,107 @@
 
 .width1600.p-sidebar {
     width: 81%;
+    border-radius: var(--border-radius-rounded-2xl, 16px) var(--spacing-0, 0px) var(--spacing-0, 0px) var(--border-radius-rounded-2xl, 16px);
+    border: 1px solid var(--stroke-soft, #E4E7EC);
+    background: var(--surface-component, #FFF);
 }
+
+.custmSidebar.p-sidebar .p-sidebar-content {
+    padding: 0 !important;
+}
+
+.custmSidebar.p-sidebar .p-sidebar-header {
+    padding: 0 !important;
+}
+
+.custmSidebar.p-sidebar-mask {
+    background-color: #ffffffbd !important;
+}
+
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close:enabled:hover,
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icon:enabled:hover {
+    /* color: #6c768b; */
+    border-color: transparent !important;
+}
+
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close:focus,
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icon:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0rem transparent !important;
+}
+
+.custmSidebar.p-sidebar.p-component.kpisidebar {
+    width: 40vw;
+}
+
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close:enabled:hover,
+.kpisidebar.p-sidebar .p-sidebar-header .p-sidebar-icon:enabled:hover {
+    /* color: #6c768b; */
+    border-color: transparent !important;
+}
+
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close:focus,
+.kpisidebar.p-sidebar .p-sidebar-header .p-sidebar-icon:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0rem transparent !important;
+}
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icons .p-sidebar-close {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 86px;
+    height: 76px;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius-rounded-2xl, 16px);
+    background: var(--colors-primary-pure, #4169E1);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.10);
+}
+.custmSidebar.p-sidebar .p-sidebar-header {
+    position: absolute;
+    left: -110px;
+    top: 45%;
+    bottom: 45%;
+}
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icons .p-sidebar-close::before {
+    font-family: 'assetsmanage' !important;
+    content: '\e90e';
+    font-size: 24px;
+    display: block;
+    line-height: 24px;
+    color: white;
+}
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icons .p-sidebar-close::after {
+    content: 'close';
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px; 
+}
+.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icons .p-sidebar-close svg {
+    display: none;
+}
+
+.vertical-shadow {
+    background: url("/assets/images/vertical-shadow.svg") no-repeat;
+    width: 225px;
+    height: 100%;
+}
+
+/* Shadows/shadow-lg */
+.shadow-lg{box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);}
+
 
 /***********************************************
             Responsive
 ***********************************************/
 @media only screen and (min-width: 1800px) {
+    .width1600.p-sidebar {
+        border-radius: var(--border-radius-rounded-2xl, 0.833vw) var(--spacing-0, 0px) var(--spacing-0, 0px) var(--border-radius-rounded-2xl, 0.833vw);
+    }
     .custTavbview .react-tabs__tab-list {
         gap: 0.417vw;
     }
@@ -533,6 +628,33 @@
         font-size: 0.729vw;
     }
     /* Data table end */
+    .custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icons .p-sidebar-close {
+        gap: 0.417vw;
+        width: 4.479vw;
+        height: 3.958vw;
+        border-radius: 0.833vw;
+    }
+    .custmSidebar.p-sidebar .p-sidebar-header {
+        position: absolute;
+        left: -5.729vw;
+        top: 45%;
+        bottom: 45%;
+    }
+    .custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icons .p-sidebar-close::before {
+        font-family: 'assetsmanage' !important;
+        content: '\e90e';
+        font-size: 1.25vw;
+        display: block;
+        color: white;
+    }
+    .custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icons .p-sidebar-close::after {
+        content: 'close';
+        display: block;
+        color: white;
+        font-size: 0.729vw;
+        font-weight: 500;
+        line-height: 0.938vw; 
+    }
 }
 @media (max-width:1280px) {  }
 
