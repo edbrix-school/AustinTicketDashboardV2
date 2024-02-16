@@ -114,13 +114,6 @@ border-radius: 30px !important;
 padding: 0.25rem !important;
 
 }
-@media screen and (min-width:220px) and (max-width:768px) {
-   .assetspoups{
-    width: 90% !important;
-   } 
-    
-}
-
 
 .assetspoups button, [type='button'], [type='reset'], [type='submit']{
     display: none !important;
@@ -128,6 +121,14 @@ padding: 0.25rem !important;
 .parent-div:hover > .child-div:first-child {
     color: #4169E1; 
   }
+
+
+@media screen and (min-width:220px) and (max-width:768px) {
+   .assetspoups{
+    width: 90% !important;
+   } 
+    
+}
 /* AssetPopup CSS  End */
 
 

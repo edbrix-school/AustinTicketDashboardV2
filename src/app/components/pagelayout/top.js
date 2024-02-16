@@ -17,8 +17,13 @@ export default function Top({ ...pageProps }) {
                         <div className="cursor-pointer">Home</div>
                         <i className="asetsmng-arrow-right text-[8px] 3xl:text-[0.417vw]"></i>
                         <div className="cursor-pointer">{pageProps.parentPageName}</div>
+                        {pageProps.pageName && 
+                        <>
                         <i className="asetsmng-arrow-right text-[8px] 3xl:text-[0.417vw]"></i>
                         <div className="text-[#3A3E49] dark:text-[#84878D]">{pageProps.pageName}</div>
+                        </>
+                        }
+
                     </div>
                     <div className={`text-[#3A3E49] 3xl:text-[1.250vw] text-[24px] font-medium leading-7 dark:text-[#fff]`}>{pageProps.pageName}</div>
                 </div>
