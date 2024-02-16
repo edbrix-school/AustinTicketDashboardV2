@@ -216,7 +216,7 @@ export default function InventoryAudit() {
   const actionBodyTemplate = (rowData) => {
     return (
       <>
-        <div className="flex justify-center text-[16px] gap-[10px] xl:gap-[1.042vw] w-full">
+        <div className="flex justify-start text-[16px] gap-[10px] xl:gap-[1.042vw] w-full">
           <Link
             href="#"
             onClick={() => {
@@ -300,7 +300,7 @@ export default function InventoryAudit() {
              <div className="flex flex-wrap items-center justify-between 3xl:px-[1.042vw] px-4 3xl:pt-[1.042vw] pt-4 3xl:pb-[0.990vw] pb-4">
               <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
                 <div className="text-[#3A3E49] dark:text-white 3xl:text-[0.833vw] text-sm font-medium 3xl:leading-[1.042vw] leading-5">
-                Manage Assets
+                Manage Assets 
                 </div>
                 <div className="text-[#84878D] 3xl:text-[0.625vw] text-xs font-medium 3xl:leading-[0.938vw] leading-5 bg-[#F9F9FC] dark:bg-[#1C2026] 3xl:rounded-[0.938vw] rounded-2xl 3xl:px-[0.729vw] px-3 3xl:py-[0.313vw] py-1">
                   Display 1 to 10 of 150
@@ -425,7 +425,7 @@ export default function InventoryAudit() {
                 showApplyButton={false}
                 filter
                 filterElement={SearchFilterTemplate}
-                style={{ minWidth: "12rem" }}
+                style={{ minWidth: "20rem" }}
                 body={statusBodyTemplate}
               ></Column>
 
@@ -437,10 +437,12 @@ export default function InventoryAudit() {
                 frozen
                 alignFrozen="right"
                 align="center"
-                style={{ minWidth: "10rem" }}
+                style={{ minWidth: "1rem" }}
                 body={actionBodyTemplate}
               ></Column>
             </DataTable>
+
+            
           </div>
         </div>
         

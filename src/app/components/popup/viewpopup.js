@@ -260,6 +260,61 @@ export default function Viewpopup(props) {
               
             </DataTable>
 
+            <DataTable
+              value={products}
+              className="custTable tableCust custCheckBox"
+              scrollable
+              responsiveLayout="scroll"
+              style={{ width: "100%" }}
+              
+             
+              
+              filters={filters}
+              globalFilterFields={[
+                "Groupname",
+                "Groupdescription",
+                "representative.name",
+                "Groupcreateddate",
+                "Lastmodifieddate",
+              ]}
+              dataKey="id"
+            >
+              {/* <Column
+                selectionMode="multiple"
+                style={{ minWidth: '1rem', maxWidth: '1rem' }}
+              ></Column> */}
+             
+              <Column
+                field="Field"
+                header="Asset Code"
+                sortable
+                style={{ minWidth: "10rem" }}
+              ></Column>
+              <Column
+                field="Count"
+                header="Serial "
+               
+                showFilterMatchModes={false}
+                showFilterMenuOptions={false}
+                showClearButton={false}
+                showApplyButton={false}
+                filter
+                filterElement={SearchFilterTemplate}
+                style={{ minWidth: "10rem" }}
+              ></Column>
+
+              <Column
+                field="Field"
+                header="Field"
+                sortable
+                style={{ minWidth: "10rem" }}
+              ></Column>
+             
+
+
+              
+            </DataTable>
+
 
             </Sidebar>
         </>
