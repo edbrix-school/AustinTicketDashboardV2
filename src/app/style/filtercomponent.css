@@ -4,6 +4,8 @@
 .custDropdown .p-dropdown:not(.p-disabled).p-focus, .custCalendar .p-inputtext:enabled:focus { box-shadow: none; }
 .custDropdown .p-dropdown .p-dropdown-label.p-placeholder{ color: #24262D; font-size: 14px; }
 .custDropdown .pi-chevron-down:before { font-family: 'osu'; content: '\e80d'; font-size: 12px; }
+.custDropdown .p-dropdown-trigger:before { font-family: 'assetsmanage' !important; content: '\e938'; font-size: 12px; }
+.custDropdown .p-dropdown-trigger svg { display: none; }
 .p-dropdown-panel .p-dropdown-items .p-dropdown-item { padding: 6px 10px !important; font-size: 14px !important; }
 .custCalendar { min-width: 120px; }
 .custCalendar .p-inputtext { border: none; padding: 0; background: transparent; border-radius: 0; font-size: 14px; }
