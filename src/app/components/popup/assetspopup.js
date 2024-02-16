@@ -14,7 +14,7 @@ export default function AssetPopup(props) {
                 className="w-[922px]  lg:w-[922px] 3xl:w-[48.021vw] custmSidebar rounded-lg"
             >
                 <div className=" ">
-                    <div className="bg-[#F9F9FC] px-[24px] 3xl:px-[1.25vw] py-[38px] 3xl:py-[1.979vw]  ">
+                    <div className="bg-[#F9F9FC] px-[20px] 3xl:px-[1.042vw] py-[30px] 3xl:py-[1.563vw]  ">
                         <div className="text-[24px] font-semibold text-[#20232E] lg:text-[24px] 3xl:text-[1.25vw] min-h-[20px] 3xl:min-h-[1.823vw] lg:min-h-[20px] ">
                             Assets
                         </div>
