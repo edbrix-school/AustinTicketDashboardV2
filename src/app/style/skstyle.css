@@ -392,11 +392,12 @@
     padding-left: 40px;
     font-size: 12px;
 }
-
-
-
 :focus-visible {
     outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+.width1600.p-sidebar {
+    width: 81%;
 }
 
 /***********************************************

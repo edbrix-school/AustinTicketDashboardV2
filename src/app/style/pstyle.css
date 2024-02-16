@@ -6,52 +6,6 @@
     padding: 0 !important;
 }
 
-.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close.p-sidebar-icon {
-    position: absolute;
-    left: -75px;
-    top: 50%;
-    bottom: 50%;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-
-    font-family: "austin" !important;
-    content: "\e80c" !important;
-    background-image: url(/assets/images/Close_button.svg);
-    /* C:\Users\admin\Documents\Hexalytics Projects\AustinTicketDashboardV2\public\assets\images\Close button.svg */
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 4.427vw;
-    color: #6c768b;
-    content: "";
-    width: 62px;
-    height: 55px;
-    display: block;
-}
-
-.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close:enabled:hover,
-.p-sidebar .p-sidebar-header .p-sidebar-icon:enabled:hover {
-    color: #343a40;
-    border-color: transparent;
-    background: transparent;
-    background-image: url(/assets/images/Close_button.svg);
-    position: absolute;
-    left: -75px;
-    top: 50%;
-    bottom: 50%;
-    width: 62px;
-    height: 55px;
-    display: block;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 4.427vw;
-}
-
-.custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close.p-sidebar-icon svg {
-    display: none;
-}
-
 .custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-close,
 .custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icon {
     border-radius: 14px;

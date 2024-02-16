@@ -8,7 +8,7 @@ const LogincoordinatesMap = (props) => {
     return (
         <>
            <div>
-                <Sidebar visible={props.visible} position="right" className="" onHide={() => props.onHides(false)} >
+                <Sidebar visible={props.visible} position="right" className="custmSidebar width1600" onHide={() => props.onHides(false)} >
 
                 sadasdasd
                 </Sidebar>
