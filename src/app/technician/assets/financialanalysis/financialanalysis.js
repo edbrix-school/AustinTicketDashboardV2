@@ -401,13 +401,11 @@ function Finacialanalysis() {
 
             </div>
 
-            <div className='border borde-[#E4E7EC] shadow-sm shadow-[#00000014] rounded-lg mt-[24px] 3xl:mt-[1.25vw]'>
 
-               
- <div className="bg-white dark:bg-[#13161B] border border-[#F2EEEE] dark:border-[#1F2A37] rounded-lg 3xl:rounded-[0.521vw] ">
+  <div className="bg-white dark:bg-[#13161B] border border-[#F2EEEE] dark:border-[#1F2A37] rounded-lg 3xl:rounded-[0.521vw]">
             <div className="flex flex-wrap items-center justify-between 3xl:px-[1.042vw] px-4 3xl:pt-[1.042vw] pt-4 3xl:pb-[0.990vw] pb-4">
               <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
-                <div className="text-[#3A3E49] dark:text-white 3xl:text-[0.866vw] text-sm font-medium 3xl:leading-[1.042vw] leading-5">
+                <div className="text-[#3A3E49] dark:text-white 3xl:text-[0.833vw] text-sm font-medium 3xl:leading-[1.042vw] leading-5">
                 Manage Assets
                 </div>
                 <div className="text-[#84878D] 3xl:text-[0.625vw] text-xs font-medium 3xl:leading-[0.938vw] leading-5 bg-[#F9F9FC] dark:bg-[#1C2026] 3xl:rounded-[0.938vw] rounded-2xl 3xl:px-[0.729vw] px-3 3xl:py-[0.313vw] py-1">
@@ -423,10 +421,10 @@ function Finacialanalysis() {
                     value={inputValue}
                     onChange={handleChange}
                       placeholder="Search"
-                      className="p-inputtext p-component 3xl:h-[1.875vw] h-[33px] 3xl:w-[16.927vw] placeholder:text-[#888888] placeholder:font-normal placeholder:3xl:text-[0.833vw] "
+                      className="p-inputtext p-component 3xl:h-[1.875vw] h-[33px] w-[300px] 3xl:w-[16.927vw] placeholder:text-[#888888] placeholder:font-normal placeholder:3xl:text-[0.833vw] "
                     />
                     {inputValue && (
-                    <i onClick={clearInput} className="asetsmng-cross 3xl:text-[0.521vw] text-[10px] text-[#84878D] cursor-pointer" />
+                    <i onClick={clearInput} className="asetsmng-cross 3xl:text-[0.521vw] text-[10px] leading-4 text-[#84878D] cursor-pointer" />
                     )}  
                   </span>
                 </div>
@@ -440,14 +438,14 @@ function Finacialanalysis() {
                   </Link>
                   <Link
                     href={""}
-                    className="text-[#84878D] font-normal 3xl:text-[1.042vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
+                    className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
                   >
                     <i className="asetsmng-import"></i>
                     <span>Import</span>
                   </Link>
                   <Link
                     href={""}
-                    className="text-[#84878D] font-normal 3xl:text-[1.042vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
+                    className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
                   >
                     <i className="asetsmng-export"></i>
                     <span>Export</span>
@@ -457,24 +455,22 @@ function Finacialanalysis() {
                 <div className="flex items-center 3xl:gap-[0.417vw] gap-1.5">
                 <Link
                   href={""}
-                  className="bg-white rounded border border-[#D3D3CE] text-[#84878D] 3xl:text-[1.042vw] flex items-center justify-center text-xs 3xl:p-[0.417vw] p-2 3xl:h-[1.875vw] h-[33px] 3xl:rounded-[0.417vw] hover:bg-[#4169E1] hover:text-white hover:border-[#4169E1]"
+                  className="bg-white rounded border border-[#D3D3CE] text-[#84878D] 3xl:text-[1.042vw] flex items-center justify-center text-base 3xl:p-[0.417vw] p-2 3xl:h-[1.875vw] h-[33px] 3xl:rounded-[0.417vw] hover:bg-[#4169E1] hover:text-white hover:border-[#4169E1]"
                 >
                   <i className="asetsmng-map-view"></i>
                 </Link>
                 <Link
                   href={""}
-                  className="bg-[#4169E1] rounded border text-white 3xl:text-[1.042vw] flex items-center justify-center text-xs 3xl:p-[0.417vw] p-2 3xl:h-[1.875vw] h-[33px] 3xl:rounded-[0.417vw]"
+                  className="bg-[#4169E1] rounded border text-white 3xl:text-[1.042vw] flex items-center justify-center text-base 3xl:p-[0.417vw] p-2 3xl:h-[1.875vw] h-[33px] 3xl:rounded-[0.417vw]"
                 >
                   <i className="asetsmng-grid-outline"></i>
                 </Link>
-
-
                 <Link
                   href={""}
                   className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.421vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
                 >
                    <i className='asetsmng-arrow-left-think '></i>
-                  {/* <i className="asetsmng-grid-outline"></i> */}
+           
                 </Link>
                 <Link
                   href={""}
@@ -482,47 +478,35 @@ function Finacialanalysis() {
                 >
                  <i className='asetsmng-arrow-right-think '></i>
 
-                  {/* <i className="asetsmng-grid-outline"></i> */}
                 </Link>
                 </div>
               </div>
             </div>
-           
-          </div>
-         
-
-
-                <DataTable
-            value={products0}
-            className="custTable tableCust custCheckBox "
-            scrollable
-            responsiveLayout="scroll"
-            style={{ width: "100%" }}
-            paginator
-            paginatorTemplate="CurrentPageReport RowsPerPageDropdown PrevPageLink PageLinks NextPageLink custmpaginator"
-            currentPageReportTemplate="Rows per page  {first}-{last} of {totalRecords}"
-            rowsPerPageOptions={[5, 10, 25, 50]}
-            rows={10}
-            onSelectionChange={(e) => setSelectedProducts(e.value)}
-            selectionMode={rowClick ? null : "checkbox"}
-            selection={selectedProducts}
-            filters={filters}
-            globalFilterFields={[
-              "Fname",
-              "group",
-              "Date",
-              "DueDate",
-              "Time",
-              "School",
-              "Subject",
-              "Advisor",
-              "Phase",
-              "estimate",
-              "Mood",
-            ]}
-            dataKey="id"
-          >
-            <Column
+            <DataTable
+              value={products0}
+              className="custTable tableCust custCheckBox"
+              scrollable
+              responsiveLayout="scroll"
+              style={{ width: "100%" }}
+              paginator
+              paginatorTemplate="CurrentPageReport RowsPerPageDropdown PrevPageLink PageLinks NextPageLink custmpaginator"
+              currentPageReportTemplate="Rows per page  {first}-{last} of {totalRecords}"
+              rowsPerPageOptions={[5, 10, 25, 50]}
+              rows={10}
+              onSelectionChange={(e) => setSelectedProducts(e.value)}
+              selectionMode={rowClick ? null : "checkbox"}
+              selection={selectedProducts}
+              filters={filters}
+              globalFilterFields={[
+                "Type",
+                "Assetcode",
+                "representative.Serialnumber",
+                "District",
+                "School",
+              ]}
+              dataKey="id"
+            >
+           <Column
               selectionMode="multiple"
               style={{ minWidth: "1rem", maxWidth: "1rem" }}
             ></Column>
@@ -588,14 +572,14 @@ function Finacialanalysis() {
               field="Date"
               header="Date of Purchase"
               sortable
-              style={{ minWidth: "9rem" }}
+              style={{ minWidth: "12rem" }}
             ></Column>
             <Column
               field="DueDate"
               header="Purchase Cost"
        
             sortable
-              style={{ minWidth: "9rem" }}
+              style={{ minWidth: "10rem" }}
             ></Column>
          
            
@@ -604,7 +588,7 @@ function Finacialanalysis() {
               header="Depreciation (Current Value)"
        
             sortable
-              style={{ minWidth: "14rem" }}
+              style={{ minWidth: "16rem" }}
             ></Column>
        
             <Column
@@ -622,8 +606,8 @@ function Finacialanalysis() {
               className="action-shadow-table"
               frozen
               sortable
-              align="center"
-              style={{ minWidth: "10rem" }}
+             
+              style={{ minWidth: "12rem" }}
           
             ></Column>
              <Column
@@ -632,23 +616,23 @@ function Finacialanalysis() {
               className="action-shadow-table"
               frozen
               sortable
-              align="center"
-              style={{ minWidth: "10rem" }}
+              
+              style={{ minWidth: "12rem" }}
             //   body={actionBodyTemplate}
             ></Column>
              <Column
-              field="Date"
+            
+              field="Action"
               header="Action"
-              className="action-shadow-table"
+              style={{ minWidth: "4rem" }}
+              align="center"
+              body={actionBodyTemplate}
+              sortable
               frozen
               alignFrozen="right"
-              align="center"
-              style={{ minWidth: "5rem" }}
-              body={actionBodyTemplate}
             ></Column>
-          </DataTable>
-            </div>
-
+            </DataTable>
+          </div>
 
         </>
     )
