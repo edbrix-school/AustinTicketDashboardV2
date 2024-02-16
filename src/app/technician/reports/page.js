@@ -17,10 +17,10 @@ function Index() {
                                     <div className='text-[#101828]  text-[24px] xl:text-[1.25vw] border border-[#C8CBD0] px-[12px] py-[8px] xl:px-[0.625vw] xl:py-[0.417vw] rounded-[4px] mt-[7px] xl:mt-[0.365vw]'> ASSETS</div>
                                 </div>
                                 <div className=''>
-                                    <Image className='mt-5 mb-2 h-[110px]' height={80} width={160} src={"/assets/images/assetsimg.png"} alt={"imgaes1"}></Image>
+                                    <Image className='mt-5 mb-2 h-[110px] ' height={80} width={160} src={"/assets/images/assetsimg.png"} alt={"imgaes1"}></Image>
                                 </div>
                             </div>
-                            <Image className='rounded-b-[4px] ' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
+                            <Image className='rounded-b-[4px] w-full xl:w-[390px] ' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
 
                         </div>
                     </div>
@@ -35,7 +35,7 @@ function Index() {
                                     <Image className='mt-5 mb-2 h-[110px]' height={80} width={160} src={"/assets/images/softwareimg.svg"} alt={"softwareimg"}></Image>
                                 </div>
                             </div>
-                            <Image className='rounded-b-[4px] ' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
+                            <Image className='rounded-b-[4px] w-full xl:w-[390px]' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
 
                         </div>
                     </div>
@@ -50,7 +50,7 @@ function Index() {
                                     <Image className='mt-5 mb-2 h-[110px]' height={80} width={160} src={"/assets/images/vendorimg.svg"} alt={"imgaes1"}></Image>
                                 </div>
                             </div>
-                            <Image className='rounded-b-[4px] ' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
+                            <Image className='rounded-b-[4px] w-full xl:w-[390px]' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
 
                         </div>
                     </div>
@@ -65,7 +65,7 @@ function Index() {
                                     <Image className='mt-5 mb-2 h-[110px]' height={160} width={160} src={"/assets/images/Users.svg"} alt={"imgaes1"}></Image>
                                 </div>
                             </div>
-                            <Image className='rounded-b-[4px] ' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
+                            <Image className='rounded-b-[4px] w-full xl:w-[390px]' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
 
                         </div>
                     </div>
@@ -80,7 +80,7 @@ function Index() {
                                     <Image className='mt-5 mb-2 h-[110px]' height={50} width={160} src={"/assets/images/Mapimg.svg"} alt={"imgaes1"}></Image>
                                 </div>
                             </div>
-                            <Image className='rounded-b-[4px] ' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
+                            <Image className='rounded-b-[4px] w-full xl:w-[390px]' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
 
                         </div>
                     </div>
@@ -95,7 +95,7 @@ function Index() {
                                     <Image className='mt-5 mb-2 h-[110px]' height={80} width={160} src={"/assets/images/ticketimg.svg"} alt={"imgaes1"}></Image>
                                 </div>
                             </div>
-                            <Image className='rounded-b-[4px] ' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
+                            <Image className='rounded-b-[4px] w-full xl:w-[390px]' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
 
                         </div>
                     </div>
@@ -110,7 +110,7 @@ function Index() {
                                     <Image className='mt-5 mb-2 h-[110px]' height={80} width={160} src={"/assets/images/innvoiceimg.svg"} alt={"imgaes1"}></Image>
                                 </div>
                             </div>
-                            <Image className='rounded-b-[4px] ' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
+                            <Image className='rounded-b-[4px] w-full xl:w-[390px]' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
 
                         </div>
                     </div>
@@ -125,7 +125,7 @@ function Index() {
                                     <Image className='mt-5 mb-2 h-[110px]' height={80} width={160} src={"/assets/images/Payments.svg"} alt={"imgaes1"}></Image>
                                 </div>
                             </div>
-                            <Image className='rounded-b-[4px] ' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
+                            <Image className='rounded-b-[4px] w-full xl:w-[390px]' height={230} width={390} src={"/assets/images/reportImg.svg"} alt={"imgaes"}></Image>
 
                         </div>
                     </div>
