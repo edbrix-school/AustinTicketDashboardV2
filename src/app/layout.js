@@ -20,7 +20,6 @@ export const metadata = {
   description: "Welcome to Austin Asset Management",
   icon: [
     {
-      media: '(prefer-color-theme: light)',
       url: '/public/assets/images/logo.svg',
       href: '/public/assets/images/logo.svg'
     }

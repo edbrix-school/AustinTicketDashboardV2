@@ -20,7 +20,7 @@ export default function Layout({ children, ...pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <Top topTab={pageProps.topTab} pageTitle={pageProps.pageTitle} pageName={pageProps.pageName} />         
+        <Top topTab={pageProps.topTab} pageTitle={pageProps.pageTitle} pageName={pageProps.pageName} parentPageName={pageProps.parentPageName} />         
         <Left />
         <div className={`${myInter.className} pl-[118px] xl:pl-[128px] pr-4 xl:pr-[0.833vw]  pb-6 xl:pb-[1.25vw] dark:bg-[#1C2026]`}>
           <main>

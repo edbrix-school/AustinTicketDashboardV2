@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { InputText } from "primereact/inputtext";
 import PageLayout from '@/app/components/pagelayout/pagelayout';
@@ -14,21 +14,23 @@ import InventoryAudit from "./inventoryaudit/inventoryaudit"
 import FilterComponent from '@/app/components/filtercomponent';
 
 export default function Index() {
+  const [pageName, setPageName] = useState('Manage Assets');
+
   return (
-    <PageLayout topTab={true} pageTitle="Manage Assets">
+    <PageLayout topTab={true} pageTitle="Manage Assets" parentPageName="Assets" pageName={pageName}>
      <div className="xl:mt-[1.198vw] mt-5">
      <Tabs className={'custTavbview'}>
       <div className='flex flex-wrap items-center justify-between gap-y-3'>
         <div>
     <TabList>
-      <Tab>Manage Assets</Tab>
-      <Tab>Quick Add</Tab>
-      <Tab>Checkout/Tansfer</Tab>
-      <Tab>Checkin</Tab>
-      <Tab>Financial Analysis</Tab>
-      <Tab>Change Status</Tab>
-      <Tab>Market Alerts</Tab>
-      <Tab>Inventory Audit</Tab>
+      <Tab onClick={() => setPageName("Manage Assets")}>Manage Assets</Tab>
+      <Tab onClick={() => setPageName("Quick Add")}>Quick Add</Tab>
+      <Tab onClick={() => setPageName("Checkout/Tansfer")}>Checkout/Tansfer</Tab>
+      <Tab onClick={() => setPageName("Checkin")}>Checkin</Tab>
+      <Tab onClick={() => setPageName("Financial Analysis")}>Financial Analysis</Tab>
+      <Tab onClick={() => setPageName("Change Status")}>Change Status</Tab>
+      <Tab onClick={() => setPageName("Market Alerts")}>Market Alerts</Tab>
+      <Tab onClick={() => setPageName("Inventory Audit")}>Inventory Audit</Tab>
     </TabList>
     </div>
     <div>

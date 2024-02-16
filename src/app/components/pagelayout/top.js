@@ -16,11 +16,11 @@ export default function Top({ ...pageProps }) {
                     <div className="flex items-center gap-3 text-[12px] 3xl:text-[0.625vw] text-[#84878D] mb-1 3xl:mb-[0.208vw]">
                         <div className="cursor-pointer">Home</div>
                         <i className="asetsmng-arrow-right text-[8px] 3xl:text-[0.417vw]"></i>
-                        <div className="cursor-pointer">Assets</div>
+                        <div className="cursor-pointer">{pageProps.parentPageName}</div>
                         <i className="asetsmng-arrow-right text-[8px] 3xl:text-[0.417vw]"></i>
-                        <div className="text-[#3A3E49] dark:text-[#84878D]">{pageProps.pageTitle}</div>
+                        <div className="text-[#3A3E49] dark:text-[#84878D]">{pageProps.pageName}</div>
                     </div>
-                    <div className={`text-[#3A3E49] 3xl:text-[1.250vw] text-[24px] font-medium leading-7 dark:text-[#fff]`}>{pageProps.pageTitle}</div>
+                    <div className={`text-[#3A3E49] 3xl:text-[1.250vw] text-[24px] font-medium leading-7 dark:text-[#fff]`}>{pageProps.pageName}</div>
                 </div>
                 <div className="flex items-center gap-[16px] 3xl:gap-[0.833vw]">
                     <Link href={''} className="3xl:p-[0.625vw] relative" title="shopping-cart">
