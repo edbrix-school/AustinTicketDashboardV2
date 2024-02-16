@@ -177,14 +177,14 @@ export default function ManageAssets() {
         return (
           <>
             <div className="SearchFilter 3xl:p-[0.729vw] p-3 3xl:rounded-[0.521vw] rounded-lg bg-white boxshadow01 3xl:space-y-[0.625vw] space-y-3">
-              <span className="p-input-icon-left custm-filterserach">
+              <span className="p-input-icon-left custm-td-filterserach">
                 <i
                   className="asetsmng-td-search"
                   style={{ color: "#9CA1AB", fontSize: "0.8rem" }}
                 />
                 <InputText
                   placeholder="Search"
-                  className="3xl:h-[2.292vw] h-[36px] placeholder:font-normal placeholder:text-[#9CA1AB]"
+                  className="3xl:h-[1.875vw] h-[36px] placeholder:font-normal placeholder:text-[#9CA1AB] placeholder:3xl:text-[0.729vw] placeholder:text-sm"
                   style={{ }}
                 />
               </span>

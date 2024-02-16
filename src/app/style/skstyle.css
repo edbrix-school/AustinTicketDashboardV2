@@ -374,6 +374,13 @@
     font-family: 'assetsmanage' !important;
     content: "\e92f";
 }
+.custm-td-filterserach input {
+    border-radius: 8px;
+    border: var(--spacing-0, 1px) solid var(--interface-stroke-default, #BECDE3);
+    background: var(--brand-neutral-50, #F5F6F8);
+    padding-left: 2.188vw;
+    font-size: 0.729vw;
+}
 /* Data table end */
 .boxshadow01 {box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);}
 .cutsm_checkbox {
@@ -398,6 +405,7 @@
     transition-duration: 0.2s;
     color: #ffffff;
     font-size: 8px;
+    width: 8px;
 }
 .custm-search i {
     margin-top: -0.4rem;
@@ -407,6 +415,8 @@
     padding-left: 2.208vw;
     font-size: 12px;
 }
+
+
 
 :focus-visible {
     outline: -webkit-focus-ring-color auto 0px !important;
@@ -431,7 +441,7 @@
         font-weight: 400;
     }
     .custInputsearch .p-inputtext {
-        width: 150px;
+        width: 200px;
         height: 33px;
         padding: 0 20px;
     }
@@ -477,6 +487,18 @@
     .custTable .p-datatable-tbody .p-checkbox .p-checkbox-box {
         width: 14px !important;
         height: 14px !important;
+    }
+    .custm-td-filterserach input {
+        padding-left: 30px !important;
+        font-size: 12px;
+    }
+    .cutsm_checkbox {
+        width: 14px;
+        height: 14px;
+    }
+    .cutsm_checkbox.p-checkbox .p-checkbox-box {
+        width: 14px;
+        height: 14px;
     }
 }
 
