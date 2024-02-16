@@ -196,12 +196,12 @@ function Finacialanalysis() {
       const SearchFilterTemplate = (options) => {
         return (
           <>
-            <div className="SearchFilter xl:p-[0.729vw] p-3 xl:rounded-[0.521vw] rounded-lg bg-white boxshadow01 xl:space-y-[0.625vw] space-y-3">
+            <div className="SearchFilter 3xl:p-[0.729vw] p-3 3xl:rounded-[0.521vw] rounded-lg bg-white boxshadow01 3xl:space-y-[0.625vw] space-y-3">
               <span className="p-input-icon-left">
                 <i className="pi pi-search" />
                 <InputText
                   placeholder="Search"
-                  className="xl:h-[2.083vw] h-[36px]"
+                  className="3xl:h-[2.083vw] h-[36px]"
                   style={{
                     background: "#F5F6F8",
                     border: "1px solid #BECDE3",
@@ -209,7 +209,7 @@ function Finacialanalysis() {
                   }}
                 />
               </span>
-              <div className="flex flex-col xl:gap-[0.625vw] gap-2">
+              <div className="flex flex-col 3xl:gap-[0.625vw] gap-2">
                 {categories.map((category) => {
                   return (
                     <div key={category.key} className="flex items-center">
@@ -245,7 +245,7 @@ function Finacialanalysis() {
       const actionBodyTemplate = (rowData) => {
         return (
           <>
-            <div className="flex  items-center xl:gap-[0.833vw] gap-3 text-[#888888] xl:text-[0.938vw] text-sm">
+            <div className="flex  items-center 3xl:gap-[0.833vw] gap-3 text-[#888888] 3xl:text-[0.938vw] text-sm">
               <Link href={""}>
                 <i className="cgupod-user-tick"></i>
               </Link>
@@ -271,25 +271,25 @@ function Finacialanalysis() {
       };
     return (
         <>
-            <div className='grid grid-cols-5 gap-[20px] xl:gap-[1.042vw] mt-[24px] xl:mt-[1.25vw]'>
-                <div className='col-span-1 '>
-                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] xl:pl-[0.833vw]'>
-                        <div className='text-[#20232E] text-[16px] xl:text-[0.866vw] py-[12px]  xl:py-[0.625vw] ' >Total Value of All Assets</div>
-                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] xl:px-[0.625vw] xl:py-[0.313vw] text-[#20232E] text-[12px] xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
-                            Assets Value
+            <div className='grid grid-cols-12 xl:grid-cols-5 gap-[20px] 3xl:gap-[1.042vw] mt-[24px] 3xl:mt-[1.25vw]'>
+                <div className='col-span-12 sm:col-span-6  lg:col-span-4 xl:col-span-1 '>
+                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] 3xl:pl-[0.833vw]'>
+                        <div className='text-[#20232E] xl:text-[12px]  3xl:text-[0.866vw] py-[12px]  3xl:py-[0.625vw] ' >Total Value of All Assets</div>
+                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
+                            Assets Value                                                                      
                         </div>
                         <div className='flex justify-between items-center'>
-                            <div className='my-[12px] xl:my-[0.625vw]'>
-                                <div className='text-[#3A3E49] text-[36px] xl:text-[1.875vw] font-medium '>$3M</div>
-                                <div className='text-[#84878D] text-[12px] xl:text-[0.625vw]  '>Total Value</div>
+                            <div className='my-[12px] 3xl:my-[0.625vw]'>
+                                <div className='text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium '>$3M</div>
+                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Value</div>
                             </div>
-                            <div className='m-[16px] xl:m-[0.866vw]'>
+                            <div className='m-[16px] 3xl:m-[0.866vw]'>
                                 <div className='flex items-center '>
-                                    <div className='text-[#20232E] text-[16px] font-medium xl:text-[0.866vw] mr-[6px] xl:mr-[0.313vw]'>2%</div>
+                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
                                     <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
                                 </div>
 
-                                <div className='text-[#84878D] text-[12px] xl:text-[0.625vw] '>by last period</div>
+                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] '>by last period</div>
                                 <div className=''>
 
                                 </div>
@@ -297,24 +297,24 @@ function Finacialanalysis() {
                         </div>
                     </div>
                 </div>
-                <div className='col-span-1 '>
-                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] xl:pl-[0.833vw]'>
-                        <div className='text-[#20232E] text-[16px] xl:text-[0.866vw] py-[12px]  xl:py-[0.625vw] ' >Assets Expiring in 7 Days</div>
-                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] xl:px-[0.625vw] xl:py-[0.313vw] text-[#20232E] text-[12px] xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
+                <div className='col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-1 '>
+                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] 3xl:pl-[0.833vw]'>
+                        <div className='text-[#20232E] xl:text-[12px] text-sm 3xl:text-[0.866vw] py-[12px]  3xl:py-[0.625vw] ' >Assets Expiring in 7 Days</div>
+                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
                             Short-Term
                         </div>
                         <div className='flex justify-between items-center'>
-                            <div className='my-[12px] xl:my-[0.625vw]'>
-                                <div className='text-[#3A3E49] text-[36px] xl:text-[1.875vw] font-medium '>102</div>
-                                <div className='text-[#84878D] text-[12px] xl:text-[0.625vw]  '>Total Expiring</div>
+                            <div className='my-[12px] 3xl:my-[0.625vw]'>
+                                <div className='text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium '>102</div>
+                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Expiring</div>
                             </div>
-                            <div className='m-[16px] xl:m-[0.866vw]'>
+                            <div className='m-[16px] 3xl:m-[0.866vw]'>
                                 <div className='flex items-center '>
-                                    <div className='text-[#20232E] text-[16px] font-medium xl:text-[0.866vw] mr-[6px] xl:mr-[0.313vw]'>2%</div>
+                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
                                     <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
                                 </div>
 
-                                <div className='text-[#84878D] text-[12px] xl:text-[0.625vw] '>by last period</div>
+                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] '>by last period</div>
                                 <div className=''>
 
                                 </div>
@@ -322,24 +322,24 @@ function Finacialanalysis() {
                         </div>
                     </div>
                 </div>
-                <div className='col-span-1 '>
-                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] xl:pl-[0.833vw]'>
-                        <div className='text-[#20232E] text-[16px] xl:text-[0.866vw] py-[12px]  xl:py-[0.625vw] ' >Total Cost of Replacement</div>
-                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] xl:px-[0.625vw] xl:py-[0.313vw] text-[#20232E] text-[12px] xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
+                <div className='col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-1 '>
+                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] 3xl:pl-[0.833vw]'>
+                        <div className='text-[#20232E] xl:text-[12px]  3xl:text-[0.866vw] py-[12px]  3xl:py-[0.625vw] ' >Total Cost of Replacement</div>
+                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
                             Short-Term Expiring Assets
                         </div>
                         <div className='flex justify-between items-center'>
-                            <div className='my-[12px] xl:my-[0.625vw]'>
-                                <div className='text-[#3A3E49] text-[36px] xl:text-[1.875vw] font-medium '>$340M</div>
-                                <div className='text-[#84878D] text-[12px] xl:text-[0.625vw]  '>Total Cost</div>
+                            <div className='my-[12px] 3xl:my-[0.625vw]'>
+                                <div className='text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium '>$340M</div>
+                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Cost</div>
                             </div>
-                            <div className='m-[16px] xl:m-[0.866vw]'>
+                            <div className='m-[16px] 3xl:m-[0.866vw]'>
                                 <div className='flex items-center '>
-                                    <div className='text-[#20232E] text-[16px] font-medium xl:text-[0.866vw] mr-[6px] xl:mr-[0.313vw]'>2%</div>
+                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
                                     <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
                                 </div>
 
-                                <div className='text-[#84878D] text-[12px] xl:text-[0.625vw] '>by last period</div>
+                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] '>by last period</div>
                                 <div className=''>
 
                                 </div>
@@ -347,24 +347,24 @@ function Finacialanalysis() {
                         </div>
                     </div>
                 </div>
-                <div className='col-span-1 '>
-                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] xl:pl-[0.833vw]'>
-                        <div className='text-[#20232E] text-[16px] xl:text-[0.866vw] py-[12px]  xl:py-[0.625vw] ' >Assets Expiring in Current Quarter</div>
-                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] xl:px-[0.625vw] xl:py-[0.313vw] text-[#20232E] text-[12px] xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
+                <div className='col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-1 '>
+                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] 3xl:pl-[0.833vw]'>
+                        <div className='text-[#20232E] xl:text-[12px]  3xl:text-[0.866vw] py-[12px]  3xl:py-[0.625vw] ' >Assets Expiring in Current Quarter</div>
+                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
                             Long-Term
                         </div>
                         <div className='flex justify-between items-center'>
-                            <div className='my-[12px] xl:my-[0.625vw]'>
-                                <div className='text-[#3A3E49] text-[36px] xl:text-[1.875vw] font-medium '>230</div>
-                                <div className='text-[#84878D] text-[12px] xl:text-[0.625vw]  '>Total Expiring</div>
+                            <div className='my-[12px] 3xl:my-[0.625vw]'>
+                                <div className='text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium '>230</div>
+                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Expiring</div>
                             </div>
-                            <div className='m-[16px] xl:m-[0.866vw]'>
+                            <div className='m-[16px] 3xl:m-[0.866vw]'>
                                 <div className='flex items-center '>
-                                    <div className='text-[#20232E] text-[16px] font-medium xl:text-[0.866vw] mr-[6px] xl:mr-[0.313vw]'>2%</div>
+                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
                                     <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
                                 </div>
 
-                                <div className='text-[#84878D] text-[12px] xl:text-[0.625vw] '>by last period</div>
+                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] '>by last period</div>
                                 <div className=''>
 
                                 </div>
@@ -372,24 +372,24 @@ function Finacialanalysis() {
                         </div>
                     </div>
                 </div>
-                <div className='col-span-1 '>
-                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] xl:pl-[0.833vw]'>
-                        <div className='text-[#20232E] text-[16px] xl:text-[0.866vw] py-[12px]  xl:py-[0.625vw] ' >Total Cost of Replacement</div>
-                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] xl:px-[0.625vw] xl:py-[0.313vw] text-[#20232E] text-[12px] xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
+                <div className='col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-1 '>
+                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] 3xl:pl-[0.833vw]'>
+                        <div className='text-[#20232E] xl:text-[12px]  3xl:text-[0.866vw] py-[12px]  3xl:py-[0.625vw] ' >Total Cost of Replacement</div>
+                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
                             Long-Term Expiring Assets
                         </div>
                         <div className='flex justify-between items-center'>
-                            <div className='my-[12px] xl:my-[0.625vw]'>
-                                <div className='text-[#3A3E49] text-[36px] xl:text-[1.875vw] font-medium '>$560M</div>
-                                <div className='text-[#84878D] text-[12px] xl:text-[0.625vw]  '>Total Cost</div>
+                            <div className='my-[12px] 3xl:my-[0.625vw]'>
+                                <div className='text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium '>$560M</div>
+                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Cost</div>
                             </div>
-                            <div className='m-[16px] xl:m-[0.866vw]'>
+                            <div className='m-[16px] 3xl:m-[0.866vw]'>
                                 <div className='flex items-center '>
-                                    <div className='text-[#20232E] text-[16px] font-medium xl:text-[0.866vw] mr-[6px] xl:mr-[0.313vw]'>2%</div>
+                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
                                     <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
                                 </div>
 
-                                <div className='text-[#84878D] text-[12px] xl:text-[0.625vw] '>by last period</div>
+                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] '>by last period</div>
                                 <div className=''>
 
                                 </div>
@@ -401,114 +401,69 @@ function Finacialanalysis() {
 
             </div>
 
-            <div className='border borde-[#E4E7EC] shadow-sm shadow-[#00000014] rounded-lg mt-[24px] xl:mt-[1.25vw]'>
+            <div className='border borde-[#E4E7EC] shadow-sm shadow-[#00000014] rounded-lg mt-[24px] 3xl:mt-[1.25vw]'>
 
-                {/* <div className='py-[22px] xl:py-[1.146vw]'>
-                    <div className='flex items-center justify-between'>
-                        <div className='flex items-center'>
-                            <div className='text-[#3A3E49] text-[16px] xl:text-[0.866vw] font-medium'>Manage Assets</div>
-                            <div className='bg-[#F9F9FC] rounded-[16px] xl:rounded-[0.866vw] py-[4px] px-[12px] xl:px-[0.625vw] xl:py-[0.208vw]'>
-                                <div className='text-[#84878D] text-[12px] xl:text-[0.625vw] '>Display 1 to 10 of 150</div>
-                            </div>
-                        </div>
-                        <div className='flex items-center'>
-                            <diV>
-                                <span className="p-input-icon-right">
-                                    <i className="pi pi-search" />
-                                    <InputText placeholder="Search" />
-                                </span>
-                            </diV>
-
-                            <Link href="#" className='border border-[#4169E1] text-[#4169E1] text-[12px] xl:text-[0.625vw] py-[10px] px-[16px] xl:py-[0.521vw] rounded-[8px] xl:px[0.866vw] mx-[8px] xl:mx-[0.417vw]'>
-                                <i className='asetsmng-plus-rounded-box text-[14px] xl:text-[0.729vw] mr-[8px] xl:mr-[0.417vw]'></i>
-                                Add Assets
-                            </Link>
-
-                            <Link href="#" className='text-[#84878D] border border-[#84878D] text-[12px] xl:text-[0.625vw] py-[10px] px-[16px] xl:py-[0.521vw] rounded-[8px] xl:px[0.866vw] mr-[8px] xl:mr-[0.417vw]'>
-                                <i className='asetsmng-open-folder mr-[8px] xl:mr-[0.417vw] text-14px xl:text-[0.729vw] text-[#84878D]'></i>
-                                Supporting Documnets</Link>
-                            <Link href="#" className='text-[#84878D] border border-[#84878D] text-[12px] xl:text-[0.625vw] py-[10px] px-[16px] xl:py-[0.521vw] rounded-[8px] xl:px[0.866vw] mr-[8px] xl:mr-[0.417vw]'>
-                                <i className='asetsmng-import mr-[8px] xl:mr-[0.417vw] text-14px xl:text-[0.729vw] text-[#84878D]'></i>
-                                Import</Link>
-                            <Link href="#" className='text-[#84878D] border border-[#84878D] text-[12px] xl:text-[0.625vw] py-[10px] px-[16px] xl:py-[0.521vw] rounded-[8px] xl:px[0.866vw] mr-[8px] xl:mr-[0.417vw]'>
-                                <i className='asetsmng-export mr-[8px] xl:mr-[0.417vw] text-14px xl:text-[0.729vw] text-[#84878D]'></i>
-                                Export</Link>
-                            <Link href="#" className='text-[#84878D] border border-[#84878D] text-[12px] xl:text-[0.625vw] py-[10px] px-[9px] xl:py-[0.521vw] rounded-[8px] xl:px[0.469vw] mr-[8px] xl:mr-[0.417vw]'>
-                                <i className='asetsmng-map-view  text-14px xl:text-[0.729vw] text-[#84878D]'></i>
-                            </Link>
-                            <Link href="#" className='text-[#ffffff] bg-[#4169E1] border border-[#4169E1] text-[12px] xl:text-[0.625vw] py-[10px] px-[9px] xl:py-[0.521vw] rounded-[8px] xl:px[0.469vw] mr-[8px] xl:mr-[0.417vw]'>
-                                <i className='asetsmng-map-view  text-14px xl:text-[0.729vw] text-[#ffffff]'></i>
-                            </Link>
-                            <Link href="#" className='text-[#84878D] border border-[#EAE0E0] text-[12px] xl:text-[0.625vw] py-[10px] px-[9px] xl:py-[0.521vw] rounded-[8px] xl:px[0.469vw] mr-[8px] xl:mr-[0.417vw]'>
-                                <i className='asetsmng-arrow-left-think  text-14px xl:text-[0.729vw] text-[#84878D]'></i>
-                            </Link>
-                            <Link href="#" className='text-[#84878D] border border-[#EAE0E0] text-[12px] xl:text-[0.625vw] py-[10px] px-[9px] xl:py-[0.521vw] rounded-[8px] xl:px[0.469vw] mr-[8px] xl:mr-[0.417vw]'>
-                                <i className='asetsmng-arrow-right-think  text-14px xl:text-[0.729vw] text-[#84878D]'></i>
-                            </Link>
-                        </div>
-                    </div>
-
-                </div> */}
- <div className="bg-white dark:bg-[#13161B] border border-[#F2EEEE] dark:border-[#1F2A37] rounded-lg xl:rounded-[0.521vw] ">
-            <div className="flex flex-wrap items-center justify-between xl:px-[1.042vw] px-4 xl:pt-[1.042vw] pt-4 xl:pb-[0.990vw] pb-4">
-              <div className="flex flex-wrap items-center xl:gap-[0.521vw] gap-2">
-                <div className="text-[#3A3E49] dark:text-white xl:text-[0.833vw] text-sm font-medium xl:leading-[1.042vw] leading-5">
+               
+ <div className="bg-white dark:bg-[#13161B] border border-[#F2EEEE] dark:border-[#1F2A37] rounded-lg 3xl:rounded-[0.521vw] ">
+            <div className="flex flex-wrap items-center justify-between 3xl:px-[1.042vw] px-4 3xl:pt-[1.042vw] pt-4 3xl:pb-[0.990vw] pb-4">
+              <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
+                <div className="text-[#3A3E49] dark:text-white 3xl:text-[0.866vw] text-sm font-medium 3xl:leading-[1.042vw] leading-5">
                 Manage Assets
                 </div>
-                <div className="text-[#84878D] xl:text-[0.625vw] text-xs font-medium xl:leading-[0.938vw] leading-5 bg-[#F9F9FC] dark:bg-[#1C2026] xl:rounded-[0.938vw] rounded-2xl xl:px-[0.729vw] px-3 xl:py-[0.313vw] py-1">
+                <div className="text-[#84878D] 3xl:text-[0.625vw] text-xs font-medium 3xl:leading-[0.938vw] leading-5 bg-[#F9F9FC] dark:bg-[#1C2026] 3xl:rounded-[0.938vw] rounded-2xl 3xl:px-[0.729vw] px-3 3xl:py-[0.313vw] py-1">
                   Display 1 to 10 of 150
                 </div>
               </div>
-              <div className="flex flex-wrap items-center xl:gap-[0.833vw] gap-4">
-                <div className="flex flex-wrap items-center xl:gap-[1.25vw] gap-5">
+              <div className="flex flex-wrap items-center 3xl:gap-[0.833vw] gap-4">
+                <div className="flex flex-wrap items-center 3xl:gap-[1.25vw] gap-5">
                 <div>
                   <span className="p-input-icon-left custm-tdsearch p-input-icon-right">
-                    <i className="asetsmng-td-search xl:text-[0.833vw] text-xs text-[#84878D] cursor-pointer w-fit" />
+                    <i className="asetsmng-td-search 3xl:text-[0.833vw] text-xs text-[#84878D] cursor-pointer w-fit" />
                     <InputText
                     value={inputValue}
                     onChange={handleChange}
                       placeholder="Search"
-                      className="p-inputtext p-component xl:h-[1.875vw] h-[33px] xl:w-[16.927vw] placeholder:text-[#888888] placeholder:font-normal placeholder:xl:text-[0.833vw] "
+                      className="p-inputtext p-component 3xl:h-[1.875vw] h-[33px] 3xl:w-[16.927vw] placeholder:text-[#888888] placeholder:font-normal placeholder:3xl:text-[0.833vw] "
                     />
                     {inputValue && (
-                    <i onClick={clearInput} className="asetsmng-cross xl:text-[0.521vw] text-[10px] text-[#84878D] cursor-pointer" />
+                    <i onClick={clearInput} className="asetsmng-cross 3xl:text-[0.521vw] text-[10px] text-[#84878D] cursor-pointer" />
                     )}  
                   </span>
                 </div>
-                <div className="flex flex-wrap items-center xl:gap-[0.521vw] gap-2">
+                <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
                 <Link
                     href={""}
-                    className="text-[#4169E1] font-normal xl:text-[0.729vw] text-xs bg-white border border-[#4169E1] xl:py-[0.521vw] py-2 xl:px-[0.833vw] px-3 xl:rounded-[0.521vw] rounded-lg flex items-center xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] xl:h-[1.875vw]"
+                    className="text-[#4169E1] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#4169E1] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw]"
                   >
                     <i className="asetsmng-plus-rounded-box"></i>
                     <span>Add Assets</span>
                   </Link>
                   <Link
                     href={""}
-                    className="text-[#84878D] font-normal xl:text-[1.042vw] text-xs bg-white border border-[#D3D3CE] xl:py-[0.521vw] py-2 xl:px-[0.833vw] px-3 xl:rounded-[0.521vw] rounded-lg flex items-center xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
+                    className="text-[#84878D] font-normal 3xl:text-[1.042vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
                   >
                     <i className="asetsmng-import"></i>
                     <span>Import</span>
                   </Link>
                   <Link
                     href={""}
-                    className="text-[#84878D] font-normal xl:text-[1.042vw] text-xs bg-white border border-[#D3D3CE] xl:py-[0.521vw] py-2 xl:px-[0.833vw] px-3 xl:rounded-[0.521vw] rounded-lg flex items-center xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
+                    className="text-[#84878D] font-normal 3xl:text-[1.042vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
                   >
                     <i className="asetsmng-export"></i>
                     <span>Export</span>
                   </Link>
                 </div>
                 </div>
-                <div className="flex items-center xl:gap-[0.417vw] gap-1.5">
+                <div className="flex items-center 3xl:gap-[0.417vw] gap-1.5">
                 <Link
                   href={""}
-                  className="bg-white rounded border border-[#D3D3CE] text-[#84878D] xl:text-[1.042vw] flex items-center justify-center text-xs xl:p-[0.417vw] p-2 xl:h-[1.875vw] h-[33px] xl:rounded-[0.417vw] hover:bg-[#4169E1] hover:text-white hover:border-[#4169E1]"
+                  className="bg-white rounded border border-[#D3D3CE] text-[#84878D] 3xl:text-[1.042vw] flex items-center justify-center text-xs 3xl:p-[0.417vw] p-2 3xl:h-[1.875vw] h-[33px] 3xl:rounded-[0.417vw] hover:bg-[#4169E1] hover:text-white hover:border-[#4169E1]"
                 >
                   <i className="asetsmng-map-view"></i>
                 </Link>
                 <Link
                   href={""}
-                  className="bg-[#4169E1] rounded border text-white xl:text-[1.042vw] flex items-center justify-center text-xs xl:p-[0.417vw] p-2 xl:h-[1.875vw] h-[33px] xl:rounded-[0.417vw]"
+                  className="bg-[#4169E1] rounded border text-white 3xl:text-[1.042vw] flex items-center justify-center text-xs 3xl:p-[0.417vw] p-2 3xl:h-[1.875vw] h-[33px] 3xl:rounded-[0.417vw]"
                 >
                   <i className="asetsmng-grid-outline"></i>
                 </Link>
@@ -516,14 +471,14 @@ function Finacialanalysis() {
 
                 <Link
                   href={""}
-                  className="text-[#84878D] font-normal xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] xl:py-[0.421vw] py-2 xl:px-[0.833vw] px-3 xl:rounded-[0.521vw] rounded-lg flex items-center xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
+                  className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.421vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
                 >
                    <i className='asetsmng-arrow-left-think '></i>
                   {/* <i className="asetsmng-grid-outline"></i> */}
                 </Link>
                 <Link
                   href={""}
-                  className="text-[#84878D] font-normal xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] xl:py-[0.421vw] py-2 xl:px-[0.833vw] px-3 xl:rounded-[0.521vw] rounded-lg flex items-center xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
+                  className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.421vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
                 >
                  <i className='asetsmng-arrow-right-think '></i>
 
