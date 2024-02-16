@@ -99,7 +99,10 @@ body {
 /* common style End */
 
 /* V.K style */
-
+.productSearch .p-inputtext { border: 1px solid #E4E7EC; color: #84878D; border-radius: 12px; padding: 20px 28px 20px 62px; width: 100%; min-width: 800px; }
+.productSearch .p-input-icon-left > i { margin: 0; left: 30px; top: 50%; transform: translateY(-50%); }
+.productSearch .p-button { display: block; background: #91A5C3; height: 100%; width: 100%; min-width: 114px; border-radius: 12px; }
+.productSearch .p-button-label { color: white; font-weight: 400; font-size: 20px; }
 /* V.K style End */
 
 
@@ -109,6 +112,12 @@ body {
 
 @media (min-width:1800px) { 
     body { font-size: 0.729vw; }
+     /* V.K style */
+    .productSearch .p-inputtext { border: 0.052vw solid #E4E7EC; border-radius: 0.625vw; padding: 1.042vw 1.458vw 1.042vw 3.229vw; min-width: 41.667vw; }
+    .productSearch .p-input-icon-left > i { left: 1.563vw; }
+    .productSearch .p-button { min-width: 5.938vw; }
+    .productSearch .p-button-label { font-size: 1.042vw; }
+    /* V.K style End */
 }
 
 @media (max-width:1280px) {  }
