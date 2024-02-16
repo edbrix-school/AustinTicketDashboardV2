@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from 'next/link'
+import { Tag } from 'primereact/tag';
 import { Column } from "primereact/column";
 import { DataTable } from "primereact/datatable";
 import { InputText } from "primereact/inputtext";
@@ -252,6 +253,26 @@ export default function ManageAssets() {
     
         setSelectedCategories(_selectedCategories);
       };
+
+    const statusBodyTemplate = (product) => {
+        return <Tag value={product.Status} severity={getSeverity(product)}></Tag>;
+    };
+
+    const getSeverity = (product) => {
+        switch (product.Status) {
+            case 'Active':
+                return 'success';
+
+            case 'Inactive':
+                return 'warning';
+
+            case 'OUTOFSTOCK':
+                return 'danger';
+
+            default:
+                return null;
+        }
+    };
       /*---Table End--*/
 
       const [inputValue, setInputValue] = useState('');
@@ -409,6 +430,7 @@ export default function ManageAssets() {
                 showApplyButton={false}
                 filter
                 filterElement={SearchFilterTemplate}
+                body={statusBodyTemplate}
                 style={{ minWidth: "8rem" }}
               ></Column>
               <Column
