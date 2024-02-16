@@ -8,10 +8,7 @@
     transform: rotate(270deg); 
   }
   
-  .p-datatable .p-datatable-thead > tr > th{
-    background-color: #DFE7FA
-    ;
-  }
+  
   .sidebarwidth{
   width: 800px;
   }
