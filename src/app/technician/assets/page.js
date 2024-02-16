@@ -11,10 +11,11 @@ import FinancialAnalysis from './financialanalysis/financialanalysis';
 import ChangeStatus from './changestatus/changestatus';
 import MarketAlerts from './marketalerts/marketalerts';
 import InventoryAudit from "./inventoryaudit/inventoryaudit"
+import FilterComponent from '@/app/components/filtercomponent';
 
 export default function Index() {
   return (
-    <PageLayout pageTitle="Manage Assets">
+    <PageLayout topTab={true} pageTitle="Manage Assets">
      <div className="xl:mt-[1.198vw] mt-5">
      <Tabs className={'custTavbview'}>
       <div className='flex flex-wrap items-center justify-between gap-y-3 xl:pb-[0.833vw] pb-4'>
@@ -37,6 +38,7 @@ export default function Index() {
     </div>
     </div>
     </div>
+    <FilterComponent />
     <div>
     <TabPanel>
     <ManageAssets />
