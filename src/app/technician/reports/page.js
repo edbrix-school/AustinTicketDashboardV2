@@ -137,7 +137,7 @@ function Index() {
                     </div>
                 </div>
 
-                <AssetPopup visibleRight={assetsPopupShow} onHide={() => setAssetsPopupShow(false)} />
+                <AssetPopup visible={assetsPopupShow} onHide={() => setAssetsPopupShow(false)} />
             </PageLayout>
 
         </>
