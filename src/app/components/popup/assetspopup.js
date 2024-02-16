@@ -1,21 +1,18 @@
-
-'use client'
-
 import React, { useState } from "react";
 import { Sidebar } from "primereact/sidebar";
 
 
 
-export default function Index() {
+export default function AssetPopup(props) {
 
-    const [visibleRight, setVisibleRight] = useState(false);
     return (
         <>
-            <div className='mt-[200px] ' onClick={() => setVisibleRight(true)} >Popup</div>
+
             <div className='assetspoups'>
 
                 <div className='assetspoups'>
-                    <Sidebar visible={visibleRight} position="right" blockScroll={true} onHide={() => setVisibleRight(false)} className='assetspoups w-[922px] xl:w-[48.021vw] custmSidebar  rounded-lg'>
+                    <Sidebar visible={props.visibleRight} position="right" blockScroll={true}
+                        onHide={props.onHide} className='assetspoups w-[922px] xl:w-[48.021vw] custmSidebar  rounded-lg'>
                         <div className=" ">
                             <div className="header pl-[15px] pt-[8px]  ">
                                 <div className='text-[24px] font-semibold text-[#20232E] xl:text-[1.25vw] min-h-[20px] xl:min-h-[1.823vw]  '>Assets</div>
