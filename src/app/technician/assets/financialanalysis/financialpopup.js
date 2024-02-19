@@ -116,14 +116,14 @@ function Financialpopup({
                 width: 2,
                 type: lineType,
                 itemStyle: {
-                    borderColor: borderColor,
+                    // borderColor: borderColor,
                     borderWidth: 2
                 },
             },
             itemStyle: {
                 color: fillcolor[0],
                 borderWidth: 1,
-                borderColor: borderColor,
+                // borderColor: borderColor,
             }
 
         },
