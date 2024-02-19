@@ -9,7 +9,7 @@ import { Column } from "primereact/column";
 import { Checkbox } from "primereact/checkbox";
 
 import Viewpopup from "@/app/components/popup/viewpopup";
-import AddInventoryPopup from "@/app/components/popup/Addinventoryauditpopup";
+import AddInventoryPopup from "@/app/components/popup/addinventoryauditpopup"
 
 export default function InventoryAudit() {
   const [visibleRight, setVisibleRight] = useState(false);

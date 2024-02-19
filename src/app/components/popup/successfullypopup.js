@@ -4,13 +4,13 @@ import Link from "next/link";
 import { useState } from 'react';
 import { Sidebar } from 'primereact/sidebar';
 
-export default function successfullypopup() {
+export default function successfullypopup(props) {
     const [visibleRight, setVisibleRight] = useState(false);
   return (
     <>
      <div>
-                <Sidebar visible={visibleRight} position="right" 
-                className="successfully w-[550px] xl:w-[28.646vw]" onHide={() =>setVisibleRight(false)} >
+                <Sidebar visible={props.visible} position="right" 
+                className="successfully w-[550px] xl:w-[28.646vw]" onHide={() =>props.onHides(false)} >
                 <div className="xl:px-[2.604vw] px-10 xl:space-y-[1.875vw] space-y-8">
                     <div className="flex justify-center items-center">
                     <div>     <Image src={'/assets/images/successfully_image.png'} alt="successfully popup" width={499} height={485} className="xl:w-[25.99vw] xl:h-[25.26vw]" /></div>
