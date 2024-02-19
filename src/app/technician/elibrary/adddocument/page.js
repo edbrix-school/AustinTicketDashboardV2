@@ -1,5 +1,6 @@
 import React from "react";
 import PageLayout from "@/app/components/pagelayout/pagelayout";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -7,7 +8,7 @@ const page = () => {
       topTab={true}
       pageTitle="Add Document"
       pageName="Add Document"
-      parentPageName="E-Library"
+      parentPageName={["E-Library"]}
     >
       <div>
         <div className="flex justify-between items-center mt-[30px] 3xl:mt-[1.563vw]">
@@ -46,12 +47,13 @@ const page = () => {
               <div className="text-[#888888] text-[12px] 3xl:text-[0.625vw] leading-4 font-semibold">
                 Max. File Size: 30MB
               </div>
-              <div className="bg-[#4169E1] rounded-lg text-[#FFF] flex items-center gap-[8px] 3xl:gap-[0.417vw] px-[12px] 3xl:px-[0.6vw] py-[8px] 3xl:py-[0.429vw] cursor-pointer mt-[16px] 3xl:mt-[0.833vw]">
+              <Link href={"/technician/elibrary/previewdocument"}
+               className="bg-[#4169E1] rounded-lg text-[#FFF] flex items-center gap-[8px] 3xl:gap-[0.417vw] px-[12px] 3xl:px-[0.6vw] py-[8px] 3xl:py-[0.429vw] cursor-pointer mt-[16px] 3xl:mt-[0.833vw]">
                 <i className="asetsmng-td-search 3xl:text-[0.629vw] text-[12px]"></i>
                 <span className="3xl:text-[0.729vw] text-[14px] font-normal leading-4 ">
                   Browse File
                 </span>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

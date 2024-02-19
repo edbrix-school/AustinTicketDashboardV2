@@ -50,6 +50,18 @@
 .customCalendar .p-datepicker-trigger svg {
    display: none;
 }
+  /* Toast */
+  .p-toast .p-toast-message .p-toast-message-content .p-toast-message-icon.p-icon{
+    height: 1.20rem;
+    width: 1.20rem;
+}
+.p-toast .p-toast-message .p-toast-message-content{
+    background-color: #FFFFFF;
+    color: #3A3E49;
+}
+.p-toast .p-toast-message.p-toast-message-success .p-toast-icon-close{
+    color: #84878D;
+}
 
 /* calendar end */
 
