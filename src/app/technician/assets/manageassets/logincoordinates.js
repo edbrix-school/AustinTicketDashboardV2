@@ -12,7 +12,7 @@ const CustomPrevArrow = (props) => {
     return (
       <div
         className={className}
-        style={{ ...style, top: '0%', left: '50%', transform: 'translate(-50%, -50%) rotate(90deg)', background:"#000" }}
+        style={{ ...style}}
         onClick={onClick}
       />
     );
@@ -24,7 +24,7 @@ const CustomPrevArrow = (props) => {
     return (
       <div
         className={className}
-        style={{ ...style, bottom: '0%', left: '50%', transform: 'translate(-50%, 200%) rotate(90deg)', background:"#000" }}
+        style={{ ...style}}
         onClick={onClick}
       />
     );
@@ -36,7 +36,7 @@ const LogincoordinatesMap = (props) => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: 2,
         slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
@@ -72,22 +72,22 @@ const LogincoordinatesMap = (props) => {
                 <div className="vertical-slider-container">
                 <Slider {...settings}>
                 <div>
-                <h3>Slide 1</h3>
+                <div className="bg-[#F9F9FC] py-1 3xl:py-[0.208vw] px-1 flex items-center justify-between h-14">
+                    <div className="text-[#3A3E49] text-xs font-semibold leading-4 3xl:text-[0.625vw] 3xl:leading-[0.833vw] text-center grow w-full">12:00 AM</div>
+                    <div className="grow w-[17px]"><Image src={'/assets/images/barchart.svg'} width={17} height={34} alt="34" /></div>
+                </div>
                 </div>
                 <div>
-                <h3>Slide 2</h3>
+                <div className="bg-[#F9F9FC] py-1 3xl:py-[0.208vw] px-1 flex items-center justify-between h-14">
+                    <div className="text-[#3A3E49] text-xs font-semibold leading-4 3xl:text-[0.625vw] 3xl:leading-[0.833vw] text-center grow w-full">12:00 AM</div>
+                    <div className="grow w-[17px]"><Image src={'/assets/images/barchart.svg'} width={17} height={34} alt="34" /></div>
+                </div>
                 </div>
                 <div>
-                <h3>Slide 3</h3>
+                <div className="bg-[#F9F9FC] py-1 3xl:py-[0.208vw] px-1 flex items-center justify-between h-14">
+                    <div className="text-[#3A3E49] text-xs font-semibold leading-4 3xl:text-[0.625vw] 3xl:leading-[0.833vw] text-center grow w-full">12:00 AM</div>
+                    <div className="grow w-[17px]"><Image src={'/assets/images/barchart.svg'} width={17} height={34} alt="34" /></div>
                 </div>
-                <div>
-                <h3>Slide 4</h3>
-                </div>
-                <div>
-                <h3>Slide 5</h3>
-                </div>
-                <div>
-                <h3>Slide 6</h3>
                 </div>
                 {/* Add more slides as needed */}
                 </Slider>
