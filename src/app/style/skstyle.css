@@ -33,6 +33,8 @@
     font-weight: 400;
     padding-left: 42px;
     padding-right: 38px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 /* Data Table start */
@@ -490,7 +492,13 @@
 
 /* Shadows/shadow-lg */
 .shadow-lg{box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);}
-
+.vertical-slider-container, .vertical-slider-container .slick-slider.slick-vertical.slick-initialized {
+    width: 100px;
+}
+.vertical-slider-container .slick-slider.slick-vertical.slick-initialized .slick-arrow.slick-prev {
+    background: var(--colors-primary-50, #F1F4FD);
+    color: #333330;
+}
 
 /***********************************************
             Responsive

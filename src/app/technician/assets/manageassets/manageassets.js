@@ -313,7 +313,7 @@ export default function ManageAssets() {
                 <div className="flex flex-wrap items-center 3xl:gap-[1.25vw] gap-5">
                 <div>
                   <span className="p-input-icon-left custm-tdsearch p-input-icon-right">
-                    <i className="asetsmng-td-search 3xl:text-[0.833vw] text-xs text-[#84878D] cursor-pointer w-fit" />
+                    <i className="asetsmng-td-search 3xl:text-[0.833vw] text-base text-[#84878D] cursor-pointer w-fit" />
                     <InputText
                     value={inputValue}
                     onChange={handleChange}
@@ -321,7 +321,7 @@ export default function ManageAssets() {
                       className="p-inputtext p-component 3xl:h-[1.875vw] h-[33px] w-[300px] 3xl:w-[16.927vw] placeholder:text-[#888888] placeholder:font-normal placeholder:3xl:text-[0.833vw] "
                     />
                     {inputValue && (
-                    <i onClick={clearInput} className="asetsmng-cross 3xl:text-[0.521vw] text-[10px] leading-4 text-[#84878D] cursor-pointer" />
+                    <i onClick={clearInput} className="asetsmng-cross 3xl:text-[0.521vw] text-xs w-3 h-4 flex items-center justify-center text-[#84878D] cursor-pointer" />
                     )}  
                   </span>
                 </div>
