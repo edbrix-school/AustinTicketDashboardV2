@@ -22,7 +22,7 @@ export default function Addinventoryauditpopup(props) {
   return (
    <>
    <div>
-   <Sidebar visible={props.visible}
+   <Sidebar visible={props.addInventory}
                 position="right"
                 onHide={() => props.onHides(false)}
                 title={props.title} 
