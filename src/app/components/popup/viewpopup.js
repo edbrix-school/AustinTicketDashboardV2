@@ -114,7 +114,7 @@ export default function Viewpopup(props) {
       <Sidebar visible={props.visible}
         position="right"
         onHide={() => props.onHides(false)}
-        className="sidebarwidth rounded-l-xl"
+        className="sidebarwidth custmSidebar rounded-l-xl "
         title={props.title}>
 
         <div className="">
@@ -172,7 +172,7 @@ export default function Viewpopup(props) {
               />
             </div>
 
-            <div className="custInput custDropdownBox ">
+            <div className="custInput  customCalendar">
               <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
                 Start Date
               </label>
@@ -181,10 +181,10 @@ export default function Viewpopup(props) {
                 onChange={(e) => setDate(e.value)}
                 showIcon
                 placeholder="24/04/2023"
-                className="w-full border rounded-lg"
+                className="w-full border rounded-lg "
               />
             </div>
-            <div className="custInput custDropdownBox ">
+            <div className="custInput customCalendar ">
               <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
                 End Date
               </label>
@@ -193,7 +193,7 @@ export default function Viewpopup(props) {
                 onChange={(e) => setDate(e.value)}
                 showIcon
                 placeholder="24/04/2023"
-                className="w-full border rounded-lg"
+                className="w-full border rounded-lg customCalendar"
               />
             </div>
             <div className="custInput custInputBox">
