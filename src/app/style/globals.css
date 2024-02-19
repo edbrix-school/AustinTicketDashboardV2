@@ -86,6 +86,7 @@
 .asetsmng-unlock:before {content: "\e936";}
 .asetsmng-upload:before {content: "\e937";}
 .asetsmng-edit-pen:before {content: "\e938";}
+.asetsmng-arrow-down:before {content: "\e939";}
 
 
 /* common style */
