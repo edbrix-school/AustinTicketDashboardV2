@@ -8,14 +8,14 @@ export default function MarketAlerts() {
   return (
     <>
       <div className="mt-[15px] lg:mt-[40px] xl:mt-[67px] 3xl:mt-[3.49vw]">
-        <div className="w-full max-w-[1144px] 3xl:max-w-[59.583vw] mx-auto bg-white rounded-[16px] lg:rounded-[24px] 3xl:rounded-[1.25vw] px-[15px] lg:px-[56px] 3xl:px-[2.917vw] py-[15px] lg:py-[40px] 3xl:py-[2.083vw]">
+        <div className="bg-white rounded-[16px] lg:rounded-[24px] 3xl:rounded-[1.25vw] px-[15px] lg:px-[56px] 3xl:px-[2.917vw] py-[15px] lg:py-[40px] 3xl:py-[2.083vw]">
           <div className="text-[#20232E] text-[18px] lg:text-[24px] 3xl:text-[1.25vw] font-medium text-center">
             Chose Product for Market Alert
           </div>
-          <div className="flex justify-center productSearch gap-[16px] 3xl:gap-[0.833vw] mt-[15px] lg:mt-[36px] 3xl:mt-[1.875vw] mb-[24px] lg:mb-[48px] 3xl:mb-[2.5vw]">
+          <div className="md:flex justify-center productSearch space-y-[16px] md:space-y-[0] gap-[16px] 3xl:gap-[0.833vw] mt-[15px] lg:mt-[36px] 3xl:mt-[1.875vw] mb-[24px] lg:mb-[48px] 3xl:mb-[2.5vw]">
             <div className="p-input-icon-left">
               <i className="asetsmng-search-big text-[20px] 3xl:text-[1.042vw] text-[#4B586E]" />
-              {/* <i className="asetsmng-microphone text-[20px] 3xl:text-[1.042vw] text-[#4B586E] leading-none" /> */}
+              <i className="asetsmng-microphone text-[20px] 3xl:text-[1.042vw] text-[#4B586E] leading-none cursor-pointer" />
               <InputText
                 className="placeholder:text-[#84878D] placeholder:text-[16px] 3xl:placeholder:text-[0.833vw]"
                 placeholder="Search products by name, brand, etc.,"
