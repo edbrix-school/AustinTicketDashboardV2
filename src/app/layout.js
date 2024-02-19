@@ -22,12 +22,14 @@ const inter = Inter({
 export const metadata = {
   title: "Assets",
   description: "Welcome to Austin Asset Management",
-  icon: [
-    {
-      url: '/public/assets/images/logo.svg',
-      href: '/public/assets/images/logo.svg'
-    }
-  ]
+  icons:{
+    icon: [
+      {
+        url: '/assets/images/logo.svg',
+        // href: '/assets/images/logo.svg'
+      }
+    ]
+  }
 };
 
 export default function RootLayout({ children }) {
