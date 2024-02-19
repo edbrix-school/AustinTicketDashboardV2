@@ -91,7 +91,7 @@ const ElibraryPage = () => {
           <div className="flex gap-[16px] 3xl:gap-[0.833vw]">
             <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
               <Link
-                href={""}
+                href="/technician/elibrary/adddocument"
                 className="text-[#4169E1] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#4169E1] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw]"
               >
                 <i className="asetsmng-text-doc"></i>

@@ -13,13 +13,18 @@ function Financialpopup({
           },
     legend: legend,
     xAxis: {
-        name: xAxisName,
-        nameLocation: xAxisNamePosition,
+
+        name: "Quarterly",
+
+         nameLocation: "center",
         nameGap: xAxisNameGap,
+        nameGap: 30,
         type: 'category',
         data: data.labels,
         nameTextStyle: {
-            color: "#9CA1AB"
+            color: "#84878D",
+            fontWeight:600,
+            fontSize: 12,
         },
         label: {
             show: true // show labels for all data points
@@ -48,12 +53,18 @@ function Financialpopup({
 
             }
         },
-        name: yAxisName,
-        nameLocation: yAxisNamePosition,
-        nameGap: yAxisNameGap,
+
+        name: "Depreciation",
+        nameLocation: "center",
+        nameGap: xAxisNameGap,
+        nameGap: 50,
         nameTextStyle: {
-            color: currentTheme === "dark" ? "#B3B9C6" : "#6C768B"
+            color: currentTheme === "dark" ? "#B3B9C6" : "#84878D",
+           
+            fontWeight:600,
+            fontSize: 12,
         },
+      
         axisLabel: {
             color: currentTheme === "dark" ? "#B3B9C6" : "#6C768B",
             fontSize: 8,
@@ -85,21 +96,38 @@ function Financialpopup({
                     padding: [2, 2, 2, 2],
                 }
             },
+            areaStyle: {
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                  {
+                    offset: 0,
+                    color: 'rgba(3,130,248,1)'
+                  
+                      
+                  },
+                  {
+                    offset: 1,
+                    color: 'rgba(3,130,248,0.9)'
+                
+                  }
+                ])
+              },
             lineStyle: {
                 color: lineColor[0],
                 width: 2,
                 type: lineType,
                 itemStyle: {
-                    borderColor: borderColor,
+                    // borderColor: borderColor,
                     borderWidth: 2
                 },
             },
             itemStyle: {
                 color: fillcolor[0],
                 borderWidth: 1,
-                borderColor: borderColor,
+                // borderColor: borderColor,
             }
+
         },
+   
     ]
 };
     const LineChartData = {

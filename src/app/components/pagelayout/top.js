@@ -9,20 +9,22 @@ import Image from "next/image";
 export default function Top({ ...pageProps }) {
     const notificatio = useRef(null);
 
+    console.log("pageProps",pageProps);
+
     return (
         <header className="sticky top-0 z-[3]">
             <div className={`${ pageProps.topTab ? '3xl:min-h-[4.27vw] min-h-[82px] pb-[12px] 3xl:pb-[0.625vw]' : '3xl:min-h-[5.96vw] min-h-[114px] pb-[44px] 3xl:pb-[2.299vw]'} bg-white flex flex-wrap gap-2 items-center justify-between pt-[20px] 3xl:pt-[1.04vw] pb-[12px] 3xl:pb-[0.625vw] pr-[45px] 3xl:pr-[2.344vw] pl-[118px] 3xl:pl-[128px] dark:bg-[#191A1E] `}>
                 <div className="">
                     <div className="flex items-center gap-3 text-[12px] 3xl:text-[0.625vw] text-[#84878D] mb-1 3xl:mb-[0.208vw]">
                         <div className="cursor-pointer">Home</div>
-                        {pageProps.parentPageName?.map((elm) => {
-                            return (
+                        {/* {pageProps.parentPageName?.map((elm) => { */}
+                            {/* return ( */}
                                 <>
                                 <i className="asetsmng-arrow-right text-[8px] 3xl:text-[0.417vw]"></i>
-                                <div className="cursor-pointer">{elm}</div>
+                                <div className="cursor-pointer">{pageProps.parentPageName}</div>
                                 </>
-                            );
-                        })}
+                            {/* ); */}
+                        {/* })} */}
 
                         {pageProps.pageName && 
                         <>

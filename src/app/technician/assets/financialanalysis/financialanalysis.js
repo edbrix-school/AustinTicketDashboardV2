@@ -686,7 +686,7 @@ function Finacialanalysis() {
                         lineType={"line"}
                         color1={"black"}
                         fillcolor={["#1D224E"]}
-                        borderColor={"#FFF"}
+                        // borderColor={"#FFF"}
                         lineColor={["#1D224E"]}
                         yAxisNameGap={"33"}
                         yAxisNamePosition={"middle"}
