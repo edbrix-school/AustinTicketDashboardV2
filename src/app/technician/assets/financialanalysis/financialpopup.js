@@ -33,7 +33,11 @@ function Financialpopup({
                 show: false
             },
             axisLine: {
-                show: false
+                show: true,
+                lineStyle: {
+                  color: currentTheme == "dark" ? "#818181" : "#E4E7EC",
+                },
+          
             },
             axisLabel: {
                 interval: 0,
