@@ -11,7 +11,7 @@ export default function AssetPopup(props) {
                 position="right"
                 blockScroll={true}
                 onHide={props.onHide}
-                className="w-[922px]  lg:w-[922px] 3xl:w-[48.021vw] custmSidebar rounded-lg"
+                className="w-[922px] xl:w-[48.021vw] 3xl:w-[48.021vw] custmSidebar rounded-lg"
             >
                 <div className=" ">
                     <div className="bg-[#F9F9FC] px-[20px] 3xl:px-[1.042vw] py-[30px] 3xl:py-[1.563vw]  ">

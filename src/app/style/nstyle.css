@@ -1,0 +1,71 @@
+
+/* calendar start */
+.customCalendar .p-inputtext {
+    padding: 10px 16px;
+    font-size: 14px;
+    background: #FFFFFF;
+}
+
+.customCalendar .p-button {
+    padding: 12px 16px !important;
+    font-size: 14px;
+    color: #4B586E;
+    background: #FFFFFF;
+    border-left: none;
+    border-right: 1px solid #DDE1EA;
+    border-top: 1px solid #DDE1EA;
+    border-bottom: 1px solid #DDE1EA;
+}
+
+.customCalendar .p-inputtext {
+    border: 1px solid #DDE1EA;
+    border-left: 1px solid #DDE1EA;
+    border-right: none;
+    border-top: 1px solid #DDE1EA;
+    border-bottom: 1px solid #DDE1EA;
+}
+
+.customCalendar .p-inputtext:enabled:hover {
+    border-color: #DDE1EA;
+}
+
+.customCalendar .p-button:enabled:hover,
+.customCalendar .p-button:not(button):not(a):not(.p-disabled):hover {
+    background: #FFFFFF;
+    color: #4B586E;
+    border-color: #DDE1EA;
+}
+
+.customCalendar .p-inputtext:enabled:focus {
+    box-shadow: none !important;
+    border-color: #DDE1EA;
+}
+
+.customCalendar .p-datepicker-trigger:before {
+    font-family: 'assetsmanage' !important;
+    content: "\e90c";
+    font-size: 15px;
+}
+
+.customCalendar .p-datepicker-trigger svg {
+   display: none;
+}
+
+/* calendar end */
+
+
+@media (min-width:1800) {  
+.customCalendar .p-inputtext {
+    padding: 0.521vw 0.833vw;
+    font-size: 0.729vw;
+}
+
+.customCalendar .p-button {
+    padding: 0.521vw 0.833vw !important;
+    font-size: 0.729vw;
+}
+
+.customCalendar .p-datepicker-trigger:before {
+    font-size: 0.729vw;
+}
+}

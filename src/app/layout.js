@@ -9,6 +9,7 @@ import "./style/filtercomponent.css";
 import "./style/pstyle.css"
 import "./style/sgstyle.css";
 import "./style/ppstyle.css";
+import "./style/nstyle.css";
 
 const inter = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
