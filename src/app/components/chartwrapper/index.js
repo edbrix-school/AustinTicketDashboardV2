@@ -60,10 +60,11 @@ export default function ChartWrapper(props) {
             <div>
               <div className='flex items-center justify-between pb-[16px] lg:pb-[24px] xl:pb-[1.25vw]'>
                 <div className='flex items-center 3xl:gap-[0.417vw] gap-[8px]'>
-                  <div><i className='asetsmng-folder text-[20px] 3xl:text-[1.042vw]'></i></div>
+                  {/* <div><i className='asetsmng-folder text-[20px] 3xl:text-[1.042vw]'></i></div> */}
                   <div className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold  ${props.text}`}>
                     <p>{props.title}</p>
                   </div>
+                 
                   <div className={`text-[#6C768B] text-[14px] xl:text-[0.729vw] font-normal  ${props.text}`}><p>{props.subtitle}</p></div>
                 </div>
                 <div className='space-x-2 optionbtn flex items-center wrapper_icons items-center custm_dropdwon text-[#6C768B] dark:text-[#B3B9C6]'>
@@ -130,9 +131,11 @@ export default function ChartWrapper(props) {
                         <div className="card flex">
                           <button onClick={(e) => op.current.toggle(e)}>
                             <div className="cursor-pointer flex items-center leading-none">
-                              <i className='asetsmng-three-dots-circle text-[14px] xl:text-[0.94vw] align-top' title='Click here for multiple option'></i>
+                              <i className='asetsmng-three-dots-box text-[14px] xl:text-[0.94vw] align-top' title='Click here for multiple option'></i>
                             </div>
+                           
                           </button>
+                          
                           <OverlayPanel ref={op} className="dropdownList">
                             <div className='flex flex-col text-left gap-y-2 wrapperOption text-[14px] xl:text-[0.730vw] text-[#363A44] dark:text-[#B3B9C6]'>
                               <button className='flex gap-2 items-center hover:text-[#4FB155] dark:hover:text-[#4FB155] ease-linear duration-200' href='' onClick={() => { handlePrintBots(); onExit(); }}>
