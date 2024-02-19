@@ -2,14 +2,14 @@
 import React, { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { InputText } from "primereact/inputtext";
-import PageLayout from '@/app/components/pagelayout/pagelayout';
 import FilterComponent from '@/app/components/filtercomponent';
+import ExecutiveLayout from '@/app/components/executivepagelayout/pagelayout';
 
 export default function Index() {
     const [pageTitle, setPageTitle] = useState('Summary');
 
     return (
-        <PageLayout topTab={true} pageTitle={pageTitle} pageName={'Dashboard'}>
+        <ExecutiveLayout topTab={true} pageTitle={pageTitle} pageName={'Dashboard'}>
             <div className="xl:mt-[1.198vw] mt-5">
                 <Tabs className={'custTavbview'}>
                     <div className='flex flex-wrap items-center justify-between gap-y-3'>
@@ -46,6 +46,6 @@ export default function Index() {
                     </div>
                 </Tabs>
             </div>
-        </PageLayout>
+        </ExecutiveLayout>
     )
 }
