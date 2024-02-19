@@ -28,7 +28,7 @@ export default function Addinventoryauditpopup(props) {
                 position="right"
                 onHide={() => props.onHides(false)}
                 title={props.title} 
-                className="auditpoups w-[922px] xl:w-[48.021vw]">
+                className="auditpoups custmSidebar w-[922px] xl:w-[48.021vw]">
           <div className="font-medium">
             <div className="header bg-[#F9F9FC]">
               <div className='text-[24px] p-[24px] xl:p-[1.25vw] font-normal text-[#20232E] xl:text-[1.25vw]'>Add Inventory Audit</div>
@@ -82,7 +82,7 @@ export default function Addinventoryauditpopup(props) {
                             />
                         </div>
 
-                        <div className="custInput custDropdownBox ">
+                        <div className="custInput customCalendar ">
                             <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
                                 Start Date
                             </label>
@@ -94,7 +94,7 @@ export default function Addinventoryauditpopup(props) {
                                 className="w-full border"
                             />
                         </div>
-                        <div className="custInput custDropdownBox">
+                        <div className="custInput customCalendar">
                             <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
                                 End Date
                             </label>
