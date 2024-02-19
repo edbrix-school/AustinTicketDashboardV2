@@ -25,7 +25,7 @@ export default function Top({ ...pageProps }) {
                         }
 
                     </div>
-                    <div className={`text-[#3A3E49] 3xl:text-[1.250vw] text-[24px] font-medium leading-7 dark:text-[#fff]`}>{pageProps.pageName}</div>
+                    <div className={`text-[#3A3E49] 3xl:text-[1.250vw] text-[24px] font-medium leading-7 dark:text-[#fff]`}>{pageProps.pageTitle}</div>
                 </div>
                 <div className="flex items-center gap-[16px] 3xl:gap-[0.833vw]">
                     <Link href={''} className="3xl:p-[0.625vw] relative" title="shopping-cart">
