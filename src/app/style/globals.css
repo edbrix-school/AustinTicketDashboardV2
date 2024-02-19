@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer tailwind-base, primereact, tailwind-utilities;
-@layer tailwind-base { @tailwind base; }
 
 @font-face {
   font-family: 'assetsmanage';
@@ -134,3 +132,8 @@ body {
 
 @media (max-width:575px) {  }
 
+@layer tailwind-base, primereact, tailwind-utilities;
+
+@layer tailwind-base {
+    @tailwind base;
+}
