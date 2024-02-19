@@ -30,10 +30,10 @@ export default function Index() {
       <div className="login-wrap-bg">
 
       <div className='grid grid-cols-12 xl:grid-cols-2 gap-[20px] 3xl:gap-[1.042vw]  3xl:mx-[1.042vw]'>
-                <div className=''>
+                <div className='hidden lg:block col-span-12 lg:col-span-1 xl:col-span-1'>
 
                   </div>
-                  <div className='col-span-12 sm:col-span-1 lg:col-span-1 xl:col-span-1 login'>
+                  <div className='col-span-12 lg:col-span-10 xl:col-span-1 login'>
                     <div className="bg-[#fff] 3xl:my-[3.385vw] 3xl:mx-[5.469vw] 3xl:py-[3.125vw] 3xl:px-[6.25vw] lg:my-[65px] lg:mx-[80px] lg:px-[80px] lg:py-[40px] border-2 border-[#A93238] rounded-xl">
                     
                       <Image className='' height={75} width={250} src={"/assets/images/logo.png"} alt={"logo"}/>
