@@ -62,7 +62,10 @@ export default function Top({ ...pageProps }) {
                 <div className=''>
                     <div className="w-full min-w-[440px] origin-top-right bg-white dark:bg-[#24262D] box-shadow">
                         <div className="flex items-center justify-between px-[16px] 3xl:px-[0.833vw] py-[12px] 3xl:py-[0.625vw]">
-                            <div className="text-[#1A1F36] dark:text-[#FFFFFF] text-[14px] 3xl:text-[0.729vw] font-medium">Notifications</div>
+                            <div className="flex items-center">
+                            <div className="text-[#1A1F36] dark:text-[#FFFFFF] text-[14px] 3xl:text-[0.729vw] font-medium">Notifications <span className="text-[#9EA0AA] text-[12px] 3xl:text-[0.625vw] pl-2">All <i className="asetsmng-dropdown-arrow text-[0.317vw] pl-3"></i></span></div>
+
+                            </div>
                             <div className="flex items-center gap-2 cursor-pointer">
                                 <div className="text-[#1A1F36] dark:text-[#FFFFFF] text-[14px] 3xl:text-[0.729vw] font-medium">Mark all as read</div>
                                 <i className="asetsmng-right-tick-outline text-[16px] 3xl:text-[0.833vw]"></i>
