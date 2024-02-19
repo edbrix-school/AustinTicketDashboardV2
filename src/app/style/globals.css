@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer tailwind-base, primereact, tailwind-utilities;
+@layer tailwind-base { @tailwind base; }
+
 @font-face {
   font-family: 'assetsmanage';
   src:  url('/assets/fonts/assetsmanage.eot?ibrc4u');
