@@ -3,6 +3,7 @@ import { Sidebar } from "primereact/sidebar";
 import { Dropdown } from "primereact/dropdown";
 import { InputText } from "primereact/inputtext";
 import { Calendar } from "primereact/calendar";
+import Link from "next/link";
 
 export default function AssetsRefreshPopup(props) {
     const [datestart, setDateStart] = useState(null);
@@ -159,7 +160,7 @@ export default function AssetsRefreshPopup(props) {
             <div className="absolute bottom-0 right-0 left-0">
                 <div className="flex justify-end gap-3 bg-[#F9F9FC] px-[30px] lg:px-[30px] 3xl:px-[1.563vw] py-[18px] lg:py-[18px] 3xl:py-[0.938vw]">
                     <div className="text-[#4B586E] text-[14px] xl:text-[14px] 3xl:text-[0.729vw] font-normal px-[12px] lg:px-[12px] 3xl:px-[0.625vw] py-[10px] lg:py-[10px] 3xl:py-[0.521vw] bg-[#FFFFFF] border border-[#BECDE3] rounded-lg cursor-pointer">Cancel</div>
-                    <div className="text-[#fff] text-[14px] xl:text-[14px] 3xl:text-[0.729vw] font-normal px-[12px] lg:px-[12px] 3xl:px-[0.625vw] py-[10px] lg:py-[10px] 3xl:py-[0.521vw] bg-[#1570EF] border border-[#1570EF] rounded-lg cursor-pointer">Generate Report</div>
+                    <Link href={'/technician/reports/assetrefreshreport'} className="text-[#fff] text-[14px] xl:text-[14px] 3xl:text-[0.729vw] font-normal px-[12px] lg:px-[12px] 3xl:px-[0.625vw] py-[10px] lg:py-[10px] 3xl:py-[0.521vw] bg-[#1570EF] border border-[#1570EF] rounded-lg cursor-pointer">Generate Report</Link>
                 </div>
             </div>
         </div>

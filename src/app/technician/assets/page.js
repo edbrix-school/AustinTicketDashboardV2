@@ -18,7 +18,7 @@ export default function Index() {
   const [pageTitle, setPageTitle] = useState('Manage Assets');
 
   return (
-    <PageLayout topTab={true} pageTitle={pageTitle} parentPageName="Assets" pageName={pageName}>
+    <PageLayout topTab={true} pageTitle={pageTitle} parentPageName={["Assets"]} pageName={pageName}>
      <div className="xl:mt-[1.198vw] mt-5">
      <Tabs className={'custTavbview'}>
       <div className='flex flex-wrap items-center justify-between gap-y-3'>

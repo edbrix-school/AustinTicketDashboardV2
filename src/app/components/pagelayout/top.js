@@ -15,8 +15,16 @@ export default function Top({ ...pageProps }) {
                 <div className="">
                     <div className="flex items-center gap-3 text-[12px] 3xl:text-[0.625vw] text-[#84878D] mb-1 3xl:mb-[0.208vw]">
                         <div className="cursor-pointer">Home</div>
-                        <i className="asetsmng-arrow-right text-[8px] 3xl:text-[0.417vw]"></i>
-                        <div className="cursor-pointer">{pageProps.parentPageName}</div>
+                        {pageProps.parentPageName?.map((elm) => {
+                            console.log("elm", elm);
+                            return (
+                                <>
+                                <i className="asetsmng-arrow-right text-[8px] 3xl:text-[0.417vw]"></i>
+                                <div className="cursor-pointer">{elm}</div>
+                                </>
+                            );
+                        })}
+
                         {pageProps.pageName && 
                         <>
                         <i className="asetsmng-arrow-right text-[8px] 3xl:text-[0.417vw]"></i>
