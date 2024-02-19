@@ -1,7 +1,7 @@
 'use client'
 
 import FilterComponent from '@/app/components/filtercomponent'
-import PageLayout from '@/app/components/pagelayout/pagelayout'
+
 import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { InputText } from "primereact/inputtext";
@@ -9,6 +9,7 @@ import Dailydashboard from './dailydashboard/dailydashboard';
 import Detailedview from './detailedview/detailedview';
 import Drilldown from './drilldown/drilldown';
 import Summary from './summary/summary';
+import LeadLayout from '@/app/components/leadpagelayout/pagelayout';
 
 
 export default function Index() {
@@ -17,7 +18,7 @@ export default function Index() {
     
 
   return (
-    <PageLayout topTab={true} pageTitle={pageTitle} pageName={pageName}>
+    <LeadLayout topTab={true} pageTitle={pageTitle} pageName={pageName}>
         <div className="xl:mt-[1.198vw] mt-5">
         <Tabs className={'custTavbview'}>
           <div className='flex flex-wrap items-center justify-between gap-y-3'>
@@ -178,6 +179,6 @@ export default function Index() {
             </div> */}
 
 
-    </PageLayout>
+    </LeadLayout>
   )
 }
