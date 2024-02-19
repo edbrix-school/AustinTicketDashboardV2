@@ -10,15 +10,16 @@
   
   
   .sidebarwidth{
-  width: 800px;
+  width: 922px;
+  padding-left: 30px;
   }
   
-  .sidebarwidth .p-sidebar-close{
+  /* .sidebarwidth .p-sidebar-close{
     display: none;
   }
   .sidebarwidth .p-sidebar-header{
     display: none;
-  }
+  } */
   
   
 
