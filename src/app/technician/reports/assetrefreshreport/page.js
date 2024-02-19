@@ -6,175 +6,180 @@ import { DataTable } from "primereact/datatable";
 import { InputText } from "primereact/inputtext";
 import { Checkbox } from "primereact/checkbox";
 import Link from 'next/link';
-import { Tag } from 'primereact/tag';
 
 export default function Index() {
-    const [pageName, setPageName] = useState('Manage Assets');
-    const [pageTitle, setPageTitle] = useState('Manage Assets');
-
     const [rowClick, setRowClick] = useState(true);
     const [selectedProducts, setSelectedProducts] = useState(null);
     const [filters, setFilters] = useState(null);
     const products = [
         {
-            Type: "Routers",
+            Type: "Hardware",
             Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
+            Serialnumber: "SR - 5318",
+            Model:'Acer - 11223',
+            Manufacturer:'Acer',
+            Category:'Laptop',
+            Campus:'Allison',
+            CreatedDate:'22/11/2016',
+            ExpiryDate:'22/12/2023',
+            DayslefttoExpire:'31',
+            EstimatedReplacementCost:'$4,500',
         },
         {
-            Type: "Computers",
+            Type: "Hardware",
             Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
+            Serialnumber: "SR - 5318",
+            Model:'Acer - 11223',
+            Manufacturer:'Acer',
+            Category:'Laptop',
+            Campus:'Allison',
+            CreatedDate:'22/11/2016',
+            ExpiryDate:'22/12/2023',
+            DayslefttoExpire:'1',
+            EstimatedReplacementCost:'$4,500',
         },
         {
-            Type: "Computers",
+            Type: "Hardware",
             Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
+            Serialnumber: "SR - 5318",
+            Model:'Acer - 11223',
+            Manufacturer:'Acer',
+            Category:'Laptop',
+            Campus:'Allison',
+            CreatedDate:'22/11/2016',
+            ExpiryDate:'22/12/2023',
+            DayslefttoExpire:'101',
+            EstimatedReplacementCost:'$4,500',
         },
         {
-            Type: "Computers",
+            Type: "Hardware",
             Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
+            Serialnumber: "SR - 5318",
+            Model:'Acer - 11223',
+            Manufacturer:'Acer',
+            Category:'Laptop',
+            Campus:'Allison',
+            CreatedDate:'22/11/2016',
+            ExpiryDate:'22/12/2023',
+            DayslefttoExpire:'31',
+            EstimatedReplacementCost:'$4,500',
         },
         {
-            Type: "Computers",
+            Type: "Hardware",
             Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
+            Serialnumber: "SR - 5318",
+            Model:'Acer - 11223',
+            Manufacturer:'Acer',
+            Category:'Laptop',
+            Campus:'Allison',
+            CreatedDate:'22/11/2016',
+            ExpiryDate:'22/12/2023',
+            DayslefttoExpire:'31',
+            EstimatedReplacementCost:'$4,500',
         },
         {
-            Type: "Computers",
+            Type: "Hardware",
             Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
+            Serialnumber: "SR - 5318",
+            Model:'Acer - 11223',
+            Manufacturer:'Acer',
+            Category:'Laptop',
+            Campus:'Allison',
+            CreatedDate:'22/11/2016',
+            ExpiryDate:'22/12/2023',
+            DayslefttoExpire:'31',
+            EstimatedReplacementCost:'$4,500',
         },
         {
-            Type: "Computers",
+            Type: "Hardware",
             Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
+            Serialnumber: "SR - 5318",
+            Model:'Acer - 11223',
+            Manufacturer:'Acer',
+            Category:'Laptop',
+            Campus:'Allison',
+            CreatedDate:'22/11/2016',
+            ExpiryDate:'22/12/2023',
+            DayslefttoExpire:'31',
+            EstimatedReplacementCost:'$4,500',
         },
         {
-            Type: "Computers",
+            Type: "Hardware",
             Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
+            Serialnumber: "SR - 5318",
+            Model:'Acer - 11223',
+            Manufacturer:'Acer',
+            Category:'Laptop',
+            Campus:'Allison',
+            CreatedDate:'22/11/2016',
+            ExpiryDate:'22/12/2023',
+            DayslefttoExpire:'31',
+            EstimatedReplacementCost:'$4,500',
         },
         {
-            Type: "Computers",
+            Type: "Hardware",
             Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
+            Serialnumber: "SR - 5318",
+            Model:'Acer - 11223',
+            Manufacturer:'Acer',
+            Category:'Laptop',
+            Campus:'Allison',
+            CreatedDate:'22/11/2016',
+            ExpiryDate:'22/12/2023',
+            DayslefttoExpire:'31',
+            EstimatedReplacementCost:'$4,500',
         },
         {
-            Type: "Computers",
+            Type: "Hardware",
             Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
+            Serialnumber: "SR - 5318",
+            Model:'Acer - 11223',
+            Manufacturer:'Acer',
+            Category:'Laptop',
+            Campus:'Allison',
+            CreatedDate:'22/11/2016',
+            ExpiryDate:'22/12/2023',
+            DayslefttoExpire:'31',
+            EstimatedReplacementCost:'$4,500',
         },
         {
-            Type: "Computers",
+            Type: "Hardware",
             Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
+            Serialnumber: "SR - 5318",
+            Model:'Acer - 11223',
+            Manufacturer:'Acer',
+            Category:'Laptop',
+            Campus:'Allison',
+            CreatedDate:'22/11/2016',
+            ExpiryDate:'22/12/2023',
+            DayslefttoExpire:'31',
+            EstimatedReplacementCost:'$4,500',
         },
         {
-            Type: "Computers",
+            Type: "Hardware",
             Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
+            Serialnumber: "SR - 5318",
+            Model:'Acer - 11223',
+            Manufacturer:'Acer',
+            Category:'Laptop',
+            Campus:'Allison',
+            CreatedDate:'22/11/2016',
+            ExpiryDate:'22/12/2023',
+            DayslefttoExpire:'31',
+            EstimatedReplacementCost:'$4,500',
         },
         {
-            Type: "Computers",
+            Type: "Hardware",
             Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
-        },
-        {
-            Type: "Computers",
-            Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
-        },
-        {
-            Type: "Computers",
-            Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
-        },
-        {
-            Type: "Computers",
-            Assetcode: "AC - 95826",
-            Serialnumber: "2SR - 5318",
-            District: "Local District - Northeast",
-            School: 'Apperson ES',
-            Status: 'Active',
-            Lastlogindatetime: "8/6/2022, 10:06:00 AM",
-            Lastlogincoordinates: "37.0902° N, 95.7129° W",
+            Serialnumber: "SR - 5318",
+            Model:'Acer - 11223',
+            Manufacturer:'Acer',
+            Category:'Laptop',
+            Campus:'Allison',
+            CreatedDate:'22/11/2016',
+            ExpiryDate:'22/12/2023',
+            DayslefttoExpire:'31',
+            EstimatedReplacementCost:'$4,500',
         },
     ];
 
@@ -222,26 +227,11 @@ export default function Index() {
         );
     };
 
-    const actionBodyTemplate = (rowData) => {
+    const DayslefttoExpireBody = (rowData) => {
         return (
             <>
-                <div className="flex items-center 3xl:gap-[0.833vw] gap-3 text-[#888888] 3xl:text-[0.938vw] text-sm">
-                    <Link href={""}>
-                        <i className="asetsmng-eye"></i>
-                    </Link>
-                    <Link href={""}>
-                        <i className="asetsmng-edit-rounded-box"></i>
-                    </Link>
-                </div>
-            </>
-        );
-    };
-
-    const LastlogincoordinatesTemplate = (rowData) => {
-        return (
-            <>
-                <div className="text-[#3A3E49] 3xl:text-[0.729vw] text-xs font-normal" onClick={() => setlogincoordinates(true)}>
-                    37.0902° N, 95.7129° W
+                <div className={`${rowData.DayslefttoExpire >= 100 ? 'bg-[#D1FAE4]' : rowData.DayslefttoExpire >= 10 ? 'bg-[#E6DDA2]' : 'bg-[#815C27] text-[#E4E4E4]'}  text-[#3A3E49] font-medium  rounded-md px-[8px] lg:px-[8px] 3xl:px-[0.417vw] py-[2px] inline-block`}>
+                    {rowData.DayslefttoExpire}
                 </div>
             </>
         );
@@ -267,26 +257,6 @@ export default function Index() {
 
         setSelectedCategories(_selectedCategories);
     };
-
-    const statusBodyTemplate = (product) => {
-        return <Tag value={product.Status} severity={getSeverity(product)}></Tag>;
-    };
-
-    const getSeverity = (product) => {
-        switch (product.Status) {
-            case 'Active':
-                return 'success';
-
-            case 'Inactive':
-                return 'warning';
-
-            case 'OUTOFSTOCK':
-                return 'danger';
-
-            default:
-                return null;
-        }
-    };
     /*---Table End--*/
 
     const [inputValue, setInputValue] = useState('');
@@ -301,12 +271,12 @@ export default function Index() {
 
     return (
         <PageLayout topTab={true} pageTitle={'Asset Refresh Report'} parentPageName={["Reports","Standard Reports"]} pageName={'Asset Refresh Report'}>
-            <div className="xl:mt-[1.198vw] mt-5">
+            <div className="3xl:mt-[1.25vw] mt-6">
                 <div className="bg-white dark:bg-[#13161B] border border-[#F2EEEE] dark:border-[#1F2A37] rounded-lg 3xl:rounded-[0.521vw]">
                     <div className="flex flex-wrap items-center justify-between 3xl:px-[1.042vw] px-4 3xl:pt-[1.042vw] pt-4 3xl:pb-[0.990vw] pb-4">
                         <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
                             <div className="text-[#3A3E49] dark:text-white 3xl:text-[0.833vw] text-sm font-medium 3xl:leading-[1.042vw] leading-5">
-                                Manage Assets
+                            Asset Refresh Report
                             </div>
                             <div className="text-[#84878D] 3xl:text-[0.625vw] text-xs font-medium 3xl:leading-[0.938vw] leading-5 bg-[#F9F9FC] dark:bg-[#1C2026] 3xl:rounded-[0.938vw] rounded-2xl 3xl:px-[0.729vw] px-3 3xl:py-[0.313vw] py-1">
                                 Display 1 to 10 of 150
@@ -331,40 +301,12 @@ export default function Index() {
                                 <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
                                     <Link
                                         href={""}
-                                        className="text-[#4169E1] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#4169E1] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw]"
-                                    >
-                                        <i className="asetsmng-plus-rounded-box"></i>
-                                        <span>Add Assets</span>
-                                    </Link>
-                                    <Link
-                                        href={""}
-                                        className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
-                                    >
-                                        <i className="asetsmng-import"></i>
-                                        <span>Import</span>
-                                    </Link>
-                                    <Link
-                                        href={""}
                                         className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
                                     >
                                         <i className="asetsmng-export"></i>
                                         <span>Export</span>
                                     </Link>
                                 </div>
-                            </div>
-                            <div className="flex items-center 3xl:gap-[0.417vw] gap-1.5">
-                                <Link
-                                    href={""}
-                                    className="bg-white rounded border border-[#D3D3CE] text-[#84878D] 3xl:text-[1.042vw] flex items-center justify-center text-base 3xl:p-[0.417vw] p-2 3xl:h-[1.875vw] h-[33px] 3xl:rounded-[0.417vw] hover:bg-[#4169E1] hover:text-white hover:border-[#4169E1]"
-                                >
-                                    <i className="asetsmng-map-view"></i>
-                                </Link>
-                                <Link
-                                    href={""}
-                                    className="bg-[#4169E1] rounded border text-white 3xl:text-[1.042vw] flex items-center justify-center text-base 3xl:p-[0.417vw] p-2 3xl:h-[1.875vw] h-[33px] 3xl:rounded-[0.417vw]"
-                                >
-                                    <i className="asetsmng-grid-outline"></i>
-                                </Link>
                             </div>
                         </div>
                     </div>
@@ -397,12 +339,6 @@ export default function Index() {
                             style={{ maxWidth: "3rem" }}
                         ></Column>
                         <Column
-                            field="Type"
-                            header="Type"
-                            sortable
-                            style={{ minWidth: "5rem" }}
-                        ></Column>
-                        <Column
                             field="Assetcode"
                             header="Asset Code"
                             sortable
@@ -414,20 +350,9 @@ export default function Index() {
                             sortable
                             style={{ minWidth: "10rem" }}
                         ></Column>
-                        <Column
-                            field="District"
-                            header="District"
-                            showFilterMatchModes={false}
-                            showFilterMenuOptions={false}
-                            showClearButton={false}
-                            showApplyButton={false}
-                            filter
-                            filterElement={SearchFilterTemplate}
-                            style={{ minWidth: "10rem" }}
-                        ></Column>
-                        <Column
-                            field="School"
-                            header="School"
+                         <Column
+                            field="Type"
+                            header="Type"
                             showFilterMatchModes={false}
                             showFilterMenuOptions={false}
                             showClearButton={false}
@@ -437,20 +362,30 @@ export default function Index() {
                             style={{ minWidth: "9rem" }}
                         ></Column>
                         <Column
-                            field="Status"
-                            header="Status"
+                            field="Model"
+                            header="Model"
                             showFilterMatchModes={false}
                             showFilterMenuOptions={false}
                             showClearButton={false}
                             showApplyButton={false}
                             filter
                             filterElement={SearchFilterTemplate}
-                            body={statusBodyTemplate}
-                            style={{ minWidth: "8rem" }}
+                            style={{ minWidth: "10rem" }}
                         ></Column>
                         <Column
-                            field="Lastlogindatetime"
-                            header="Last Login - Date/time"
+                            field="Manufacturer"
+                            header="Manufacturer"
+                            showFilterMatchModes={false}
+                            showFilterMenuOptions={false}
+                            showClearButton={false}
+                            showApplyButton={false}
+                            filter
+                            filterElement={SearchFilterTemplate}
+                            style={{ minWidth: "9rem" }}
+                        ></Column>
+                        <Column
+                            field="Category"
+                            header="Category"
                             showFilterMatchModes={false}
                             showFilterMenuOptions={false}
                             showClearButton={false}
@@ -460,8 +395,8 @@ export default function Index() {
                             style={{ minWidth: "12rem" }}
                         ></Column>
                         <Column
-                            field="Lastlogincoordinates"
-                            header="Last login - coordinates"
+                            field="Campus"
+                            header="Campus"
                             showFilterMatchModes={false}
                             showFilterMenuOptions={false}
                             showClearButton={false}
@@ -469,18 +404,34 @@ export default function Index() {
                             filter
                             filterElement={SearchFilterTemplate}
                             style={{ minWidth: "12rem" }}
-                            body={LastlogincoordinatesTemplate}
                         ></Column>
                         <Column
-                            field="Action"
-                            header="Action"
-                            style={{ minWidth: "5rem" }}
-                            align="center"
-                            body={actionBodyTemplate}
+                            field="CreatedDate"
+                            header="Created Date"
                             sortable
-                            frozen
-                            alignFrozen="right"
+                            style={{ minWidth: "12rem" }}
                         ></Column>
+                        <Column
+                            field="ExpiryDate"
+                            header="Expiry Date"
+                            sortable
+                            style={{ minWidth: "12rem" }}
+                        ></Column>
+                        <Column
+                            field="DayslefttoExpire"
+                            header="Days left to Expire"
+                            sortable
+                            style={{ minWidth: "12rem" }}
+                            body={DayslefttoExpireBody}
+                        ></Column>
+                        <Column
+                            field="EstimatedReplacementCost"
+                            header="Estimated Replacement Cost"
+                            sortable
+                            style={{ minWidth: "15rem" }}
+                        ></Column>
+
+                      
                     </DataTable>
                 </div>
             </div>
