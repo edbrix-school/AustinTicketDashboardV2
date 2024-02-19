@@ -1,16 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-/* common style */
-body { font-size: 14px; }
-
-.p-button:focus, .p-dropdown:not(.p-disabled).p-focus, .p-inputtext:enabled:focus, .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus, .p-radiobutton .p-radiobutton-box:not(.p-disabled).p-focus, .p-calendar:not(.p-calendar-disabled).p-focus > .p-inputtext { box-shadow: none !important; }
-/* common style End */
-
-/* V.K style */
-
-/* V.K style End */
 /* Login start */
 .login-wrap-bg {
     background-image: url(/assets/images/login-bg.svg);
@@ -23,7 +11,7 @@ body { font-size: 14px; }
 /* Login end*/
 
 
-/* Login */
+
 
 
 
