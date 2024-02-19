@@ -3,10 +3,10 @@ import Link from "next/link";
 import { OverlayPanel } from 'primereact/overlaypanel';
 import { CSVLink } from "react-csv";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
-import { useReactToPrint } from "react-to-print";
+// import { useReactToPrint } from "react-to-print";
 import ReactFullscreen from 'react-easyfullscreen';
-import ExcelDownloader from '../exportn/ExcelDownloader';
-import PdfDownloader from '../exportn/PdfDownloader';
+// import ExcelDownloader from '../exportn/ExcelDownloader';
+// import PdfDownloader from '../exportn/PdfDownloader';
 import { Dropdown } from "primereact/dropdown";
 
 export default function ChartWrapper(props) {
@@ -27,9 +27,9 @@ export default function ChartWrapper(props) {
   }
 
   //Print Function
-  const handlePrintBots = useReactToPrint({
-    content: () => Bots.current,
-  });
+  // const handlePrintBots = useReactToPrint({
+  //   content: () => Bots.current,
+  // });
 
   const { formatDownloadedData = [], formatFileName = 'Demo', isDetailedExport = false, disablepdf = false, title = 'abc', subtitle = 'abc', placeholder1 = 'Dimention', placeholder2 = 'Dimention2', data = [] } = props;
 
@@ -59,8 +59,9 @@ export default function ChartWrapper(props) {
           <div ref={ref} className=' h-full fullScreen'>
             <div>
               <div className='flex items-center justify-between pb-[16px] lg:pb-[24px] xl:pb-[1.25vw]'>
-                <div className=''>
-                  <div className={`text-[#000000] dark:text-[#FFF] text-[14px] xl:text-[0.94vw] font-semibold  ${props.text}`}>
+                <div className='flex items-center 3xl:gap-[0.417vw] gap-[8px]'>
+                  <div><i className='asetsmng-folder text-[24px] 3xl:text-[1.25vw]'></i></div>
+                  <div className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold  ${props.text}`}>
                     <p>{props.title}</p>
                   </div>
                   <div className={`text-[#6C768B] text-[14px] xl:text-[0.729vw] font-normal  ${props.text}`}><p>{props.subtitle}</p></div>
@@ -129,7 +130,7 @@ export default function ChartWrapper(props) {
                         <div className="card flex">
                           <button onClick={(e) => op.current.toggle(e)}>
                             <div className="cursor-pointer flex items-center leading-none">
-                              <i className='redingtonHR-three-dots-rectangle text-[14px] xl:text-[0.94vw] align-top' title='Click here for multiple option'></i>
+                              <i className='asetsmng-three-dots-circle text-[14px] xl:text-[0.94vw] align-top' title='Click here for multiple option'></i>
                             </div>
                           </button>
                           <OverlayPanel ref={op} className="dropdownList">
@@ -142,18 +143,18 @@ export default function ChartWrapper(props) {
                                 <i className='pi pi-download '></i>
                                 <CSVLink {...csvReport}>Export to CSV</CSVLink>
                               </button>
-                              <div className='flex gap-2 items-center cursor-pointer hover:text-[#4FB155] dark:hover:text-[#4FB155] ease-linear duration-200'>
+                              {/* <div className='flex gap-2 items-center cursor-pointer hover:text-[#4FB155] dark:hover:text-[#4FB155] ease-linear duration-200'>
                                 <i className='pi pi-download '></i>
                                 <ExcelDownloader data={formatDownloadedData} />
-                              </div>
-                              <div className='flex gap-2 items-center cursor-pointer hover:text-[#4FB155] dark:hover:text-[#4FB155] ease-linear duration-200'>
+                              </div> */}
+                              {/* <div className='flex gap-2 items-center cursor-pointer hover:text-[#4FB155] dark:hover:text-[#4FB155] ease-linear duration-200'>
                                 <i className='pi pi-download '></i>
                                 <PdfDownloader
                                   title={formatFileName}
                                   isDetailedExport={isDetailedExport}
                                   data={formatDownloadedData}
                                   id={props.id}
-                                /></div>
+                                /></div> */}
                             </div>
                           </OverlayPanel>
                         </div>
