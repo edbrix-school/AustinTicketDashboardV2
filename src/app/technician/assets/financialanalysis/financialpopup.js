@@ -38,8 +38,8 @@ function Financialpopup({
         axisLabel: {
             interval: 0,
             fontSize: 10,
-            color: '#9CA1AB',
-            fontWeight:400
+            color: '#84878D',
+            fontWeight:600
         },
     },
     grid: grid,
@@ -49,11 +49,13 @@ function Financialpopup({
             show: true,
             lineStyle: {
                 type: 'dashed',
-                color:currentTheme == "dark" ? "#BECDE3": "#BECDE3",
+                color:currentTheme == "dark" ? "#BECDE3": "#E4E7EC",
 
             }
         },
-
+        min: 0,
+        max: 5000,
+        interval: 500,
         name: "Depreciation",
         nameLocation: "center",
         nameGap: xAxisNameGap,
@@ -66,9 +68,9 @@ function Financialpopup({
         },
       
         axisLabel: {
-            color: currentTheme === "dark" ? "#B3B9C6" : "#6C768B",
-            fontSize: 8,
-            fontWeight:400,
+            color: currentTheme === "dark" ? "#B3B9C6" : "#84878D",
+            fontSize: 12,
+            fontWeight:600,
             formatter: '{value}',
         }
     },
