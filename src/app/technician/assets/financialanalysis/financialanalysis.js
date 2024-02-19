@@ -661,7 +661,7 @@ function Finacialanalysis() {
                     <div className="3xl:space-y-[0.417vw] space-y-2">
                         <div className="text-[#20232E] text-xl font-medium leading-7 3xl:leading-[1.458vw] 3xl:text-[1.25vw]">5 Year Trend Analysis</div>
                     </div>
-                    <div className='bg-[#F9F9FC] rounded-[8px] h-[500px] '>
+                    <div className='bg-[#F9F9FC] rounded-[8px] h-[500px] mt-[24px] xl:mt-[1.25vw] '>
                        <Financialpopup
                            legend={{
                             show: true,
