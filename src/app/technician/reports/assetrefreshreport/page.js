@@ -285,8 +285,8 @@ export default function Index() {
                         <div className="flex flex-wrap items-center 3xl:gap-[0.833vw] gap-4">
                             <div className="flex flex-wrap items-center 3xl:gap-[1.25vw] gap-5">
                                 <div>
-                                    <span className="p-input-icon-left custm-tdsearch p-input-icon-right">
-                                        <i className="asetsmng-td-search 3xl:text-[0.833vw] text-xs text-[#84878D] cursor-pointer w-fit" />
+                                    <span className="p-input-icon-left p-input-icon-right">
+                                        <i className="asetsmng-td-search 3xl:text-[0.833vw] text-base text-[#84878D] cursor-pointer w-fit" />
                                         <InputText
                                             value={inputValue}
                                             onChange={handleChange}

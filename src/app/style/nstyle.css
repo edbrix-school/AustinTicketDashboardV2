@@ -53,6 +53,9 @@
 
 /* calendar end */
 
+.custSimplebar .p-overlaypanel-content{
+    padding: 0px;
+}
 
 @media (min-width:1800) {  
 .customCalendar .p-inputtext {
