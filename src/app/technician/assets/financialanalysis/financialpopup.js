@@ -88,14 +88,16 @@ function Financialpopup({
                 label: {
                     show: labelShow,
                     fontSize: 12,
-                    position: 'outside',
+                    position: 'center',
                     formatter: '{c}',
                     textStyle: {
                         color: "#fff",
                         fontSize: 9,
                         fontWeight: 500,
                         backgroundColor: "#1D224E",
-                        padding: [2, 2, 2, 2],
+                        padding: [5, 10, 5, 10],
+                        borderRadius: [8, 8, 8, 8],
+                        // marginTop:"20px",
                     }
                 },
                 areaStyle: {
