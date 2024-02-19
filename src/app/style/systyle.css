@@ -4,7 +4,9 @@
     background-image: url(/assets/images/login-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
+   
 }
 
 .login .custInputBox .p-inputtext {
