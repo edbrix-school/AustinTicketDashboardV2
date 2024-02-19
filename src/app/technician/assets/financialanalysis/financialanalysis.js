@@ -1,15 +1,18 @@
 import React, { useState } from 'react'
 import { InputText } from "primereact/inputtext";
-
+import { Sidebar } from 'primereact/sidebar';
 import Link from 'next/link'
 import { Checkbox } from "primereact/checkbox";
 import { Column } from "primereact/column";
 import { DataTable } from "primereact/datatable";
+import Financialpopup from './financialpopup';
 function Finacialanalysis() {
     const [rowClick, setRowClick] = useState(true);
+    const [visible, setVisible] = useState(false);
     const [selectedProducts, setSelectedProducts] = useState(null);
     const [filters, setFilters] = useState(null);
     const [inputValue, setInputValue] = useState('');
+  
     const products0 = [
         {
           id: "SR - 5318",
@@ -234,6 +237,10 @@ function Finacialanalysis() {
           </>
         );
       };
+      const LineChartData = {
+        labels: ["2020 Q1", "2020 Q2", "2020 Q3", "2020 Q4", "2020 Q1", "2020 Q2", "2020 Q3", "2020 Q4","2020 Q1", "2020 Q2", "2020 Q3", "2020 Q4",],
+        values: ["4650", "4400", "4000", "3510", "2750", "2100","1510","1480","1350","1000","550","350"],
+    };
       const categories = [
         { name: "Option 1", key: "A" },
         { name: "Option 2", key: "M" },
@@ -241,6 +248,16 @@ function Finacialanalysis() {
         { name: "Option 4", key: "R" },
         { name: "Option 5", key: "R" },
       ];
+       const depreciationValue=(rowData)=>{
+        return(
+          <>
+          <div className=''  onClick={() => setVisible(true)}>
+              {rowData.Subject}
+          </div>
+          
+          </>
+        )
+       }
   
       const actionBodyTemplate = (rowData) => {
         return (
@@ -586,7 +603,7 @@ function Finacialanalysis() {
             <Column
               field="Subject"
               header="Depreciation (Current Value)"
-       
+              body={depreciationValue}
             sortable
               style={{ minWidth: "16rem" }}
             ></Column>
@@ -633,7 +650,57 @@ function Finacialanalysis() {
             ></Column>
             </DataTable>
           </div>
+          <Sidebar 
+          // visible={props.visible} 
+          position="right" className="custmSidebar width740 w-[730px]" 
+          // onHide={() => props.onHides(false)}
+          Sidebar visible={visible} onHide={() => setVisible(false)}
+          >
+                {/* Header */}
+                <div className="  rounded-tl-2xl xl:rounded-tl-2xl-[0.833vw] 3xl:p-[1.25vw] p-6 z-10 relative">
+                    <div className="3xl:space-y-[0.417vw] space-y-2">
+                        <div className="text-[#20232E] text-xl font-medium leading-7 3xl:leading-[1.458vw] 3xl:text-[1.25vw]">5 Year Trend Analysis</div>
+                    </div>
+                    <div className='bg-[#F9F9FC] rounded-[8px] h-[500px] '>
+                       <Financialpopup
+                           legend={{
+                            show: true,
+                            bottom: 30,
+                            left: 0,
+                            itemWidth: 9,
+                            itemHeight: 9,
+                            textStyle: {
+                                color: "#FFF",
+                                fontSize: "10px",
+                                fontWeight: 400,
+                            }
+                        }}
+                        labelShow={true}
+                        grid={{
+                            top: "15%",
+                            bottom: "10%",
+                            left: "10%",
+                            right: "05%",
+                        }}
+                        data={LineChartData}
+                        lineType={"line"}
+                        color1={"black"}
+                        fillcolor={["#1D224E"]}
+                        borderColor={"#FFF"}
+                        lineColor={["#1D224E"]}
+                        yAxisNameGap={"33"}
+                        yAxisNamePosition={"middle"}
+                       
+                       />
 
+                    </div>
+                    
+                </div>           
+                {/* Header */} 
+                {/*Map view */}
+                
+                {/*Map view */}
+            </Sidebar>
         </>
     )
 }

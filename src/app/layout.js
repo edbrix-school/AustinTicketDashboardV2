@@ -8,6 +8,7 @@ import "./style/pstyle.css"
 import "./style/sgstyle.css";
 import "./style/ppstyle.css";
 import "./style/nstyle.css";
+import "./style/atstyle.css";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 
