@@ -112,9 +112,10 @@ body {
 .productSearch .p-inputtext { border: 1px solid #E4E7EC; color: #84878D; border-radius: 12px; padding: 20px 28px 20px 62px; width: 100%; min-width: 800px; }
 .productSearch .p-input-icon-left { width: 100%; }
 .productSearch .p-input-icon-left > i { margin: 0; left: 30px; top: 50%; transform: translateY(-50%); }
-.productSearch .p-button { display: block; background: #91A5C3; height: 100%; width: 100%; min-width: 114px; border-radius: 12px; }
+.productSearch .p-button { display: block; background: #91A5C3; height: 100%; width: 100%; min-width: 114px; border-radius: 12px; border-color: #91A5C3; }
 .productSearch .p-button-label { color: white; font-weight: 400; font-size: 20px; }
 .productSearch i.asetsmng-microphone { right: 28px; position: absolute; left: auto !important; }
+.custTavbview.marketAlertTabs .react-tabs__tab-list .react-tabs__tab { border-radius: 8px; padding: 10px 12px; }
 /* V.K style End */
 
 
@@ -130,6 +131,7 @@ body {
     .productSearch .p-button { min-width: 5.938vw; }
     .productSearch .p-button-label { font-size: 1.042vw; }
     .productSearch i.asetsmng-microphone { right: 1.458vw; }
+    .custTavbview.marketAlertTabs .react-tabs__tab-list .react-tabs__tab { border-radius: 0.417vw; padding: 0.521vw 0.625vw; }
     /* V.K style End */
 }
 
