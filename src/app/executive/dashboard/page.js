@@ -4,6 +4,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { InputText } from "primereact/inputtext";
 import FilterComponent from '@/app/components/filtercomponent';
 import ExecutiveLayout from '@/app/components/executivepagelayout/pagelayout';
+import Summary from './summary/summary';
+import Comparision from './comparision/comparision';
+import Drilldown from './drilldown/drilldown';
+import Detailed from './detailed/detailed';
 
 export default function Index() {
     const [pageTitle, setPageTitle] = useState('Summary');
@@ -31,16 +35,16 @@ export default function Index() {
                     <FilterComponent />
                     <div>
                         <TabPanel>
-                            1
+                            <Summary />
                         </TabPanel>
                         <TabPanel>
-                            2
+                            <Comparision />
                         </TabPanel>
                         <TabPanel>
-                            3
+                            <Drilldown />
                         </TabPanel>
                         <TabPanel>
-                            4
+                            <Detailed />
                         </TabPanel>
 
                     </div>

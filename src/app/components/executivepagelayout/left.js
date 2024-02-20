@@ -53,13 +53,13 @@ export default function Left(props) {
               <div data-simplebar>
                 <div className="visible lg:hidden"></div>
                 <ul className="left-menu h-full">
-                  <li className={`${isLinkActive('/technician/dashboard') ? 'active' : ''} ico-dashboard`}>
-                    <Link href='/technician/dashboard'>
+                  <li className={`${isLinkActive('/executive/dashboard') ? 'active' : ''} ico-dashboard`}>
+                    <Link href='/executive/dashboard'>
                       <span>Dashboard</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/technician/assets') ? 'active' : ''} ico-assets`}>
-                    <Link href='/technician/assets'>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-assets`}>
+                    <Link href=''>
                       <span>Assets</span>
                     </Link>
                   </li>
@@ -98,8 +98,8 @@ export default function Left(props) {
                       <span>Settings</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/technician/reports') ? 'active' : ''} ico-reports`}>
-                    <Link href='/technician/reports'>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-reports`}>
+                    <Link href=''>
                       <span>Reports</span>
                     </Link>
                   </li>
