@@ -58,10 +58,10 @@ export default function ChartWrapper(props) {
         {({ ref, onToggle, onExit }) => (
           <div ref={ref} className=' h-full fullScreen'>
             <div>
-              <div className='flex items-center justify-between pb-[16px] lg:pb-[24px] xl:pb-[1.25vw]'>
+              <div className='flex items-center justify-between border-b border-b-[#BECDE3] px-[16px] 3xl:px-[0.833vw] py-[12px] 3xl:py-[0.625vw]'>
                 <div className='flex items-center 3xl:gap-[0.417vw] gap-[8px]'>
                   {/* <div><i className='asetsmng-folder text-[20px] 3xl:text-[1.042vw]'></i></div> */}
-                  <div className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold  ${props.text}`}>
+                  <div className={`text-[#000000] dark:text-[#FFF] text-[16px] 3xl:text-[0.833vw] font-semibold  ${props.text}`}>
                     <p>{props.title}</p>
                   </div>
                  

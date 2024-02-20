@@ -73,6 +73,12 @@
     box-shadow: 0px 4px 6px -1px #0000001A;
 }
 
+/* chart dropdown start */
+.chartdropdown .p-inputtext {
+    padding: 8px 9px;
+}
+/* chart dropdown end */
+
 @media (min-width:1800) {  
 .customCalendar .p-inputtext {
     padding: 0.521vw 0.833vw;
