@@ -6,9 +6,9 @@ export default function Summary() {
 
   const [selectedCluster, setSelectedCluster] = useState(null);
   const cluster = [
-    { name: "RoME 1", code: "NY" },
-    { name: "RoME 2", code: "RM" },
-    { name: "RoME 3", code: "LDN" },
+    { name: "Medium 1", code: "NY" },
+    { name: "Medium 2", code: "RM" },
+    { name: "Medium 3", code: "LDN" },
   ];
 
 
@@ -86,13 +86,13 @@ export default function Summary() {
               data={
                 <div className="w-full xl:h-[19.333vw]">
                   <div className="flex justify-end ">
-                      <div className="chartdropdown">
+                      <div className="chartdropdown mr-[16px] 3xl:mr-[0.833vw]">
                         <Dropdown
                           value={selectedCluster}
                           onChange={(e) => setSelectedCluster(e.value)}
                           options={cluster}
                           optionLabel="name"
-                          placeholder="All"
+                          placeholder="Medium"
                           className="w-full"
                         />
                       </div>

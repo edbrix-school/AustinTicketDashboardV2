@@ -75,7 +75,21 @@
 
 /* chart dropdown start */
 .chartdropdown .p-inputtext {
+    color: #37445E;
+    font-weight: 300;
+    font-size: 11px;
     padding: 8px 9px;
+}
+.chartdropdown .p-dropdown {
+   background: #FFFFFF;
+   border: 1px solid #E5E7EB;
+   border-top: none;
+   border-radius: 0px 0px 8px 8px;
+}
+
+.chartdropdown .p-dropdown .p-dropdown-trigger {
+    width: 2rem;
+    color: #9CA1AB;
 }
 /* chart dropdown end */
 
@@ -83,6 +97,11 @@
 .customCalendar .p-inputtext {
     padding: 0.521vw 0.833vw;
     font-size: 0.729vw;
+}
+
+.chartdropdown .p-inputtext {
+    padding: 0.417vw 0.469vw;
+    font-size: 0.573vw;
 }
 
 .customCalendar .p-button {
