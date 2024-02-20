@@ -17,7 +17,7 @@ export default function MarketAlerts() {
           <div className="flex justify-center productSearch gap-[16px] 3xl:gap-[0.833vw] mt-[15px] lg:mt-[36px] 3xl:mt-[1.875vw] mb-[24px] lg:mb-[48px] 3xl:mb-[2.5vw]">
             <div className="p-input-icon-left">
               <i className="asetsmng-search-big text-[20px] 3xl:text-[1.042vw] text-[#4B586E]" />
-              {/* <i className="asetsmng-microphone text-[20px] 3xl:text-[1.042vw] text-[#4B586E] leading-none" /> */}
+              <i className="asetsmng-microphone text-[20px] 3xl:text-[1.042vw] text-[#4B586E] leading-none" />
               <InputText
                 className="placeholder:text-[#84878D] placeholder:text-[16px] 3xl:placeholder:text-[0.833vw]"
                 placeholder="Search products by name, brand, etc.,"
