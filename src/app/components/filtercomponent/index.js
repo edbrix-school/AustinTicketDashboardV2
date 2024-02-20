@@ -1,12 +1,8 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { useRouter } from 'next/router';
 import { Work_Sans } from "next/font/google";
-import { InputText } from "primereact/inputtext";
 import { Dropdown } from "primereact/dropdown";
-import { Sidebar } from 'primereact/sidebar';
-import { MultiSelect } from 'primereact/multiselect';
 
 const myworksans = Work_Sans({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -15,38 +11,9 @@ const myworksans = Work_Sans({
 });
 
 export default function FilterComponent(props) {  
-  const [value, setValue] = useState('');
-  const [selectedCity, setSelectedCity] = useState(null);
-  const cities = [
-    { name: 'New York', code: 'NY' },
-    { name: 'Rome', code: 'RM' },
-    { name: 'London', code: 'LDN' },
-    { name: 'Istanbul', code: 'IST' },
-    { name: 'Paris', code: 'PRS' }
-  ];
 
-  const [selectedDataSource, setSelectedDataSource] = useState(null);
-  const [selectedGeography, setSelectedGeography] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedType, setSelectedType] = useState(null);
   const [selectedYear, setSelectedYear] = useState(null);
-  const [selectedHalfYear, setSelectedHalfYear] = useState(null);
-  const [selectedQuarter, setSelectedQuarter] = useState(null);
-  const dataSource = [
-    { name: "All",},
-    { name: "Data 1",},
-    { name: "Data 2",},
-  ];
-  const geography = [
-    { name: "All",},
-    { name: "Data 1",},
-    { name: "Data 2",},
-  ];
-  const category = [
-    { name: "All",},
-    { name: "Data 1",},
-    { name: "Data 2",},
-  ];
   const type = [
     { name: "Order",},
     { name: "Data 1",},
@@ -57,19 +24,9 @@ export default function FilterComponent(props) {
     { name: "Data 1",},
     { name: "Data 2",},
   ];
-  const halfYear = [
-    { name: "All",},
-    { name: "Data 1",},
-    { name: "Data 2",},
-  ];
-  const quarter = [
-    { name: "All",},
-    { name: "Data 1",},
-    { name: "Data 2",},
-  ];
-  
+
   return (
-    <div className="xl:sticky xl:top-[3.92vw] z-[4]">
+    <div className="z-[4]">
       <div className="flex gap-4 items-center mt-[16px] xl:mt-[0.833vw] mb-[24px] xl:mb-[1.25vw]">
         <div className="w-full min-h-[65px] xl:min-h-[2.5vw] bg-white flex flex-wrap justify-between rounded-[8px] xl:rounded-[0.417vw] dark:bg-[#191A1E] pl-2 xl:pl-[0.833vw] shadow">
           <div className="flex flex-wrap justify-start items-center gap-1 pt-2 pb-1 xl:py-1">

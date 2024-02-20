@@ -10,6 +10,27 @@ export default function Summary() {
     { name: "Medium 2", code: "RM" },
     { name: "Medium 3", code: "LDN" },
   ];
+  
+  const [selectedTeams, setSelectedTeams] = useState(null);
+  const Teams = [
+    { name: "Team 1", code: "NY" },
+    { name: "Team 2", code: "RM" },
+    { name: "Team 3", code: "LDN" },
+  ];
+
+  const [selectedResolvedRequests, setSelectedResolvedRequests] = useState(null);
+  const ResolvedRequests = [
+    { name: "Within SLA%", code: "NY" },
+    { name: "Within SLA%", code: "RM" },
+    { name: "Within SLA%", code: "LDN" },
+  ];
+
+  const [selectedEmployeePerformance, setSelectedEmployeePerformance] = useState(null);
+  const EmployeePerformance = [
+    { name: "By Tickets Resolved", code: "NY" },
+    { name: "By Tickets Resolved", code: "RM" },
+    { name: "By Tickets Resolved", code: "LDN" },
+  ];
 
 
   const cardData = [
@@ -74,7 +95,7 @@ export default function Summary() {
       </div>
       <div className='mt-[36px] 3xl:mt-[1.875vw]'>
         <div className='grid grid-cols-2 gap-[24px] 3xl:gap-[1.25vw]'>
-          <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl 3xl:rounded-[0.833vw]">
+          <div className="bg-white border border-[#EAEDF3] shadow-card rounded-2xl 3xl:rounded-[0.833vw]">
             <ChartWrapper
               title={"Assigned to Resolved - Top 5 Teams (Resolved %)"}
               ExportIcon={true}
@@ -142,6 +163,104 @@ export default function Summary() {
                     yAxisNamePosition={"middle"}
                   /> */}
 
+                  
+                </div>
+              }
+            />
+
+          </div>
+          {/* col  */}
+          <div className="bg-white border border-[#EAEDF3] shadow-card rounded-2xl 3xl:rounded-[0.833vw]">
+            <ChartWrapper
+              title={"Tickets by Unopened Days"}
+              ExportIcon={true}
+              tabSection={true}
+              infoIcon={true}
+              bulbIcon={true}
+              downloadIcon={true}
+              graphIcon={true}
+              data={
+                <div className="w-full xl:h-[19.333vw]">
+                  <div className="flex justify-end ">
+                      <div className="chartdropdown mr-[16px] 3xl:mr-[0.833vw]">
+                        <Dropdown
+                          value={selectedTeams}
+                          onChange={(e) => setSelectedTeams(e.value)}
+                          options={Teams}
+                          optionLabel="name"
+                          placeholder="Teams 1"
+                          className="w-full"
+                        />
+                      </div>
+                  </div>
+
+               
+                  
+                </div>
+              }
+            />
+
+          </div>
+
+          {/* col  */}
+          <div className="bg-white border border-[#EAEDF3] shadow-card rounded-2xl 3xl:rounded-[0.833vw]">
+            <ChartWrapper
+              title={"Resolved Requests - Monthly Trend"}
+              ExportIcon={true}
+              tabSection={true}
+              infoIcon={true}
+              bulbIcon={true}
+              downloadIcon={true}
+              graphIcon={true}
+              data={
+                <div className="w-full xl:h-[19.333vw]">
+                  <div className="flex justify-end ">
+                      <div className="chartdropdown mr-[16px] 3xl:mr-[0.833vw]">
+                        <Dropdown
+                          value={selectedResolvedRequests}
+                          onChange={(e) => setSelectedResolvedRequests(e.value)}
+                          options={ResolvedRequests}
+                          optionLabel="name"
+                          placeholder="Within SLA%"
+                          className="w-full"
+                        />
+                      </div>
+                  </div>
+
+               
+                  
+                </div>
+              }
+            />
+
+          </div>
+
+          {/* col  */}
+          <div className="bg-white border border-[#EAEDF3] shadow-card rounded-2xl 3xl:rounded-[0.833vw]">
+            <ChartWrapper
+              title={"Employee Performance"}
+              ExportIcon={true}
+              tabSection={true}
+              infoIcon={true}
+              bulbIcon={true}
+              downloadIcon={true}
+              graphIcon={true}
+              data={
+                <div className="w-full xl:h-[19.333vw]">
+                  <div className="flex justify-end ">
+                      <div className="chartdropdown mr-[16px] 3xl:mr-[0.833vw]">
+                        <Dropdown
+                          value={selectedEmployeePerformance}
+                          onChange={(e) => setSelectedEmployeePerformance(e.value)}
+                          options={EmployeePerformance}
+                          optionLabel="name"
+                          placeholder="By Tickets Resolved"
+                          className="w-full"
+                        />
+                      </div>
+                  </div>
+
+               
                   
                 </div>
               }
