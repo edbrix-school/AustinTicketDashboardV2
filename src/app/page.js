@@ -34,7 +34,7 @@ export default function Index() {
 
                   </div>
                   <div className='col-span-12 lg:col-span-10 xl:col-span-1 login'>
-                    <div className="bg-[#fff] 3xl:my-[3.385vw] 3xl:mx-[5.469vw] 3xl:py-[3.125vw] 3xl:px-[6.25vw] lg:my-[65px] lg:mx-[80px] lg:px-[80px] lg:py-[40px] border-2 border-[#A93238] rounded-xl">
+                    <div className="bg-[#fff] 3xl:my-[3.385vw] 3xl:mx-[5.469vw] 3xl:py-[3.125vw] 3xl:px-[6.25vw] lg:my-[65px] lg:mx-[80px] lg:px-[80px] lg:py-[40px] border-2 border-[#A93238] mx-[40px] my-[40px] px-[40px] py-[40px] rounded-xl">
                     
                       <Image className='' height={75} width={250} src={"/assets/images/logo.png"} alt={"logo"}/>
 
