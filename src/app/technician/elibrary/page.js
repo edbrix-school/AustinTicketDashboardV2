@@ -11,8 +11,8 @@ import AdvancedSearchPopup from "@/app/components/popup/advancedsearch";
 import Docspopup from "@/app/components/popup/docspopup";
 import PreviewPopup from "@/app/components/popup/previewpopup";
 const ElibraryPage = () => {
-  const [advancedSearch,setAdvancedSearch] = useState(false);
-  const [previewPopup,setPreviewPopup] =useState(false);
+  const [advancedSearch, setAdvancedSearch] = useState(false);
+  const [previewPopup, setPreviewPopup] = useState(false);
   const [pageName, setPageName] = useState("E-Library");
   const [inputValue, setInputValue] = useState("");
   const handleChange = (event) => {
@@ -53,7 +53,10 @@ const ElibraryPage = () => {
                 <i className="asetsmng-td-search 3xl:text-[0.833vw] text-xs text-[#FFF] cursor-pointer w-fit" />
               </div>
             </div>
-            <div onClick={()=>setAdvancedSearch(true)} className="text-[#4169e1] text-[14px] 3xl:text-[0.729vw] font-medium leading-4">
+            <div
+              onClick={() => setAdvancedSearch(true)}
+              className="text-[#4169e1] text-[14px] 3xl:text-[0.729vw] font-medium leading-4"
+            >
               Advanced Search
             </div>
           </div>
@@ -127,354 +130,489 @@ const ElibraryPage = () => {
         </div>
       </div>
       <div className="grid grid-cols-4 xl:mt-[1.250vw] mt-6 xl:gap-[1.250vw] gap-5">
-        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
-          <ChartWrapper
-            title={"Allison"}
-            ExportIcon={true}
-            data={
-              <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-                <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    File Size : 1.5 GB
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Folders : 3
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Files : 3
-                  </div>
+      <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+          <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
+            <div className="flex justify-between items-center">
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <div className="">
+                  <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
-                <div className="flex justify-between items-center">
-                  <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
-                    Last Updated on: 07/30/2023
-                  </div>
-                  <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
-                    <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
-                    <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
-                      View History
-                    </div>
-                  </div>
-                </div>
-                <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Open Folder</span>
-                    <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
-                  <div onClick={()=>setPreviewPopup(true)} className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
-                    <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
+                <div
+                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                >
+                  Allison
                 </div>
               </div>
-            }
-          />
+              <div>
+                <i
+                  className="asetsmng-three-dots-circle text-[14px] xl:text-[0.94vw] align-top"
+                  title="Click here for multiple option"
+                ></i>
+              </div>
+            </div>
+            <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                File Size : 1.5 GB
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Folders : 3
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Files : 3
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
+                Last Updated on: 07/30/2023
+              </div>
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
+                <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
+                  View History
+                </div>
+              </div>
+            </div>
+            <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
+              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+                <span className="text-[14px] 3xl:text-[0.729vw]">
+                  Open Folder
+                </span>
+                <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+              <div
+                onClick={() => setPreviewPopup(true)}
+                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+              >
+                <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
+                <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
-          <ChartWrapper
-            title={"Baldwin"}
-            ExportIcon={true}
-            data={
-              <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-                <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    File Size : 1.5 GB
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Folders : 3
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Files : 3
-                  </div>
+          <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
+            <div className="flex justify-between items-center">
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <div className="">
+                  <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
-                <div className="flex justify-between items-center">
-                  <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
-                    Last Updated on: 07/30/2023
-                  </div>
-                  <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
-                    <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
-                    <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
-                      View History
-                    </div>
-                  </div>
-                </div>
-                <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Open Folder</span>
-                    <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
-                    <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
+                <div
+                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                >
+                  Allison
                 </div>
               </div>
-            }
-          />
+              <div>
+                <i
+                  className="asetsmng-three-dots-circle text-[14px] xl:text-[0.94vw] align-top"
+                  title="Click here for multiple option"
+                ></i>
+              </div>
+            </div>
+            <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                File Size : 1.5 GB
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Folders : 3
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Files : 3
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
+                Last Updated on: 07/30/2023
+              </div>
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
+                <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
+                  View History
+                </div>
+              </div>
+            </div>
+            <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
+              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+                <span className="text-[14px] 3xl:text-[0.729vw]">
+                  Open Folder
+                </span>
+                <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+              <div
+                onClick={() => setPreviewPopup(true)}
+                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+              >
+                <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
+                <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B] w-full">
-          <ChartWrapper
-            title={"Woodword"}
-            ExportIcon={true}
-            data={
-              <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-                <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    File Size : 1.5 GB
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Folders : 3
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Files : 3
-                  </div>
+        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+          <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
+            <div className="flex justify-between items-center">
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <div className="">
+                  <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
-                <div className="flex justify-between items-center">
-                  <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
-                    Last Updated on: 07/30/2023
-                  </div>
-                  <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
-                    <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
-                    <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
-                      View History
-                    </div>
-                  </div>
-                </div>
-                <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Open Folder</span>
-                    <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
-                    <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
+                <div
+                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                >
+                  Allison
                 </div>
               </div>
-            }
-          />
+              <div>
+                <i
+                  className="asetsmng-three-dots-circle text-[14px] xl:text-[0.94vw] align-top"
+                  title="Click here for multiple option"
+                ></i>
+              </div>
+            </div>
+            <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                File Size : 1.5 GB
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Folders : 3
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Files : 3
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
+                Last Updated on: 07/30/2023
+              </div>
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
+                <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
+                  View History
+                </div>
+              </div>
+            </div>
+            <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
+              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+                <span className="text-[14px] 3xl:text-[0.729vw]">
+                  Open Folder
+                </span>
+                <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+              <div
+                onClick={() => setPreviewPopup(true)}
+                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+              >
+                <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
+                <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B] w-full">
-          <ChartWrapper
-            title={"Arkinson"}
-            ExportIcon={true}
-            data={
-              <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-                <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    File Size : 1.5 GB
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Folders : 3
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Files : 3
-                  </div>
+        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+          <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
+            <div className="flex justify-between items-center">
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <div className="">
+                  <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
-                <div className="flex justify-between items-center">
-                  <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
-                    Last Updated on: 07/30/2023
-                  </div>
-                  <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
-                    <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
-                    <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
-                      View History
-                    </div>
-                  </div>
-                </div>
-                <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Open Folder</span>
-                    <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
-                    <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
+                <div
+                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                >
+                  Allison
                 </div>
               </div>
-            }
-          />
+              <div>
+                <i
+                  className="asetsmng-three-dots-circle text-[14px] xl:text-[0.94vw] align-top"
+                  title="Click here for multiple option"
+                ></i>
+              </div>
+            </div>
+            <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                File Size : 1.5 GB
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Folders : 3
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Files : 3
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
+                Last Updated on: 07/30/2023
+              </div>
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
+                <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
+                  View History
+                </div>
+              </div>
+            </div>
+            <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
+              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+                <span className="text-[14px] 3xl:text-[0.729vw]">
+                  Open Folder
+                </span>
+                <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+              <div
+                onClick={() => setPreviewPopup(true)}
+                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+              >
+                <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
+                <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B] w-full">
-          <ChartWrapper
-            title={"Justin"}
-            ExportIcon={true}
-            data={
-              <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-                <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    File Size : 1.5 GB
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Folders : 3
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Files : 3
-                  </div>
+        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+          <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
+            <div className="flex justify-between items-center">
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <div className="">
+                  <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
-                <div className="flex justify-between items-center">
-                  <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
-                    Last Updated on: 07/30/2023
-                  </div>
-                  <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
-                    <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
-                    <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
-                      View History
-                    </div>
-                  </div>
-                </div>
-                <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Open Folder</span>
-                    <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
-                    <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
+                <div
+                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                >
+                  Allison
                 </div>
               </div>
-            }
-          />
+              <div>
+                <i
+                  className="asetsmng-three-dots-circle text-[14px] xl:text-[0.94vw] align-top"
+                  title="Click here for multiple option"
+                ></i>
+              </div>
+            </div>
+            <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                File Size : 1.5 GB
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Folders : 3
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Files : 3
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
+                Last Updated on: 07/30/2023
+              </div>
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
+                <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
+                  View History
+                </div>
+              </div>
+            </div>
+            <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
+              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+                <span className="text-[14px] 3xl:text-[0.729vw]">
+                  Open Folder
+                </span>
+                <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+              <div
+                onClick={() => setPreviewPopup(true)}
+                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+              >
+                <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
+                <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B] w-full">
-          <ChartWrapper
-            title={"Casa"}
-            ExportIcon={true}
-            data={
-              <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-                <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    File Size : 1.5 GB
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Folders : 3
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Files : 3
-                  </div>
+        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+          <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
+            <div className="flex justify-between items-center">
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <div className="">
+                  <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
-                <div className="flex justify-between items-center">
-                  <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
-                    Last Updated on: 07/30/2023
-                  </div>
-                  <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
-                    <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
-                    <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
-                      View History
-                    </div>
-                  </div>
-                </div>
-                <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Open Folder</span>
-                    <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
-                    <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
+                <div
+                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                >
+                  Allison
                 </div>
               </div>
-            }
-          />
+              <div>
+                <i
+                  className="asetsmng-three-dots-circle text-[14px] xl:text-[0.94vw] align-top"
+                  title="Click here for multiple option"
+                ></i>
+              </div>
+            </div>
+            <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                File Size : 1.5 GB
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Folders : 3
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Files : 3
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
+                Last Updated on: 07/30/2023
+              </div>
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
+                <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
+                  View History
+                </div>
+              </div>
+            </div>
+            <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
+              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+                <span className="text-[14px] 3xl:text-[0.729vw]">
+                  Open Folder
+                </span>
+                <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+              <div
+                onClick={() => setPreviewPopup(true)}
+                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+              >
+                <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
+                <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B] w-full">
-          <ChartWrapper
-            title={"City Lab"}
-            ExportIcon={true}
-            data={
-              <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-                <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    File Size : 1.5 GB
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Folders : 3
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Files : 3
-                  </div>
+        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+          <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
+            <div className="flex justify-between items-center">
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <div className="">
+                  <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
-                <div className="flex justify-between items-center">
-                  <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
-                    Last Updated on: 07/30/2023
-                  </div>
-                  <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
-                    <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
-                    <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
-                      View History
-                    </div>
-                  </div>
-                </div>
-                <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Open Folder</span>
-                    <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
-                    <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
+                <div
+                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                >
+                  Allison
                 </div>
               </div>
-            }
-          />
+              <div>
+                <i
+                  className="asetsmng-three-dots-circle text-[14px] xl:text-[0.94vw] align-top"
+                  title="Click here for multiple option"
+                ></i>
+              </div>
+            </div>
+            <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                File Size : 1.5 GB
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Folders : 3
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Files : 3
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
+                Last Updated on: 07/30/2023
+              </div>
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
+                <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
+                  View History
+                </div>
+              </div>
+            </div>
+            <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
+              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+                <span className="text-[14px] 3xl:text-[0.729vw]">
+                  Open Folder
+                </span>
+                <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+              <div
+                onClick={() => setPreviewPopup(true)}
+                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+              >
+                <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
+                <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B] w-full">
-          <ChartWrapper
-            title={"HEC"}
-            ExportIcon={true}
-            data={
-              <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-                <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    File Size : 1.5 GB
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Folders : 3
-                  </div>
-                  <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                    Files : 3
-                  </div>
+        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+          <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
+            <div className="flex justify-between items-center">
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <div className="">
+                  <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
-                <div className="flex justify-between items-center">
-                  <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
-                    Last Updated on: 07/30/2023
-                  </div>
-                  <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
-                    <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
-                    <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
-                      View History
-                    </div>
-                  </div>
-                </div>
-                <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Open Folder</span>
-                    <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
-                    <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
-                    <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
-                  </div>
+                <div
+                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                >
+                  Allison
                 </div>
               </div>
-            }
-          />
+              <div>
+                <i
+                  className="asetsmng-three-dots-circle text-[14px] xl:text-[0.94vw] align-top"
+                  title="Click here for multiple option"
+                ></i>
+              </div>
+            </div>
+            <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                File Size : 1.5 GB
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Folders : 3
+              </div>
+              <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
+                Files : 3
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="3xl:text-[0.625vw] text-[12px] text-[#84878d]">
+                Last Updated on: 07/30/2023
+              </div>
+              <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
+                <i className="asetsmng-info-i text-[#4c72e3] 3xl:text-[0.469vw] text-[9px]"></i>
+                <div className="text-[#4c72e3] 3xl:text-[0.521vw] text-[10px]">
+                  View History
+                </div>
+              </div>
+            </div>
+            <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
+              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+                <span className="text-[14px] 3xl:text-[0.729vw]">
+                  Open Folder
+                </span>
+                <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+              <div
+                onClick={() => setPreviewPopup(true)}
+                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+              >
+                <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
+                <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <PreviewPopup
-      visible={previewPopup}
-      onHides={()=>setPreviewPopup(true)}
+        visible={previewPopup}
+        onHides={() => setPreviewPopup(true)}
       />
       <AdvancedSearchPopup
-      visible={advancedSearch}
-      onHides={()=>setAdvancedSearch(false)}
+        visible={advancedSearch}
+        onHides={() => setAdvancedSearch(false)}
       />
-     <Docspopup/>
+      <Docspopup />
     </PageLayout>
-   
   );
 };
 
