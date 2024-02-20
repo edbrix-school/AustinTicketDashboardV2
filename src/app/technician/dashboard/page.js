@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { InputText } from "primereact/inputtext";
 import ChartWrapper from "@/app/components/chartwrapper";
 import { Dropdown } from 'primereact/dropdown'
+import LineChartwithShadow from "@/app/components/charts/linechartwithshadow";
 
 export default function Index() {
     const [pageName, setPageName] = useState('Summary');
@@ -13,9 +14,8 @@ export default function Index() {
 
   const [selectedCluster, setSelectedCluster] = useState(null);
   const cluster = [
-    { name: "RoME 1", code: "NY" },
-    { name: "RoME 2", code: "RM" },
-    { name: "RoME 3", code: "LDN" },
+    { name: "With in SLA", code: "NY" },
+    { name: "With Out SLA", code: "RM" },
   ];
   return (
     
@@ -174,7 +174,7 @@ export default function Index() {
                 </div>
             </div>
 
-            <div className="mt-[30px] xl:mt-[36px] lg:mt-[36px] 3xl:mt-[1.875vw]">
+            <div className="mt-[30px] xl:mt-[36px] lg:mt-[36px] 3xl:mt-[1.875vw] mb-[300px]">
             <div className='grid grid-cols-2 gap-[24px] 3xl:gap-[1.25vw]'>
           <div className="bg-white border border-[#E4E7EC] shadow-card rounded-2xl 3xl:rounded-[0.833vw]">
             <ChartWrapper
@@ -186,7 +186,7 @@ export default function Index() {
               downloadIcon={true}
               graphIcon={true}
               data={
-                <div className="w-full xl:h-[19.333vw]">
+                <div className="w-full">
                   <div className="flex justify-end  px-[16px]">
                       <div className="chartdropdown">
                         <Dropdown
@@ -194,55 +194,15 @@ export default function Index() {
                           onChange={(e) => setSelectedCluster(e.value)}
                           options={cluster}
                           optionLabel="name"
-                          placeholder="Within SLA"
+                          placeholder="All"
                           className="w-full"
                         />
                       </div>
                   </div>
-
-                  {/* <DoublebarLinechart
-
-                    data={investigationsData}
-                    barname={["Projected", "Actual", "PAT%"]}
-                    legend={{
-                      left: 0,
-                      bottom: 2,
-                      itemWidth: 10,
-                      itemHeight: 10,
-                      symbolKeepAspect: true,
-                      data: [
-                        { name: 'Projected', },
-                        { name: 'Actual', },
-                        { name: 'PAT%', icon: 'image:///assets/images/profit-3rd-legends.svg' },
-                      ],
-                      textStyle: {
-                        color: currentTheme == "dark" ? "#ffff" : "#344054",
-                      },
-                    }}
-                    grid={{
-                      top: 30,
-                      bottom: 90,
-                      right: 60,
-                      left: 70,
-                    }}
-                    maxBar1={300}
-                    interval1={50}
-                    maxBar2={7}
-                    interval2={1}
-                    axistop={true}
-                    axistoplabel={["4%", "4%", "4%", "4%"]}
-                    color1={"#009CDA"}
-                    color2={"#256D85"}
-                    color3={"#363A44"}
-                    xAxisName={"Quarters"}
-                    xAxisNameGap={"55"}
-                    xAxisNamePosition={"middle"}
-                    yAxisName={"Value ( In US $)"}
-                    yAxisName1={"Value ( In %)"}
-                    yAxisNameGap={50}
-                    yAxisNameGap1={45}
-                    yAxisNamePosition={"middle"}
-                  /> */}
+                <div className=" 3xl:h-[19.531vw] xl:h-[375px] lg:h-[360px]">
+                    <LineChartwithShadow/>
+                </div>
+                 
 
                   
                 </div>
