@@ -9,8 +9,10 @@ import Link from "next/link";
 import ChartWrapper from "@/app/components/chartwrapper";
 import AdvancedSearchPopup from "@/app/components/popup/advancedsearch";
 import Docspopup from "@/app/components/popup/docspopup";
+import PreviewPopup from "@/app/components/popup/previewpopup";
 const ElibraryPage = () => {
   const [advancedSearch,setAdvancedSearch] = useState(false);
+  const [previewPopup,setPreviewPopup] =useState(false);
   const [pageName, setPageName] = useState("E-Library");
   const [inputValue, setInputValue] = useState("");
   const handleChange = (event) => {
@@ -158,7 +160,7 @@ const ElibraryPage = () => {
                     <span className="text-[14px] 3xl:text-[0.729vw]">Open Folder</span>
                     <i className="asetsmng-open-folder text-[14px] 3xl:text-[0.729vw]"></i>
                   </div>
-                  <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+                  <div onClick={()=>setPreviewPopup(true)} className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
                     <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
                     <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
                   </div>
@@ -462,6 +464,10 @@ const ElibraryPage = () => {
           />
         </div>
       </div>
+      <PreviewPopup
+      visible={previewPopup}
+      onHides={()=>setPreviewPopup(true)}
+      />
       <AdvancedSearchPopup
       visible={advancedSearch}
       onHides={()=>setAdvancedSearch(false)}
