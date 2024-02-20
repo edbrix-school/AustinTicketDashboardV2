@@ -52,13 +52,14 @@ export default function Index() {
           <div>
             <TabPanel>
             <div className='grid grid-cols-12 xl:grid-cols-5 gap-[20px] 3xl:gap-[1.042vw] mt-[24px] 3xl:mt-[1.25vw]'>
-                <div className='col-span-12 sm:col-span-6  lg:col-span-4 xl:col-span-1 '>
+            <div className='col-span-12 sm:col-span-6  lg:col-span-4 xl:col-span-1 '>
                 <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC]  bg-[#fff] px-[16px] py-[12px] lg:py-[16px] lg:px-[12px] 3xl:py-[0.833vw] 
                     3xl:px-[0.625vw]'>
                         <div className='text-[#20232E] xl:text-[12px]  3xl:text-[0.866vw] 3xl:mb-[0.729vw] lg:mb-[14px] mb-[14px]'>Total Tickets Assigned</div>
                         <div className='flex justify-between items-center'>
                             <div className=''>
-                                <div className='text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium '>1000</div>
+                                <div className='text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium '>1000 
+                                </div>
                             </div>
                             <div className='3xl:mt-[0.729vw] lg:mt-[14px] mt-[14px]'>
                                 <div className='flex items-center  justify-end gap-2'>
@@ -70,7 +71,7 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                 </div>
+                    </div>
                 </div>
                 {/* 2nd card */}
                 <div className='col-span-12 sm:col-span-6  lg:col-span-4 xl:col-span-1 '>
