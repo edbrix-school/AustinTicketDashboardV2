@@ -173,7 +173,7 @@ const ElibraryPage = () => {
               </div>
             </div>
             <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+              <div className="gap-[8px] cursor-pointer 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
                 <span className="text-[14px] 3xl:text-[0.729vw]">
                   Open Folder
                 </span>
@@ -181,7 +181,7 @@ const ElibraryPage = () => {
               </div>
               <div
                 onClick={() => setPreviewPopup(true)}
-                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+                className="gap-[8px] cursor-pointer 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
               >
                 <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
                 <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
@@ -291,7 +291,7 @@ const ElibraryPage = () => {
               </div>
             </div>
             <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+              <div className="gap-[8px] cursor-pointer 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
                 <span className="text-[14px] 3xl:text-[0.729vw]">
                   Open Folder
                 </span>
@@ -299,7 +299,7 @@ const ElibraryPage = () => {
               </div>
               <div
                 onClick={() => setPreviewPopup(true)}
-                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+                className="gap-[8px] cursor-pointer 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
               >
                 <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
                 <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
@@ -350,7 +350,7 @@ const ElibraryPage = () => {
               </div>
             </div>
             <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+              <div className="gap-[8px] cursor-pointer 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
                 <span className="text-[14px] 3xl:text-[0.729vw]">
                   Open Folder
                 </span>
@@ -358,7 +358,7 @@ const ElibraryPage = () => {
               </div>
               <div
                 onClick={() => setPreviewPopup(true)}
-                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+                className="gap-[8px] cursor-pointer 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
               >
                 <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
                 <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
@@ -409,7 +409,7 @@ const ElibraryPage = () => {
               </div>
             </div>
             <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+              <div className="gap-[8px] cursor-pointer 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
                 <span className="text-[14px] 3xl:text-[0.729vw]">
                   Open Folder
                 </span>
@@ -417,8 +417,8 @@ const ElibraryPage = () => {
               </div>
               <div
                 onClick={() => setPreviewPopup(true)}
-                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
-              >
+                className="gap-[8px] cursor-pointer 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+              > 
                 <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
                 <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
               </div>
@@ -468,7 +468,7 @@ const ElibraryPage = () => {
               </div>
             </div>
             <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+              <div className="gap-[8px] cursor-pointer 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
                 <span className="text-[14px] 3xl:text-[0.729vw]">
                   Open Folder
                 </span>
@@ -476,7 +476,7 @@ const ElibraryPage = () => {
               </div>
               <div
                 onClick={() => setPreviewPopup(true)}
-                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+                className="gap-[8px] cursor-pointer 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
               >
                 <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
                 <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
@@ -527,7 +527,7 @@ const ElibraryPage = () => {
               </div>
             </div>
             <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+              <div className="gap-[8px] cursor-pointer 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
                 <span className="text-[14px] 3xl:text-[0.729vw]">
                   Open Folder
                 </span>
@@ -535,7 +535,7 @@ const ElibraryPage = () => {
               </div>
               <div
                 onClick={() => setPreviewPopup(true)}
-                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+                className="gap-[8px] cursor-pointer 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
               >
                 <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
                 <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
@@ -586,7 +586,7 @@ const ElibraryPage = () => {
               </div>
             </div>
             <div className="gap-[16px] 3xl:gap-[0.833vw] flex items-center justify-center w-full">
-              <div className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
+              <div className="gap-[8px] cursor-pointer 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full">
                 <span className="text-[14px] 3xl:text-[0.729vw]">
                   Open Folder
                 </span>
@@ -594,7 +594,7 @@ const ElibraryPage = () => {
               </div>
               <div
                 onClick={() => setPreviewPopup(true)}
-                className="gap-[8px] 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
+                className="gap-[8px] cursor-pointer 3xl:gap-[0.417vw] flex items-center justify-center border-[#d3d3ce] border rounded-lg px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] w-full"
               >
                 <span className="text-[14px] 3xl:text-[0.729vw]">Preview</span>
                 <i className="asetsmng-eye text-[14px] 3xl:text-[0.729vw]"></i>
