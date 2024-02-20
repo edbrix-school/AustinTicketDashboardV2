@@ -8,7 +8,7 @@ import { Dropdown } from "primereact/dropdown";
 import Link from "next/link";
 import ChartWrapper from "@/app/components/chartwrapper";
 import AdvancedSearchPopup from "@/app/components/popup/advancedsearch";
-
+import Docspopup from "@/app/components/popup/docspopup";
 const ElibraryPage = () => {
   const [advancedSearch,setAdvancedSearch] = useState(false);
   const [pageName, setPageName] = useState("E-Library");
@@ -466,7 +466,9 @@ const ElibraryPage = () => {
       visible={advancedSearch}
       onHides={()=>setAdvancedSearch(false)}
       />
+     <Docspopup/>
     </PageLayout>
+   
   );
 };
 
