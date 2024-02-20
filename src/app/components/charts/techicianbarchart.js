@@ -42,7 +42,7 @@ export default function DoublebarLinechart({ legend, grid, data, xAxisName, xAxi
                 nameGap: xAxisNameGap,
                 nameLocation: xAxisNamePosition,
                 nameTextStyle: {
-                    color: currentTheme == "dark" ? "#ffff" : '#363A44',
+                    color: currentTheme == "dark" ? "#ffff" : '#84878D',
                     fontSize: 12,
                 },
             },
@@ -85,7 +85,7 @@ export default function DoublebarLinechart({ legend, grid, data, xAxisName, xAxi
                 nameLocation: "center",
                 nameGap: yAxisNameGap1,
                 nameTextStyle: {
-                    color: currentTheme == "dark" ? "#ffff" : '#6C768B',
+                    color: currentTheme == "dark" ? "#ffff" : '#84878D',
                     fontSize: 12,
                 },
                 min: minBar2,
