@@ -301,7 +301,7 @@ function Finacialanalysis() {
                                 <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Value</div>
                             </div>
                             <div className='m-[16px] 3xl:m-[0.866vw]'>
-                                <div className='flex items-center '>
+                                <div className='flex items-center justify-end '>
                                     <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
                                     <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
                                 </div>
@@ -326,7 +326,7 @@ function Finacialanalysis() {
                                 <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Expiring</div>
                             </div>
                             <div className='m-[16px] 3xl:m-[0.866vw]'>
-                                <div className='flex items-center '>
+                                <div className='flex items-center justify-end  '>
                                     <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
                                     <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
                                 </div>
@@ -351,7 +351,7 @@ function Finacialanalysis() {
                                 <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Cost</div>
                             </div>
                             <div className='m-[16px] 3xl:m-[0.866vw]'>
-                                <div className='flex items-center '>
+                                <div className='flex items-center justify-end '>
                                     <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
                                     <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
                                 </div>
@@ -376,7 +376,7 @@ function Finacialanalysis() {
                                 <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Expiring</div>
                             </div>
                             <div className='m-[16px] 3xl:m-[0.866vw]'>
-                                <div className='flex items-center '>
+                                <div className='flex items-center justify-end '>
                                     <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
                                     <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
                                 </div>
@@ -401,7 +401,7 @@ function Finacialanalysis() {
                                 <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Cost</div>
                             </div>
                             <div className='m-[16px] 3xl:m-[0.866vw]'>
-                                <div className='flex items-center '>
+                                <div className='flex items-center justify-end '>
                                     <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
                                     <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
                                 </div>
