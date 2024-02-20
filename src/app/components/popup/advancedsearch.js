@@ -6,6 +6,8 @@ import { RadioButton } from "primereact/radiobutton";
 import { Checkbox } from "primereact/checkbox";
 import { Calendar } from "primereact/calendar";
 import { Dropdown } from "primereact/dropdown";
+import { Divider } from "primereact/divider";
+import { Accordion, AccordionTab } from 'primereact/accordion';
 
 export default function AdvancedSearchPopup(props) {
   const [activeTab, setActiveTab] = useState(0);
@@ -18,6 +20,23 @@ export default function AdvancedSearchPopup(props) {
   const [optionalfile, setOptionalFile] = useState(false);
   const [date, setDate] = useState(null);
   const [selectedOwner, setSelectedOwner] = useState("");
+  const [selectName, setSelectName] = useState("");
+  const [nameText,setNameText] = useState("");
+  const [nameTextOne,setNameTextOne] = useState("");
+  const [nameTextTwo,setNameTextTwo] = useState("");
+  const [nameTextThree,setNameTextThree] = useState("");
+  const [nameTextFour,setNameTextFour] = useState("");
+  const [conditionOne,setConditionOne] = useState("");
+  const [conditionTwo,setConditionTwo] = useState("");
+  const [conditionThree,setConditionThree] = useState("");
+  const [conditionFour,setConditionFour] = useState("");
+  const [conditionFive,setConditionFive] = useState("");
+  const [conditionSix,setConditionSix] = useState("");
+  const [conditionSeven,setConditionSeven] = useState("");
+  const [conditionEight,setConditionEight] = useState("");
+  const [conditionNine,setConditionNine] = useState("")
+  const [conditionTen,setConditionTen] = useState("");
+
 
   const handleTabClick = (index) => {
     setActiveTab(index);
@@ -25,6 +44,42 @@ export default function AdvancedSearchPopup(props) {
   const OwnerList = [
     { name: "Adam", code: "NY" },
     { name: "Richard", code: "RM" },
+  ];
+  const ParameterList = [
+    { name: "Student", code: "NY", template: [{name:"sdsdsd"},{name:"sweweewwe"},{name:"okokok"}] },
+    { name: "School", code: "RM" },
+    { name: "District", code: "RM" },
+
+  ];
+//   const optionTemplate = (option) => {
+//     return (
+//         <div>
+//             <Accordion activeIndex={0}>
+//             <AccordionTab header="">
+//                 {
+//                     ParameterList.template?.map((elm,index)=>{
+//                         return (
+//                             <div >
+//                                 {elm.name}
+//                             </div>
+//                         )
+//                     })
+//                 }
+//                 <div></div>
+//                 </AccordionTab>
+//             </Accordion>
+//         </div>
+//     //   <div className="grid">
+//     //     <span>{option.name}</span>
+//     //     <span style={{marginLeft: '5px', fontSize: '0.8rem'}}>{option.template}</span>
+//     //   </div>
+//     );
+//   };
+  const ConditionList = [
+    { name: "Between", code: "vr" },
+    { name: "And", code: "er" },
+    { name: "Or", code: "vr" },
+    { name: "Not", code: "er" },
   ];
   return (
     <div>
@@ -316,37 +371,206 @@ export default function AdvancedSearchPopup(props) {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-[#FFF] p-[12px] 3xl:p-[0.625vw] grid w-full">
+                    <div className="bg-[#FFF] p-[12px] 3xl:p-[0.625vw] grid w-full gap-[8px] 3xl:gap-[0.417vw]">
                       <div className="grid w-full">
                         <div className="flex gap-[8px] 3xl:gap-[0.417vw]">
                           <Dropdown
-                            value={selectedOwner}
-                            onChange={(e) => setSelectedOwner(e.value)}
-                            options={OwnerList}
+                            value={conditionOne}
+                            onChange={(e) => setConditionOne(e.value)}
+                            filter
+                            options={ParameterList}
                             optionLabel="name"
-                            placeholder="Select a Owner"
+                            placeholder="Name"
                             className="w-full md:w-14rem border"
                           />
                           <Dropdown
-                            value={selectedOwner}
-                            onChange={(e) => setSelectedOwner(e.value)}
-                            options={OwnerList}
+                            value={conditionTwo}
+                            onChange={(e) => setConditionTwo(e.value)}
+                            options={ConditionList}
                             optionLabel="name"
-                            placeholder="Select a Owner"
+                            placeholder="And"
+                            className="w-full md:w-14rem border"
+                          />
+                          <InputText
+                            value={nameText}
+                            onChange={(e) => setNameText(e.value)}
+                            optionLabel="name"
+                            placeholder="Alex Smith - SC1001"
+                            className="w-full md:w-14rem border"
+                          />
+                          <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
+                            <div className="bg-[#dfe7fa] rounded-3xl p-[4px] 3xl:p-[0.208vw] flex items-center gap-[4px] 3xl:gap-[0.208vw] px-[8px] 3xl:px-[0.417vw]">
+                              <div>And</div>
+                              <div className="h-[12px] w-[12px] rounded-full border border-[#4169e1] bg-[#4169e1]"></div>
+                            </div>
+                            <div>
+                              <i className="asetsmng-close-circle text-[16px] 3xl:text-[0.833vw]"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="grid w-full">
+                        <div className="flex gap-[8px] 3xl:gap-[0.417vw]">
+                          <Dropdown
+                            value={conditionThree}
+                            onChange={(e) => setConditionThree(e.value)}
+                            options={ParameterList}
+                            optionLabel="name"
+                            placeholder="Parameter"
                             className="w-full md:w-14rem border"
                           />
                           <Dropdown
-                            value={selectedOwner}
-                            onChange={(e) => setSelectedOwner(e.value)}
-                            options={OwnerList}
+                            value={conditionFour}
+                            onChange={(e) => setConditionFour(e.value)}
+                            options={ConditionList}
                             optionLabel="name"
-                            placeholder="Select a Owner"
+                            placeholder="condition"
                             className="w-full md:w-14rem border"
                           />
-                          <div className="flex">
-                            <div className="bg-[#dfe7fa] rounded-lg p-[4px] 3xl:p-[0.208vw] flex items-center gap-[4px] 3xl:gap-[0.208vw]">
-                                <div>And</div>
-                                <div className="h-[10px] w-[10px] rounded-full border border-[#4169e1] bg-[#4169e1]"></div>
+                          <InputText
+                            value={nameTextOne}
+                            onChange={(e) => setNameTextOne(e.value)}
+                            optionLabel="name"
+                            placeholder="Value"
+                            className="w-full md:w-14rem border"
+                          />
+                          <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
+                            <div className="border rounded-3xl p-[4px] 3xl:p-[0.208vw] flex items-center gap-[4px] 3xl:gap-[0.208vw] px-[8px] 3xl:px-[0.417vw]">
+                              <div>
+                                <i className="asetsmng-plus-rounded-box text-[13px] 3xl:text-[0.677vw]"></i>
+                              </div>
+                              <div>And</div>
+                            </div>
+                            <div>
+                              <i className="asetsmng-close-circle text-[16px] 3xl:text-[0.833vw]"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex items-center border-[#e4e7ec] w-full relative">
+                        <div className="bg-[#dfe7fa] rounded-3xl p-[4px] 3xl:p-[0.208vw] flex items-center gap-[4px] 3xl:gap-[0.208vw] z-10 px-[8px] 3xl:px-[0.417vw]">
+                          <div>And</div>
+                          <div className="h-[12px] w-[12px]  rounded-full border border-[#4169e1] bg-[#4169e1]"></div>
+                        </div>
+                        <Divider className="absolute" />
+                      </div>
+                      <div className="grid w-full">
+                        <div className="flex gap-[8px] 3xl:gap-[0.417vw]">
+                          <Dropdown
+                            value={conditionFive}
+                            onChange={(e) => setConditionFive(e.value)}
+                            filter
+                            options={ParameterList}
+                            optionLabel="name"
+                            placeholder="Name"
+                            className="w-full md:w-14rem border"
+                          />
+                          <Dropdown
+                            value={conditionSix}
+                            onChange={(e) => setConditionSix(e.value)}
+                            options={ConditionList}
+                            optionLabel="name"
+                            placeholder="And"
+                            className="w-full md:w-14rem border"
+                          />
+                          <InputText
+                            value={nameTextTwo}
+                            onChange={(e) => setNameTextTwo(e.value)}
+                            optionLabel="name"
+                            placeholder="Alex Smith - SC1001"
+                            className="w-full md:w-14rem border"
+                          />
+                          <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
+                            <div className="bg-[#dfe7fa] rounded-3xl p-[4px] 3xl:p-[0.208vw] flex items-center gap-[4px] 3xl:gap-[0.208vw] px-[8px] 3xl:px-[0.417vw]">
+                              <div>And</div>
+                              <div className="h-[12px] w-[12px] rounded-full border border-[#4169e1] bg-[#4169e1]"></div>
+                            </div>
+                            <div>
+                              <i className="asetsmng-close-circle text-[16px] 3xl:text-[0.833vw]"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="grid w-full">
+                        <div className="flex gap-[8px] 3xl:gap-[0.417vw]">
+                          <Dropdown
+                            value={conditionSeven}
+                            onChange={(e) => setConditionSeven(e.value)}
+                            options={ParameterList}
+                            optionLabel="name"
+                            placeholder="Parameter"
+                            className="w-full md:w-14rem border"
+                          />
+                          <Dropdown
+                            value={conditionEight}
+                            onChange={(e) => setConditionEight(e.value)}
+                            options={ConditionList}
+                            optionLabel="name"
+                            placeholder="condition"
+                            className="w-full md:w-14rem border"
+                          />
+                          <InputText
+                            value={nameTextThree}
+                            onChange={(e) => setNameTextThree(e.value)}
+                            optionLabel="name"
+                            placeholder="Value"
+                            className="w-full md:w-14rem border"
+                          />
+                          <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
+                            <div className="border rounded-3xl p-[4px] 3xl:p-[0.208vw] flex items-center gap-[4px] 3xl:gap-[0.208vw] px-[8px] 3xl:px-[0.417vw]">
+                              <div>
+                                <i className="asetsmng-plus-rounded-box text-[13px] 3xl:text-[0.677vw]"></i>
+                              </div>
+                              <div>And</div>
+                            </div>
+                            <div>
+                              <i className="asetsmng-close-circle text-[16px] 3xl:text-[0.833vw]"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex items-center border-[#e4e7ec] w-full relative">
+                        <div className="bg-[#dfe7fa] rounded-3xl p-[4px] 3xl:p-[0.208vw] flex items-center gap-[4px] 3xl:gap-[0.208vw] z-10 px-[8px] 3xl:px-[0.417vw]">
+                          <div>And</div>
+                          <div className="h-[12px] w-[12px]  rounded-full border border-[#4169e1] bg-[#4169e1]"></div>
+                        </div>
+                        <Divider className="absolute" />
+                      </div>
+                      <div className="grid w-full">
+                        <div className="flex gap-[8px] 3xl:gap-[0.417vw]">
+                          <Dropdown
+                            value={conditionNine}
+                            onChange={(e) => setConditionNine(e.value)}
+                            filter
+                            options={ParameterList}
+                            optionLabel="name"
+                            placeholder="Name"
+                            className="w-full md:w-14rem border"
+                          />
+                          <Dropdown
+                            value={conditionTen}
+                            onChange={(e) => setConditionTen(e.value)}
+                            options={ConditionList}
+                            optionLabel="name"
+                            placeholder="And"
+                            className="w-full md:w-14rem border"
+                          />
+                          <InputText
+                            value={nameTextFour}
+                            onChange={(e) => setNameTextFour(e.value)}
+                            optionLabel="name"
+                            placeholder="Alex Smith - SC1001"
+                            className="w-full md:w-14rem border"
+                          />
+                          <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
+                            <div className="border rounded-3xl p-[4px] 3xl:p-[0.208vw] flex items-center gap-[4px] 3xl:gap-[0.208vw] px-[8px] 3xl:px-[0.417vw]">
+                              <div>
+                                <i className="asetsmng-plus-rounded-box text-[13px] 3xl:text-[0.677vw]"></i>
+                              </div>
+                              <div>And</div>
+                            </div>
+                            <div>
+                              <i className="asetsmng-close-circle text-[16px] 3xl:text-[0.833vw]"></i>
                             </div>
                           </div>
                         </div>
