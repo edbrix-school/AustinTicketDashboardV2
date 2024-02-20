@@ -103,8 +103,8 @@ export default function Left(props) {
                       <span>Reports</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('') ? 'active' : ''} ico-eliabrary`}>
-                    <Link href=''>
+                  <li className={`${isLinkActive('/technician/elibrary') ? 'active' : ''} ico-eliabrary`}>
+                    <Link href='/technician/elibrary'>
                       <span>E- Library</span>
                     </Link>
                   </li>

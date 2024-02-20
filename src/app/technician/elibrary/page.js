@@ -7,8 +7,10 @@ import { InputText } from "primereact/inputtext";
 import { Dropdown } from "primereact/dropdown";
 import Link from "next/link";
 import ChartWrapper from "@/app/components/chartwrapper";
+import AdvancedSearchPopup from "@/app/components/popup/advancedsearch";
 
 const ElibraryPage = () => {
+  const [advancedSearch,setAdvancedSearch] = useState(false);
   const [pageName, setPageName] = useState("E-Library");
   const [inputValue, setInputValue] = useState("");
   const handleChange = (event) => {
@@ -32,7 +34,7 @@ const ElibraryPage = () => {
     <PageLayout topTab={true} pageTitle="E-Library" pageName={pageName}>
       <FilterComponent />
       <div className="grid gap-[12px] 3xl:gap-[0.625vw]">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-start">
           <div className="flex flex-col gap-[8px] 3xl:gap-[0.417vw]">
             <div className="flex gap-[10px] 3xl:gap-[0.521vw]">
               <span className="p-input-icon-left custm-tdsearch p-input-icon-right">
@@ -49,7 +51,7 @@ const ElibraryPage = () => {
                 <i className="asetsmng-td-search 3xl:text-[0.833vw] text-xs text-[#FFF] cursor-pointer w-fit" />
               </div>
             </div>
-            <div className="text-[#4169e1] text-[14px] 3xl:text-[0.729vw] font-medium leading-4">
+            <div onClick={()=>setAdvancedSearch(true)} className="text-[#4169e1] text-[14px] 3xl:text-[0.729vw] font-medium leading-4">
               Advanced Search
             </div>
           </div>
@@ -61,7 +63,7 @@ const ElibraryPage = () => {
                 options={cities}
                 optionLabel="name"
                 placeholder="Order by"
-                className="w-full md:w-14rem border"
+                className="w-full md:w-14rem border 3xl:h-[2.083vw] h-[36px]"
               />
             </div>
 
@@ -72,7 +74,7 @@ const ElibraryPage = () => {
                 options={cities}
                 optionLabel="name"
                 placeholder="Group by School"
-                className="w-full md:w-14rem border"
+                className="w-full md:w-14rem border 3xl:h-[2.083vw] h-[36px]"
               />
             </div>
           </div>
@@ -460,6 +462,10 @@ const ElibraryPage = () => {
           />
         </div>
       </div>
+      <AdvancedSearchPopup
+      visible={advancedSearch}
+      onHides={()=>setAdvancedSearch(false)}
+      />
     </PageLayout>
   );
 };

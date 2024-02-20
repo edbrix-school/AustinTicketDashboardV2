@@ -131,7 +131,7 @@ const page = () => {
                     Key Fields
                   </div>
                   <div className="gap-[16px] 3xl:gap-[0.833vw] grid">
-                    <div className="grid gap-[8px] 3xl:gap-[0.417vw] mt-[30px] 3xl:mt-[1.563vw]">
+                    <div className="grid gap-[8px] 3xl:gap-[0.417vw] mt-[20px] 3xl:mt-[1.042vw]">
                       <span className="text-[14px] 3xl:text-[0.729vw] font-medium leading-5">
                         Document Name
                       </span>
