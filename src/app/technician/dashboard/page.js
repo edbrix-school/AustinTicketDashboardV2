@@ -7,6 +7,7 @@ import { InputText } from "primereact/inputtext";
 import ChartWrapper from "@/app/components/chartwrapper";
 import { Dropdown } from 'primereact/dropdown'
 import LineChartwithShadow from "@/app/components/charts/linechartwithshadow";
+import LineChartwithShadow1 from "@/app/components/charts/linechartwithshadow1";
 
 export default function Index() {
     const [pageName, setPageName] = useState('Summary');
@@ -174,7 +175,7 @@ export default function Index() {
                 </div>
             </div>
 
-            <div className="mt-[30px] xl:mt-[36px] lg:mt-[36px] 3xl:mt-[1.875vw] mb-[300px]">
+            <div className="mt-[30px] xl:mt-[36px] lg:mt-[36px] 3xl:mt-[1.875vw] mb-[300px  ]">
             <div className='grid grid-cols-2 gap-[24px] 3xl:gap-[1.25vw]'>
           <div className="bg-white border border-[#E4E7EC] shadow-card rounded-2xl 3xl:rounded-[0.833vw]">
             <ChartWrapper
@@ -201,6 +202,41 @@ export default function Index() {
                   </div>
                 <div className=" 3xl:h-[19.531vw] xl:h-[375px] lg:h-[360px]">
                     <LineChartwithShadow/>
+                </div>
+                 
+
+                  
+                </div>
+              }
+            />
+
+          </div>
+
+          <div className="bg-white border border-[#E4E7EC] shadow-card rounded-2xl 3xl:rounded-[0.833vw]">
+            <ChartWrapper
+              title={"Tickets Assigned To Resolve"}
+              ExportIcon={true}
+              tabSection={true}
+              infoIcon={true}
+              bulbIcon={true}
+              downloadIcon={true}
+              graphIcon={true}
+              data={
+                <div className="w-full">
+                  <div className="flex justify-end  px-[16px]">
+                      <div className="chartdropdown">
+                        <Dropdown
+                          value={selectedCluster}
+                          onChange={(e) => setSelectedCluster(e.value)}
+                          options={cluster}
+                          optionLabel="name"
+                          placeholder="All"
+                          className="w-full"
+                        />
+                      </div>
+                  </div>
+                <div className=" 3xl:h-[19.531vw] xl:h-[375px] lg:h-[360px]">
+                    <LineChartwithShadow1/>
                 </div>
                  
 
