@@ -1,7 +1,15 @@
+import MetadataPage from "@/app/technician/elibrary/metadata/page";
+import PreviewTable from "@/app/technician/elibrary/previewtable/page";
 import { Sidebar } from "primereact/sidebar";
 import React, { useState } from "react";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 
 export default function PreviewPopup(props) {
+  const [activeTab, setActiveTab] = useState(0);
+
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
   return (
     <div>
       <Sidebar
@@ -15,6 +23,44 @@ export default function PreviewPopup(props) {
           <div className="py-[24px] xl:py-[1.25vw] text-[24px] text-[#20232E]">
             SR - 113
           </div>
+          <Tabs selectedIndex={activeTab} onSelect={handleTabClick}>
+            <div>
+              <TabList>
+                <div className="flex gap-[16px] 3xl:gap-[0.833vw]">
+                  <Tab>
+                    <div
+                      className={`flex items-center font-normal text-[14px] xl:text-[0.729vw] xl:py-[0.521vw] py-[12px] xl:px-[1.042vw] px-[18px] rounded-lg cursor-pointer ${
+                        activeTab === 0
+                          ? "bg-[#4169E1] dark:bg-[#4169E1] text-white active border border-[#4169E1] dark:border-[#4169E1]"
+                          : "bg-[#FFFFFFD9] hover:bg-[#F0E9EA] dark:bg-[#13161B] text-[#424242] dark:text-[#AAAAAA] border border-[#EAE0E] dark:border-[#374151]"
+                      }`}
+                    >
+                      Preview
+                    </div>
+                  </Tab>
+                  <Tab>
+                    <div
+                      className={`flex items-center font-normal text-[14px] xl:text-[0.729vw] xl:py-[0.521vw] py-[12px] xl:px-[1.042vw] px-[18px] rounded-lg cursor-pointer ${
+                        activeTab === 1
+                          ? "bg-[#4169E1] dark:bg-[#4169E1] text-white active border border-[#4169E1] dark:border-[#4169E1]"
+                          : "bg-[#FFFFFFD9] hover:bg-[#F0E9EA] dark:bg-[#13161B] text-[#424242] dark:text-[#AAAAAA] border border-[#EAE0E] dark:border-[#374151]"
+                      }`}
+                    >
+                      Metadata
+                    </div>
+                  </Tab>
+                </div>
+              </TabList>
+            </div>
+            <div>
+            <TabPanel>
+                      <PreviewTable/>
+              </TabPanel>
+              <TabPanel>
+                      <MetadataPage/>
+              </TabPanel>
+            </div>
+          </Tabs>
         </div>
       </Sidebar>
     </div>

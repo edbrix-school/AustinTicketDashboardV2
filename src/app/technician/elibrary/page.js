@@ -199,7 +199,7 @@ const ElibraryPage = () => {
                 <div
                   className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
-                  Allison
+                  Baldwin 
                 </div>
               </div>
               <div>
@@ -258,7 +258,7 @@ const ElibraryPage = () => {
                 <div
                   className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
-                  Allison
+                  Woodword 
                 </div>
               </div>
               <div>
@@ -317,7 +317,7 @@ const ElibraryPage = () => {
                 <div
                   className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
-                  Allison
+                  Arkinson 
                 </div>
               </div>
               <div>
@@ -376,7 +376,7 @@ const ElibraryPage = () => {
                 <div
                   className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
-                  Allison
+                  Justin 
                 </div>
               </div>
               <div>
@@ -435,7 +435,7 @@ const ElibraryPage = () => {
                 <div
                   className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
-                  Allison
+                 Casa 
                 </div>
               </div>
               <div>
@@ -494,7 +494,7 @@ const ElibraryPage = () => {
                 <div
                   className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
-                  Allison
+                 City Lab
                 </div>
               </div>
               <div>
@@ -553,7 +553,7 @@ const ElibraryPage = () => {
                 <div
                   className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
-                  Allison
+                  HEC
                 </div>
               </div>
               <div>
@@ -605,7 +605,7 @@ const ElibraryPage = () => {
       </div>
       <PreviewPopup
         visible={previewPopup}
-        onHides={() => setPreviewPopup(true)}
+        onHides={() => setPreviewPopup(false)}
       />
       <AdvancedSearchPopup
         visible={advancedSearch}
