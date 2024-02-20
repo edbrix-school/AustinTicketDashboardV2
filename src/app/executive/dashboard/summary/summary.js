@@ -3,8 +3,10 @@ import ChartWrapper from '@/app/components/chartwrapper'
 import Image from 'next/image';
 import { Dropdown } from 'primereact/dropdown'
 import { ProgressBar } from 'primereact/progressbar';
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import ReactEcharts from 'echarts-for-react';
+import StackBarwithLine from '@/app/components/charts/stackbarwithline';
+import { ScrollPanel } from 'primereact/scrollpanel';
 
 export default function Summary() {
 
@@ -146,7 +148,7 @@ export default function Summary() {
       left: 30,
       right: 20,
       bottom: 75,
-      top: "3%",
+      top: 20,
       containLabel: true,
     },
     xAxis: [
@@ -259,9 +261,60 @@ export default function Summary() {
     ],
   };
 
+    /* Popup scroll height start */
+    const popupPaddingTopRef = useRef(null);
+    const popupTitleRef = useRef(null);
+    const [elementHeight, setElementHeight] = useState(0);
+    useEffect(() => {
+      const updateTapScrollHeight = () => {
+        let timeoutId = setTimeout(() => {
+          const popupPaddingTop = popupPaddingTopRef.current;
+          let computedStyles, paddingTopValue, numericValue;
+          if (popupPaddingTop) {
+            computedStyles = window.getComputedStyle(popupPaddingTop);
+            paddingTopValue = computedStyles.getPropertyValue("padding-top");
+            numericValue = parseFloat(paddingTopValue);
+            console.log("Padding-top value:", numericValue);
+          }
+  
+          const popupTitle = popupTitleRef.current;
+          let height;
+          if (popupTitle) {
+            height = popupTitle.offsetHeight;
+            console.log(height + " height of ref");
+            setElementHeight(height + numericValue);
+          }
+        }, 200);
+  
+        return () => {
+          clearTimeout(timeoutId);
+        };
+      };
+  
+      // Initial update
+      updateTapScrollHeight();
+  
+      // Update elementHeight on window resize
+      const handleResize = () => {
+        updateTapScrollHeight();
+      };
+  
+      window.addEventListener("resize", handleResize);
+  
+      // Cleanup: remove the event listener on component unmount
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
+  
+    const elementStyle = {
+      height: `calc(100vh - ${elementHeight}px)`,
+    };
+    /* Popup scroll height end */
 
   return (
     <>
+     <ScrollPanel className="popupTabs" style={elementStyle}>
       <div className='mt-[16px] 3xl:mt-[0.833vw]'>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-[20px] 3xl:gap-[1.042vw]'>
           {cardData.map((elm) => {
@@ -287,7 +340,7 @@ export default function Summary() {
 
         </div>
       </div>
-      <div className='mt-[36px] 3xl:mt-[1.875vw]'>
+      <div className='mt-[36px] 3xl:mt-[1.875vw] mb-2'>
         <div className='grid grid-cols-1 xl:grid-cols-2 3xl:grid-cols-2 gap-[24px] 3xl:gap-[1.25vw]'>
           <div className="bg-white border border-[#EAEDF3] shadow-card rounded-2xl 3xl:rounded-[0.833vw]">
             <ChartWrapper
@@ -410,7 +463,7 @@ export default function Summary() {
               downloadIcon={true}
               graphIcon={true}
               data={
-                <div className="w-full xl:h-[19.333vw]">
+                <div>
                   <div className="flex justify-end ">
                     <div className="chartdropdown mr-[16px] 3xl:mr-[0.833vw]">
                       <Dropdown
@@ -423,9 +476,9 @@ export default function Summary() {
                       />
                     </div>
                   </div>
-
-
-
+                  <div className="w-full h-[421px] 3xl:h-[21.927vw]">
+                  <StackBarwithLine />
+                  </div>
                 </div>
               }
             />
@@ -503,6 +556,7 @@ export default function Summary() {
           </div>
         </div>
       </div>
+      </ScrollPanel>
     </>
   )
 }
