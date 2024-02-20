@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 
 export default function Summary() {
 
+  const [top, setTop] = useState(true)
+
   const [selectedCluster, setSelectedCluster] = useState(null);
   const cluster = [
     { name: "Medium 1", code: "NY" },
@@ -247,8 +249,13 @@ export default function Summary() {
               graphIcon={true}
               data={
                 <div className="w-full xl:h-[19.333vw]">
-                  <div className="flex justify-end ">
-                      <div className="chartdropdown mr-[16px] 3xl:mr-[0.833vw]">
+
+                  <div className="flex justify-between px-[16px] 3xl:px-[0.833vw]">
+                      <div className='flex items-center'>
+                        <button onClick={() => setTop(true)} className={`${top === true ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-bl-md`}>Top 5</button>
+                        <button onClick={() => setTop(false)} className={`${top === false ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-br-md`}>Bottom 5</button>
+                      </div>
+                      <div className="chartdropdown ">
                         <Dropdown
                           value={selectedEmployeePerformance}
                           onChange={(e) => setSelectedEmployeePerformance(e.value)}
