@@ -93,6 +93,13 @@
 }
 /* chart dropdown end */
 
+.custProgress .p-progressbar-label{
+    display: none;
+}
+.custProgress.p-progressbar-determinate .p-progressbar-value{
+    border-radius: 8px;
+}
+
 @media (min-width:1800) {  
 .customCalendar .p-inputtext {
     padding: 0.521vw 0.833vw;

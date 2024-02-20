@@ -1,5 +1,7 @@
 import ChartWrapper from '@/app/components/chartwrapper'
+import Image from 'next/image';
 import { Dropdown } from 'primereact/dropdown'
+import { ProgressBar } from 'primereact/progressbar';
 import React, { useState } from 'react'
 
 export default function Summary() {
@@ -12,7 +14,7 @@ export default function Summary() {
     { name: "Medium 2", code: "RM" },
     { name: "Medium 3", code: "LDN" },
   ];
-  
+
   const [selectedTeams, setSelectedTeams] = useState(null);
   const Teams = [
     { name: "Team 1", code: "NY" },
@@ -68,6 +70,49 @@ export default function Summary() {
     },
   ]
 
+  const employeeData = [
+    {
+      id: 1,
+      name:'Angel',
+      image:'employee1',
+      team: 'Designantion',
+      ticketsResolved: '450',
+      rating: '4.5'
+    },
+    {
+      id: 2,
+      name:'Shawn',
+      image:'employee2',
+      team: 'Designantion',
+      ticketsResolved: '450',
+      rating: '4.5'
+    },
+    {
+      id: 3,
+      name:'Mitchell',
+      image:'employee3',
+      team: 'Designantion',
+      ticketsResolved: '450',
+      rating: '4.5'
+    },
+    {
+      id: 4,
+      name:'Kyle',
+      image:'employee4',
+      team: 'Designantion',
+      ticketsResolved: '450',
+      rating: '4.5'
+    },
+    {
+      id: 5,
+      name:'Victoria',
+      image:'employee5',
+      team: 'Designantion',
+      ticketsResolved: '450',
+      rating: '4.5'
+    },
+  ]
+
   return (
     <>
       <div className='mt-[16px] 3xl:mt-[0.833vw]'>
@@ -96,7 +141,7 @@ export default function Summary() {
         </div>
       </div>
       <div className='mt-[36px] 3xl:mt-[1.875vw]'>
-        <div className='grid grid-cols-2 gap-[24px] 3xl:gap-[1.25vw]'>
+        <div className='grid grid-cols-1 xl:grid-cols-2 3xl:grid-cols-2 gap-[24px] 3xl:gap-[1.25vw]'>
           <div className="bg-white border border-[#EAEDF3] shadow-card rounded-2xl 3xl:rounded-[0.833vw]">
             <ChartWrapper
               title={"Assigned to Resolved - Top 5 Teams (Resolved %)"}
@@ -109,16 +154,16 @@ export default function Summary() {
               data={
                 <div className="w-full xl:h-[19.333vw]">
                   <div className="flex justify-end ">
-                      <div className="chartdropdown mr-[16px] 3xl:mr-[0.833vw]">
-                        <Dropdown
-                          value={selectedCluster}
-                          onChange={(e) => setSelectedCluster(e.value)}
-                          options={cluster}
-                          optionLabel="name"
-                          placeholder="Medium"
-                          className="w-full"
-                        />
-                      </div>
+                    <div className="chartdropdown mr-[16px] 3xl:mr-[0.833vw]">
+                      <Dropdown
+                        value={selectedCluster}
+                        onChange={(e) => setSelectedCluster(e.value)}
+                        options={cluster}
+                        optionLabel="name"
+                        placeholder="Medium"
+                        className="w-full"
+                      />
+                    </div>
                   </div>
 
                   {/* <DoublebarLinechart
@@ -165,7 +210,7 @@ export default function Summary() {
                     yAxisNamePosition={"middle"}
                   /> */}
 
-                  
+
                 </div>
               }
             />
@@ -184,20 +229,20 @@ export default function Summary() {
               data={
                 <div className="w-full xl:h-[19.333vw]">
                   <div className="flex justify-end ">
-                      <div className="chartdropdown mr-[16px] 3xl:mr-[0.833vw]">
-                        <Dropdown
-                          value={selectedTeams}
-                          onChange={(e) => setSelectedTeams(e.value)}
-                          options={Teams}
-                          optionLabel="name"
-                          placeholder="Teams 1"
-                          className="w-full"
-                        />
-                      </div>
+                    <div className="chartdropdown mr-[16px] 3xl:mr-[0.833vw]">
+                      <Dropdown
+                        value={selectedTeams}
+                        onChange={(e) => setSelectedTeams(e.value)}
+                        options={Teams}
+                        optionLabel="name"
+                        placeholder="Teams 1"
+                        className="w-full"
+                      />
+                    </div>
                   </div>
 
-               
-                  
+
+
                 </div>
               }
             />
@@ -217,20 +262,20 @@ export default function Summary() {
               data={
                 <div className="w-full xl:h-[19.333vw]">
                   <div className="flex justify-end ">
-                      <div className="chartdropdown mr-[16px] 3xl:mr-[0.833vw]">
-                        <Dropdown
-                          value={selectedResolvedRequests}
-                          onChange={(e) => setSelectedResolvedRequests(e.value)}
-                          options={ResolvedRequests}
-                          optionLabel="name"
-                          placeholder="Within SLA%"
-                          className="w-full"
-                        />
-                      </div>
+                    <div className="chartdropdown mr-[16px] 3xl:mr-[0.833vw]">
+                      <Dropdown
+                        value={selectedResolvedRequests}
+                        onChange={(e) => setSelectedResolvedRequests(e.value)}
+                        options={ResolvedRequests}
+                        optionLabel="name"
+                        placeholder="Within SLA%"
+                        className="w-full"
+                      />
+                    </div>
                   </div>
 
-               
-                  
+
+
                 </div>
               }
             />
@@ -248,27 +293,59 @@ export default function Summary() {
               downloadIcon={true}
               graphIcon={true}
               data={
-                <div className="w-full xl:h-[19.333vw]">
+                <div className="w-full min-h-[421px] 3xl:min-h-[21.927vw]">
 
                   <div className="flex justify-between px-[16px] 3xl:px-[0.833vw]">
-                      <div className='flex items-center'>
-                        <button onClick={() => setTop(true)} className={`${top === true ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-bl-md`}>Top 5</button>
-                        <button onClick={() => setTop(false)} className={`${top === false ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-br-md`}>Bottom 5</button>
+                    <div className='flex items-center'>
+                      <button onClick={() => setTop(true)} className={`${top === true ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-bl-md`}>Top 5</button>
+                      <button onClick={() => setTop(false)} className={`${top === false ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-br-md`}>Bottom 5</button>
+                    </div>
+                    <div className="chartdropdown ">
+                      <Dropdown
+                        value={selectedEmployeePerformance}
+                        onChange={(e) => setSelectedEmployeePerformance(e.value)}
+                        options={EmployeePerformance}
+                        optionLabel="name"
+                        placeholder="By Tickets Resolved"
+                        className="w-full"
+                      />
+                    </div>
+                  </div>
+                  <div className='px-[16px] 3xl:px-[0.833vw] py-[38px] 3xl:py-[1.979vw]'>
+                    <div className='grid grid-cols-3 gap-[24px] 3xl:gap-[1.25vw]'>
+                    {employeeData.map((elm)=>{
+                      return (
+                      <div key={elm.id} className='border border-[#E4E7EC] bg-[#F9F9FC] rounded-lg p-[16px] lg:p-[12px] 3xl:p-[0.833vw]'>
+                        <div className='flex items-center gap-[16px] 3xl:gap-[0.833vw]'>
+                          <div>
+                            <Image src={`/assets/images/${elm.image}.svg`} alt="notification" width={38} height={38} className="3xl:w-[1.979vw] w-[38px] h-auto" />
+                          </div>
+                          <div>
+                            <div className='text-[#20232E] text-[14px] 3xl:text-[0.729vw] font-semibold '>{elm.name}</div>
+                            <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] font-normal '>Team : {elm.team}</div>
+                          </div>
+                        </div>
+                        <div className='space-y-[14px] 3xl:space-y-[0.833vw] mt-[24px] 3xl:mt-[1.25vw]'>
+                          <div className='flex items-center justify-between '>
+                            <div className='text-[#20232E] text-[12px] 3xl:text-[0.625vw] font-medium '>Tickets Resolved</div>
+                            <div className='text-[#20232E] text-[12px] 3xl:text-[0.625vw] font-semibold '>{elm.ticketsResolved}</div>
+                          </div>
+                          <div className='flex items-center justify-between '>
+                            <div className='text-[#20232E] text-[12px] 3xl:text-[0.625vw] font-medium '>Average Rating</div>
+                            <div className='text-[#20232E] text-[12px] 3xl:text-[0.625vw] font-semibold '>{elm.rating}</div>
+                          </div>
+                        </div>
+                        <div className='mt-2'>
+                          <ProgressBar className='custProgress' color='#4169E1' value={60}  style={{ height: '10px' }}></ProgressBar>
+                          </div>
                       </div>
-                      <div className="chartdropdown ">
-                        <Dropdown
-                          value={selectedEmployeePerformance}
-                          onChange={(e) => setSelectedEmployeePerformance(e.value)}
-                          options={EmployeePerformance}
-                          optionLabel="name"
-                          placeholder="By Tickets Resolved"
-                          className="w-full"
-                        />
-                      </div>
+                      )
+                    })}
+
+                    </div>
                   </div>
 
-               
-                  
+
                 </div>
               }
             />
