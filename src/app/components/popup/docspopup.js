@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState,useRef  } from "react";
 import { Button } from "primereact/button";
 import { Sidebar } from 'primereact/sidebar';
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
+
+import { OverlayPanel } from 'primereact/overlaypanel';
+        
 function Docspopup() {
+    const op = useRef(null);
     const [visible, setVisible] = useState(false);
     const [value, setValue] = useState('');
     return (
@@ -50,9 +54,12 @@ function Docspopup() {
                                             </div>
                                             <div>
 
-                                                <i className="asetsmng-plus text-[16px] xl:text-[0.866vw] text-white bg-[#4169E1] p-[0.729vw] rounded-full border-[3px] border-[#9EBBF2]"></i>
+                                                <i onClick={(e) => op.current.toggle(e)} className="asetsmng-plus text-[16px] xl:text-[0.866vw] text-white bg-[#4169E1] p-[0.729vw] rounded-full border-[3px] border-[#9EBBF2]"></i>
 
-
+                                                <OverlayPanel ref={op} >
+                                                 <div><i className="asetsmng-share"></i></div>
+                                                 <div><i className="asetsmng-printer"></i></div>
+            </OverlayPanel>
                                             </div>
                                         </div>
 
@@ -90,7 +97,6 @@ function Docspopup() {
                                     <div>
 
                                         <div className="text-[#3A3E49] text-[14px] xl:text-[0.729vw] mt-[24px] xl:mt-[1.25vw] pl-[40px] xl:pl-[1.083vw] ">Notes</div>
-                                        {/* <InputText placeholder="Asset Lost" value={value} onChange={(e) => setValue(e.target.value)} className="w-full  ml-[40px] xl:ml-[1.083vw] mt-[8px] text-[14px] xl:text-[0.729vw] docinputbox placeholder:text-[14px] xl:placeholder:text-[0.729vw]" /> */}
                                         <InputTextarea autoResize value={value} onChange={(e) => setValue(e.target.value)} rows={5} cols={15} placeholder="Notes on letter of recommendation for Alex Smith" className="w-full docinputbox  mx-[14px] xl:mx-[0.729vw] mt-[8px] text-[14px] xl:text-[0.729vw] placeholder:text-[14px] xl:placeholder:text-[0.729vw]" />
                                     </div>
 
