@@ -61,8 +61,8 @@ export default function Index() {
                                 <div className='text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium '>1000</div>
                             </div>
                             <div className='3xl:mt-[0.729vw] lg:mt-[14px] mt-[14px]'>
-                                <div className='flex items-center  justify-end'>
-                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
+                                <div className='flex items-center  justify-end gap-2'>
+                                    <div className='text-[#20232E] text-[16px] font-medium'>2%</div>
                                    <div><i className='asetsmng-arrow-up-circle-fill text-[20px]  text-[#057A55]'></i></div>
                                </div>
                                 <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light'>by last period</div>
@@ -83,8 +83,8 @@ export default function Index() {
                                 <span className="font-normal text-[16px] 3xl:text-[0.933vw] ml-2">(8%)</span></div>
                             </div>
                             <div className='3xl:mt-[0.729vw] lg:mt-[14px] mt-[14px]'>
-                                <div className='flex items-center  justify-end'>
-                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
+                                <div className='flex items-center  justify-end gap-2'>
+                                    <div className='text-[#20232E] text-[16px] font-medium'>2%</div>
                                    <div><i className='asetsmng-arrow-up-circle-fill text-[20px]  text-[#057A55]'></i></div>
                                </div>
                                 <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light'>by last period</div>
@@ -105,8 +105,8 @@ export default function Index() {
                                 <span className="font-normal text-[16px] 3xl:text-[0.933vw] ml-2">(56%)</span></div>
                             </div>
                             <div className='3xl:mt-[0.729vw] lg:mt-[14px] mt-[14px]'>
-                                <div className='flex items-center  justify-end'>
-                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
+                                <div className='flex items-center  justify-end gap-2'>
+                                    <div className='text-[#20232E] text-[16px] font-medium '>2%</div>
                                    <div><i className='asetsmng-arrow-up-circle-fill text-[20px]  text-[#057A55]'></i></div>
                                </div>
                                 <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light'>by last period</div>
@@ -127,8 +127,8 @@ export default function Index() {
                                 <span className="font-normal text-[16px] 3xl:text-[0.933vw] ml-2">(12%)</span></div>
                             </div>
                             <div className='3xl:mt-[0.729vw] lg:mt-[14px] mt-[14px]'>
-                                <div className='flex items-center  justify-end'>
-                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
+                                <div className='flex items-center  justify-end gap-2'>
+                                    <div className='text-[#20232E] text-[16px] font-medium '>2%</div>
                                    <div><i className='asetsmng-arrow-up-circle-fill text-[20px]  text-[#057A55]'></i></div>
                                </div>
                                 <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light'>by last period</div>
@@ -151,8 +151,8 @@ export default function Index() {
                                 </div>
                             </div>
                             <div className='3xl:mt-[0.729vw] lg:mt-[14px] mt-[14px]'>
-                                <div className='flex items-center  justify-end'>
-                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
+                                <div className='flex items-center  justify-end gap-2'>
+                                    <div className='text-[#20232E] text-[16px] font-medium '>2%</div>
                                    <div><i className='asetsmng-arrow-up-circle-fill text-[20px]  text-[#057A55]'></i></div>
                                </div>
                                 <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light'>by last period</div>
