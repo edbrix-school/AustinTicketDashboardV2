@@ -100,6 +100,71 @@
     border-radius: 8px;
 }
 
+
+/* custom search start */
+.comparisionSearch .p-inputtext {
+    padding: 12px 16px;
+    font-size: 14px;
+    background: #FAFAFA;
+    border: 1px solid #D3D3CE;
+    border-radius: 8px;
+}
+
+.comparisionSearch .p-inputtext:enabled:hover {
+    border-color: #D3D3CE;
+}
+
+.comparisionSearch .p-inputtext:enabled:focus {
+    box-shadow: none;
+    border-color: #D3D3CE;
+}
+
+.comparisionSearch .p-input-icon-left>.p-inputtext {
+    padding-left: 2.5rem;
+}
+
+/* custom search end */
+
+
+/* check box custom start */
+.custumCheckbox.p-checkbox .p-checkbox-box.p-highlight {
+    border-color: #4169E1;
+    background: #4169E1;
+}
+
+.custumCheckbox.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover {
+    border-color: #4169E1;
+    background: #4169E1;
+}
+
+.custumCheckbox.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus {
+    border-color: #4169E1;
+    box-shadow: none;
+}
+
+.custumCheckbox.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box:hover {
+    border-color: #4169E1;
+}
+
+.custumCheckbox.p-checkbox .p-checkbox-box {
+    width: 16px;
+    height: 16px;
+    color: #4169E1;
+    border-radius: 4px;
+}
+
+.custumCheckbox.p-checkbox {
+    width: 16px;
+    height: 16px;
+}
+
+.custumCheckbox.p-checkbox .p-checkbox-box .p-checkbox-icon {
+    font-size: 9px;
+}
+
+/* check box custom end */
+
+
 @media (min-width:1800) {  
 .customCalendar .p-inputtext {
     padding: 0.521vw 0.833vw;
@@ -119,4 +184,20 @@
 .customCalendar .p-datepicker-trigger:before {
     font-size: 0.729vw;
 }
+
+.comparisionSearch .p-inputtext {
+    padding: 0.625vw 0.833vw;
+    font-size: 0.729vw;
+}
+
+.custumCheckbox.p-checkbox .p-checkbox-box {
+    width: 0.833vw;
+    height: 0.833vw;
+}
+
+.custumCheckbox.p-checkbox {
+    width: 0.833vw;
+    height: 0.833vw;
+}
+
 }
