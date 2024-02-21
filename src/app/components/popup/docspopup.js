@@ -62,9 +62,9 @@ function Docspopup() {
 
                                               {
                                                 isClicked ?
-                                                <i onClick={(e) => {op.current.toggle(e), setIsClicked(false);}} className=" asetsmng-cross text-[16px] xl:text-[0.866vw] text-white bg-[#4169E1] p-[0.729vw] rounded-full border-[3px] border-[#9EBBF2]"></i>
+                                                <i onClick={(e) => {op.current.toggle(e), setIsClicked(false);}} className=" asetsmng-cross cursor-pointer text-[16px] xl:text-[0.866vw] text-white bg-[#4169E1] p-[0.729vw] rounded-full border-[3px] border-[#9EBBF2]"></i>
                                                :
-                                               <i onClick={(e) => {op.current.toggle(e), setIsClicked(true);}} className=" asetsmng-plus text-[16px] xl:text-[0.866vw] text-white bg-[#4169E1] p-[0.729vw] rounded-full border-[3px] border-[#9EBBF2]"></i>
+                                               <i onClick={(e) => {op.current.toggle(e), setIsClicked(true);}} className=" asetsmng-plus cursor-pointer text-[16px] xl:text-[0.866vw] text-white bg-[#4169E1] p-[0.729vw] rounded-full border-[3px] border-[#9EBBF2]"></i>
 
                                               }
                                               
