@@ -26,7 +26,7 @@ export default function LineChartwithShadow1({ }) {
         left:'5%',
         right:'8%',
         top:'10%',
-        bottom:'15%',
+        bottom:'18%',
         containLabel: true,
       },
       xAxis: [
