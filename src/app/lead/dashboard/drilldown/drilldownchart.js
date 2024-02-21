@@ -44,7 +44,7 @@ export const DrillDownChart = () => {
               borderRadius: 3,
             },
             children: [
-                {
+              {
                 name: (() => {
                   return "Team 1 \n 100";
                 })(),
@@ -133,7 +133,7 @@ export const DrillDownChart = () => {
                 children: [
                   {
                     name: (() => {
-                      return "Team 5 \n 80";
+                      return "Team 1 \n 80";
                     })(),
                     lineStyle: {
                       width: 20,
@@ -162,7 +162,7 @@ export const DrillDownChart = () => {
                   },
                   {
                     name: (() => {
-                      return "Team 7 \n 20";
+                      return "Team 2 \n 20";
                     })(),
                     lineStyle: {
                       width: 20,
@@ -174,13 +174,13 @@ export const DrillDownChart = () => {
                         fontSize: "14",
                         fontWeight: "500",
                         lineHeight: 20,
-                        color: currentTheme == "dark" ? "#fff" : "#262626",
+                        color: currentTheme == "dark" ? "#fff" : "#FFF",
                         width: 80,
                           height: 40,
-                          backgroundColor: "#E8E8E5",
+                          backgroundColor: "#309DC1",
                           borderRadius: 8,
                           shadowBlur: 0,
-                          shadowColor: "#B3B1AD",
+                          shadowColor: "#256D85",
                           shadowOffsetX: -6.5,                    
                           padding: [8, 4, 8, 4],
                     },
@@ -188,6 +188,95 @@ export const DrillDownChart = () => {
                       color: currentTheme == "dark" ? "#312C49" : "#F7F7FB",
                       borderColor: currentTheme == "dark" ? "#312C49" : "#E0E0EF",
                     },
+                    children: [
+                      {
+                        name: (() => {
+                          return "Technician 1 \n 5";
+                        })(),
+                        lineStyle: {
+                          width: 20,
+                          color: currentTheme == "dark" ? "#413b35" : "#cbc3ba",
+                        },
+                        label: {
+                            show: true,
+                            position: [-10, -25],
+                            fontSize: "14",
+                            fontWeight: "500",
+                            lineHeight: 20,
+                            color: currentTheme == "dark" ? "#fff" : "#262626",
+                            width: 80,
+                              height: 40,
+                              backgroundColor: "#E8E8E5",
+                              borderRadius: 8,
+                              shadowBlur: 0,
+                              shadowColor: "#B3B1AD",
+                              shadowOffsetX: -6.5,                    
+                              padding: [8, 4, 8, 4],
+                        },
+                        itemStyle: {
+                          color: currentTheme == "dark" ? "#312C49" : "#F7F7FB",
+                          borderColor: currentTheme == "dark" ? "#312C49" : "#E0E0EF",
+                        },
+                      },
+                      {
+                        name: (() => {
+                          return "Technician 2\n 10";
+                        })(),
+                        lineStyle: {
+                          width: 20,
+                          color: currentTheme == "dark" ? "#413b35" : "#cbc3ba",
+                        },
+                        label: {
+                            show: true,
+                            position: [-10, -25],
+                            fontSize: "14",
+                            fontWeight: "500",
+                            lineHeight: 20,
+                            color: currentTheme == "dark" ? "#fff" : "#262626",
+                            width: 80,
+                              height: 40,
+                              backgroundColor: "#E8E8E5",
+                              borderRadius: 8,
+                              shadowBlur: 0,
+                              shadowColor: "#B3B1AD",
+                              shadowOffsetX: -6.5,                    
+                              padding: [8, 4, 8, 4],
+                        },
+                        itemStyle: {
+                          color: currentTheme == "dark" ? "#312C49" : "#F7F7FB",
+                          borderColor: currentTheme == "dark" ? "#312C49" : "#E0E0EF",
+                        },
+                      },
+                      {
+                        name: (() => {
+                          return "Technician 3 \n 5";
+                        })(),
+                        lineStyle: {
+                          width: 20,
+                          color: currentTheme == "dark" ? "#413b35" : "#cbc3ba",
+                        },
+                        label: {
+                            show: true,
+                            position: [-10, -25],
+                            fontSize: "14",
+                            fontWeight: "500",
+                            lineHeight: 20,
+                            color: currentTheme == "dark" ? "#fff" : "#262626",
+                            width: 80,
+                              height: 40,
+                              backgroundColor: "#E8E8E5",
+                              borderRadius: 8,
+                              shadowBlur: 0,
+                              shadowColor: "#B3B1AD",
+                              shadowOffsetX: -6.5,                    
+                              padding: [8, 4, 8, 4],
+                        },
+                        itemStyle: {
+                          color: currentTheme == "dark" ? "#312C49" : "#F7F7FB",
+                          borderColor: currentTheme == "dark" ? "#312C49" : "#E0E0EF",
+                        },
+                      },
+                    ],
                   },
                   {
                     name: (() => {
