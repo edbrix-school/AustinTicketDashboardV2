@@ -53,13 +53,13 @@ export default function Left(props) {
               <div data-simplebar>
                 <div className="visible lg:hidden"></div>
                 <ul className="left-menu h-full">
-                  <li className={`${isLinkActive('/technician/dashboard') ? 'active' : ''} ico-dashboard`}>
-                    <Link href='/technician/dashboard'>
+                  <li className={`${isLinkActive('/lead/dashboard') ? 'active' : ''} ico-dashboard`}>
+                    <Link href='/lead/dashboard'>
                       <span>Dashboard</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/technician/assets') ? 'active' : ''} ico-assets`}>
-                    <Link href='/technician/assets'>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-assets`}>
+                    <Link href=''>
                       <span>Assets</span>
                     </Link>
                   </li>
@@ -93,13 +93,13 @@ export default function Left(props) {
                       <span>Invoices</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/csjpod') ? 'active' : ''} settings`}>
-                    <Link href='/csjpod'>
+                  <li className={`${isLinkActive('') ? 'active' : ''} settings`}>
+                    <Link href=''>
                       <span>Settings</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/technician/reports') ? 'active' : ''} ico-reports`}>
-                    <Link href='/technician/reports'>
+                  <li className={`${isLinkActive('') ? 'active' : ''} ico-reports`}>
+                    <Link href=''>
                       <span>Reports</span>
                     </Link>
                   </li>
