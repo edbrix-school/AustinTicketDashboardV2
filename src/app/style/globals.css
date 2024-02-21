@@ -120,6 +120,13 @@ body {
 .productSearch .p-button-label { color: white; font-weight: 400; font-size: 20px; }
 .productSearch i.asetsmng-microphone { right: 28px; position: absolute; left: auto !important; }
 .custTavbview.marketAlertTabs .react-tabs__tab-list .react-tabs__tab { border-radius: 8px; padding: 10px 12px; }
+.custaccordion .p-accordion .p-accordion-header .p-accordion-header-link { position: relative; padding: 20px; background: #DFE7FA; color: #262626; font-size: 16px; font-weight: 500; border: none; border-radius: 8px;  }
+.custaccordion .p-accordion .p-accordion-content { border: none; padding: 0; }
+.custaccordion .p-accordion .p-accordion-tab { margin-bottom: 8px; }
+.custaccordion .p-datatable .p-datatable-tbody > tr > td { padding: 10px 20px; font-size: 14px; color: #424242; border-color: #E4E7EC; }
+.custaccordion .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon { position: absolute; right: 20px; margin: 0; color: #AF1E27; transform: rotate(90deg); }
+.custaccordion .p-accordion .p-accordion-header.p-highlight .p-accordion-header-link .p-accordion-toggle-icon { position: absolute; right: 20px; margin: 0; color: #AF1E27; transform: rotate(180deg); }
+
 /* V.K style End */
 
 
@@ -136,6 +143,10 @@ body {
     .productSearch .p-button-label { font-size: 1.042vw; }
     .productSearch i.asetsmng-microphone { right: 1.458vw; }
     .custTavbview.marketAlertTabs .react-tabs__tab-list .react-tabs__tab { border-radius: 0.417vw; padding: 0.521vw 0.625vw; }
+    .custaccordion .p-accordion .p-accordion-header .p-accordion-header-link { padding: 1.042vw; font-size: 0.833vw; border-radius: 0.417vw; }
+    .custaccordion .p-accordion .p-accordion-tab { margin-bottom: 0.417vw; }
+    .custaccordion .p-datatable .p-datatable-tbody > tr > td { padding: 0.521vw 1.042vw; font-size: 0.729vw; }
+    .custaccordion .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon { right: 1.042vw; }
     /* V.K style End */
 }
 

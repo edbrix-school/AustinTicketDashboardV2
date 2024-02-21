@@ -67,7 +67,7 @@ export default function ChartWrapper(props) {
                  
                   <div className={`text-[#6C768B] text-[14px] xl:text-[0.729vw] font-normal  ${props.text}`}><p>{props.subtitle}</p></div>
                 </div>
-                <div className='space-x-2 optionbtn flex items-center wrapper_icons items-center custm_dropdwon text-[#6C768B] dark:text-[#B3B9C6]'>
+                <div className='space-x-[8px] 3xl:space-x-[0.417vw] optionbtn flex items-center wrapper_icons items-center custm_dropdwon text-[#6C768B] dark:text-[#B3B9C6]'>
                   {
                     dropdown1 == true ?
                       <Dropdown
@@ -94,26 +94,26 @@ export default function ChartWrapper(props) {
                       />
                       : null
                   }
-                  {/* {
+                  {
                     graphIcon == true ?
-                      <Link href='' className='leading-none'><i className='redingtonHR-graph text-[14px] xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
+                      <Link href='' className='leading-none'><i className='asetsmng-linechart-outline text-[14px] xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
                       : null
                   }
                   {
                     downloadIcon == true ?
-                      <Link href='' className='leading-none'><i className='redingtonHR-note-download text-[14px] xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
+                      <Link href='' className='leading-none'><i className='asetsmng-lamp text-[14px] xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
                       : null
                   }
                   {
                     bulbIcon == true ?
-                      <Link href='' className='leading-none'><i className='redingtonHR-lightbulb text-[14px] xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
+                      <Link href='' className='leading-none'><i className='asetsmng-download text-[14px] xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
                       : null
                   }
                   {
                     infoIcon == true ?
-                      <Link href='' className='leading-none'><i className='redingtonHR-info text-[14px] xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
+                      <Link href='' className='leading-none'><i className='asetsmng-Info-circle text-[14px] xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
                       : null
-                  } */}
+                  }
                   {
                     props.maximizeIcon == true ?
                       <Link href=''

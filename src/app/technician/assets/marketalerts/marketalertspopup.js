@@ -7,9 +7,14 @@ import { Sidebar } from "primereact/sidebar";
 import * as echarts from "echarts";
 import ReactEcharts from "echarts-for-react";
 import { useRouter } from "next/navigation";
+import Manageassetstab from "./manageassetstab"
+import Checkpricetrendtab from "./checkpricetrendtab"
+import Productinformationtab from "./productinformationtab"
+
 function marketalertspopup() {
   const [visible, setVisible] = useState(false);
   const [selectedCity, setSelectedCity] = useState(null);
+  const [selectedDistrict, setSelectedDistrict] = useState(null);
   const cities = [
     { name: "Acer Aspire 5 (A5 15-56-5", code: "NY", link: "#" },
     {
@@ -20,6 +25,11 @@ function marketalertspopup() {
     { name: "Acer Aspire 7 (A5 14-54G", code: "LDN", link: "#" },
     { name: "Acer TravelMate P648-M-700F", code: "IST", link: "#" },
     { name: "Acer Aspire R3 131T-P9J9", code: "PRS", link: "#" },
+  ];
+  const District = [
+    { name: "District 1" },
+    { name: "District 2" },
+    { name: "District 3" },
   ];
 
   const linechartdata = {
@@ -125,7 +135,7 @@ function marketalertspopup() {
 
             <div className="gap-[24px] 3xl:gap-[1.25vw] flex  items-center">
               <div className="col min-w-[175px]">
-                <div className="border border-[#E4E7EC] rounded-lg py-[18px] px-[12px] 3xl:px-[0.625vw] 3xl:py-[0.838vw]">
+                <div className="border border-[#E4E7EC] rounded-lg 3xl:rounded-[0.417vw] py-[18px] px-[12px] 3xl:px-[0.625vw] 3xl:py-[0.838vw]">
                   <Image
                     src={"/assets/images/laptop4.png"}
                     width={175}
@@ -169,15 +179,19 @@ function marketalertspopup() {
           <Tabs className={"custTavbview marketAlertTabs"}>
             <TabList>
               <Tab>Manage Assets</Tab>
-              <Tab>Manage Assets</Tab>
-              <Tab>Manage Assets</Tab>
+              <Tab>Check Price Trend</Tab>
+              <Tab>Product Information</Tab>
             </TabList>
             <div className="mt-[32px] 3xl:mt-[1.667vw]">
-            <TabPanel>
-              <div className="bg-[#F9F9FC] rounded-[8px] 3xl:rounded-[0.417vw] p-[24px] 3xl:p-[1.25vw]">sdfsdf</div>
-            </TabPanel>
-            <TabPanel>2222</TabPanel>
-            <TabPanel>sdfsfd</TabPanel>
+              <TabPanel>
+              <Manageassetstab />
+              </TabPanel>
+              <TabPanel>
+              <Checkpricetrendtab />
+              </TabPanel>
+              <TabPanel>
+              <Productinformationtab />
+              </TabPanel>
             </div>
           </Tabs>
         </div>
