@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { InputText } from "primereact/inputtext";
 import TeamtreetableComponent from "./teamtreetable"
+import TechnicianTable from "./techniciantable"
 
 export default function Detailed() {
 const [inputValue, setInputValue] = useState('');
@@ -106,7 +107,26 @@ return (
       </div>
       </TabPanel>
       <TabPanel>
-         Technician Table
+      <Tabs className={'executiveTableInnerTab'}>
+      <div className="3xl:py-[0.417vw] py-2 3xl:px-[1.042vw] px-5">
+      <TabList>
+      <Tab>All</Tab>
+      <Tab>Monthly</Tab>
+      <Tab>Weekly</Tab>
+      </TabList>
+      </div>
+      <div>
+      <TabPanel>
+      <TechnicianTable />
+      </TabPanel>
+      <TabPanel>
+        2
+      </TabPanel>
+      <TabPanel>
+        3
+      </TabPanel>
+      </div>
+      </Tabs>
       </TabPanel>
    </div>
 </Tabs>

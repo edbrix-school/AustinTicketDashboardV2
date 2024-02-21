@@ -462,6 +462,13 @@ background: var(--surface-page, #F9F9FC);
 }
 /* Custm Tree table end */
 
+.custTable.tableCust.p-datatable.p-datatable-grouped-footer .p-datatable-tfoot > tr > td {
+    color: #20232E;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
 
 .boxshadow01 {box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);}
 .cutsm_checkbox {
@@ -723,6 +730,10 @@ background: var(--surface-page, #F9F9FC);
 ***********************************************/
 @media only screen and (min-width: 1800px) {
     /* Custm Tree table end */
+    .custTable.tableCust.p-datatable.p-datatable-grouped-footer .p-datatable-tfoot > tr > td {
+        font-size: 0.729vw;
+        line-height: 0.938vw;
+    }
     .custTable.p-treetable .p-treetable-thead tr th .p-column-header-content .p-icon {
         width: 0.625vw;
         height: 0.625vw;
