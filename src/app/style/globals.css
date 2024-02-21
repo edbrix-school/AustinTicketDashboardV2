@@ -96,6 +96,10 @@
 .asetsmng-edit-pen:before {content: "\e938";}
 .asetsmng-arrow-down:before {content: "\e939";}
 .asetsmng-right-tick-outline:before {content: "\e93a";}
+.asetsmng-file-copy:before {content: "\e93b";}
+.asetsmng-download-file:before {content: "\e93c";}
+.asetsmng-printer-fill:before {content: "\e93d";}
+.asetsmng-share-file:before {content: "\e93e";}
 
 
 /* common style */
