@@ -7,16 +7,13 @@
     border-radius: 6px !important;
 }
 .docOverlypanel.p-overlaypanel{
-    background: #ffffff;
-  color: #4b5563;
-  border: 0 none;
-  border-radius: 6px;
+  
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    padding: 10px !important;
+    padding: 5px !important;
 
 box-shadow: unset !important;
 background: transepernt !important;
 }
 .docOverlypanel.p-overlaypanel-content {
-padding: 10px !important;
+padding: 0px !important;
 }

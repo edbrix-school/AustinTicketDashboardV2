@@ -3,7 +3,7 @@ import { Button } from "primereact/button";
 import { Sidebar } from 'primereact/sidebar';
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
-
+import { Tooltip } from 'primereact/tooltip';
 import { OverlayPanel } from 'primereact/overlaypanel';
 
 function Docspopup() {
@@ -69,10 +69,11 @@ function Docspopup() {
                                               }
                                               
                                                 <OverlayPanel ref={op}  className="docOverlypanel ">
-                                                    <div className="rounded-[4px] py-[4px] px-[8px] xl:px-[0.417vw] xl:py-[0.208vw] shadow-sm shadow-[#0000004d] "><i className="asetsmng-share"></i></div>
-                                                    <div className="rounded-[4px] py-[4px] px-[8px] xl:px-[0.417vw] xl:py-[0.208vw] shadow-sm shadow-[#0000004d]"><i className="asetsmng-printer"></i></div>
-                                                    <div className="rounded-[4px] py-[4px] px-[8px] xl:px-[0.417vw] xl:py-[0.208vw] shadow-sm shadow-[#0000004d]"><i className="asetsmng-printer"></i></div>
-                                                    <div className="rounded-[4px] py-[4px] px-[8px] xl:px-[0.417vw] xl:py-[0.208vw] shadow-sm shadow-[#0000004d]"><i className="asetsmng-printer"></i></div>
+                                                <Tooltip target=".disabled-button"  tooltipOptions={{ position: 'right' }}/>
+                                                    <div data-pr-tooltip="Share"    data-pr-position="right" data-pr-at="right+5 top"  data-pr-my="left center-2"  className="disabled-button rounded-[4px] py-[4px] px-[8px] xl:px-[0.417vw] xl:py-[0.208vw] shadow-sm shadow-[#0000004d] "><i className="asetsmng-share"></i></div>
+                                                    <div data-pr-tooltip="Print"    data-pr-position="right" data-pr-at="right+5 top"  data-pr-my="left center-2"  className="disabled-button rounded-[4px] py-[4px] px-[8px] xl:px-[0.417vw] xl:py-[0.208vw] shadow-sm shadow-[#0000004d]"><i className="asetsmng-printer"></i></div>
+                                                    <div data-pr-tooltip="Download"    data-pr-position="right" data-pr-at="right+5 top"  data-pr-my="left center-2"  className="disabled-button rounded-[4px] py-[4px] px-[8px] xl:px-[0.417vw] xl:py-[0.208vw] shadow-sm shadow-[#0000004d]"><i className="asetsmng-printer"></i></div>
+                                                    <div data-pr-tooltip="Folder"    data-pr-position="right" data-pr-at="right+5 top"  data-pr-my="left center-2"  className="disabled-button rounded-[4px] py-[4px] px-[8px] xl:px-[0.417vw] xl:py-[0.208vw] shadow-sm shadow-[#0000004d]"><i className="asetsmng-printer"></i></div>
                                                 </OverlayPanel>
                                             </div>
                                         </div>
