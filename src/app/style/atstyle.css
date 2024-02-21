@@ -9,11 +9,11 @@
 .docOverlypanel.p-overlaypanel{
   
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    padding: 5px !important;
+    padding: 0px !important;
 
 box-shadow: unset !important;
 background: transepernt !important;
 }
-.docOverlypanel.p-overlaypanel-content {
-padding: 0px !important;
+.docOverlypanel .p-overlaypanel-content {
+padding: 5px !important;
 }
