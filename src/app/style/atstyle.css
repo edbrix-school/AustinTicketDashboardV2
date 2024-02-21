@@ -17,3 +17,8 @@ background: transepernt !important;
 .docOverlypanel .p-overlaypanel-content {
 padding: 5px !important;
 }
+
+.custmSidebar.docsidebar.p-sidebar .p-sidebar-content {
+    /* padding: 0 !important; */
+    padding: 0rem 0.25rem !important;
+}

@@ -23,7 +23,7 @@ function Docspopup() {
             <Sidebar
                 // visible={props.visible} 
                 blockScroll={true}
-                position="right" className="custmSidebar width740 w-[730px]"
+                position="right" className="custmSidebar docsidebar width740 w-[730px]"
                 // onHide={() => props.onHides(false)}
                 Sidebar visible={visible} onHide={() => setVisible(false)}
             >
