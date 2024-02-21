@@ -17,8 +17,8 @@ export default function ChartWrapper(props) {
   const [dropdown1, setDropdown1] = useState(props.dropdown1);
   const [bulbIcon, setBulbIcon] = useState(props.bulbIcon);
   const [ExportIcon, setExportIcon] = useState(props.ExportIcon);
-  const [graphIcon, setGraphIcon] = useState(props.ExportIcon);
-  const [downloadIcon, setDownloadIcon] = useState(props.ExportIcon);
+  const [graphIcon, setGraphIcon] = useState(props.graphIcon);
+  const [downloadIcon, setDownloadIcon] = useState(props.downloadIcon);
   const [expand, setExpand] = useState(props.expand);
   const [historicalPrice, setHistoricalPrice] = useState(props.historicalPrice);
   

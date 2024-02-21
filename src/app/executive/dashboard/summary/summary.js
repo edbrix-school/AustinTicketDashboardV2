@@ -346,11 +346,11 @@ export default function Summary() {
             <ChartWrapper
               title={"Assigned to Resolved - Top 5 Teams (Resolved %)"}
               ExportIcon={true}
-              tabSection={true}
-              infoIcon={true}
-              bulbIcon={true}
-              downloadIcon={true}
-              graphIcon={true}
+              tabSection={false}
+              infoIcon={false}
+              bulbIcon={false}
+              downloadIcon={false}
+              graphIcon={false}
               data={
                 <div >
                   <div className="flex justify-end ">
@@ -421,11 +421,11 @@ export default function Summary() {
             <ChartWrapper
               title={"Tickets by Unopened Days"}
               ExportIcon={true}
-              tabSection={true}
-              infoIcon={true}
-              bulbIcon={true}
-              downloadIcon={true}
-              graphIcon={true}
+              tabSection={false}
+              infoIcon={false}
+              bulbIcon={false}
+              downloadIcon={false}
+              graphIcon={false}
               data={
                 <div>
                   <div className="flex justify-end ">
@@ -457,11 +457,11 @@ export default function Summary() {
             <ChartWrapper
               title={"Resolved Requests - Monthly Trend"}
               ExportIcon={true}
-              tabSection={true}
-              infoIcon={true}
-              bulbIcon={true}
-              downloadIcon={true}
-              graphIcon={true}
+              tabSection={false}
+              infoIcon={false}
+              bulbIcon={false}
+              downloadIcon={false}
+              graphIcon={false}
               data={
                 <div>
                   <div className="flex justify-end ">
@@ -490,11 +490,11 @@ export default function Summary() {
             <ChartWrapper
               title={"Employee Performance"}
               ExportIcon={true}
-              tabSection={true}
-              infoIcon={true}
-              bulbIcon={true}
-              downloadIcon={true}
-              graphIcon={true}
+              tabSection={false}
+              infoIcon={false}
+              bulbIcon={false}
+              downloadIcon={false}
+              graphIcon={false}
               data={
                 <div className="w-full min-h-[421px] 3xl:min-h-[21.927vw]">
 
