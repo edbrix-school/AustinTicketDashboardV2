@@ -24,13 +24,25 @@ const toggleVisibility = () => {
   settechnicianVisible(!technicianVisible);
 };
 
-const [teamtableVisible , setteamtableVisible ] = useState(true);
-const [categoryVisible, setcategoryVisible] = useState(false);
+const [div1Visible, setDiv1Visible] = useState(true);
+  const [div2Visible, setDiv2Visible] = useState(false);
+  const [div3Visible, setDiv3Visible] = useState(false);
 
-const toggleVisibility2 = () => {
-  setteamtableVisible (!teamtableVisible );
-  setcategoryVisible(!categoryVisible);
-};
+  const toggleVisibility1 = (divNumber) => {
+    if (divNumber === 1) {
+      setDiv1Visible(true);
+      setDiv2Visible(false);
+      setDiv3Visible(false);
+    } else if (divNumber === 2) {
+      setDiv1Visible(false);
+      setDiv2Visible(true);
+      setDiv3Visible(false);
+    } else if (divNumber === 3) {
+      setDiv1Visible(false);
+      setDiv2Visible(false);
+      setDiv3Visible(true);
+    }
+  };
 
 
  // Data table
@@ -118,8 +130,27 @@ const toggleVisibility2 = () => {
      const actionNameTemplate = (rowData) => {
       return (
         <>
-          <div className="flex items-center 3xl:gap-[0.833vw] gap-3 text-[#888888] 3xl:text-[0.938vw] text-sm cursor-pointer" onClick={toggleVisibility2}>
+        
+          <div className="flex items-center 3xl:gap-[0.833vw] gap-3 text-[#888888] 3xl:text-[0.938vw] text-sm cursor-pointer" onClick={() => toggleVisibility1(2)}>
             <i className="asetsmng-plus"></i><span>Team 1</span>
+          </div>
+        </>
+      );
+    };
+    const actioncategorynameTemplate = (rowData) => {
+      return (
+        <>
+          <div className="flex items-center 3xl:gap-[0.833vw] gap-3 text-[#888888] 3xl:text-[0.938vw] text-sm cursor-pointer" onClick={() => toggleVisibility1(3)}>
+            <i className="asetsmng-plus"></i><span>Category 1</span>
+          </div>
+        </>
+      );
+    };
+    const actionsubcategorynameTemplate = (rowData) => {
+      return (
+        <>
+          <div className="flex items-center 3xl:gap-[0.833vw] gap-3 text-[#888888] 3xl:text-[0.938vw] text-sm cursor-pointer" onClick={() => toggleVisibility1(0)}>
+            <i className="asetsmng-plus"></i><span>Sub-Category 1</span>
           </div>
         </>
       );
@@ -137,20 +168,31 @@ return (
             </TabList>
             {teamVisible  &&
             <>
-            {teamtableVisible &&
+            {div1Visible &&
             <div className="flex items-center gap-3 3xl:gap-[0.625vw]">
               <Link href={''} className="3xl:py-[0.417vw] py-2 3xl:pl-[0.833vw] pl-4 text-[#4B586E] flex items-center gap-1 3xl:gap-[0.208vw]"><i className="asetsmng-home"></i><span>Team</span></Link>
               <Link href={''} className="text-[#9CA1AB] text-xs"><i className="asetsmng-arrow-right"></i></Link>
               <Link href={''} className="text-[#1570EF]"><span>Team</span></Link>
             </div>
             }
-            {categoryVisible &&
+            {div2Visible &&
             <div className="flex items-center gap-3 3xl:gap-[0.625vw]">
             <Link href={''} className="3xl:py-[0.417vw] py-2 3xl:pl-[0.833vw] pl-4 text-[#4B586E] flex items-center gap-1 3xl:gap-[0.208vw]"><i className="asetsmng-home"></i><span>Team</span></Link>
             <Link href={''} className="text-[#9CA1AB] text-xs"><i className="asetsmng-arrow-right"></i></Link>
-            <Link href={''} className="text-[#9CA1AB]" onClick={toggleVisibility2}><span>Team 1</span></Link>
+            <Link href={''} className="text-[#9CA1AB]" onClick={() => toggleVisibility1(1)}><span>Team 1</span></Link>
             <Link href={''} className="text-[#9CA1AB] text-xs"><i className="asetsmng-arrow-right"></i></Link>
             <Link href={''} className="text-[#1570EF]"><span>Category</span></Link>
+            </div>
+            }
+            {div3Visible &&
+            <div className="flex items-center gap-3 3xl:gap-[0.625vw]">
+            <Link href={''} className="3xl:py-[0.417vw] py-2 3xl:pl-[0.833vw] pl-4 text-[#4B586E] flex items-center gap-1 3xl:gap-[0.208vw]"><i className="asetsmng-home"></i><span>Team</span></Link>
+            <Link href={''} className="text-[#9CA1AB] text-xs"><i className="asetsmng-arrow-right"></i></Link>
+            <Link href={''} className="text-[#9CA1AB]" onClick={() => toggleVisibility1(1)}><span>Team 1</span></Link>
+            <Link href={''} className="text-[#9CA1AB] text-xs"><i className="asetsmng-arrow-right"></i></Link>
+            <Link href={''} className="text-[#9CA1AB]" onClick={() => toggleVisibility1(2)}><span>Category</span></Link>
+            <Link href={''} className="text-[#9CA1AB] text-xs"><i className="asetsmng-arrow-right"></i></Link>
+            <Link href={''} className="text-[#1570EF]"><span>Sub Category</span></Link>
             </div>
             }
             
@@ -190,6 +232,9 @@ return (
             </div>
          </div>
       </div>
+      <div>
+    </div>
+    
       <TabPanel>
       <div>
       <Tabs className={'executiveTableInnerTab'}>
@@ -202,7 +247,7 @@ return (
       </div>
       <div>
       <TabPanel>
-      {teamtableVisible &&
+      {div1Visible &&
       <>
       <DataTable
               value={products}
@@ -315,7 +360,7 @@ return (
             </DataTable>
             </>
             }
-            {categoryVisible &&
+            {div2Visible &&
             <>
             <DataTable
               value={products}
@@ -347,6 +392,119 @@ return (
               dataKey="id">
               <Column field="Teamname"
                 header="Category"
+                body={actioncategorynameTemplate}
+                sortable
+                style={{ minWidth: "10rem" }}
+              ></Column>
+              <Column
+                field="Totalticket"
+                header="Total Ticket"
+                sortable
+                style={{ minWidth: "10rem" }}
+              ></Column>
+              <Column
+                field="Serialnumber"
+                header="Resolved"
+                sortable
+                style={{ minWidth: "10rem" }}
+              ></Column>
+              <Column
+                field="AvgtimeresolveticketsdDays"
+                header="Avg Time to Resolve Tickets (Days)"
+                showFilterMatchModes={false}
+                showFilterMenuOptions={false}
+                showClearButton={false}
+                showApplyButton={false}
+                filter
+                filterElement={SearchFilterTemplate}
+                style={{ minWidth: "12rem" }}
+              ></Column>
+              <Column
+                field="Numberofunopenedtickets"
+                header="Number of Unopened Tickets"
+                showFilterMatchModes={false}
+                showFilterMenuOptions={false}
+                showClearButton={false}
+                showApplyButton={false}
+                filter
+                filterElement={SearchFilterTemplate}
+                style={{ minWidth: "12rem" }}
+              ></Column>
+              <Column
+                field="Numberofclosedtickets"
+                header="Number of Closed Tickets"
+                showFilterMatchModes={false}
+                showFilterMenuOptions={false}
+                showClearButton={false}
+                showApplyButton={false}
+                filter
+                filterElement={SearchFilterTemplate}
+                style={{ minWidth: "12rem" }}
+              ></Column>
+              <Column
+                field="Numberofreroutefrom"
+                header="Number of Re-Route From"
+                showFilterMatchModes={false}
+                showFilterMenuOptions={false}
+                showClearButton={false}
+                showApplyButton={false}
+                filter
+                filterElement={SearchFilterTemplate}
+                style={{ minWidth: "12rem" }}
+              ></Column>
+              <Column
+                field="Numberofrerouteto"
+                header="Number of Re-Route To"
+                showFilterMatchModes={false}
+                showFilterMenuOptions={false}
+                showClearButton={false}
+                showApplyButton={false}
+                filter
+                filterElement={SearchFilterTemplate}
+                style={{ minWidth: "12rem" }}
+              ></Column>
+              <Column
+                field="Averageteamrating"
+                header="Average Team Rating"
+                style={{ minWidth: "10rem" }}
+                sortable
+              ></Column>
+            </DataTable>
+            </>
+            }
+            {div3Visible &&
+            <>
+            <DataTable
+              value={products}
+              className="custTable tableCust custCheckBox"
+              scrollable
+              responsiveLayout="scroll"
+              style={{ width: "100%" }}
+              paginator
+              paginatorTemplate="CurrentPageReport RowsPerPageDropdown PrevPageLink PageLinks NextPageLink custmpaginator"
+              currentPageReportTemplate="Rows per page  {first}-{last} of {totalRecords}"
+              rowsPerPageOptions={[5, 10, 25, 50]}
+              rows={10}
+              onSelectionChange={(e) => setSelectedProducts(e.value)}
+              selectionMode={rowClick ? null : "checkbox"}
+              selection={selectedProducts}
+              filters={filters}
+              globalFilterFields={[
+                "Teamname",
+                "Totalticket",
+                "Serialnumber",
+                "representative.resolved",
+                "AvgtimeresolveticketsdDays",
+                "Numberofunopenedtickets",
+                "Numberofclosedtickets",
+                "Numberofreroutefrom",
+                "Numberofrerouteto",
+                "Averageteamrating",
+              ]}
+              dataKey="id">
+              <Column field="Teamname"
+                header="Category"
+                body={actionsubcategorynameTemplate}
                 sortable
                 style={{ minWidth: "10rem" }}
               ></Column>
