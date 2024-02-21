@@ -574,7 +574,7 @@ export default function summary() {
       {" "}
       <div className="grid grid-cols-2 xl:gap-[1.250vw] gap-5 xl:mt-[1.458vw] mt-[24px]">
         {/**col**/}
-        <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw] xl:p-[0.833vw] p-4">
+        <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw] ">
           <ChartWrapper
             title={"Assigned to resolved -by Technician"}
             ExportIcon={true}
@@ -604,7 +604,7 @@ export default function summary() {
                   style={{ height: "100%", width: "100%" }}
                 /> */}
 
-                <div className='w-full h-[421px] 3xl:h-[21.927vw]'>
+                <div className='w-full h-[421px] 3xl:h-[21.927vw] px-[16px] 3xl:px-[0.833vw] py-[16px] 3xl:py-[0.833vw]'>
                 <DoublebarLinechart
 
                   data={investigationsData}
@@ -660,7 +660,7 @@ export default function summary() {
         </div>
         {/**col**/}
         {/**col**/}
-        <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw] xl:p-[0.833vw] p-4">
+        <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw] ">
           <ChartWrapper
             title={"Opex by Expense Type"}
             ExportIcon={true}
@@ -731,7 +731,7 @@ export default function summary() {
           />
         </div>
         {/**col**/}
-        <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw] xl:p-[0.833vw] p-4">
+        <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw] ">
           <ChartWrapper
             title={"Tickets Re-Assigned/Re-Routed (From) Top5"}
             ExportIcon={true}
@@ -742,13 +742,13 @@ export default function summary() {
             graphIcon={true}
             data={
               <>
-                <div className="flex gap-2 pb-2">
+                <div className="flex gap-2 pb-2 px-[16px] 3xl:px-[0.833vw]">
                   <div className='flex items-center'>
                     <button onClick={() => setTop(true)} className={`${top === true ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-bl-md`}>Top 5</button>
                     <button onClick={() => setTop(false)} className={`${top === false ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-br-md`}>Bottom 5</button>
                   </div>
                 </div>
-                <div className="w-full xl:h-[19.90vw] relative">
+                <div className="w-full xl:h-[19.90vw] relative px-[16px] 3xl:px-[0.833vw] py-[16px] 3xl:py-[0.833vw]">
                   <ReactEcharts
                     option={TecketsReReouted}
                     style={{ height: "100%", width: "100%" }}
@@ -761,7 +761,7 @@ export default function summary() {
         </div>
 
         {/**col**/}
-        <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw] xl:p-[0.833vw] p-4">
+        <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw] ">
           <ChartWrapper
             title={"Tickets By Sub Category"}
             ExportIcon={true}
@@ -772,13 +772,8 @@ export default function summary() {
             graphIcon={true}
             data={
               <>
-                <div className="flex gap-2 pb-2">
-                  <div className='flex items-center'>
-                    <button onClick={() => setTop(true)} className={`${top === true ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-bl-md`}>Top 5</button>
-                    <button onClick={() => setTop(false)} className={`${top === false ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-br-md`}>Bottom 5</button>
-                  </div>
-                </div>
-                <div className="w-full xl:h-[19.90vw] ">
+                
+                <div className="w-full xl:h-[19.90vw] px-[16px] 3xl:px-[0.833vw] ">
                   <ReactEcharts
                     option={Assetschart}
                     style={{ height: "100%", width: "100%" }}
