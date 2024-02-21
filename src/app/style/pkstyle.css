@@ -1,0 +1,31 @@
+.p-dropdown {
+    background: #FAFAFA;
+    border: 1px solid #D3D3CE;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 8px;
+    outline-color: transparent;
+}
+
+.p-inputtext {
+    font-size: 0.729vw;
+    color: #4b5563;
+    padding: 0.625vw 0.625vw;  
+}
+
+.p-dropdown .p-dropdown-label {
+    background: transparent;
+    border: 0 none;
+}
+
+.p-dropdown .p-dropdown-label.p-placeholder {
+    color: #6b7280;
+}
+
+.p-icon {
+    width: 0.833vw;
+    height: 0.833vw;
+}
+
+.p-dropdown .p-dropdown-trigger {
+    color: #84878D;
+}

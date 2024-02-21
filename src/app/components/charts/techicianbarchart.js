@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 
 
 
-export default function DoublebarLinechart({ legend, grid, data, xAxisName, xAxisNameGap, xAxisNamePosition, yAxisName, yAxisName1, yAxisNameGap, yAxisNameGap1,minBar1=0,minBar2=0, maxBar1,maxBar2, color1, color2, color3,barname,interval1,interval2,axistop,axistoplabel,yAxisLabelFormmater1="${value}",yAxisLabelFormmater2="{value}%",axisLabel2=true, barLabelFormatter="${c}" }) {
+export default function DoublebarLinechart({ legend, grid, data, xAxisName, xAxisNameGap, xAxisNamePosition, yAxisName, yAxisName1, yAxisNameGap, yAxisNameGap1,minBar1=0,minBar2=0, maxBar1,maxBar2, color1, color2, color3,barname,interval1,interval2,yAxisLabelFormmater1,yAxisLabelFormmater2,axisLabel2=true, barLabelFormatter }) {
 
     const { systemTheme, theme, setTheme } = useTheme();
     const currentTheme = theme === 'system' ? systemTheme : theme;
@@ -42,24 +42,11 @@ export default function DoublebarLinechart({ legend, grid, data, xAxisName, xAxi
                 nameGap: xAxisNameGap,
                 nameLocation: xAxisNamePosition,
                 nameTextStyle: {
-                    color: currentTheme == "dark" ? "#ffff" : '#363A44',
+                    color: currentTheme == "dark" ? "#ffff" : '#84878D',
                     fontSize: 12,
                 },
             },
-            {
-        
-                splitLine: { show: false },
-                axisTick: { show: false },
-                axisLine: { show: false },
-                axisLabel: {
-                    show:axistop,
-                  color: currentTheme == "dark" ? "#fff" : "#fff",
-                  fontSize: 13,
-                  backgroundColor: "#046C4E",
-                  padding: 5,
-                },
-                data: axistoplabel,
-              },
+           
         ],
         yAxis: [
             {
@@ -98,7 +85,7 @@ export default function DoublebarLinechart({ legend, grid, data, xAxisName, xAxi
                 nameLocation: "center",
                 nameGap: yAxisNameGap1,
                 nameTextStyle: {
-                    color: currentTheme == "dark" ? "#ffff" : '#6C768B',
+                    color: currentTheme == "dark" ? "#ffff" : '#84878D',
                     fontSize: 12,
                 },
                 min: minBar2,
@@ -157,16 +144,24 @@ export default function DoublebarLinechart({ legend, grid, data, xAxisName, xAxi
             },
             {
                 name: barname[2],
-                type: 'line',
+                type: 'scatter',
+                symbol: 'circle',
+                symbolKeepAspect: true,
+                itemStyle: {
+                    color:'#fff',
+                    borderWidth: 2,
+                    borderColor:color3
+                },
                 yAxisIndex: 1,
                 color: color3,
                 data: data.values3,
-                symbolSize: 8,
+                symbolSize: 10,
                 label: {
                     show: true,
                     formatter: '{@[n]} %',
                     color:'#24262D',
-                    backgroundColor: "#EEF8F4",
+                    position:'top',
+                    backgroundColor: "#EDEDF7",
                     padding: [4, 4, 4, 4]
                     }
             }

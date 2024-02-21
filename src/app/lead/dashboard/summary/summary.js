@@ -4,18 +4,21 @@ import { Dropdown } from "primereact/dropdown";
 import ReactEcharts from "echarts-for-react";
 import { useTheme } from "next-themes";
 import DoublebarLinechart from '@/app/components/charts/techicianbarchart';
-
+import { ProgressBar } from 'primereact/progressbar';
+import Image from 'next/image';
 
 export default function summary() {
+  const [top, setTop] = useState(true)
   const { systemTheme, theme, setTheme } = useTheme();
 
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   const [selectedCluster, setSelectedCluster] = useState(null);
   const cluster = [
-    { name: "RoME 1", code: "NY" },
-    { name: "RoME 2", code: "RM" },
-    { name: "RoME 3", code: "LDN" },
+    { name: "All ", code: "NY" },
+    { name: "High ", code: "RM" },
+    { name: "Medium ", code: "LDN" },
+    { name: "Low ", code: "LDN" },
   ];
 
 
@@ -316,16 +319,254 @@ export default function summary() {
     ],
   };
 
+  const TecketsReReouted = {
+    tooltip: { trigger: "axis" },
+    legend: {
+      show: true,
+      bottom: "bottom",
+      left: "left",
+      itemWidth: 8,
+      itemHeight: 8,
+      borderRadius: [4, 4, 0, 0],
+      textStyle: {
+        color: "#6C768B",
+        fontSize: 12,
+      },
+    },
+    grid: {
+      left: "8%",
+      right: "4%",
+      bottom: "18%",
+      top: "3%",
+      containLabel: true,
+    },
+    xAxis: [
+      {
+        type: "category",
+        name: "Team", // Add the common title for the x-axis here
+        nameLocation: "center", // Set the position of the x-axis name to the center
+        nameGap: 40, // Adjust the gap between the x-axis name and the axis
+        nameTextStyle: {
+          color: "#6C768B", // Set title text color
+          fontSize: 12, // Set title font size
+
+        },
+        splitLine: { show: false },
+        axisTick: { show: false },
+        axisLine: { show: false },
+        axisLabel: {
+          color: "#363A44",
+          fontSize: 10,
+
+        },
+        data: ["Team1", "Team2", "Team3", "Team4", "Team5"],
+
+      },
+    ],
+    yAxis: [
+      {
+        type: "value",
+        name: "Tickets Re-Routed",
+        nameLocation: "center",
+        nameGap: 40,
+        nameTextStyle: {
+          color: "#6C768B",
+          fontSize: 12,
+        },
+        min: 0,
+        max: 160,
+        interval: 20,
+        axisLabel: {
+          color: "#6C768B",
+          fontSize: 10,
+          formatter: "{value} ",
+        },
+        axisLine: {
+          show: true,
+          lineStyle: { color: "#EAEDF3" },
+        },
+        splitLine: {
+          show: true,
+          lineStyle: {
+            type: "dashed",
+            color: "#EAEDF3",
+          },
+        },
+      },
+    ],
+
+    series: [
+      {
+        name: "Tickets Re-Routed",
+        type: "bar",
+        barWidth: 60,
+
+        stack: "Ad",
+        itemStyle: {
+          color: "#009CDA",
+          borderRadius: [5, 5, 0, 0]
+        },
+        label: {
+          show: true,
+          color: "#fff",
+          formatter: "${c}",
+        },
+        emphasis: { focus: "series" },
+        data: [120, 100, 142, 120, 130,]
+      },
+
+    ],
+  };
+
   const investigationsData = {
     labels: [
-      "Q1",
-      "Q2",
-      "Q3",
-      "Q4",
+      "Technician1",
+      "Technician2",
+      "Technician3",
+      "Technician4",
     ],
-    values1: [200, 225, 230, 250],
-    values2: [210, 230, 220, 240],
-    values3: [4, 5, 4, 6],
+    values1: [120, 125, 142, 121],
+    values2: [85, 115, 110, 118],
+    values3: [49, 40, 35, 80],
+  };
+
+  const [selectedEmployeePerformance, setSelectedEmployeePerformance] = useState(null);
+  const EmployeePerformance = [
+    { name: "By Tickets Resolved", code: "NY" },
+    { name: "By Tickets Resolved", code: "RM" },
+    { name: "By Tickets Resolved", code: "LDN" },
+  ];
+  const employeeData = [
+    {
+      id: 1,
+      name: 'Angel',
+      image: 'employee1',
+      team: 'Designantion',
+      ticketsResolved: '450',
+      rating: '4.5'
+    },
+    {
+      id: 2,
+      name: 'Shawn',
+      image: 'employee2',
+      team: 'Designantion',
+      ticketsResolved: '450',
+      rating: '4.5'
+    },
+    {
+      id: 3,
+      name: 'Mitchell',
+      image: 'employee3',
+      team: 'Designantion',
+      ticketsResolved: '450',
+      rating: '4.5'
+    },
+    {
+      id: 4,
+      name: 'Kyle',
+      image: 'employee4',
+      team: 'Designantion',
+      ticketsResolved: '450',
+      rating: '4.5'
+    },
+    {
+      id: 5,
+      name: 'Victoria',
+      image: 'employee5',
+      team: 'Designantion',
+      ticketsResolved: '450',
+      rating: '4.5'
+    },
+  ]
+  const Assetschart = {
+    tooltip: { trigger: "axis" },
+    legend: {
+      show: true,
+      itemWidth: 10,
+      itemHeight: 10,
+      textStyle: {
+        color: '#222222',
+      },
+      data: ['Inventory', 'Vendor Receivable']
+    },
+
+    series: [
+      {
+        type: "treemap",
+        width: "100%",
+        height: "90%",
+        label: {
+          show: true,
+          position: "inside",
+          overflow: "breakAll",
+          rich: {
+            larger: {
+              fontSize: 12,
+              color: "#FFFFFF",
+            },
+            normal: {
+              fontSize: 12,
+              color: "#FFFFFF00",
+            },
+          },
+          formatter: "{larger|{b}}\n\n {normal|{c}}",
+        },
+        data: [
+          {
+            name: "Badges\n\n100",
+            value: "2",
+            itemStyle: {
+              color: "#263040",
+            },
+          },
+          {
+            value: "2",
+            children: [
+              {
+                name: 'Asset\n\n60',
+                value: 1,
+                itemStyle: {
+                  color: "#6480AB",
+                },
+              },
+              {
+                name: 'Security\n\n50',
+                value: 1,
+                itemStyle: {
+                  color: "#91A5C3",
+                },
+              }
+            ],
+            itemStyle: {
+              color: "rgba(2, 144, 70, 1)",
+            },
+          },
+          {
+
+            value: "2",
+            children: [
+              {
+                name: 'Request\n\n90',
+                value: 1,
+                itemStyle: {
+                  color: "#4F6484",
+                },
+              },
+              {
+                name: 'Others\n\n20',
+                value: 1,
+                itemStyle: {
+                  color: "#A9B9D0",
+                },
+              }
+            ],
+            itemStyle: {
+              color: "rgba(188, 186, 121, 1)",
+            },
+          },
+        ],
+      },
+    ],
   };
 
   return (
@@ -345,113 +586,73 @@ export default function summary() {
             data={
               <div className="w-full xl:h-[19.333vw] relative">
                 <div className="flex justify-end ">
-                  <div className="rounded pb-[4px] px-[3px]  cursor-pointer overflow-hidden bg-[#F6F7F9] dark:bg-[#24262D]">
-                    <span className="text-[#6C768B] dark:text-[#B3B9C6] text-[10px] font-normal">
-                      Select Cost Head
-                    </span>
-                    <div className="custDropdown ">
-                      <Dropdown
-                        value={selectedCluster}
-                        onChange={(e) => setSelectedCluster(e.value)}
-                        options={cluster}
-                        optionLabel="name"
-                        placeholder="All"
-                        className="w-full"
-                      />
-                    </div>
+                  <div className="chartdropdown mr-[16px] 3xl:mr-[0.833vw]">
+                    <Dropdown
+                      value={selectedCluster}
+                      onChange={(e) => setSelectedCluster(e.value)}
+                      options={cluster}
+                      optionLabel="name"
+                      placeholder="High"
+                      className="w-full"
+                    />
                   </div>
                 </div>
-                <div className="rotate-[-90deg] absolute left-0 -translate-x-12 inset-y-1/2 text-[#6C768B] text-[10px] font-normal leading-4">
-                  Sales Revenue in US$
-                </div>
+
+
                 {/* <ReactEcharts
                   option={BudgetExpense}
                   style={{ height: "100%", width: "100%" }}
                 /> */}
 
-                
+                <div className='w-full h-[421px] 3xl:h-[21.927vw]'>
                 <DoublebarLinechart
-                
-                data={investigationsData}
-                barname={["Projected", "Actual", "PAT%"]}
-                legend={{
-                  left: 0,
-                  bottom: 2,
-                  itemWidth: 10,
-                  itemHeight: 10,
-                  symbolKeepAspect: true,
-                  data: [
-                    { name: 'Projected', },
-                    { name: 'Actual', },
-                    { name: 'PAT%', icon: 'image:///assets/images/profit-3rd-legends.svg' },
-                  ],
-                  textStyle: {
-                    color: currentTheme == "dark" ? "#ffff" : "#344054",
-                  },
-                }}
-                grid={{
-                  top: 30,
-                  bottom: 90,
-                  right: 60,
-                  left: 70,
-                }}
-                maxBar1={300}
-                interval1={50}
-                maxBar2={7}
-                interval2={1}
-                axistop={true}
-                axistoplabel={["4%", "4%", "4%", "4%"]}
-                color1={"#009CDA"}
-                color2={"#256D85"}
-                color3={"#363A44"}
-                xAxisName={"Quarters"}
-                xAxisNameGap={"55"}
-                xAxisNamePosition={"middle"}
-                yAxisName={"Value ( In US $)"}
-                yAxisName1={"Value ( In %)"}
-                yAxisNameGap={50}
-                yAxisNameGap1={45}
-                yAxisNamePosition={"middle"}
-                />
 
-                <div className="rotate-[90deg] absolute right-0 translate-x-12 inset-y-1/2 text-[#6C768B] text-[10px] font-normal leading-4">
-                  Sales Revenue in US$
+                  data={investigationsData}
+                  barname={["Projected", "Actual", "PAT%"]}
+                  legend={{
+                    left: 0,
+                    bottom: 2,
+                    itemWidth: 10,
+                    itemHeight: 10,
+                    symbolKeepAspect: true,
+                    data: [
+                      { name: 'Projected', },
+                      { name: 'Actual', },
+                      { name: 'PAT%', icon: 'image:///assets/images/profit-3rd-legends.svg' },
+                    ],
+                    textStyle: {
+                      color: currentTheme == "dark" ? "#ffff" : "#344054",
+                    },
+                  }}
+                  grid={{
+                    top: 30,
+                    bottom: 90,
+                    right: 60,
+                    left: 70,
+                  }}
+                  maxBar1={160}
+                  interval1={20}
+                  maxBar2={100}
+                  interval2={10}
+                  axistop={true}
+                  axistoplabel={["4%", "4%", "4%", "4%"]}
+                  color1={"#4169E1"}
+                  color2={"#2C9999"}
+                  color3={"#363A44"}
+                  xAxisName={"Technicians"}
+                  xAxisNameGap={"55"}
+                  xAxisNamePosition={"middle"}
+                  yAxisName={"Count of Tickets"}
+                  yAxisName1={"Resolved ( In %)"}
+                  yAxisNameGap={50}
+                  yAxisNameGap1={45}
+                  yAxisNamePosition={"middle"}
+                />
                 </div>
-                <div className="absolute bottom-[-34px] xl:bottom-[-1.771vw] inset-x-1/2 text-[#6C768B] text-[10px] font-normal leading-4">
-                  Quarters
-                </div>
-                <div className="absolute bottom-[-15px] xl:bottom-[-0.885vw] left-[11vw] xl:left-[6vw]">
-                  <div className="flex items-center gap-1">
-                    <i className="text-[10px] xl:text-[0.521vw] finance-arrow-line-up-light text-[#31C48D] rounded-full"></i>
-                    <div className="text-[#6C768B] text-[12px] xl:text-[0.625vw] font-normal">
-                      <span className="font-medium">5%</span> LY Var
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute bottom-[-15px] xl:bottom-[-0.885vw] left-[30vw] xl:left-[15vw]">
-                  <div className="flex items-center gap-1">
-                    <i className="text-[10px] xl:text-[0.521vw] finance-arrow-line-down text-[#FF4537] rounded-full"></i>
-                    <div className="text-[#6C768B] text-[12px] xl:text-[0.625vw] font-normal">
-                      <span className="font-medium">5%</span> LY Var
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute bottom-[-15px] xl:bottom-[-0.885vw] left-[47vw] xl:bottom-[0.781vw] xl:left-[23vw]">
-                  <div className="flex items-center gap-1">
-                    <i className="text-[10px] xl:text-[0.521vw] finance-arrow-line-up-light text-[#31C48D] rounded-full"></i>
-                    <div className="text-[#6C768B] text-[12px] xl:text-[0.625vw] font-normal">
-                      <span className="font-medium">5%</span> LY Var
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute bottom-8  xl:bottom-[-0.885vw] left-[65vw] xl:left-[32vw]">
-                  <div className="flex items-center gap-1">
-                    <i className="text-[10px] xl:text-[0.521vw] finance-arrow-line-up-light text-[#31C48D] rounded-full"></i>
-                    <div className="text-[#6C768B] text-[12px] xl:text-[0.625vw] font-normal">
-                      <span className="font-medium">5%</span> LY Var
-                    </div>
-                  </div>
-                </div>
+
+
+
+
               </div>
             }
           />
@@ -470,56 +671,126 @@ export default function summary() {
             graphIcon={true}
             data={
               <>
-                <div className="flex gap-2 pb-2">
-                  <button className="py-2 px-3 bg-[#4FB155] rounded-lg text-sm text-white font-medium">
-                    Top 10
-                  </button>
-                  <button className="py-2 px-3 bg-[#fff] rounded-lg text-sm text-[#363A44] font-medium">
-                    Bottom 10
-                  </button>
-                </div>
-                <div className="w-full xl:h-[19.90vw] relative">
-                  <ReactEcharts
-                    option={stackbarwithline}
-                    style={{ height: "100%", width: "100%" }}
-                  />
-                  <div className="absolute bottom-8 left-[11vw] xl:left-[7.5vw]">
-                    <div className="flex items-center gap-1">
-                      <i className="text-[10px] xl:text-[0.521vw] finance-arrow-line-up-light text-[#31C48D] rounded-full"></i>
-                      <div className="text-[#6C768B] text-[12px] xl:text-[0.625vw] font-normal">
-                        <span className="font-medium">5%</span> LY Var
-                      </div>
+
+                <div className="w-full min-h-[421px] 3xl:min-h-[21.927vw]">
+
+                  <div className="flex justify-between px-[16px] 3xl:px-[0.833vw]">
+                    <div className='flex items-center'>
+                      <button onClick={() => setTop(true)} className={`${top === true ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-bl-md`}>Top 5</button>
+                      <button onClick={() => setTop(false)} className={`${top === false ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-br-md`}>Bottom 5</button>
+                    </div>
+                    <div className="chartdropdown ">
+                      <Dropdown
+                        value={selectedEmployeePerformance}
+                        onChange={(e) => setSelectedEmployeePerformance(e.value)}
+                        options={EmployeePerformance}
+                        optionLabel="name"
+                        placeholder="By Tickets Resolved"
+                        className="w-full"
+                      />
                     </div>
                   </div>
-                  <div className="absolute bottom-8 left-[30vw] xl:left-[16.5vw]">
-                    <div className="flex items-center gap-1">
-                      <i className="text-[10px] xl:text-[0.521vw] finance-arrow-line-down text-[#FF4537] rounded-full"></i>
-                      <div className="text-[#6C768B] text-[12px] xl:text-[0.625vw] font-normal">
-                        <span className="font-medium">5%</span> LY Var
-                      </div>
+                  <div className='px-[16px] 3xl:px-[0.833vw] py-[38px] 3xl:py-[1.979vw]'>
+                    <div className='grid grid-cols-3 gap-[24px] 3xl:gap-[1.25vw]'>
+                      {employeeData.map((elm) => {
+                        return (
+                          <div key={elm.id} className='border border-[#E4E7EC] bg-[#F9F9FC] rounded-lg p-[16px] lg:p-[12px] 3xl:p-[0.833vw]'>
+                            <div className='flex items-center gap-[16px] 3xl:gap-[0.833vw]'>
+                              <div>
+                                <Image src={`/assets/images/${elm.image}.svg`} alt="notification" width={38} height={38} className="3xl:w-[1.979vw] w-[38px] h-auto" />
+                              </div>
+                              <div>
+                                <div className='text-[#20232E] text-[14px] 3xl:text-[0.729vw] font-semibold '>{elm.name}</div>
+                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] font-normal '>Team : {elm.team}</div>
+                              </div>
+                            </div>
+                            <div className='space-y-[14px] 3xl:space-y-[0.833vw] mt-[24px] 3xl:mt-[1.25vw]'>
+                              <div className='flex items-center justify-between '>
+                                <div className='text-[#20232E] text-[12px] 3xl:text-[0.625vw] font-medium '>Tickets Resolved</div>
+                                <div className='text-[#20232E] text-[12px] 3xl:text-[0.625vw] font-semibold '>{elm.ticketsResolved}</div>
+                              </div>
+                              <div className='flex items-center justify-between '>
+                                <div className='text-[#20232E] text-[12px] 3xl:text-[0.625vw] font-medium '>Average Rating</div>
+                                <div className='text-[#20232E] text-[12px] 3xl:text-[0.625vw] font-semibold '>{elm.rating}</div>
+                              </div>
+                            </div>
+                            <div className='mt-2'>
+                              <ProgressBar className='custProgress' color='#4169E1' value={60} style={{ height: '10px' }}></ProgressBar>
+                            </div>
+                          </div>
+                        )
+                      })}
+
                     </div>
                   </div>
-                  <div className="absolute bottom-8 left-[47vw] xl:left-[25.5vw]">
-                    <div className="flex items-center gap-1">
-                      <i className="text-[10px] xl:text-[0.521vw] finance-arrow-line-up-light text-[#31C48D] rounded-full"></i>
-                      <div className="text-[#6C768B] text-[12px] xl:text-[0.625vw] font-normal">
-                        <span className="font-medium">5%</span> LY Var
-                      </div>
-                    </div>
-                  </div>
-                  <div className="absolute bottom-8  left-[65vw] xl:left-[34.4vw]">
-                    <div className="flex items-center gap-1">
-                      <i className="text-[10px] xl:text-[0.521vw] finance-arrow-line-up-light text-[#31C48D] rounded-full"></i>
-                      <div className="text-[#6C768B] text-[12px] xl:text-[0.625vw] font-normal">
-                        <span className="font-medium">5%</span> LY Var
-                      </div>
-                    </div>
-                  </div>
+
+
                 </div>
               </>
             }
           />
         </div>
+        {/**col**/}
+        <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw] xl:p-[0.833vw] p-4">
+          <ChartWrapper
+            title={"Tickets Re-Assigned/Re-Routed (From) Top5"}
+            ExportIcon={true}
+            tabSection={true}
+            infoIcon={true}
+            bulbIcon={true}
+            downloadIcon={true}
+            graphIcon={true}
+            data={
+              <>
+                <div className="flex gap-2 pb-2">
+                  <div className='flex items-center'>
+                    <button onClick={() => setTop(true)} className={`${top === true ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-bl-md`}>Top 5</button>
+                    <button onClick={() => setTop(false)} className={`${top === false ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-br-md`}>Bottom 5</button>
+                  </div>
+                </div>
+                <div className="w-full xl:h-[19.90vw] relative">
+                  <ReactEcharts
+                    option={TecketsReReouted}
+                    style={{ height: "100%", width: "100%" }}
+                  />
+
+                </div>
+              </>
+            }
+          />
+        </div>
+
+        {/**col**/}
+        <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw] xl:p-[0.833vw] p-4">
+          <ChartWrapper
+            title={"Tickets By Sub Category"}
+            ExportIcon={true}
+            tabSection={true}
+            infoIcon={true}
+            bulbIcon={true}
+            downloadIcon={true}
+            graphIcon={true}
+            data={
+              <>
+                <div className="flex gap-2 pb-2">
+                  <div className='flex items-center'>
+                    <button onClick={() => setTop(true)} className={`${top === true ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-bl-md`}>Top 5</button>
+                    <button onClick={() => setTop(false)} className={`${top === false ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-br-md`}>Bottom 5</button>
+                  </div>
+                </div>
+                <div className="w-full xl:h-[19.90vw] ">
+                  <ReactEcharts
+                    option={Assetschart}
+                    style={{ height: "100%", width: "100%" }}
+                  />
+
+                </div>
+              </>
+            }
+          />
+        </div>
+
+
       </div>
     </div>
 

@@ -13,7 +13,46 @@
     padding: 6px 10px;
 }
 
-.custTavbview .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {background: #1570EF;color: #FFFFFF;}
+.custTavbview .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {background: #1570EF;color: #FFFFFF;border-color: #1570EF;}
+
+/*******Executive Detailed Table Custm Tabs***********/
+.executiveCustTavbview .react-tabs__tab-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.executiveCustTavbview .react-tabs__tab-list .react-tabs__tab {
+    border-radius: 6px;
+    border: 1px solid var(--stroke-soft, #E4E7EC);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    cursor: pointer;
+    padding: 6px 10px;
+}
+
+.executiveCustTavbview .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {background: #1570EF;color: #FFFFFF;border-color: #1570EF;}
+/*******Executive Detailed Table Custm Tabs***********/
+
+/*******Executive Detailed Inner Table Custm Tabs***********/
+.executiveTableInnerTab .react-tabs__tab-list {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+.executiveTableInnerTab .react-tabs__tab-list .react-tabs__tab {
+    border-bottom: 1px solid var(--stroke-soft, #E5E7EB) !important;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 0;
+    border: 0;
+}
+
+.executiveTableInnerTab .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {background: #FFF;color: #1570EF; border-bottom: 2px solid var(--stroke-soft, #1570EF) !important;}
+/*******Executive Detailed Inner Table Custm Tabs***********/
 
 .custInputsearch .p-inputtext {
     width: 300px;
@@ -613,10 +652,43 @@
 .custDropdownBox.dropdown_bg01 .p-dropdown:not(.p-disabled):hover, .custDropdownBox.dropdown_bg01 .p-dropdown:not(.p-disabled).p-focus {
     border-color: #D3D3CE;
 }
+
+.blue_active_btn {
+    background: #4169E1 !important;
+    color: #ffffff !important; 
+    border-color:#4169E1 !important;
+}
 /***********************************************
             Responsive
 ***********************************************/
 @media only screen and (min-width: 1800px) {
+    /*******Executive Detailed Inner Table Custm Tabs***********/
+    .executiveTableInnerTab .react-tabs__tab-list {
+    display: flex;
+    align-items: center;
+    gap: 0 !important;
+    }
+    .executiveTableInnerTab .react-tabs__tab-list .react-tabs__tab {
+    border-bottom: 0.104vw solid var(--stroke-soft, #E5E7EB) !important;
+    font-size: 0.625vw;
+    line-height: 0.833vw;
+    cursor: pointer;
+    padding: 0.313vw 0.625vw;
+    border-radius: 0 !important;
+    border: 0;
+    }
+    .executiveTableInnerTab .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {background: #FFF;color: #1570EF; border-bottom: 0.156vw solid var(--stroke-soft, #1570EF) !important;}
+    /*******Executive Detailed Table Custm Tabs***********/
+    .executiveCustTavbview .react-tabs__tab-list {
+    gap: 0.417vw;
+    }
+    .executiveCustTavbview .react-tabs__tab-list .react-tabs__tab {
+    border-radius: 0.313vw;
+    font-size: 0.625vw;
+    line-height: 0.833vw;
+    padding: 0.313vw 0.625vw;
+    }
+    /*******Executive Detailed Table Custm Tabs***********/
     .map-view-marker {
         position: absolute;
         top: 14.323vw;
