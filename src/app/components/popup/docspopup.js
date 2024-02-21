@@ -1,15 +1,21 @@
-import React, { useState,useRef  } from "react";
+import React, { useState, useRef } from "react";
 import { Button } from "primereact/button";
 import { Sidebar } from 'primereact/sidebar';
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
 
 import { OverlayPanel } from 'primereact/overlaypanel';
-        
+
 function Docspopup() {
     const op = useRef(null);
+    const [isClicked, setIsClicked] = useState(false);
+    console.log("clickkk",isClicked)
     const [visible, setVisible] = useState(false);
     const [value, setValue] = useState('');
+
+    const toggleFunction = () => {
+        setIsClicked(true);
+    };
     return (
         <>
 
@@ -54,12 +60,20 @@ function Docspopup() {
                                             </div>
                                             <div>
 
-                                                <i onClick={(e) => op.current.toggle(e)} className="asetsmng-plus text-[16px] xl:text-[0.866vw] text-white bg-[#4169E1] p-[0.729vw] rounded-full border-[3px] border-[#9EBBF2]"></i>
+                                              {
+                                                isClicked ?
+                                                <i onClick={(e) => {op.current.toggle(e), setIsClicked(false);}} className=" asetsmng-cross text-[16px] xl:text-[0.866vw] text-white bg-[#4169E1] p-[0.729vw] rounded-full border-[3px] border-[#9EBBF2]"></i>
+                                               :
+                                               <i onClick={(e) => {op.current.toggle(e), setIsClicked(true);}} className=" asetsmng-plus text-[16px] xl:text-[0.866vw] text-white bg-[#4169E1] p-[0.729vw] rounded-full border-[3px] border-[#9EBBF2]"></i>
 
-                                                <OverlayPanel ref={op} >
-                                                 <div><i className="asetsmng-share"></i></div>
-                                                 <div><i className="asetsmng-printer"></i></div>
-            </OverlayPanel>
+                                              }
+                                              
+                                                <OverlayPanel ref={op}  className="docOverlypanel ">
+                                                    <div className="rounded-[4px] py-[4px] px-[8px] xl:px-[0.417vw] xl:py-[0.208vw] shadow-sm shadow-[#0000004d] "><i className="asetsmng-share"></i></div>
+                                                    <div className="rounded-[4px] py-[4px] px-[8px] xl:px-[0.417vw] xl:py-[0.208vw] shadow-sm shadow-[#0000004d]"><i className="asetsmng-printer"></i></div>
+                                                    <div className="rounded-[4px] py-[4px] px-[8px] xl:px-[0.417vw] xl:py-[0.208vw] shadow-sm shadow-[#0000004d]"><i className="asetsmng-printer"></i></div>
+                                                    <div className="rounded-[4px] py-[4px] px-[8px] xl:px-[0.417vw] xl:py-[0.208vw] shadow-sm shadow-[#0000004d]"><i className="asetsmng-printer"></i></div>
+                                                </OverlayPanel>
                                             </div>
                                         </div>
 
