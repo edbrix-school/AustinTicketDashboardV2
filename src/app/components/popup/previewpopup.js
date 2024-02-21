@@ -3,6 +3,8 @@ import PreviewTable from "@/app/technician/elibrary/previewtable/page";
 import { Sidebar } from "primereact/sidebar";
 import React, { useState } from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import Link from "next/link";
+
 
 export default function PreviewPopup(props) {
   const [activeTab, setActiveTab] = useState(0);
@@ -60,7 +62,13 @@ export default function PreviewPopup(props) {
                       <MetadataPage/>
               </TabPanel>
             </div>
+        
           </Tabs>
+          <div className="flex w-full justify-end items-end bottom-0 pr-[24px] 3xl:pr-[1.25vw] p-[24px] 3xl:p-[1.25vw]">
+              <Link href={""} className="text-[16px] 3xl:text-[0.833vw] text-[#FFF] bg-[#4169E1] rounded-lg leading-5 px-[12px] py-[8px]">
+              Open this Folder
+              </Link>
+            </div>
         </div>
       </Sidebar>
     </div>
