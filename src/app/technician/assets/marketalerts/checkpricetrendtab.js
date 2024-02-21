@@ -151,6 +151,7 @@ function checkpricetrendtab() {
               bulbIcon={true}
               downloadIcon={true}
               graphIcon={true}
+              expand={true}
               data={
                 <div>
                   

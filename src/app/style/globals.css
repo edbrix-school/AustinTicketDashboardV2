@@ -120,6 +120,7 @@ body {
 .productSearch .p-button-label { color: white; font-weight: 400; font-size: 20px; }
 .productSearch i.asetsmng-microphone { right: 28px; position: absolute; left: auto !important; }
 .custTavbview.marketAlertTabs .react-tabs__tab-list .react-tabs__tab { border-radius: 8px; padding: 10px 12px; }
+.custTavbview.marketAlertTabs .bordercolorB { border-color: #E4E7EC; }
 .custaccordion .p-accordion .p-accordion-header .p-accordion-header-link { position: relative; padding: 20px; background: #DFE7FA; color: #262626; font-size: 16px; font-weight: 500; border: none; border-radius: 8px;  }
 .custaccordion .p-accordion .p-accordion-content { border: none; padding: 0; }
 .custaccordion .p-accordion .p-accordion-tab { margin-bottom: 8px; }

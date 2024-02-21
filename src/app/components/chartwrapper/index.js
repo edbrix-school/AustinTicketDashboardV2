@@ -19,6 +19,8 @@ export default function ChartWrapper(props) {
   const [ExportIcon, setExportIcon] = useState(props.ExportIcon);
   const [graphIcon, setGraphIcon] = useState(props.ExportIcon);
   const [downloadIcon, setDownloadIcon] = useState(props.ExportIcon);
+  const [expand, setExpand] = useState(props.expand);
+  
 
   const op = useRef(null);
   const Bots = useRef();
@@ -58,14 +60,22 @@ export default function ChartWrapper(props) {
         {({ ref, onToggle, onExit }) => (
           <div ref={ref} className=' h-full fullScreen'>
             <div>
-              <div className='flex items-center justify-between border-b border-b-[#BECDE3] px-[16px] 3xl:px-[0.833vw] py-[14px] 3xl:py-[0.725vw]'>
-                <div className='flex items-center 3xl:gap-[0.417vw] gap-[8px]'>
+              <div className='flex items-center justify-between border-b border-b-[#BECDE3] bordercolorB px-[16px] 3xl:px-[0.833vw] py-[14px] 3xl:py-[0.725vw]'>
+                <div className='flex items-center 3xl:gap-[0.625vw] gap-[12px]'>
                   {/* <div><i className='asetsmng-folder text-[20px] 3xl:text-[1.042vw]'></i></div> */}
                   <div className={`text-[#000000] dark:text-[#FFF] text-[16px] 3xl:text-[0.833vw] font-semibold  ${props.text}`}>
                     <p>{props.title}</p>
                   </div>
+
+                  {
+                    expand == true ?
+                      <div className='text-[#4169E1] text-[14px] 3xl:text-[0.729vw] font-medium'>
+                        <Link href={""}>Expand</Link>
+                      </div>
+                      : null
+                  }
                  
-                  <div className={`text-[#6C768B] text-[14px] xl:text-[0.729vw] font-normal  ${props.text}`}><p>{props.subtitle}</p></div>
+                  <div className={`text-[#6C768B] text-[14px] 3xl:text-[0.729vw] font-normal  ${props.text}`}><p>{props.subtitle}</p></div>
                 </div>
                 <div className='space-x-[8px] 3xl:space-x-[0.417vw] optionbtn flex items-center wrapper_icons items-center custm_dropdwon text-[#6C768B] dark:text-[#B3B9C6]'>
                   {
@@ -76,7 +86,7 @@ export default function ChartWrapper(props) {
                         options={cities}
                         optionLabel="name"
                         placeholder={props.placeholder1}
-                        className="w-full xl:w-[10.417vw] md:h-[40px]"
+                        className="w-full 3xl:w-[10.417vw] md:h-[40px]"
                         style={{ border: "1px solid #DDE1EA", borderRadius: "8px" }}
                       />
                       : null
@@ -89,29 +99,29 @@ export default function ChartWrapper(props) {
                         options={cities}
                         optionLabel="name"
                         placeholder={props.placeholder2}
-                        className="w-full xl:w-[10.417vw] md:h-[40px]"
+                        className="w-full 3xl:w-[10.417vw] md:h-[40px]"
                         style={{ border: "1px solid #DDE1EA", borderRadius: "8px" }}
                       />
                       : null
                   }
                   {
                     graphIcon == true ?
-                      <Link href='' className='leading-none'><i className='asetsmng-linechart-outline text-[14px] xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
+                      <Link href='' className='leading-none'><i className='asetsmng-linechart-outline text-[14px] 3xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
                       : null
                   }
                   {
                     downloadIcon == true ?
-                      <Link href='' className='leading-none'><i className='asetsmng-lamp text-[14px] xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
+                      <Link href='' className='leading-none'><i className='asetsmng-lamp text-[14px] 3xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
                       : null
                   }
                   {
                     bulbIcon == true ?
-                      <Link href='' className='leading-none'><i className='asetsmng-download text-[14px] xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
+                      <Link href='' className='leading-none'><i className='asetsmng-download text-[14px] 3xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
                       : null
                   }
                   {
                     infoIcon == true ?
-                      <Link href='' className='leading-none'><i className='asetsmng-Info-circle text-[14px] xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
+                      <Link href='' className='leading-none'><i className='asetsmng-Info-circle text-[14px] 3xl:text-[0.94vw] align-top' title='Add proper title here'></i></Link>
                       : null
                   }
                   {
@@ -122,7 +132,7 @@ export default function ChartWrapper(props) {
                           onToggle();
                         }}
                       >
-                        <i onClick={handleClick} className='redingtonHR-pluse text-[14px] xl:text-[0.94vw] align-top'></i></Link>
+                        <i onClick={handleClick} className='redingtonHR-pluse text-[14px] 3xl:text-[0.94vw] align-top'></i></Link>
                       : null
                   }
                   {
@@ -131,13 +141,13 @@ export default function ChartWrapper(props) {
                         <div className="card flex">
                           <button onClick={(e) => op.current.toggle(e)}>
                             <div className="cursor-pointer flex items-center leading-none">
-                              <i className='asetsmng-three-dots-box text-[14px] xl:text-[0.94vw] align-top' title='Click here for multiple option'></i>
+                              <i className='asetsmng-three-dots-box text-[14px] 3xl:text-[0.94vw] align-top' title='Click here for multiple option'></i>
                             </div>
                            
                           </button>
                           
                           <OverlayPanel ref={op} className="dropdownList">
-                            <div className='flex flex-col text-left gap-y-2 wrapperOption text-[14px] xl:text-[0.730vw] text-[#363A44] dark:text-[#B3B9C6]'>
+                            <div className='flex flex-col text-left gap-y-2 wrapperOption text-[14px] 3xl:text-[0.730vw] text-[#363A44] dark:text-[#B3B9C6]'>
                               <button className='flex gap-2 items-center hover:text-[#4FB155] dark:hover:text-[#4FB155] ease-linear duration-200' href='' onClick={() => { handlePrintBots(); onExit(); }}>
                                 <i className='pi pi-print '></i>
                                 <span>Print to pdf</span>
