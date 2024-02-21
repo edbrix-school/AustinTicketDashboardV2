@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { Column } from "primereact/column";
 import { DataTable } from "primereact/datatable";
