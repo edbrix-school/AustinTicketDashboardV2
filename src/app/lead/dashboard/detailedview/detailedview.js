@@ -325,7 +325,7 @@ export default function detailedview() {
             </div>
           </div>
           <div className="flex flex-wrap items-center 3xl:gap-[0.833vw] gap-4">
-            <div className="flex flex-wrap items-center 3xl:gap-[1.25vw] gap-5">
+            <div className="flex flex-wrap items-center 3xl:gap-[0.833vw] gap-4">
               <div>
                 <span className="p-input-icon-left custm-tdsearch p-input-icon-right">
                   <i className="asetsmng-td-search 3xl:text-[0.833vw] text-base text-[#84878D] cursor-pointer w-fit" />
@@ -364,7 +364,7 @@ export default function detailedview() {
                 </Link>
               </div>
             </div>
-            <div className="flex items-center 3xl:gap-[0.417vw] gap-1.5">
+            <div className="flex items-center 3xl:gap-[0.313vw] gap-6">
               <Link
                 href={""}
                 className="bg-white rounded-lg border border-[#EAE0E0] text-[#424242] text-[18px] 3xl:text-[0.938vw] flex items-center justify-center p-[9px] xl:p-[0.469vw] 3xl:rounded-[0.417vw] "

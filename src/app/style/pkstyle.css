@@ -29,3 +29,7 @@
 .p-dropdown .p-dropdown-trigger {
     color: #84878D;
 }
+
+.p-dropdown .p-dropdown-label.p-placeholder {
+    color: #20232E;
+}
