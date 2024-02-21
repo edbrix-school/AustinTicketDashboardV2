@@ -158,7 +158,7 @@ export default function DoublebarLinechart({ legend, grid, data, xAxisName, xAxi
                 symbolSize: 10,
                 label: {
                     show: true,
-                    formatter: '{@[n]} %',
+                    formatter: '{c} %',
                     color:'#24262D',
                     position:'top',
                     backgroundColor: "#EDEDF7",

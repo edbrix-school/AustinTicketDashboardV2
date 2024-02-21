@@ -147,10 +147,10 @@ export default function ComparisonDoublebarLinechart({ legend, grid, data, xAxis
                 yAxisIndex: 1,
                 color: color3,
                 data: data.values3,
-                symbolSize: 10,
+                symbolSize: 8,
                 label: {
                     show: true,
-                    formatter: '{@[n]}',
+                    formatter: '{c}',
                     fontSize: 10,
                     color:'#24262D',
                     backgroundColor: "#EDEDF7",

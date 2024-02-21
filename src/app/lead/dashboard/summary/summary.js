@@ -178,7 +178,7 @@ export default function summary() {
         color: "#363A44",
         label: {
           show: true,
-          formatter: "{@[n]} %",
+          formatter: "{c} %",
           color: "#24262D",
           backgroundColor: "#EEF8F4",
           position: [-10, 10],

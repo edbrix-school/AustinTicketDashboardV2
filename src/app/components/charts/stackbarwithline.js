@@ -153,7 +153,7 @@ export default function StackBarwithLine({ }) {
         symbolSize: 10,
         label:{
             show: true,
-            formatter: '{@[n]} %',
+            formatter: '{c} %',
             color:'#24262D',
             fontSize:10,
             backgroundColor: "#EEF8F4",

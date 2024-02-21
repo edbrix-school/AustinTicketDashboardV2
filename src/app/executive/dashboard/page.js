@@ -5,9 +5,9 @@ import { InputText } from "primereact/inputtext";
 import FilterComponent from '@/app/components/filtercomponent';
 import ExecutiveLayout from '@/app/components/executivepagelayout/pagelayout';
 import Summary from './summary/summary';
-import Comparision from './comparision/comparision';
 import Drilldown from './drilldown/drilldown';
 import Detailed from './detailed/detailed';
+import Comparison from './comparison/comparison';
 
 export default function Index() {
     const [pageTitle, setPageTitle] = useState('Summary');
@@ -20,7 +20,7 @@ export default function Index() {
                         <div>
                             <TabList>
                                 <Tab onClick={() => { setPageTitle("Summary") }}>Summary</Tab>
-                                <Tab onClick={() => { setPageTitle("Comparision") }}>Comparision</Tab>
+                                <Tab onClick={() => { setPageTitle("Comparison") }}>Comparison</Tab>
                                 <Tab onClick={() => { setPageTitle("Drildown") }}>Drildown</Tab>
                                 <Tab onClick={() => { setPageTitle("Detailed") }}>Detailed</Tab>
                             </TabList>
@@ -38,7 +38,7 @@ export default function Index() {
                             <Summary />
                         </TabPanel>
                         <TabPanel>
-                            <Comparision />
+                            <Comparison />
                         </TabPanel>
                         <TabPanel>
                             <Drilldown />
