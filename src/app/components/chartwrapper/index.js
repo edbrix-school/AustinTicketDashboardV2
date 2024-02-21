@@ -20,6 +20,8 @@ export default function ChartWrapper(props) {
   const [graphIcon, setGraphIcon] = useState(props.ExportIcon);
   const [downloadIcon, setDownloadIcon] = useState(props.ExportIcon);
   const [expand, setExpand] = useState(props.expand);
+  const [historicalPrice, setHistoricalPrice] = useState(props.historicalPrice);
+  
   
 
   const op = useRef(null);
@@ -60,7 +62,8 @@ export default function ChartWrapper(props) {
         {({ ref, onToggle, onExit }) => (
           <div ref={ref} className=' h-full fullScreen'>
             <div>
-              <div className='flex items-center justify-between border-b border-b-[#BECDE3] bordercolorB px-[16px] 3xl:px-[0.833vw] py-[14px] 3xl:py-[0.725vw]'>
+              <div className='border-b border-b-[#BECDE3] bordercolorB px-[16px] 3xl:px-[0.833vw] py-[14px] 3xl:py-[0.725vw]'>
+                <div className='flex items-center justify-between'>
                 <div className='flex items-center 3xl:gap-[0.625vw] gap-[12px]'>
                   {/* <div><i className='asetsmng-folder text-[20px] 3xl:text-[1.042vw]'></i></div> */}
                   <div className={`text-[#000000] dark:text-[#FFF] text-[16px] 3xl:text-[0.833vw] font-semibold  ${props.text}`}>
@@ -175,6 +178,35 @@ export default function ChartWrapper(props) {
                       : null
                   }
                 </div>
+                </div>
+                {
+                    historicalPrice == true ?
+                      <div className='flex items-center'>
+                        <div className='flex items-center gap-[45px] 3xl:gap-[2.344vw]'>
+                        <div>sdfsdf</div>
+                        <div className='flex items-center gap-[65px] 3xl:gap-[3.385vw]'>
+                          <div className='col space-y-[6px] 3xl:space-y-[0.313vw]'>
+                            <div className='text-[#3A3E49] text-[12px] 3xl:text-[0.625vw]'>Actual Price</div>
+                            <div className='text-[##20232E] text-[14px] 3xl:text-[0.729vw] font-medium'>$3438</div>
+                          </div>
+                          <div className='col space-y-[6px] 3xl:space-y-[0.313vw]'>
+                            <div className='text-[#3A3E49] text-[12px] 3xl:text-[0.625vw]'>Changes - 24hrs</div>
+                            <div className='text-[##20232E] text-[14px] 3xl:text-[0.729vw] font-medium'>$3438 <span className='text-[#6D9636] text-[12px] 3xl:text-[0.625vw]'>11.4%</span> <span className='text-[#6D9636] text-[12px] 3xl:text-[0.625vw]'><i className='asetsmng-arrow-up-line'></i></span></div>
+                          </div>
+                          <div className='col space-y-[6px] 3xl:space-y-[0.313vw]'>
+                            <div className='text-[#3A3E49] text-[12px] 3xl:text-[0.625vw]'>Actual Price</div>
+                            <div className='text-[##20232E] text-[14px] 3xl:text-[0.729vw] font-medium'>$3438</div>
+                          </div>
+                          <div className='col space-y-[6px] 3xl:space-y-[0.313vw]'>
+                            <div className='text-[#3A3E49] text-[12px] 3xl:text-[0.625vw]'>Actual Price</div>
+                            <div className='text-[##20232E] text-[14px] 3xl:text-[0.729vw] font-medium'>$3438</div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      : null
+                  }
+                
               </div>
               <div className="">
                 <div className='grid grid-cols-1 wrapper_icons center-content'>

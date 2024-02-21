@@ -152,6 +152,7 @@ function checkpricetrendtab() {
               downloadIcon={true}
               graphIcon={true}
               expand={true}
+              historicalPrice={true}
               data={
                 <div>
                   
