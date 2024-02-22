@@ -19,7 +19,7 @@ return (
     currentPageReportTemplate="Rows per page  {first}-{last} of {totalRecords}"
     rowsPerPageOptions={[5, 10, 25, 50]}
     rows={10}>
-    <Column field="teamname" header="Team Name" expander sortable style={{ width: "10rem" }}></Column>
+    <Column field="teamname" header="Team Name" expander sortable style={{ width: "10rem" }} expanderIcon="asetsmng-minus"></Column>
     <Column field="totalticket" header="Total Ticket" sortable style={{ width: "10rem" }}></Column>
     <Column field="resolved" header="Resolved" sortable style={{ width: "10rem" }}></Column>
     <Column field="avgtimeresolveticketsdays" header="Avg Time to Resolve Tickets (Days)" style={{ width: "15rem" }} sortable></Column>

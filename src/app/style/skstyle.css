@@ -440,7 +440,6 @@ background: var(--surface-page, #F9F9FC);
     content: "\e928";
     font-size: 12px;
     color: #9CA1AB;
-
 }
 .custTable.p-treetable .p-treetable-tbody > tr > td .p-treetable-toggler svg {
     display: none;
