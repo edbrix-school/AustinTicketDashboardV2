@@ -16,6 +16,14 @@ import FilterComponent from '@/app/components/filtercomponent';
 export default function Index() {
   const [pageName, setPageName] = useState('Manage Assets');
   const [pageTitle, setPageTitle] = useState('Manage Assets');
+  const [bodyClass, setBodyClass] = useState('');
+
+  const handleClick = () => {
+    // Remove the class from the body
+    document.body.classList.remove('expandFull');
+    // Update state to reflect the change
+    setBodyClass('');
+  };
 
   return (
     <PageLayout topTab={true} pageTitle={pageTitle} parentPageName={["Assets"]} pageName={pageName}>
@@ -30,7 +38,7 @@ export default function Index() {
       <Tab onClick={() => {setPageName("Checkin"), setPageTitle("Checkin") }}>Checkin</Tab>
       <Tab onClick={() => {setPageName("Financial Analysis"), setPageTitle("Financial Analysis") }}>Financial Analysis</Tab>
       <Tab onClick={() => {setPageName("Change Status"), setPageTitle("Change Status") }}>Change Status</Tab>
-      <Tab onClick={() => {setPageName("Market Alerts"), setPageTitle("Market Alerts") }}>Market Alerts</Tab>
+      <Tab onClick={() => {setPageName("Market Alerts"), setPageTitle("Market Alerts"), setBodyClass(handleClick) }}>Market Alerts</Tab>
       <Tab onClick={() => {setPageName("Inventory Audit"), setPageTitle("Inventory Audit") }}>Inventory Audit</Tab>
     </TabList>
     </div>

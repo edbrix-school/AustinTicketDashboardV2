@@ -148,6 +148,11 @@ body {
 .expandFull .p-sidebar-visible { display: none !important; }
 .expandFull .ExpandTitle { display: none; }
 .expandFull .bothTitleHide { display: none; }
+.ExpandHeader2 { display: none; }
+.expandFull .ExpandHeader2 { display: block; }
+.expandFull .ExpandHeader1 { display: none; }
+.expandFull .expandProductImg { max-width: 80px; min-width: fit-content; }
+.expandFull .expandProductImg img{ max-width: 80px; }
 /* V.K style End */
 
 

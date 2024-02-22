@@ -67,21 +67,19 @@ function marketalertspopupHeader() {
     ],
   };
 
-  const [drodownlonValueClick,setDroDownvalueClick] = useState(false)
+  const [drodownlonValueClick, setDroDownvalueClick] = useState(false);
   const dropwonClick = (e) => {
-
-    if(e === "dropwonClick"){
-        document.querySelector('body').classList.add('expandFull')
-       setDroDownvalueClick(false)
-    }else if(e === "bodyclick" && drodownlonValueClick){
-        document.querySelector('body').classList.remove('expandFull')
-        setDroDownvalueClick(false)
-
+    if (e === "dropwonClick") {
+      document.querySelector("body").classList.add("expandFull");
+      setDroDownvalueClick(false);
+    } else if (e === "bodyclick" && drodownlonValueClick) {
+      document.querySelector("body").classList.remove("expandFull");
+      setDroDownvalueClick(false);
     }
-}
+  };
 
   return (
-    <div onClick={()=>dropwonClick("bodyclick")}>
+    <div onClick={() => dropwonClick("bodyclick")}>
       {/* Header */}
       <div className="rounded-tl-2xl 3xl:rounded-tl-2xl-[0.833vw] p-[24px] 3xl:p-[1.25vw] z-10 relative border-b border-[#E4E7EC]">
         <div className="space-y-2xl 3xl:space-y-[1.25vw]">
@@ -90,12 +88,19 @@ function marketalertspopupHeader() {
               Market Alert
             </div>
             <div className="text-[#4169E1] text-[14px] 3xl:text-[0.729vw] font-medium expandHide ExpandTitle">
-              <Link href={""} onClick={()=>{dropwonClick("dropwonClick"),setDroDownvalueClick(true)}}>Expand</Link>
+              <Link
+                href={""}
+                onClick={() => {
+                  dropwonClick("dropwonClick"), setDroDownvalueClick(true);
+                }}
+              >
+                Expand
+              </Link>
             </div>
           </div>
 
           <div className="gap-[24px] 3xl:gap-[1.25vw] flex items-center expandHide">
-            <div className="col min-w-[175px]">
+            <div className="col min-w-[175px] 3xl:min-w-[9.115vw] expandProductImg">
               <div className="border border-[#E4E7EC] rounded-lg 3xl:rounded-[0.417vw] py-[18px] px-[12px] 3xl:px-[0.625vw] 3xl:py-[0.838vw]">
                 <Image
                   src={"/assets/images/laptop4.png"}
@@ -104,7 +109,8 @@ function marketalertspopupHeader() {
                 />
               </div>
             </div>
-            <div className="col w-full">
+                         
+            <div className="col w-full ExpandHeader1">
               <div className="text-[#20232E] text-[20px] 3xl:-[1.042vw] font-medium ">
                 Aspire 5 A515-56-51EV Notebook
               </div>
@@ -129,6 +135,41 @@ function marketalertspopupHeader() {
                   <span className="text-[#84878D] text-[12px] 3xl:text-[0.625vw]">
                     Current Price, at 2 PM. On 30th Nov
                   </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="col w-full ExpandHeader2">
+              <div className="flex items-center justify-between">
+                <div className="col space-y-[6px] 3xl:space-y-[0.313vw]">
+                <div className="text-[#20232E] text-[20px] 3xl:-[1.042vw] font-medium ">
+                Aspire 5 A515-56-51EV Notebook
+              </div>
+              <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw]">
+                Model: A515-56-51EV
+              </div>
+                </div>
+                <div className="col flex items-start gap-[20px] 3xl:gap-[1.042vw]">
+                <div className="min-w-[200px] 3xl:min-w-[10.417vw]">
+                  <ReactEcharts
+                    option={linechartdata}
+                    style={{ height: "80%", width: "100%" }}
+                  />
+                </div>
+                <div>
+                  <div className="text-end">
+                    <div className="text-[20px] 3xl:text-[1.042vw] text-[#000000] font-medium ">
+                      $3450
+                    </div>{" "}
+                    <div className="text-[#6D9636] text-[14px] 3xl:text-[0.729vw] font-semibold">
+                      20.4% Increased{" "}
+                      <i className="asetsmng-arrow-up-line mx-[5px] 3xl:mx-[0.26vw]"></i>
+                    </div>
+                    <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw]">
+                      Current Price, at 2 PM. On 30th Nov
+                    </div>
+                  </div>
+                </div>
                 </div>
               </div>
             </div>
