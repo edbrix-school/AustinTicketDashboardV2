@@ -13,6 +13,8 @@ import TreeMap from "@/app/components/charts/treemapchart";
 import Image from "next/image";
 import TicketsbyPriority from "@/app/components/charts/ticketsbypriority";
 import Piechart from "@/app/components/charts/piechart";
+import Assignedticketshourlytrend from "@/app/components/charts/assignedticketshourlytrend";
+import Newticketsbyagebarchart from "@/app/components/charts/newticketsbtagebarchart";
 
 export default function Index() {
   const [pageName, setPageName] = useState("Summary");
@@ -657,7 +659,12 @@ export default function Index() {
                             </div>
                           </div>
                           <div className=" 3xl:h-[19.531vw] xl:h-[375px] lg:h-[360px]">
-                            
+                          <Assignedticketshourlytrend
+                          seclinecirclecolor={'#E04177'}
+                          seclinecolor={'#E04177'}
+                          chartshadow={'#E04177'}
+                          linechartgradientcolor={'#E04177'}
+                          />
                           </div>
                         </div>
                       }
@@ -688,7 +695,7 @@ export default function Index() {
                             </div>
                           </div>
                           <div className=" 3xl:h-[19.531vw] xl:h-[375px] lg:h-[360px] px-5">
-                            
+                          <Newticketsbyagebarchart/>
                           </div>
                         </div>
                       }

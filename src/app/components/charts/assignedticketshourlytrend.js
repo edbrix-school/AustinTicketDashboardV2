@@ -4,7 +4,7 @@ import * as echarts from 'echarts';
 import { graphic } from "echarts";
 import { useTheme } from "next-themes";
 
-export default function Assignedticketshourlytrend() {
+export default function Assignedticketshourlytrend({seclinecirclecolor,seclinecolor,chartshadow,linechartgradientcolor}) {
     const { systemTheme, theme, setTheme } = useTheme();
     const currentTheme = theme === 'system' ? systemTheme : theme;
     
@@ -112,12 +112,13 @@ export default function Assignedticketshourlytrend() {
                 formatter: "${c}",
                 // formatter: '{@[n]} %',
                 backgroundColor: "#EEF8F4",
-                padding: [4, 8, 4, 8],
+                padding: [3, 4, 3, 4],
+                fontSize:'10'
               },
               areaStyle: {
                 
     
-                color: new echarts.graphic.LinearGradient(0, 0, 1, 1, [
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
                   {
                     offset: 0,
                     color: '#4169E1'
@@ -139,30 +140,38 @@ export default function Assignedticketshourlytrend() {
               itemStyle: {
                 color: "#fff",
                 borderWidth: 2,
-                borderColor: "#2C9999",
+                // borderColor: "#2C9999",
+                borderColor:seclinecirclecolor  
               },
               lineStyle: {
-                color: "#2C9999",
-                shadowColor: "#2C9999",
+                // color: "#2C9999",
+                // shadowColor: "#2C9999",
+                color: seclinecolor,
+                  // color: "#E04177",
+                // shadowColor: "#E04177",
+                shadowColor:chartshadow,
                 shadowBlur: 10
               },
               label: {
                 show: true,
                 color: currentTheme == 'dark' ? '#FFFFFF' : '#24262D',
-                position: 'bottom',
+                position: 'top',
                 formatter: "${c}",
                 // formatter: '{@[n]} %',
                 backgroundColor: "#EEF8F4",
-                padding: [4, 8, 4, 8],
+                padding: [3, 4, 3, 4],
+                fontSize:'10'
               },
               areaStyle: {
                 
                
     
-                color: new echarts.graphic.LinearGradient(0, 0, 1, 1, [
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
                   {
                     offset: 0,
-                    color: '#2C9999'
+                    // color: '#2C9999'
+                    // color: '#E04177'
+                    color:linechartgradientcolor,
                   },
                   {
                     offset: 1,
