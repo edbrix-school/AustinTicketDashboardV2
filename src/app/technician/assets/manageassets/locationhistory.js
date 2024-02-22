@@ -228,7 +228,7 @@ export default function LocationHistoryTable() {
             >
               <Column
                 selectionMode="multiple"
-                style={{ maxWidth: "2rem",  minWidth: "2rem" }}
+                style={{ width: "2rem" }}
               ></Column>
               <Column
                 field="Index"

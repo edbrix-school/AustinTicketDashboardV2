@@ -82,17 +82,182 @@ export default function TechnicianTable() {
 
 
       const [sales] = useState([
-        { product: '1', technicianname:'Tech 1', technicianID:'E101221', technicianemail:'mail@domain', totalticket: 100, resolved: '40 (40%)', resolvedwithinSLA: 54406, thisYearProfit: 43342 },
-        { product: '2', technicianname:'Tech 2', technicianID:'E101221', technicianemail:'mail@domain', totalticket: 100, resolved: '40 (40%)', resolvedwithinSLA: 423132, thisYearProfit: 312122 },
-        { product: '3', technicianname:'Tech 3', technicianID:'E101221', technicianemail:'mail@domain', totalticket: 100, resolved: '40 (40%)', resolvedwithinSLA: 12321, thisYearProfit: 8500 },
-        { product: '4', technicianname:'Tech 4', technicianID:'E101221', technicianemail:'mail@domain', totalticket: 100, resolved: '40 (40%)', resolvedwithinSLA: 745232, thisYearProfit: 65323 },
-        { product: '5', technicianname:'Tech 5', technicianID:'E101221', technicianemail:'mail@domain', totalticket: 100, resolved: '40 (40%)', resolvedwithinSLA: 643242, thisYearProfit: 500332 },
-        { product: '6', technicianname:'Tech 6', technicianID:'E101221', technicianemail:'mail@domain', totalticket: 100, resolved: '40 (40%)', resolvedwithinSLA: 421132, thisYearProfit: 150005 },
-        { product: '7', technicianname:'Tech 7', technicianID:'E101221', technicianemail:'mail@domain', totalticket: 100, resolved: '40 (40%)', resolvedwithinSLA: 131211, thisYearProfit: 100214 },
-        { product: '8', technicianname:'Tech 8', technicianID:'E101221', technicianemail:'mail@domain', totalticket: 100, resolved: '40 (40%)', resolvedwithinSLA: 66442, thisYearProfit: 53322 },
-        { product: '9', technicianname:'Tech 9', technicianID:'E101221', technicianemail:'mail@domain', totalticket: 100, resolved: '40 (40%)', resolvedwithinSLA: 765442, thisYearProfit: 296232 },
-        { product: '10', technicianname:'Tech 10', technicianID:'E101221', technicianemail:'mail@domain', totalticket: 100, resolved: '40 (40%)', resolvedwithinSLA: 21212, thisYearProfit: 12533 },
-        { product: '11', technicianname:'Tech 11', technicianID:'E101221',  technicianemail:'mail@domain', totalticket: 75, resolved: '40 (40%)', resolvedwithinSLA: 21212, thisYearProfit: 12533 }
+        {
+          product: '1',
+          technicianname:'Tech 1',
+          technicianID:'E101221',
+          technicianemail:'mail@domain',
+          totalticket: 100,
+          resolved: '40 (40%)',
+          resolvedwithinSLA: '20 (20%)',
+          resolvedoutsideSLA: '20 (20%)',
+          avgtimeresolveticketsdays:'4.5',
+          numberunopenedtickets:'10 (10%)',
+          numberclosedtickets:'5 (5%)',
+          numberreroutefrom:'20',
+          numberrerouteto:'10',
+          averagetechnicianrating:'3',
+        },
+        { 
+          product: '2',
+          technicianname:'Tech 2',
+          technicianID:'E101221',
+          technicianemail:'mail@domain',
+          totalticket: 100,
+          resolved: '40 (40%)',
+          resolvedwithinSLA: '20 (20%)',
+          resolvedoutsideSLA: '20 (20%)',
+          avgtimeresolveticketsdays:'4.5',
+          numberunopenedtickets:'10 (10%)',
+          numberclosedtickets:'5 (5%)',
+          numberreroutefrom:'20',
+          numberrerouteto:'10',
+          averagetechnicianrating:'3',
+         },
+        { 
+          product: '3',
+          technicianname:'Tech 3',
+          technicianID:'E101221',
+          technicianemail:'mail@domain',
+          totalticket: 100,
+          resolved: '40 (40%)',
+          resolvedwithinSLA: '20 (20%)',
+          resolvedoutsideSLA: '20 (20%)',
+          avgtimeresolveticketsdays:'4.5',
+          numberunopenedtickets:'10 (10%)',
+          numberclosedtickets:'5 (5%)',
+          numberreroutefrom:'20',
+          numberrerouteto:'10',
+          averagetechnicianrating:'3',
+         },
+        { 
+          product: '4',
+          technicianname:'Tech 4',
+          technicianID:'E101221',
+          technicianemail:'mail@domain',
+          totalticket: 100,
+          resolved: '40 (40%)',
+          resolvedwithinSLA: '20 (20%)',
+          resolvedoutsideSLA: '20 (20%)',
+          avgtimeresolveticketsdays:'4.5',
+          numberunopenedtickets:'10 (10%)',
+          numberclosedtickets:'5 (5%)',
+          numberreroutefrom:'20',
+          numberrerouteto:'10',
+          averagetechnicianrating:'3',
+         },
+        { 
+          product: '5',
+          technicianname:'Tech 5',
+          technicianID:'E101221',
+          technicianemail:'mail@domain',
+          totalticket: 100,
+          resolved: '40 (40%)',
+          resolvedwithinSLA: '20 (20%)',
+          resolvedoutsideSLA: '20 (20%)',
+          avgtimeresolveticketsdays:'4.5',
+          numberunopenedtickets:'10 (10%)',
+          numberclosedtickets:'5 (5%)',
+          numberreroutefrom:'20',
+          numberrerouteto:'10',
+          averagetechnicianrating:'3',
+         },
+        { 
+          product: '6',
+          technicianname:'Tech 6',
+          technicianID:'E101221',
+          technicianemail:'mail@domain',
+          totalticket: 100,
+          resolved: '40 (40%)',
+          resolvedwithinSLA: '20 (20%)',
+          resolvedoutsideSLA: '20 (20%)',
+          avgtimeresolveticketsdays:'4.5',
+          numberunopenedtickets:'10 (10%)',
+          numberclosedtickets:'5 (5%)',
+          numberreroutefrom:'20',
+          numberrerouteto:'10',
+          averagetechnicianrating:'3',
+         },
+        { 
+          product: '7',
+          technicianname:'Tech 7',
+          technicianID:'E101221',
+          technicianemail:'mail@domain',
+          totalticket: 100,
+          resolved: '40 (40%)',
+          resolvedwithinSLA: '20 (20%)',
+          resolvedoutsideSLA: '20 (20%)',
+          avgtimeresolveticketsdays:'4.5',
+          numberunopenedtickets:'10 (10%)',
+          numberclosedtickets:'5 (5%)',
+          numberreroutefrom:'20',
+          numberrerouteto:'10',
+          averagetechnicianrating:'3',
+         },
+        { 
+          product: '8',
+          technicianname:'Tech 8',
+          technicianID:'E101221',
+          technicianemail:'mail@domain',
+          totalticket: 100,
+          resolved: '40 (40%)',
+          resolvedwithinSLA: '20 (20%)',
+          resolvedoutsideSLA: '20 (20%)',
+          avgtimeresolveticketsdays:'4.5',
+          numberunopenedtickets:'10 (10%)',
+          numberclosedtickets:'5 (5%)',
+          numberreroutefrom:'20',
+          numberrerouteto:'10',
+          averagetechnicianrating:'3',
+         },
+        { 
+          product: '9',
+          technicianname:'Tech 9',
+          technicianID:'E101221',
+          technicianemail:'mail@domain',
+          totalticket: 100,
+          resolved: '40 (40%)',
+          resolvedwithinSLA: '20 (20%)',
+          resolvedoutsideSLA: '20 (20%)',
+          avgtimeresolveticketsdays:'4.5',
+          numberunopenedtickets:'10 (10%)',
+          numberclosedtickets:'5 (5%)',
+          numberreroutefrom:'20',
+          numberrerouteto:'10',
+          averagetechnicianrating:'3',
+         },
+        { 
+          product: '10',
+          technicianname:'Tech 10',
+          technicianID:'E101221',
+          technicianemail:'mail@domain',
+          totalticket: 100,
+          resolved: '40 (40%)',
+          resolvedwithinSLA: '20 (20%)',
+          resolvedoutsideSLA: '20 (20%)',
+          avgtimeresolveticketsdays:'4.5',
+          numberunopenedtickets:'10 (10%)',
+          numberclosedtickets:'5 (5%)',
+          numberreroutefrom:'20',
+          numberrerouteto:'10',
+          averagetechnicianrating:'3',
+         },
+        { 
+          product: '11',
+          technicianname:'Tech 11',
+          technicianID:'E101221',
+          technicianemail:'mail@domain',
+          totalticket: 100,
+          resolved: '40 (40%)',
+          resolvedwithinSLA: '20 (20%)',
+          resolvedoutsideSLA: '20 (20%)',
+          avgtimeresolveticketsdays:'4.5',
+          numberunopenedtickets:'10 (10%)',
+          numberclosedtickets:'5 (5%)',
+          numberreroutefrom:'20',
+          numberrerouteto:'10',
+          averagetechnicianrating:'3',
+         }
     ]);
 
     
@@ -108,13 +273,13 @@ export default function TechnicianTable() {
                 <Column header="Total Ticket" sortable field="totalticket" />
                 <Column header="Resolved" sortable field="resolved" />
                 <Column header="Resolved (within SLA)" sortable field="resolvedwithinSLA" />
-                <Column header="Resolved (outside SLA)" sortable field="thisYearProfit" />
-                <Column header="Avg Time to Resolve Tickets (Days)" sortable field="thisYearProfit" />
-                <Column header="Number of Unopened Tickets" sortable field="thisYearProfit" />
-                <Column header="Number of Closed Tickets" sortable field="thisYearProfit" />
-                <Column header="Number of Re-Route From" sortable field="thisYearProfit" />
-                <Column header="Number of Re-Route To" sortable field="thisYearProfit" />
-                <Column header="Average Technician Rating" sortable />
+                <Column header="Resolved (outside SLA)" sortable field="resolvedoutsideSLA" />
+                <Column header="Avg Time to Resolve Tickets (Days)" sortable field="avgtimeresolveticketsdays" />
+                <Column header="Number of Unopened Tickets" sortable field="numberunopenedtickets" />
+                <Column header="Number of Closed Tickets" sortable field="numberclosedtickets" />
+                <Column header="Number of Re-Route From" sortable field="numberreroutefrom" />
+                <Column header="Number of Re-Route To" sortable field="numberrerouteto" />
+                <Column header="Average Technician Rating" sortable field="averagetechnicianrating" />
             </Row>
         </ColumnGroup>
     );
@@ -150,18 +315,18 @@ export default function TechnicianTable() {
               style={{ width: "100%" }}>
                 <Column field="product" style={{ minWidth: "10rem" }} />
                 <Column field="technicianname" style={{ minWidth: "12rem" }}  />
-                <Column field="technicianID" style={{ minWidth: "10rem" }} />
-                <Column field="technicianemail" style={{ minWidth: "12rem" }}  />
-                <Column field="totalticket"  style={{ minWidth: "12rem" }} />
-                <Column field="resolved"  style={{ minWidth: "12rem" }} />
+                <Column field="technicianID" style={{ minWidth: "9rem" }} />
+                <Column field="technicianemail" style={{ minWidth: "10rem" }}  />
+                <Column field="totalticket"  style={{ minWidth: "9rem" }} />
+                <Column field="resolved"  style={{ minWidth: "8rem" }} />
                 <Column field="resolvedwithinSLA"  style={{ minWidth: "12rem" }} />
-                <Column field="thisYearProfit"  style={{ minWidth: "15rem" }} />
-                <Column field="thisYearProfit" style={{ minWidth: "18rem" }} />
-                <Column field="thisYearProfit"  style={{ minWidth: "18rem" }} />
-                <Column field="thisYearProfit"  style={{ minWidth: "18rem" }} />
-                <Column field="thisYearProfit"  style={{ minWidth: "18rem" }} />
-                <Column field="thisYearProfit"  style={{ minWidth: "18rem" }} />
-                <Column field="thisYearProfit"  style={{ minWidth: "18rem" }} />
+                <Column field="resolvedoutsideSLA"  style={{ minWidth: "13rem" }} />
+                <Column field="avgtimeresolveticketsdays" style={{ minWidth: "17rem" }} />
+                <Column field="numberunopenedtickets"  style={{ minWidth: "15rem" }} />
+                <Column field="numberclosedtickets"  style={{ minWidth: "14rem" }} />
+                <Column field="numberreroutefrom"  style={{ minWidth: "14rem" }} />
+                <Column field="numberrerouteto"  style={{ minWidth: "13rem" }} />
+                <Column field="averagetechnicianrating"  style={{ minWidth: "15rem" }} />
             </DataTable>
     </>
   );
