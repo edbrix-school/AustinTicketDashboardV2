@@ -7,7 +7,7 @@ import { Button } from "primereact/button";
 export default function MarketAlerts() {
   return (
     <>
-      <div className="mt-[15px] lg:mt-[24px] xl:mt-[32px] 3xl:mt-[1.667vw]">
+      <div className="">
         {/* row */}
         <div className="flex justify-between border-b border-[#E4E7EC] pb-[16px] 3xl:pb-[0.833vw]">
             <div className="text-[#20232E]">Recent Searches</div>

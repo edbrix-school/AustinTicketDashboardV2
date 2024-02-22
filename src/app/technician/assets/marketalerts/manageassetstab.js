@@ -15,8 +15,8 @@ function manageassetstab() {
   return (
     <>
       <div className="relative">
-        <div className="bg-[#F9F9FC] rounded-[8px] 3xl:rounded-[0.417vw] p-[24px] 3xl:p-[1.25vw]">
-          <div className="space-y-[16px] lg:space-y-[24px] 3xl:space-y-[1.25vw]">
+        <div className="bg-[#F9F9FC] rounded-[8px] 3xl:rounded-[0.417vw] p-[24px] 3xl:p-[1.25vw] gridBlock">
+          <div className="grid grid-cols-2 gap-[16px] lg:gap-[24px] 3xl:gap-[1.25vw]">
             <div className="col">
               <div className="text-[#262626] text-[14px] lg:text-[14px] 3xl:text-[0.729vw] font-medium mb-[4px] xl:mb-[0.417vw]">
                 How Often
