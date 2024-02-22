@@ -100,6 +100,7 @@
 .asetsmng-download-file:before {content: "\e93c";}
 .asetsmng-printer-fill:before {content: "\e93d";}
 .asetsmng-share-file:before {content: "\e93e";}
+.asetsmng-minus:before {content: "\e93f";}
 
 
 /* common style */
