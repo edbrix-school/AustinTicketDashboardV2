@@ -60,8 +60,21 @@ export default function ChartWrapper(props) {
     { name: "IND", code: "RM" },
   ];
 
+  const [drodownlonValueClick,setDroDownvalueClick] = useState(false)
+  const dropwonClick = (e) => {
+
+    if(e === "dropwonClick"){
+        document.querySelector('body').classList.add('expandDiv')
+       setDroDownvalueClick(false)
+    }else if(e === "bodyclick" && drodownlonValueClick){
+        document.querySelector('body').classList.remove('expandDiv')
+        setDroDownvalueClick(false)
+
+    }
+}
+
   return (
-    <div>
+    <div onClick={()=>dropwonClick("bodyclick")}>
       <ReactFullscreen>
         {({ ref, onToggle, onExit }) => (
           <div ref={ref} className=' h-full fullScreen'>
@@ -77,7 +90,8 @@ export default function ChartWrapper(props) {
                   {
                     expand == true ?
                       <div className='text-[#4169E1] text-[14px] 3xl:text-[0.729vw] font-medium'>
-                        <Link href={""}>Expand</Link>
+                        <Link href={""} onClick={()=>{dropwonClick("dropwonClick"),setDroDownvalueClick(true)}} className='expandHide'>Expand</Link>
+                        <Link href={""} onClick={()=>{dropwonClick("dropwonClick"),setDroDownvalueClick(true)}} className='expandShow'>Collapse</Link>
                       </div>
                       : null
                   }

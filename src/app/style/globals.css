@@ -133,7 +133,11 @@ body {
 .custPriceDropdown .p-dropdown .p-dropdown-trigger { width: 2rem; }
 .custTavbview .marketAlertCharttabs .react-tabs__tab-list .react-tabs__tab { border-color: #BECDE3; }
 .custTavbview .marketAlertCharttabs .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {background: #91A5C3; border-color: #91A5C3; border-radius: 4px; }
-
+.marketAlertSidebar { width: 800px; transition: all 0.3s ease-in-out; }
+.expandDiv .marketAlertSidebar { width: 1200px; transition: all 0.3s ease-in-out; }
+.expandDiv .expandHide { display: none; }
+.expandShow { display: none; }
+.expandDiv .expandShow { display: inline-block; }
 /* V.K style End */
 
 
@@ -156,6 +160,8 @@ body {
     .custaccordion .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon { right: 1.042vw; }
     .custPriceDropdown .p-dropdown { min-width: 5.208vw; }
     .custPriceDropdown .p-dropdown .p-dropdown-label { font-size: 0.729vw; padding: 0.417vw 0.625vw; }
+    .marketAlertSidebar { width: 41.667vw; }
+    .expandDiv .marketAlertSidebar { width: 62.5vw; }
     /* V.K style End */
 }
 
@@ -171,6 +177,7 @@ body {
 
 @media (max-width:767px) {
   .productSearch .p-inputtext { width: 100%; min-width: 100%; }
+  .marketAlertSidebar, .expandDiv .marketAlertSidebar { width: 100%; }
  }
 
 @media (max-width:575px) {  }
