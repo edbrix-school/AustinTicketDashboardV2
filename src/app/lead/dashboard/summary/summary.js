@@ -6,6 +6,8 @@ import { useTheme } from "next-themes";
 import DoublebarLinechart from '@/app/components/charts/techicianbarchart';
 import { ProgressBar } from 'primereact/progressbar';
 import Image from 'next/image';
+import Ticketsreassignedbarchart from '@/app/components/charts/ticketsreassignedbarchart';
+import Heatmapchart from '@/app/components/charts/heatmapchart';
 
 export default function summary() {
   const [top, setTop] = useState(true)
@@ -319,104 +321,7 @@ export default function summary() {
     ],
   };
 
-  const TecketsReReouted = {
-    tooltip: { trigger: "axis" },
-    legend: {
-      show: true,
-      bottom: "bottom",
-      left: "left",
-      itemWidth: 8,
-      itemHeight: 8,
-      borderRadius: [4, 4, 0, 0],
-      textStyle: {
-        color: "#6C768B",
-        fontSize: 12,
-      },
-    },
-    grid: {
-      left: "8%",
-      right: "4%",
-      bottom: "18%",
-      top: "3%",
-      containLabel: true,
-    },
-    xAxis: [
-      {
-        type: "category",
-        name: "Team", // Add the common title for the x-axis here
-        nameLocation: "center", // Set the position of the x-axis name to the center
-        nameGap: 40, // Adjust the gap between the x-axis name and the axis
-        nameTextStyle: {
-          color: "#6C768B", // Set title text color
-          fontSize: 12, // Set title font size
-
-        },
-        splitLine: { show: false },
-        axisTick: { show: false },
-        axisLine: { show: false },
-        axisLabel: {
-          color: "#363A44",
-          fontSize: 10,
-
-        },
-        data: ["Team1", "Team2", "Team3", "Team4", "Team5"],
-
-      },
-    ],
-    yAxis: [
-      {
-        type: "value",
-        name: "Tickets Re-Routed",
-        nameLocation: "center",
-        nameGap: 40,
-        nameTextStyle: {
-          color: "#6C768B",
-          fontSize: 12,
-        },
-        min: 0,
-        max: 160,
-        interval: 20,
-        axisLabel: {
-          color: "#6C768B",
-          fontSize: 10,
-          formatter: "{value} ",
-        },
-        axisLine: {
-          show: true,
-          lineStyle: { color: "#EAEDF3" },
-        },
-        splitLine: {
-          show: true,
-          lineStyle: {
-            type: "dashed",
-            color: "#EAEDF3",
-          },
-        },
-      },
-    ],
-
-    series: [
-      {
-        name: "Tickets Re-Routed",
-        type: "bar",
-        barWidth: 60,
-
-        stack: "Ad",
-        itemStyle: {
-          color: "#009CDA",
-          borderRadius: [5, 5, 0, 0]
-        },
-        label: {
-          show: true,
-          color: "#fff",
-          formatter: "${c}",
-        },
-        emphasis: { focus: "series" },
-        data: [120, 100, 142, 120, 130,]
-      },
-
-    ],
-  };
+ 
 
   const investigationsData = {
     labels: [
@@ -478,96 +383,7 @@ export default function summary() {
       rating: '4.5'
     },
   ]
-  const Assetschart = {
-    tooltip: { trigger: "axis" },
-    legend: {
-      show: true,
-      itemWidth: 10,
-      itemHeight: 10,
-      textStyle: {
-        color: '#222222',
-      },
-      data: ['Inventory', 'Vendor Receivable']
-    },
-
-    series: [
-      {
-        type: "treemap",
-        width: "100%",
-        height: "90%",
-        label: {
-          show: true,
-          position: "inside",
-          overflow: "breakAll",
-          rich: {
-            larger: {
-              fontSize: 12,
-              color: "#FFFFFF",
-            },
-            normal: {
-              fontSize: 12,
-              color: "#FFFFFF00",
-            },
-          },
-          formatter: "{larger|{b}}\n\n {normal|{c}}",
-        },
-        data: [
-          {
-            name: "Badges\n\n100",
-            value: "2",
-            itemStyle: {
-              color: "#263040",
-            },
-          },
-          {
-            value: "2",
-            children: [
-              {
-                name: 'Asset\n\n60',
-                value: 1,
-                itemStyle: {
-                  color: "#6480AB",
-                },
-              },
-              {
-                name: 'Security\n\n50',
-                value: 1,
-                itemStyle: {
-                  color: "#91A5C3",
-                },
-              }
-            ],
-            itemStyle: {
-              color: "rgba(2, 144, 70, 1)",
-            },
-          },
-          {
-
-            value: "2",
-            children: [
-              {
-                name: 'Request\n\n90',
-                value: 1,
-                itemStyle: {
-                  color: "#4F6484",
-                },
-              },
-              {
-                name: 'Others\n\n20',
-                value: 1,
-                itemStyle: {
-                  color: "#A9B9D0",
-                },
-              }
-            ],
-            itemStyle: {
-              color: "rgba(188, 186, 121, 1)",
-            },
-          },
-        ],
-      },
-    ],
-  };
+ 
 
   return (
     <div>
@@ -662,7 +478,7 @@ export default function summary() {
         {/**col**/}
         <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw] ">
           <ChartWrapper
-            title={"Opex by Expense Type"}
+            title={"Employee Performance"}
             ExportIcon={true}
             tabSection={true}
             infoIcon={true}
@@ -749,11 +565,7 @@ export default function summary() {
                   </div>
                 </div>
                 <div className="w-full xl:h-[19.90vw] relative px-[16px] 3xl:px-[0.833vw] py-[16px] 3xl:py-[0.833vw]">
-                  <ReactEcharts
-                    option={TecketsReReouted}
-                    style={{ height: "100%", width: "100%" }}
-                  />
-
+                  <Ticketsreassignedbarchart/>
                 </div>
               </>
             }
@@ -774,10 +586,8 @@ export default function summary() {
               <>
                 
                 <div className="w-full xl:h-[19.90vw] px-[16px] 3xl:px-[0.833vw] ">
-                  <ReactEcharts
-                    option={Assetschart}
-                    style={{ height: "100%", width: "100%" }}
-                  />
+                  
+                  <Heatmapchart/>
 
                 </div>
               </>

@@ -7,6 +7,9 @@ import DoublebarLinechart from '@/app/components/charts/techicianbarchart';
 import { ProgressBar } from 'primereact/progressbar';
 import Image from 'next/image';
 import * as echarts from 'echarts';
+import Assignedticketshourlytrend from '@/app/components/charts/assignedticketshourlytrend';
+import Newticketsbtagebarchart from '@/app/components/charts/newticketsbtagebarchart';
+import Newticketsbyagebarchart from '@/app/components/charts/newticketsbtagebarchart';
 
 export default function dailydashboard() {
   const [top, setTop] = useState(true)
@@ -930,12 +933,6 @@ series: [
                 </div>
               </div>
 
-
-              {/* <ReactEcharts
-                option={BudgetExpense}
-                style={{ height: "100%", width: "100%" }}
-              /> */}
-
               <div className='w-full h-[380px] 3xl:h-[19.792vw] px-[16px] 3xl:px-[0.833vw]'>
               <DoublebarLinechart
 
@@ -1049,10 +1046,12 @@ series: [
                 
               </div>
               <div className="w-full xl:h-[19.90vw] relative">
-                <ReactEcharts
+                {/* <ReactEcharts
                   option={LineChartwithShadow}
                   style={{ height: "100%", width: "100%" }}
-                />
+                /> */}
+
+                <Assignedticketshourlytrend/>
 
               </div>
             </>
@@ -1076,10 +1075,9 @@ series: [
                 
               </div>
               <div className="w-full xl:h-[19.90vw] ">
-                <ReactEcharts
-                  option={stackbarwithline2}
-                  style={{ height: "100%", width: "100%" }}
-                />
+               
+
+                <Newticketsbyagebarchart/>
 
               </div>
             </>
