@@ -16,6 +16,7 @@ export default function PreviewPopup(props) {
     <div>
       <Sidebar
         visible={props.visible}
+        blockScroll={true}
         position="right"
         onHide={() => props.onHides(false)}
         className="sidebarwidth custmSidebar rounded-l-xl "
@@ -64,8 +65,8 @@ export default function PreviewPopup(props) {
             </div>
         
           </Tabs>
-          <div className="flex w-full justify-end items-end bottom-0 pr-[24px] 3xl:pr-[1.25vw] p-[24px] 3xl:p-[1.25vw]">
-              <Link href={""} className="text-[16px] 3xl:text-[0.833vw] text-[#FFF] bg-[#4169E1] rounded-lg leading-5 px-[12px] py-[8px]">
+          <div className="flex w-full justify-end items-end  pr-[24px] 3xl:pr-[1.25vw] p-[24px] 3xl:p-[1.25vw]">
+              <Link href={""} className="text-[16px] 3xl:text-[0.833vw] text-[#FFF] bg-[#4169E1] rounded-lg leading-5 px-[12px] py-[8px] absolute bottom-2">
               Open this Folder
               </Link>
             </div>

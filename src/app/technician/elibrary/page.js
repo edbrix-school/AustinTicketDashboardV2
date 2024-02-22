@@ -55,7 +55,7 @@ const ElibraryPage = () => {
             </div>
             <div
               onClick={() => setAdvancedSearch(true)}
-              className="text-[#4169e1] text-[14px] 3xl:text-[0.729vw] font-medium leading-4"
+              className="text-[#4169e1] text-[14px] 3xl:text-[0.729vw] font-medium leading-4 cursor-pointer"
             >
               Advanced Search
             </div>
