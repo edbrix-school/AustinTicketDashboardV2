@@ -12,6 +12,7 @@ import PerformanceTrend from "@/app/components/charts/performancetrend";
 import TreeMap from "@/app/components/charts/treemapchart";
 import Image from "next/image";
 import TicketsbyPriority from "@/app/components/charts/ticketsbypriority";
+import Piechart from "@/app/components/charts/piechart";
 
 export default function Index() {
   const [pageName, setPageName] = useState("Summary");
@@ -594,7 +595,7 @@ export default function Index() {
                             </div>
                           </div>
                           <div className=" 3xl:h-[19.531vw] xl:h-[375px] lg:h-[360px]">
-                            
+                            <Piechart/>
                           </div>
                         </div>
                       }
