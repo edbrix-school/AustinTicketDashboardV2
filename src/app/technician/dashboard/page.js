@@ -423,8 +423,8 @@ export default function Index() {
                     <div className="text-[#3A3E49] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-medium ">
                       Number of Tickets in each Status Today
                     </div>
-                    <div className="flex flex-wrap  mt-[20px] xl:mt-[20px] lg:mt-[20px] 3xl:mt-[0.890vw] bg-[#FAFAFA]">
-                                        <div className="border border-[#E4E7EC] p-[16px] xl:p-[12px] lg:p-[16px] 3xl:p-[0.633vw]  rounded-l-lg">
+                    <div className="flex flex-wrap  mt-[20px] xl:mt-[20px] lg:mt-[20px] 3xl:mt-[0.890vw] ">
+                                        <div className="border border-[#E4E7EC] p-[16px] xl:p-[12px] lg:p-[16px] 3xl:p-[0.633vw]  rounded-l-lg bg-[#FAFAFA]">
                                             <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
                                             New
                                             </div>
@@ -444,7 +444,7 @@ export default function Index() {
                                             </div>
                                         </div>
                                     {/* 2nd */}
-                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[12px] lg:p-[16px] 3xl:p-[0.633vw] ">
+                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[12px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA]">
                                         <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
                                         Assigned
                                         </div>
@@ -464,7 +464,7 @@ export default function Index() {
                                         </div>
                                     </div>
                                    {/* 3rd */}
-                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[12px] lg:p-[16px] 3xl:p-[0.633vw]">
+                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[12px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA]">
                                         <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
                                         In-Progress
                                         </div>
@@ -485,7 +485,7 @@ export default function Index() {
                                     </div>
 
                                     {/* 4th */}
-                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[12px] lg:p-[16px] 3xl:p-[0.633vw]">
+                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[12px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA]">
                                         <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
                                         Awaiting Parts/Updates
                                         </div>
@@ -505,7 +505,7 @@ export default function Index() {
                                         </div>
                                     </div>
                                     {/* 5th */}
-                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[12px] lg:p-[16px] 3xl:p-[0.633vw]">
+                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[12px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA]">
                                         <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
                                         Awaiting User Input
                                         </div>
@@ -525,7 +525,7 @@ export default function Index() {
                                         </div>
                                     </div>
                                      {/* 6th */}
-                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[12px] lg:p-[16px] 3xl:p-[0.633vw]">
+                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[12px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA]">
                                         <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
                                         Resolved
                                         </div>
@@ -545,7 +545,7 @@ export default function Index() {
                                         </div>
                                     </div>
                                     {/* 7th */}
-                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[12px] lg:p-[16px] 3xl:p-[0.633vw] rounded-r-lg">
+                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[12px] lg:p-[16px] 3xl:p-[0.633vw] rounded-r-lg bg-[#FAFAFA]">
                                         <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
                                         Closed
                                         </div>
