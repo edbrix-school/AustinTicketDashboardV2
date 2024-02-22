@@ -130,7 +130,7 @@ const ElibraryPage = () => {
         </div>
       </div>
       <div className="grid grid-cols-4 xl:mt-[1.250vw] mt-6 xl:gap-[1.250vw] gap-5">
-      <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+      <Link href={"/technician/elibrary/allison"} className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
@@ -188,7 +188,7 @@ const ElibraryPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Link>
         <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
             <div className="flex justify-between items-center">
