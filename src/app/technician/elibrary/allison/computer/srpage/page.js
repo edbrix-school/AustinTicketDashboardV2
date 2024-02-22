@@ -15,7 +15,7 @@ const page = () => {
   const [pageName, setPageName] = useState("E-Library");
   const [inputValue, setInputValue] = useState("");
   const [advancedSearch, setAdvancedSearch] = useState(false);
-  const [documentPopup,setDocumentPopup] = useState(false);
+  const [documentPopup, setDocumentPopup] = useState(false);
   const handleChange = (event) => {
     setInputValue(event.target.value);
   };
@@ -36,7 +36,7 @@ const page = () => {
     return (
       <>
         <div className="flex justify-start text-[16px] gap-[10px] xl:gap-[1.042vw] w-full">
-        <Link href="">
+          <Link href="">
             {" "}
             <i className="asetsmng-edit-rounded-box text-[#84878D]"></i>
           </Link>
@@ -54,7 +54,7 @@ const page = () => {
             {" "}
             <i className="asetsmng-trash text-[#84878D]"></i>
           </Link>
-   
+
         </div>
       </>
     );
@@ -68,7 +68,7 @@ const page = () => {
       Designation: "Principal",
       CreatedDate: "29-02-2023",
       Type: "Doc",
-      Size: "10,000 KB",
+      Size: "100 KB",
       Activate: "",
     },
     {
@@ -79,7 +79,7 @@ const page = () => {
       CreatedDate: "29-02-2023",
       Status: "Sheduled",
       Type: "PDF",
-      Size: "10,000 KB",
+      Size: "1 MB",
       Activate: "",
     },
     {
@@ -89,8 +89,8 @@ const page = () => {
       Designation: "Assistant Principal",
       CreatedDate: "29-02-2023",
       Status: "In Progress",
-      Size: "10,000 KB",
-      Type: "CSV",
+      Size: "1.5 MB",
+      Type: "Doc",
       Activate: "",
     },
     {
@@ -100,8 +100,8 @@ const page = () => {
       Designation: "Assistant Principal",
       CreatedDate: "29-02-2023",
       Status: "Complete",
-      Size: "10,000 KB",
-      Type: "PDF",
+      Size: "100 KB",
+      Type: "CSV",
       Activate: "",
     },
 
@@ -112,8 +112,8 @@ const page = () => {
       Designation: "Assistant Principal",
       CreatedDate: "29-02-2023",
       Status: "Sheduled",
-      Size: "10,000 KB",
-      Type: "PDF",
+      Size: "1 MB",
+      Type: "Doc",
       Activate: "",
     },
     {
@@ -123,8 +123,8 @@ const page = () => {
       Designation: "Assistant Principal",
       CreatedDate: "29-02-2023",
       Status: "In Progress",
-      Size: "10,000 KB",
-      Type: "CSV",
+      Size: "1.2 MB",
+      Type: "Doc",
       Activate: "",
     },
     {
@@ -134,7 +134,7 @@ const page = () => {
       Designation: "Assistant Principal",
       CreatedDate: "29-02-2023",
       Status: "Sheduled",
-      Size: "10,000 KB",
+      Size: "100 KB",
       Type: "PDF",
       Activate: "",
     },
@@ -145,8 +145,8 @@ const page = () => {
       Designation: "Assistant Principal",
       CreatedDate: "29-02-2023",
       Status: "Complete",
-      Type: "Doc",
-      Size: "10,000 KB",
+      Type: "CSV",
+      Size: "1 MB",
       Activate: "",
     },
     {
@@ -156,8 +156,8 @@ const page = () => {
       Designation: "Assistant Principal",
       CreatedDate: "29-02-2023",
       Status: "Complete",
-      Size: "10,000 KB",
-      Type: "PDF",
+      Size: "1 MB",
+      Type: "Doc",
       Activate: "",
     },
     {
@@ -167,8 +167,8 @@ const page = () => {
       Designation: "Assistant Principal",
       CreatedDate: "29-02-2023",
       Status: "In Progress",
-      Type: "PDF",
-      Size: "10,000 KB",
+      Type: "Doc",
+      Size: "1 MB",
       Activate: "",
     },
     {
@@ -183,9 +183,9 @@ const page = () => {
       Activate: "",
     },
   ];
-  const DocPopup =(rowData)=>{
-    return(
-      <div onClick={()=>setDocumentPopup(true)}>{rowData.Index}</div>
+  const DocPopup = (rowData) => {
+    return (
+      <div onClick={() => setDocumentPopup(true)}>{rowData.Index}</div>
     )
   }
 
@@ -256,7 +256,7 @@ const page = () => {
               Allison
             </Link>
             <i className="asetsmng-arrow-right text-[12px] 3xl:text-[0.625vw] text-[#84878d]"></i>
-            <Link href={"/technician/elibrary/allison/computer"}  className="text-[#3a3e49] text-[14px] 3xl:text-[0.729vw]">
+            <Link href={"/technician/elibrary/allison/computer"} className="text-[#3a3e49] text-[14px] 3xl:text-[0.729vw]">
               Computer
             </Link>
             <i className="asetsmng-arrow-right text-[12px] 3xl:text-[0.625vw] text-[#84878d]"></i>
@@ -342,15 +342,15 @@ const page = () => {
             <Column field="Type" header="Type"></Column>
             <Column field="Size" header="Size"></Column>
             <Column
-                field="action"
-                header="Actions"
-                className="action-shadow-table"
-                frozen
-                alignFrozen="right"
-                align="center"
-                style={{ minWidth: "1rem" }}
-                body={actionBodyTemplate}
-              ></Column>
+              field="action"
+              header="Actions"
+              className="action-shadow-table"
+              frozen
+              alignFrozen="right"
+              align="center"
+              style={{ minWidth: "1rem" }}
+              body={actionBodyTemplate}
+            ></Column>
           </DataTable>
         </div>
       </div>
@@ -358,9 +358,9 @@ const page = () => {
         visible={advancedSearch}
         onHides={() => setAdvancedSearch(false)}
       />
-            <Docspopup
-            visible={documentPopup} 
-            onHides={()=>setDocumentPopup(false)}/>
+      <Docspopup
+        visible={documentPopup}
+        onHides={() => setDocumentPopup(false)} />
     </PageLayout>
   );
 };
