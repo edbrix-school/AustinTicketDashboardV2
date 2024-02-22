@@ -164,10 +164,10 @@ const ElibraryPage = () => {
                 File Size : 1.5 GB
               </div>
               <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                Folders : 3
+                Folders : 4
               </div>
               <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                Files : 3
+                Files : 4
               </div>
             </div>
             <div className="flex justify-between items-center">
@@ -223,10 +223,10 @@ const ElibraryPage = () => {
                 File Size : 1.5 GB
               </div>
               <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                Folders : 3
+                Folders : 2
               </div>
               <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                Files : 3
+                Files : 4
               </div>
             </div>
             <div className="flex justify-between items-center">
@@ -282,10 +282,10 @@ const ElibraryPage = () => {
                 File Size : 1.5 GB
               </div>
               <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                Folders : 3
+                Folders : 2
               </div>
               <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
-                Files : 3
+                Files : 4
               </div>
             </div>
             <div className="flex justify-between items-center">
