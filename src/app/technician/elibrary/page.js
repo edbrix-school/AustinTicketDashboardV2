@@ -611,7 +611,6 @@ const ElibraryPage = () => {
         visible={advancedSearch}
         onHides={() => setAdvancedSearch(false)}
       />
-      <Docspopup />
     </PageLayout>
   );
 };

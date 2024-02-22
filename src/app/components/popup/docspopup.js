@@ -6,10 +6,9 @@ import { InputTextarea } from "primereact/inputtextarea";
 import { Tooltip } from 'primereact/tooltip';
 import { OverlayPanel } from 'primereact/overlaypanel';
 
-function Docspopup() {
+function Docspopup(props) {
     const op = useRef(null);
     const [isClicked, setIsClicked] = useState(false);
-    console.log("clickkk",isClicked)
     const [visible, setVisible] = useState(false);
     const [value, setValue] = useState('');
 
@@ -18,14 +17,11 @@ function Docspopup() {
     };
     return (
         <>
-
-            <Button icon="pi pi-arrow-right" onClick={() => setVisible(true)} />
             <Sidebar
-                // visible={props.visible} 
+                visible={props.visible} 
                 blockScroll={true}
                 position="right" className="custmSidebar docsidebar width740 w-[730px]"
-                // onHide={() => props.onHides(false)}
-                Sidebar visible={visible} onHide={() => setVisible(false)}
+                onHide={() => props.onHides(false)}
             >
                 {/* Header */}
                 <div className="  rounded-tl-2xl 3xl:rounded-tl-2xl-[0.833vw]  z-10 ">

@@ -196,6 +196,15 @@
     background-color: #fff;
 }
 
+ .p-multiselect-panel .p-multiselect-items .p-multiselect-item .p-checkbox {
+    display: none !important;
+}
+.conditionbtn .p-radiobutton .p-radiobutton-box{
+    height: 15px !important;
+    width: 15px !important;
+
+}
+
 
 /* cust table end */
 
@@ -235,3 +244,4 @@
     }
 
 }
+

@@ -92,13 +92,13 @@ const ComputerPage = () => {
               Home
             </div>
             <i className="asetsmng-arrow-right text-[12px] 3xl:text-[0.625vw] text-[#84878d]"></i>
-            <div className="text-[#3a3e49] text-[14px] 3xl:text-[0.729vw]">
+            <Link href={"/technician/elibrary"} className="text-[#3a3e49] text-[14px] 3xl:text-[0.729vw]">
               District 1
-            </div>
+            </Link>
             <i className="asetsmng-arrow-right text-[12px] 3xl:text-[0.625vw] text-[#84878d]"></i>
-            <div className="text-[#3a3e49] text-[14px] 3xl:text-[0.729vw]">
+            <Link href={"/technician/elibrary/allison"} className="text-[#3a3e49] text-[14px] 3xl:text-[0.729vw]">
             Allison
-            </div>
+            </Link>
             <i className="asetsmng-arrow-right text-[12px] 3xl:text-[0.625vw] text-[#84878d]"></i>
             <div className="text-[#3a3e49] text-[14px] 3xl:text-[0.729vw] font-medium">
             Computer
@@ -139,7 +139,7 @@ const ComputerPage = () => {
         </div>
       </div>
       <div className="grid grid-cols-4 xl:mt-[1.250vw] mt-6 xl:gap-[1.250vw] gap-5">
-      <Link href={"/technician/elibrary/allison"} className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+      <Link href={"/technician/elibrary/allison/computer/srpage"} className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
@@ -385,7 +385,6 @@ const ComputerPage = () => {
         visible={advancedSearch}
         onHides={() => setAdvancedSearch(false)}
       />
-      <Docspopup />
     </PageLayout>
   );
 };

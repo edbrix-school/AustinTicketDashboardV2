@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Sidebar } from "primereact/sidebar";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { InputText } from "primereact/inputtext";
@@ -7,10 +7,13 @@ import { Checkbox } from "primereact/checkbox";
 import { Calendar } from "primereact/calendar";
 import { Dropdown } from "primereact/dropdown";
 import { Divider } from "primereact/divider";
-import { Accordion, AccordionTab } from 'primereact/accordion';
+import { Accordion, AccordionTab } from "primereact/accordion";
+import { Button } from "primereact/button";
+import { MultiSelect } from "primereact/multiselect";
 
 export default function AdvancedSearchPopup(props) {
   const [activeTab, setActiveTab] = useState(0);
+  const [studentName, setStudentName] = useState(false);
   const [ingredient, setIngredient] = useState("");
   const [dateAdded, setDateAdded] = useState("");
   const [owner, setOwner] = useState("");
@@ -21,22 +24,36 @@ export default function AdvancedSearchPopup(props) {
   const [date, setDate] = useState(null);
   const [selectedOwner, setSelectedOwner] = useState("");
   const [selectName, setSelectName] = useState("");
-  const [nameText,setNameText] = useState("");
-  const [nameTextOne,setNameTextOne] = useState("");
-  const [nameTextTwo,setNameTextTwo] = useState("");
-  const [nameTextThree,setNameTextThree] = useState("");
-  const [nameTextFour,setNameTextFour] = useState("");
-  const [conditionOne,setConditionOne] = useState("");
-  const [conditionTwo,setConditionTwo] = useState("");
-  const [conditionThree,setConditionThree] = useState("");
-  const [conditionFour,setConditionFour] = useState("");
-  const [conditionFive,setConditionFive] = useState("");
-  const [conditionSix,setConditionSix] = useState("");
-  const [conditionSeven,setConditionSeven] = useState("");
-  const [conditionEight,setConditionEight] = useState("");
-  const [conditionNine,setConditionNine] = useState("")
-  const [conditionTen,setConditionTen] = useState("");
-
+  const [nameText, setNameText] = useState("");
+  const [nameTextOne, setNameTextOne] = useState("");
+  const [nameTextTwo, setNameTextTwo] = useState("");
+  const [nameTextThree, setNameTextThree] = useState("");
+  const [nameTextFour, setNameTextFour] = useState("");
+  const [conditionOne, setConditionOne] = useState("");
+  const [conditionTwo, setConditionTwo] = useState("");
+  const [conditionThree, setConditionThree] = useState("");
+  const [conditionFour, setConditionFour] = useState("");
+  const [conditionFive, setConditionFive] = useState("");
+  const [conditionSix, setConditionSix] = useState("");
+  const [conditionSeven, setConditionSeven] = useState("");
+  const [conditionEight, setConditionEight] = useState("");
+  const [conditionNine, setConditionNine] = useState("");
+  const [conditionTen, setConditionTen] = useState("");
+  const [expandedIndex, setExpandedIndex] = useState(null);
+  const [expandedOption, setExpandedOption] = useState(null);
+  const [selectedParent, setSelectedParent] = useState(null);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOptionTwo, setSelectedOptionTwo] = useState(null);
+  const [selectedOptionThree,setSelectedOptionThree] =  useState(null);
+  const [selectedOptionFour,setSelectedOptionFour] = useState(null);
+  const [selectedOptionFive,setSelectedOptionFive] = useState(null);
+  const [expandedItem, setExpandedItem] = useState(null);
+  const [selectedChild, setSelectedChild] = useState(null);
+  const [showChildTemplates, setShowChildTemplates] = useState(false);
+  const dropdownRef = useRef(null);
+  const handleParentChange = (e) => {
+    setSelectedParent(e.value);
+  };
 
   const handleTabClick = (index) => {
     setActiveTab(index);
@@ -46,35 +63,81 @@ export default function AdvancedSearchPopup(props) {
     { name: "Richard", code: "RM" },
   ];
   const ParameterList = [
-    { name: "Student", code: "NY", template: [{name:"sdsdsd"},{name:"sweweewwe"},{name:"okokok"}] },
-    { name: "School", code: "RM" },
-    { name: "District", code: "RM" },
-
+    {
+      name: "Student",
+      code: "NY",
+      template: [
+        { name: "Profile name", code: "NY" },
+        { name: "Index name", code: "In" },
+        { name: "Parameter C", code: "PC" },
+        { name: "Parameter D", code: "PD" },
+        { name: "Parameter E", code: "PE" },
+      ],
+    },
+    {
+      name: "School",
+      code: "RM",
+      template: [{ name: "School 123" }, { name: "School 1234" }],
+    },
+    {
+      name: "District",
+      code: "R",
+      template: [{ name: "District 123" }, { name: "District 1234" }],
+    },
   ];
-//   const optionTemplate = (option) => {
-//     return (
-//         <div>
-//             <Accordion activeIndex={0}>
-//             <AccordionTab header="">
-//                 {
-//                     ParameterList.template?.map((elm,index)=>{
-//                         return (
-//                             <div >
-//                                 {elm.name}
-//                             </div>
-//                         )
-//                     })
-//                 }
-//                 <div></div>
-//                 </AccordionTab>
-//             </Accordion>
-//         </div>
-//     //   <div className="grid">
-//     //     <span>{option.name}</span>
-//     //     <span style={{marginLeft: '5px', fontSize: '0.8rem'}}>{option.template}</span>
-//     //   </div>
-//     );
-//   };
+  const handleSelectValues = (e) => {
+    setSelectedOption([e]);
+    setSelectedOptionTwo([e]);
+    setSelectedOptionThree([e]);
+    setSelectedOptionFour([e]);
+    setSelectedOptionFive([e]);
+  };
+
+  const customOptionTemplate = (option) => {
+    return (
+      <div>
+        <div className="flex items-center justify-center">
+          <div onClick={() => handleExpandClick(option)}>
+            {expandedItem?.code === option?.code ? (
+              <i className="asetsmng-arrow-down-circle-outline"></i>
+            ) : (
+              <i className="asetsmng-arrow-up-circle-outline"></i>
+            )}
+          </div>
+          <div>{option.name}</div>
+        </div>
+
+        {showChildTemplates && option?.code === expandedItem?.code && (
+          <ul>
+            {option.template.map((child, index) => (
+              <li key={index}>
+                <button onClick={() => handleSelectValues(child)}>
+                  <RadioButton
+                    className="pr-[3px] conditionbtn"
+                    inputId="ingredient1"
+                    value={child.name}
+                    onChange={(e) => setIngredient(e.value)}
+                    checked={ingredient === child.name}
+                  />
+                  {child.name}
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    );
+  };
+  const handleExpandClick = (option) => {
+    if (expandedItem?.code === option?.code) {
+      setExpandedItem(null);
+      setShowChildTemplates(false); // Collapse child templates
+    } else {
+      setExpandedItem(option);
+      setShowChildTemplates(true); // Expand child templates
+    }
+  };
+
   const ConditionList = [
     { name: "Between", code: "vr" },
     { name: "And", code: "er" },
@@ -371,17 +434,17 @@ export default function AdvancedSearchPopup(props) {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-[#FFF] p-[12px] 3xl:p-[0.625vw] grid w-full gap-[8px] 3xl:gap-[0.417vw]">
-                      <div className="grid w-full">
-                        <div className="flex gap-[8px] 3xl:gap-[0.417vw]">
-                          <Dropdown
-                            value={conditionOne}
-                            onChange={(e) => setConditionOne(e.value)}
-                            filter
+                    <div className="bg-[#FFF]  p-[12px] 3xl:p-[0.625vw] grid w-full gap-[8px] 3xl:gap-[0.417vw]">
+                      <div className="grid w-full ">
+                        <div className="flex gap-[8px] 3xl:gap-[0.417vw] ">
+                          <MultiSelect
+                            value={selectedOption}
                             options={ParameterList}
                             optionLabel="name"
                             placeholder="Name"
-                            className="w-full md:w-14rem border"
+                            maxSelectedLabels={3}
+                            itemTemplate={customOptionTemplate}
+                            className="w-full md:w-20rem expandeble"
                           />
                           <Dropdown
                             value={conditionTwo}
@@ -411,13 +474,14 @@ export default function AdvancedSearchPopup(props) {
                       </div>
                       <div className="grid w-full">
                         <div className="flex gap-[8px] 3xl:gap-[0.417vw]">
-                          <Dropdown
-                            value={conditionThree}
-                            onChange={(e) => setConditionThree(e.value)}
+                        <MultiSelect
+                            value={selectedOptionTwo}
                             options={ParameterList}
                             optionLabel="name"
-                            placeholder="Parameter"
-                            className="w-full md:w-14rem border"
+                            placeholder="Name"
+                            maxSelectedLabels={3}
+                            itemTemplate={customOptionTemplate}
+                            className="w-full md:w-20rem expandeble"
                           />
                           <Dropdown
                             value={conditionFour}
@@ -456,14 +520,14 @@ export default function AdvancedSearchPopup(props) {
                       </div>
                       <div className="grid w-full">
                         <div className="flex gap-[8px] 3xl:gap-[0.417vw]">
-                          <Dropdown
-                            value={conditionFive}
-                            onChange={(e) => setConditionFive(e.value)}
-                            filter
+                        <MultiSelect
+                            value={selectedOptionThree}
                             options={ParameterList}
                             optionLabel="name"
                             placeholder="Name"
-                            className="w-full md:w-14rem border"
+                            maxSelectedLabels={3}
+                            itemTemplate={customOptionTemplate}
+                            className="w-full md:w-20rem expandeble"
                           />
                           <Dropdown
                             value={conditionSix}
@@ -493,13 +557,14 @@ export default function AdvancedSearchPopup(props) {
                       </div>
                       <div className="grid w-full">
                         <div className="flex gap-[8px] 3xl:gap-[0.417vw]">
-                          <Dropdown
-                            value={conditionSeven}
-                            onChange={(e) => setConditionSeven(e.value)}
+                        <MultiSelect
+                            value={selectedOptionFour}
                             options={ParameterList}
                             optionLabel="name"
-                            placeholder="Parameter"
-                            className="w-full md:w-14rem border"
+                            placeholder="Name"
+                            maxSelectedLabels={3}
+                            itemTemplate={customOptionTemplate}
+                            className="w-full md:w-20rem expandeble"
                           />
                           <Dropdown
                             value={conditionEight}
@@ -538,14 +603,14 @@ export default function AdvancedSearchPopup(props) {
                       </div>
                       <div className="grid w-full">
                         <div className="flex gap-[8px] 3xl:gap-[0.417vw]">
-                          <Dropdown
-                            value={conditionNine}
-                            onChange={(e) => setConditionNine(e.value)}
-                            filter
+                        <MultiSelect
+                            value={selectedOptionFive}
                             options={ParameterList}
                             optionLabel="name"
                             placeholder="Name"
-                            className="w-full md:w-14rem border"
+                            maxSelectedLabels={3}
+                            itemTemplate={customOptionTemplate}
+                            className="w-full md:w-20rem expandeble"
                           />
                           <Dropdown
                             value={conditionTen}
