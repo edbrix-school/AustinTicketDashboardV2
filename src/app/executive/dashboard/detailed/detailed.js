@@ -4,6 +4,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { InputText } from "primereact/inputtext";
 import TeamtreetableComponent from "./teamtreetable"
 import TechnicianTable from "./techniciantable"
+import TechnicianMonthlyTable from "./technicianmonthlytable";
+import TechnicianWeeklyTable from "./technicianweeklytable"
 
 export default function Detailed() {
 const [inputValue, setInputValue] = useState('');
@@ -120,10 +122,10 @@ return (
       <TechnicianTable />
       </TabPanel>
       <TabPanel>
-        2
+      <TechnicianMonthlyTable />
       </TabPanel>
       <TabPanel>
-        3
+      <TechnicianWeeklyTable />
       </TabPanel>
       </div>
       </Tabs>

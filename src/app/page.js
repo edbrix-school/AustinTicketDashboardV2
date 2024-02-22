@@ -71,7 +71,7 @@ export default function Index() {
                           </div>
 
                           </div>
-                          <Link href='/technician/dashboard' className="bg-[#A93238] border text-[#fff] border-[#E8F0F3] rounded-lg w-full xl:text-[16px] text-[16px] 3xl:text-[0.833vw] 
+                          <Link href='/landing' className="bg-[#A93238] border text-[#fff] border-[#E8F0F3] rounded-lg w-full xl:text-[16px] text-[16px] 3xl:text-[0.833vw] 
                         3xl:py-[0.633vw] lg:py-[8px] py-[8px] flex font-medium justify-center gap-2">Login</Link>
 
                         </form>

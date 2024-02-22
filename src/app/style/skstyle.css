@@ -133,9 +133,6 @@
     display: block;
     font-size: 13px;
 }
-.custTable.p-datatable .p-sortable-column .p-column-title{
-    padding-right: 15px;
-}
 .custTable.p-datatable .p-sortable-column .p-column-title,.custTable .p-datatable .p-sortable-column .p-sortable-column-icon, .p-datatable .p-sortable-column .p-sortable-column-badge{
     font-weight: 500;
 }
@@ -173,13 +170,42 @@
     font-size: 12px;
     padding: 8px 14px;
 }
+
+.custmfrozem {
+    box-shadow: -10px 2px 7px 0px #0000001a;
+    display: block;
+}
+
+.custmfrozem-subhead {
+    box-shadow: -10px 2px 7px 0px #0000001a;
+}
+
+.custTable.p-datatable .p-datatable-thead>tr>th.custmheading {
+    background: #6D7C9F;
+    color: #fff;
+    border-color: #6D7C9F;
+}
+.custTable.p-datatable .p-datatable-thead>tr>th.centercustmheading {
+    background:#C7D4F1;
+    border-color: #C7D4F1;
+}
+.cusmtb_right_br {
+    border-right: 1px solid #ddd;
+}
+.custTable.p-datatable .p-datatable-thead>tr>th.subheadigncustm {
+    background: #768FB5 ;
+    color: #fff;
+}
+.custTable.p-datatable .p-datatable-thead>tr>th.subheadigncustm .p-column-header-content svg {
+    color: #fff ;
+    border-color: #E4E7EC;
+}
 .custTable.p-datatable .p-sortable-column:not(.p-highlight):not(.p-sortable-disabled):hover {
     background: #DFE7FA;
     color: #3A3E49;
 }
 .custTable.p-datatable .p-column-header-content {
     width: 100%;
-    justify-content:space-between;
     position: relative;
 }
 .action-shadow-table {
@@ -721,10 +747,46 @@ background: var(--surface-page, #F9F9FC);
     color: #ffffff !important; 
     border-color:#4169E1 !important;
 }
+.heading-custm {
+    background-color: #000000;
+}
+.last_position {
+    position: sticky;
+    right: 0;
+}
+.center_position {
+    position: sticky;
+    right: 368px;
+}
+.first_position {
+    position: sticky;
+    right: 736px;
+}
+
+.draw-border { box-shadow: inset 0 0 0 0.104vw rgb(255 255 255 / 39%); color: white; transition: color 0.30s 0.0833333333s; position: relative; }
+.draw-border::before, .draw-border::after { border: 0 solid transparent; box-sizing: border-box; content: ""; pointer-events: none; position: absolute; width: 0; height: 0; bottom: 0; right: 0; }
+.draw-border::before { border-bottom-width: 0.208vw; border-left-width: 0.208vw; }
+.draw-border::after { border-top-width: 0.208vw; border-right-width: 0.208vw; }
+.draw-border:hover { color:  #b61010; }
+.draw-border:hover::before, .draw-border:hover::after { border-color: #b61010; transition: border-color 0s, width 0.30s, height 0.30s; width: 100%; height: 100%; }
+.draw-border:hover::before { transition-delay: 0s, 0s, 0.30s; }
+.draw-border:hover::after { transition-delay: 0s, 0.30s, 0s; }
 /***********************************************
             Responsive
 ***********************************************/
 @media only screen and (min-width: 1800px) {
+    .last_position {
+        position: sticky;
+        right: 0;
+    }
+    .center_position {
+        position: sticky;
+        right: 19.01vw;
+    }
+    .first_position {
+        position: sticky;
+        right: 38.143vw;
+    }
     /* Custm Tree table end */
     .custTable.tableCust.p-datatable.p-datatable-grouped-footer .p-datatable-tfoot > tr > td {
         font-size: 0.729vw;
