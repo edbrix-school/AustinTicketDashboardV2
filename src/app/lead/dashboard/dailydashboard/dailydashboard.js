@@ -72,7 +72,7 @@ export default function dailydashboard() {
         type: "value",
         name: "No. of Tickets",
         nameLocation: "center", // Set the position of the y-axis name to the center
-        nameGap: 40, // Adjust the gap between the y-axis name and the axis
+        nameGap: 30, // Adjust the gap between the y-axis name and the axis
         nameTextStyle: {
           color: currentTheme == "dark" ? "#818181" : "#84878D", // Set title text color
           fontSize: 10, // Set title font size
@@ -647,93 +647,133 @@ export default function dailydashboard() {
       rating: '4.5'
     },
   ]
-  const Assetschart = {
+  const stackbarwithline2 = {
     tooltip: { trigger: "axis" },
     legend: {
       show: true,
-      itemWidth: 10,
-      itemHeight: 10,
+      bottom: 10,
+      left: 20,
+      itemWidth: 8,
+      itemHeight: 8,
+      borderRadius: [4, 4, 0, 0],
       textStyle: {
-        color: '#222222',
+        color: "#6C768B",
+        fontSize: 12,
       },
-      data: ['Inventory', 'Vendor Receivable']
     },
+    grid: {
+      left: 30,
+      right: 20,
+      bottom: 65,
+      top: 20,
+      containLabel: true,
+    },
+    xAxis: [
+      {
+        type: "category",
+        name: "Ages", // Add the common title for the x-axis here
+        nameLocation: "center", // Set the position of the x-axis name to the center
+        nameGap: 40, // Adjust the gap between the x-axis name and the axis
+        nameTextStyle: {
+          color: "#84878D", // Set title text color
+          fontSize: 12, // Set title font size
+
+        },
+        splitLine: { show: false },
+        axisTick: { show: false },
+        axisLine: { show: false },
+        axisLabel: {
+          color:  "#20232E",
+          fontSize: 10,
+
+        },
+        data: ["0 - 5", "6 - 10", "11 - 15", "16 - 20","21 - 25", "26 - 30", '30+'],
+
+      },
+    ],
+    yAxis: [
+      {
+        type: "value",
+        name: "No. of Tickets",
+        nameLocation: "center",
+        nameGap: 40,
+        nameTextStyle: {
+          color: "#6C768B",
+          fontSize: 12,
+        },
+        min: 0,
+        max: 140,
+        interval: 20,
+        axisLabel: {
+          color: "#6C768B",
+          fontSize: 10,
+          formatter: "{value}$",
+        },
+        axisLine: {
+          show: true,
+          lineStyle: { color:  "#EAEDF3" },
+        },
+        splitLine: {
+          show: true,
+          lineStyle: {
+            type: "dashed",
+            color: "#EAEDF3",
+          },
+        },
+      },
+    ],
 
     series: [
       {
-        type: "treemap",
-        width: "100%",
-        height: "90%",
+        name: "Low",
+        type: "bar",
+        barWidth: 60,
+        
+        stack: "Ad",
+        itemStyle: {
+          color: "#2C9999",
+        },
         label: {
           show: true,
-          position: "inside",
-          overflow: "breakAll",
-          rich: {
-            larger: {
-              fontSize: 12,
-              color: "#FFFFFF",
-            },
-            normal: {
-              fontSize: 12,
-              color: "#FFFFFF00",
-            },
-          },
-          formatter: "{larger|{b}}\n\n {normal|{c}}",
+          color: "#fff",
+          formatter: "{c}",
         },
-        data: [
-          {
-            name: "Badges\n\n100",
-            value: "2",
-            itemStyle: {
-              color: "#263040",
-            },
-          },
-          {
-            value: "2",
-            children: [
-              {
-                name: 'Asset\n\n60',
-                value: 1,
-                itemStyle: {
-                  color: "#6480AB",
-                },
-              },
-              {
-                name: 'Security\n\n50',
-                value: 1,
-                itemStyle: {
-                  color: "#91A5C3",
-                },
-              }
-            ],
-            itemStyle: {
-              color: "rgba(2, 144, 70, 1)",
-            },
-          },
-          {
+        emphasis: { focus: "series" },
+        data: [48, 5, 20, 55,18,38,10],
+      },
 
-            value: "2",
-            children: [
-              {
-                name: 'Request\n\n90',
-                value: 1,
-                itemStyle: {
-                  color: "#4F6484",
-                },
-              },
-              {
-                name: 'Others\n\n20',
-                value: 1,
-                itemStyle: {
-                  color: "#A9B9D0",
-                },
-              }
-            ],
-            itemStyle: {
-              color: "rgba(188, 186, 121, 1)",
-            },
-          },
-        ],
+      {
+        name: "Medium",
+        type: "bar",
+        stack: "Ad",
+        itemStyle: {
+          borderRadius: [0, 0, 0, 0],
+          color: "#256D85",
+        },
+        label: {
+          show: true,
+          color: "#fff",
+          formatter: "{c}",
+        },
+        emphasis: { focus: "series" },
+        data: [22, 25, 15, 10,35,65,25],
+      },
+
+      {
+        name: "High",
+        type: "bar",
+        stack: "Ad",
+        itemStyle: {
+          borderRadius: [4, 4, 0, 0],
+          color: "#309DC1",
+        },
+        label: {
+          show: true,
+          color: "#fff",
+          formatter: "{c}",
+        },
+        emphasis: { focus: "series" },
+        data: [10, 40, 35, 23,10,20,28],
       },
     ],
   };
@@ -868,7 +908,7 @@ series: [
       {/**col**/}
       <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw]  ">
         <ChartWrapper
-          title={"Assigned to resolved -by Technician"}
+          title={" Technician -Assigned to Resolved"}
           ExportIcon={true}
           tabSection={true}
           infoIcon={true}
@@ -954,7 +994,7 @@ series: [
       {/**col**/}
       <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw] ">
         <ChartWrapper
-          title={"Opex by Expense Type"}
+          title={"Tickets by Priority"}
           ExportIcon={true}
           tabSection={true}
           infoIcon={true}
@@ -996,7 +1036,7 @@ series: [
       {/**col**/}
       <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw] ">
         <ChartWrapper
-          title={"Tickets Re-Assigned/Re-Routed (From) Top5"}
+          title={"New Tickets To Assigned Tickets (Hourly Trend) "}
           ExportIcon={true}
           tabSection={true}
           infoIcon={true}
@@ -1006,10 +1046,7 @@ series: [
           data={
             <>
               <div className="flex gap-2 pb-2">
-                <div className='flex items-center px-[16px] 3xl:px-[0.833vw]'>
-                  <button onClick={() => setTop(true)} className={`${top === true ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-bl-md`}>Top 5</button>
-                  <button onClick={() => setTop(false)} className={`${top === false ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-br-md`}>Bottom 5</button>
-                </div>
+                
               </div>
               <div className="w-full xl:h-[19.90vw] relative">
                 <ReactEcharts
@@ -1026,7 +1063,7 @@ series: [
       {/**col**/}
       <div className="bg-white border border-[#EAEDF3] shadow-md rounded-2xl xl:rounded-[0.833vw] ">
         <ChartWrapper
-          title={"Tickets By Sub Category"}
+          title={"New Tickets By Age"}
           ExportIcon={true}
           tabSection={true}
           infoIcon={true}
@@ -1036,14 +1073,11 @@ series: [
           data={
             <>
               <div className="flex gap-2 pb-2">
-                <div className='flex items-center px-[16px] 3xl:px-[0.833vw]'>
-                  <button onClick={() => setTop(true)} className={`${top === true ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-bl-md`}>Top 5</button>
-                  <button onClick={() => setTop(false)} className={`${top === false ? 'text-[#1B458D] bg-[#DAEEFF]' : 'text-[#4B586E] bg-[#F5F6F7]'} text-[12px] 3xl:text-[0.625vw] font-semibold px-[12px] 3xl:px-[0.625vw] py-[8px] 3xl:py-[0.417vw] rounded-br-md`}>Bottom 5</button>
-                </div>
+                
               </div>
               <div className="w-full xl:h-[19.90vw] ">
                 <ReactEcharts
-                  option={Assetschart}
+                  option={stackbarwithline2}
                   style={{ height: "100%", width: "100%" }}
                 />
 
