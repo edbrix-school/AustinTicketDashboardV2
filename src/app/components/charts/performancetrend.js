@@ -128,7 +128,7 @@ export default function PerformanceTrend({ }) {
   ],
   series: [
     {
-      name: "PBT",
+      name: "Avg Days to resolve Tickets",
       type: "bar",
       barWidth: 70,
       itemStyle: {
@@ -147,7 +147,7 @@ export default function PerformanceTrend({ }) {
   
 
     {
-      name: "Effective Tax Rate",
+      name: "Avg Ratings",
       type: "line",
       smooth: false,
       symbolSize: 10,
