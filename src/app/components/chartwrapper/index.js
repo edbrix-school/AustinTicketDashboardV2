@@ -55,6 +55,10 @@ export default function ChartWrapper(props) {
     { name: "New York", code: "NY" },
     { name: "Rome", code: "RM" },
   ];
+  const price = [
+    { name: "US $", code: "NY" },
+    { name: "IND", code: "RM" },
+  ];
 
   return (
     <div>
@@ -181,9 +185,18 @@ export default function ChartWrapper(props) {
                 </div>
                 {
                     historicalPrice == true ?
-                      <div className='flex items-center'>
+                      <div className='flex items-center mt-[24px] 3xl:mt-[1.25vw]'>
                         <div className='flex items-center gap-[45px] 3xl:gap-[2.344vw]'>
-                        <div>sdfsdf</div>
+                        <div className='col custPriceDropdown'>
+                        <Dropdown
+                        value={selectedCity}
+                        onChange={(e) => setSelectedCity(e.value)}
+                        options={price}
+                        optionLabel="name"
+                        placeholder="US $"
+                        className="w-full"
+                      />
+                        </div>
                         <div className='flex items-center gap-[65px] 3xl:gap-[3.385vw]'>
                           <div className='col space-y-[6px] 3xl:space-y-[0.313vw]'>
                             <div className='text-[#3A3E49] text-[12px] 3xl:text-[0.625vw]'>Actual Price</div>
@@ -191,15 +204,15 @@ export default function ChartWrapper(props) {
                           </div>
                           <div className='col space-y-[6px] 3xl:space-y-[0.313vw]'>
                             <div className='text-[#3A3E49] text-[12px] 3xl:text-[0.625vw]'>Changes - 24hrs</div>
-                            <div className='text-[##20232E] text-[14px] 3xl:text-[0.729vw] font-medium'>$3438 <span className='text-[#6D9636] text-[12px] 3xl:text-[0.625vw]'>11.4%</span> <span className='text-[#6D9636] text-[12px] 3xl:text-[0.625vw]'><i className='asetsmng-arrow-up-line'></i></span></div>
+                            <div className='text-[##20232E] text-[14px] 3xl:text-[0.729vw] font-medium'>$3435 <span className='text-[#6D9636] text-[12px] 3xl:text-[0.625vw]'>11.4%</span> <span className='text-[#6D9636] text-[12px] 3xl:text-[0.625vw]'><i className='asetsmng-arrow-up-line'></i></span></div>
                           </div>
                           <div className='col space-y-[6px] 3xl:space-y-[0.313vw]'>
-                            <div className='text-[#3A3E49] text-[12px] 3xl:text-[0.625vw]'>Actual Price</div>
-                            <div className='text-[##20232E] text-[14px] 3xl:text-[0.729vw] font-medium'>$3438</div>
+                            <div className='text-[#3A3E49] text-[12px] 3xl:text-[0.625vw]'>High - 24hrs</div>
+                            <div className='text-[##20232E] text-[14px] 3xl:text-[0.729vw] font-medium'>$3555 <span className='text-[#6D9636] text-[12px] 3xl:text-[0.625vw]'>12.4%</span> <span className='text-[#6D9636] text-[12px] 3xl:text-[0.625vw]'><i className='asetsmng-arrow-up-line'></i></span></div>
                           </div>
                           <div className='col space-y-[6px] 3xl:space-y-[0.313vw]'>
-                            <div className='text-[#3A3E49] text-[12px] 3xl:text-[0.625vw]'>Actual Price</div>
-                            <div className='text-[##20232E] text-[14px] 3xl:text-[0.729vw] font-medium'>$3438</div>
+                            <div className='text-[#3A3E49] text-[12px] 3xl:text-[0.625vw]'>Low - 24hrs</div>
+                            <div className='text-[##20232E] text-[14px] 3xl:text-[0.729vw] font-medium'>$3342 <span className='text-[#E71111] text-[12px] 3xl:text-[0.625vw]'>12.4%</span> <span className='text-[#E71111] text-[12px] 3xl:text-[0.625vw]'><i className='asetsmng-arrow-down-line'></i></span></div>
                           </div>
                         </div>
                         </div>

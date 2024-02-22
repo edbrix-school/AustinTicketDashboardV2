@@ -127,6 +127,11 @@ body {
 .custaccordion .p-datatable .p-datatable-tbody > tr > td { padding: 10px 20px; font-size: 14px; color: #424242; border-color: #E4E7EC; }
 .custaccordion .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon { position: absolute; right: 20px; margin: 0; color: #AF1E27; transform: rotate(90deg); }
 .custaccordion .p-accordion .p-accordion-header.p-highlight .p-accordion-header-link .p-accordion-toggle-icon { position: absolute; right: 20px; margin: 0; color: #AF1E27; transform: rotate(180deg); }
+.custPriceDropdown .p-dropdown { background: #F9F9FC; border-color: #EDEDF7; min-width: 100px; }
+.custPriceDropdown .p-dropdown .p-dropdown-label { color: #3A3E49; font-weight: 500; font-size: 14px; padding: 8px 12px; }
+.custPriceDropdown .p-dropdown .p-dropdown-trigger { width: 2rem; }
+.custTavbview .marketAlertCharttabs .react-tabs__tab-list .react-tabs__tab { border-color: #BECDE3; }
+.custTavbview .marketAlertCharttabs .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {background: #91A5C3; border-color: #91A5C3; border-radius: 4px; }
 
 /* V.K style End */
 
@@ -148,6 +153,8 @@ body {
     .custaccordion .p-accordion .p-accordion-tab { margin-bottom: 0.417vw; }
     .custaccordion .p-datatable .p-datatable-tbody > tr > td { padding: 0.521vw 1.042vw; font-size: 0.729vw; }
     .custaccordion .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon { right: 1.042vw; }
+    .custPriceDropdown .p-dropdown { min-width: 5.208vw; }
+    .custPriceDropdown .p-dropdown .p-dropdown-label { font-size: 0.729vw; padding: 0.417vw 0.625vw; }
     /* V.K style End */
 }
 
