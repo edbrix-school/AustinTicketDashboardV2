@@ -424,16 +424,16 @@ export default function Index() {
                       Number of Tickets in each Status Today
                     </div>
                     <div className="flex flex-wrap  mt-[20px] xl:mt-[20px] lg:mt-[20px] 3xl:mt-[0.890vw] w-full ">
-                                        <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw]  rounded-l-lg bg-[#FAFAFA] 3xl:grow">
+                                        <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw]  rounded-l-lg bg-[#FAFAFA] grow">
                                             <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
                                             New
                                             </div>
                                             <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
-                                            <div className="flex items-center xl:gap-1 lg:gap-1 3xl:gap-2">
+                                            <div className="flex items-center   xl:gap-[2px] lg:gap-1 3xl:gap-2">
                                                 <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
                                                 10
                                                 </div>
-                                                <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[18px]  3xl:text-[0.833vw] text-[#057A55]"></i>{" "}
+                                                <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw] text-[#057A55]"></i>{" "}
                                                 <div className="text-[#057A55] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
                                                 2%
                                                 </div>
@@ -444,16 +444,16 @@ export default function Index() {
                                             </div>
                                         </div>
                                     {/* 2nd */}
-                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] 3xl:grow">
+                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
                                         <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
                                         Assigned
                                         </div>
                                         <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
-                                        <div className="flex items-center  xl:gap-1 lg:gap-1 3xl:gap-2">
+                                        <div className="flex items-center     xl:gap-[2px] lg:gap-1 3xl:gap-2">
                                             <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
                                             12
                                             </div>
-                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[18px]  3xl:text-[0.833vw] text-[#057A55]"></i>{" "}
+                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw] text-[#057A55]"></i>{" "}
                                             <div className="text-[#057A55] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
                                             2%
                                             </div>
@@ -464,16 +464,16 @@ export default function Index() {
                                         </div>
                                     </div>
                                    {/* 3rd */}
-                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] 3xl:grow">
+                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
                                         <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
                                         In-Progress
                                         </div>
                                         <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
-                                        <div className="flex items-center xl:gap-1 lg:gap-1 3xl:gap-2">
+                                        <div className="flex items-center    xl:gap-[2px] lg:gap-1 3xl:gap-2">
                                             <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
                                             2
                                             </div>
-                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[18px]  3xl:text-[0.833vw] text-[#B21E4B]"></i>{" "}
+                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw] text-[#B21E4B]"></i>{" "}
                                             <div className="text-[#B21E4B] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
                                             2%
                                             </div>
@@ -485,16 +485,16 @@ export default function Index() {
                                     </div>
 
                                     {/* 4th */}
-                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] 3xl:grow">
+                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
                                         <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
                                         Awaiting Parts/Updates
                                         </div>
                                         <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
-                                        <div className="flex items-center xl:gap-1 lg:gap-1 3xl:gap-2">
+                                        <div className="flex items-center   xl:gap-[2px] lg:gap-1 3xl:gap-2">
                                             <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
                                             5
                                             </div>
-                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[18px]  3xl:text-[0.833vw]  text-[#B21E4B]"></i>{" "}
+                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw]  text-[#B21E4B]"></i>{" "}
                                             <div className="text-[#B21E4B] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
                                             2%
                                             </div>
@@ -505,16 +505,16 @@ export default function Index() {
                                         </div>
                                     </div>
                                     {/* 5th */}
-                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] 3xl:grow">
+                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
                                         <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
                                         Awaiting User Input
                                         </div>
                                         <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
-                                        <div className="flex items-center xl:gap-1 lg:gap-1 3xl:gap-2">
+                                        <div className="flex items-center    xl:gap-[2px] lg:gap-1 3xl:gap-2">
                                             <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
                                             4
                                             </div>
-                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[18px]  3xl:text-[0.833vw]  text-[#057A55]"></i>{" "}
+                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw]  text-[#057A55]"></i>{" "}
                                             <div className="text-[#057A55] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
                                             2%
                                             </div>
@@ -525,16 +525,16 @@ export default function Index() {
                                         </div>
                                     </div>
                                      {/* 6th */}
-                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] 3xl:grow">
+                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
                                         <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
                                         Resolved
                                         </div>
                                         <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
-                                        <div className="flex items-center xl:gap-1 lg:gap-1 3xl:gap-2">
+                                        <div className="flex items-center    xl:gap-[2px] lg:gap-1 3xl:gap-2">
                                             <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
                                             20
                                             </div>
-                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[18px]  3xl:text-[0.833vw]  text-[#B21E4B]"></i>{" "}
+                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw]  text-[#B21E4B]"></i>{" "}
                                             <div className="text-[#B21E4B] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
                                             2%
                                             </div>
@@ -545,16 +545,16 @@ export default function Index() {
                                         </div>
                                     </div>
                                     {/* 7th */}
-                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] rounded-r-lg bg-[#FAFAFA] 3xl:grow">
+                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] rounded-r-lg bg-[#FAFAFA] grow">
                                         <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
                                         Closed
                                         </div>
                                         <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
-                                        <div className="flex items-center xl:gap-1 lg:gap-1 3xl:gap-2">
+                                        <div className="flex items-center    xl:gap-[2px] lg:gap-1 3xl:gap-2">
                                             <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
                                             7
                                             </div>
-                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[18px]  3xl:text-[0.833vw]  text-[#057A55]"></i>{" "}
+                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw]  text-[#057A55]"></i>{" "}
                                             <div className="text-[#057A55] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
                                             2%
                                             </div>
