@@ -62,6 +62,7 @@ const page = () => {
   // Data table
   const products = [
     {
+      id: "1100",
       Index: "Doc - 100",
       image: "Avatar1",
       Title: "22/11/2023",
@@ -72,6 +73,7 @@ const page = () => {
       Activate: "",
     },
     {
+      id: "1101",
       Index: "Doc - 101",
       image: "Avatar2",
       Title: "22/11/2023",
@@ -83,6 +85,7 @@ const page = () => {
       Activate: "",
     },
     {
+      id: "1102",
       Index: "Doc - 102",
       image: "Avatar3",
       Title: "22/11/2023",
@@ -94,6 +97,7 @@ const page = () => {
       Activate: "",
     },
     {
+      id: "1103",
       Index: "Doc - 103",
       image: "Avatar3",
       Title: "22/11/2023",
@@ -106,6 +110,7 @@ const page = () => {
     },
 
     {
+      id: "1104",
       Index: "Doc - 104",
       image: "Avatar3",
       Title: "22/11/2023",
@@ -117,6 +122,7 @@ const page = () => {
       Activate: "",
     },
     {
+      id: "1105",
       Index: "Doc - 105",
       image: "Avatar3",
       Title: "22/11/2023",
@@ -128,6 +134,7 @@ const page = () => {
       Activate: "",
     },
     {
+      id: "1106",
       Index: "Doc - 106",
       image: "Avatar3",
       Title: "22/11/2023",
@@ -139,6 +146,7 @@ const page = () => {
       Activate: "",
     },
     {
+      id: "1107",
       Index: "Doc - 107",
       image: "Avatar3",
       Title: "22/11/2023",
@@ -150,6 +158,7 @@ const page = () => {
       Activate: "",
     },
     {
+      id: "1108",
       Index: "Doc - 108",
       image: "Avatar3",
       Title: "22/11/2023",
@@ -161,6 +170,7 @@ const page = () => {
       Activate: "",
     },
     {
+      id: "1109",
       Index: "Doc - 109",
       image: "Avatar3",
       Title: "22/11/2023",
@@ -172,6 +182,7 @@ const page = () => {
       Activate: "",
     },
     {
+      id: "1110",
       Index: "Doc - 110",
       image: "Avatar3",
       Title: "22/11/2023",
