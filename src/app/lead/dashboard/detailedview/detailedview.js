@@ -341,20 +341,6 @@ export default function detailedview() {
                 </span>
               </div>
               <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
-                {/* <Link
-                    href={""}
-                    className="text-[#4169E1] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#4169E1] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw]"
-                  >
-                    <i className="asetsmng-plus-rounded-box"></i>
-                    <span>Add Assets</span>
-                  </Link> */}
-                {/* <Link
-                    href={""}
-                    className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
-                  >
-                    <i className="asetsmng-import"></i>
-                    <span>Import</span>
-                  </Link> */}
                 <Link
                   href={""}
                   className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#EAE0E0] p-[9px] xl:p-[0.469vw] 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
@@ -364,25 +350,11 @@ export default function detailedview() {
                 </Link>
               </div>
             </div>
-            <div className="flex items-center 3xl:gap-[0.313vw] gap-6">
-              <Link
-                href={""}
-                className="bg-white rounded-lg border border-[#EAE0E0] text-[#424242] text-[18px] 3xl:text-[0.938vw] flex items-center justify-center p-[9px] xl:p-[0.469vw] 3xl:rounded-[0.417vw] "
-              >
-                <i className="asetsmng-arrow-left-think"></i>
-              </Link>
-              <Link
-                href={""}
-                className="bg-white rounded-lg border border-[#EAE0E0] text-[#424242] text-[18px] 3xl:text-[0.938vw] flex items-center justify-center p-[9px] xl:p-[0.469vw] 3xl:rounded-[0.417vw]"
-              >
-                <i className="asetsmng-arrow-right-think"></i>
-              </Link>
-            </div>
           </div>
         </div>
         <DataTable
           value={products}
-          className="custTable tableCust custCheckBox"
+          className="custTable tableCust custCheckBox custfooter"
           scrollable
           responsiveLayout="scroll"
           style={{ width: "100%" }}
@@ -410,6 +382,7 @@ export default function detailedview() {
             footer="Overall"
             sortable
             style={{ minWidth: "15rem" }}
+          
           ></Column>
           <Column
             field="Technicianname"
@@ -503,11 +476,7 @@ export default function detailedview() {
           
         </DataTable>
       </div>
-
-      {/* <LogincoordinatesMap
-        visible={logincoordinates}
-        onHides={() => setlogincoordinates(false)}
-      /> */}
+      
     </>
   )
 }

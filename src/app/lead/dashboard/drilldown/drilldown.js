@@ -34,7 +34,7 @@ export default function drilldown() {
   return (
     <>
       <div className='grid grid-cols-12 gap-6'>
-        <div className='col-span-3 bg-[#FFFFFF] border borer-[#E4E7EC] rounded-2xl shadow-md p-[24px] xl:p-[1.25vw]'>
+        <div className='col-span-12 lg:col-span-3 bg-[#FFFFFF] border borer-[#E4E7EC] rounded-2xl shadow-md p-[24px] xl:p-[1.25vw]'>
           <div className="flex flex-col gap-6">
             <div>
               <label className="text-[#3A3E49] text-[14px] xl:text-[0.729vw] font-medium ">Select Metric</label>
@@ -61,7 +61,7 @@ export default function drilldown() {
           </div>
 
         </div>
-        <div className='col-span-9 bg-[#FFFFFF] border borer-[#E4E7EC] rounded-2xl shadow-md py-[19px] 3xl:py-[0.99vw] px-[20px] 3xl:px-[1.042vw]'>
+        <div className='col-span-12 lg:col-span-9 bg-[#FFFFFF] border borer-[#E4E7EC] rounded-2xl shadow-md py-[19px] 3xl:py-[0.99vw] px-[20px] 3xl:px-[1.042vw]'>
           <div className="3xl:h-[29.063vw] h-[458px] w-full">
             <DrillDownChart />
           </div>

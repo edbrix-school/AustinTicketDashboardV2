@@ -26,3 +26,20 @@
 .custdropdown.p-dropdown .p-dropdown-label.p-placeholder {
     color: #20232E;
 }
+
+.custfooter.p-datatable .p-datatable-tfoot > tr > td {
+    text-align: left;
+    padding: 8px 20px;
+    border: 1px solid #E4E7EC;
+    border-width: 0 0 1px 0;
+    font-weight: 600;
+    color: #20232E;
+    background: #F9F9FC;
+}
+
+.custfooter.p-component {
+    font-family: var(--font-family);
+    font-feature-settings: var(--font-feature-settings, normal);
+    font-size: 14px;
+    font-weight: normal;
+}
