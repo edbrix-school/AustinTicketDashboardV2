@@ -1,6 +1,7 @@
 "use client";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import React, { useState } from "react";
+import Link from "next/link";
 import { Dropdown } from "primereact/dropdown";
 import Image from "next/image";
 import { Sidebar } from "primereact/sidebar";
@@ -107,6 +108,11 @@ function marketalertspopup() {
     }
     // setSelectedCity(e.value)
   }
+
+
+
+
+
   return (
     <div>
       <div className="p-input-icon-left">
@@ -121,7 +127,7 @@ function marketalertspopup() {
       </div>
       <Sidebar
         position="right"
-        className="custmSidebar width740 w-[730px]"
+        className="custmSidebar marketAlertSidebar"
         Sidebar
         visible={visible}
         onHide={() => setVisible(false)}
@@ -129,11 +135,16 @@ function marketalertspopup() {
         {/* Header */}
         <div className="rounded-tl-2xl 3xl:rounded-tl-2xl-[0.833vw] p-[24px] 3xl:p-[1.25vw] z-10 relative border-b border-[#E4E7EC]">
           <div className="space-y-2xl 3xl:space-y-[1.25vw]">
+            <div className="flex justify-between">
             <div className="text-[#20232E] font-medium leading-7 3xl:leading-[1.458vw] text-2xl 3xl:text-[1.25vw]">
               Market Alert
             </div>
+            <div className='text-[#4169E1] text-[14px] 3xl:text-[0.729vw] font-medium expandHide'>
+                        <Link href={""}>Expand</Link>
+                      </div>
+            </div>
 
-            <div className="gap-[24px] 3xl:gap-[1.25vw] flex  items-center">
+            <div className="gap-[24px] 3xl:gap-[1.25vw] flex items-center expandHide">
               <div className="col min-w-[175px]">
                 <div className="border border-[#E4E7EC] rounded-lg 3xl:rounded-[0.417vw] py-[18px] px-[12px] 3xl:px-[0.625vw] 3xl:py-[0.838vw]">
                   <Image
