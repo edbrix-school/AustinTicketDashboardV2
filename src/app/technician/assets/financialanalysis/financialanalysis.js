@@ -288,135 +288,193 @@ function Finacialanalysis() {
       };
     return (
         <>
-            <div className='grid grid-cols-12 xl:grid-cols-5 gap-[20px] 3xl:gap-[1.042vw] mt-[24px] 3xl:mt-[1.25vw]'>
-                <div className='col-span-12 sm:col-span-6  lg:col-span-4 xl:col-span-1 '>
-                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] 3xl:pl-[0.833vw]'>
-                        <div className='text-[#20232E] xl:text-[12px]  3xl:text-[0.866vw] py-[12px]  3xl:py-[0.625vw] ' >Total Value of All Assets</div>
-                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
+
+<div className="grid grid-cols-12 xl:grid-cols-5 gap-[20px] 3xl:gap-[1.042vw] mt-[24px] 3xl:mt-[1.25vw]">
+                <div className="col-span-12 sm:col-span-6  lg:col-span-4 xl:col-span-1 ">
+                  <div
+                    className="shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC]  bg-[#fff] px-[16px] py-[12px] lg:py-[16px] lg:px-[12px] 3xl:py-[0.833vw] 
+                    3xl:px-[0.625vw]"
+                  >
+                    <div className="text-[#20232E] xl:text-[12px]  3xl:text-[0.866vw] 3xl:mb-[0.729vw] lg:mb-[14px] mb-[14px]">
+                    Total Value of All Assets
+                    </div>
+                    <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
                             Assets Value                                                                      
                         </div>
-                        <div className='flex justify-between items-center'>
-                            <div className='my-[12px] 3xl:my-[0.625vw]'>
-                                <div className='text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium '>$3M</div>
-                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Value</div>
-                            </div>
-                            <div className='m-[16px] 3xl:m-[0.866vw]'>
-                                <div className='flex items-center justify-end '>
-                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
-                                    <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
-                                </div>
-
-                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] '>by last period</div>
-                                <div className=''>
-
-                                </div>
-                            </div>
+                    <div className="flex justify-between items-center">
+                      <div className="">
+                        <div className="text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium ">
+                        $3M
                         </div>
+                        <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Value</div>
+                      </div>
+                      <div className="3xl:mt-[0.729vw] lg:mt-[14px] mt-[14px]">
+                        <div className="flex items-center  justify-end gap-2">
+                          <div className="text-[#20232E] text-[16px] font-medium">
+                            2%
+                          </div>
+                          <div>
+                            <i className="asetsmng-arrow-up-circle-fill text-[20px]  text-[#057A55]"></i>
+                          </div>
+                        </div>
+                        <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
+                          by last period
+                        </div>
+                        <div className=""></div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <div className='col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-1 '>
-                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] 3xl:pl-[0.833vw]'>
-                        <div className='text-[#20232E] xl:text-[12px] text-sm 3xl:text-[0.866vw] py-[12px]  3xl:py-[0.625vw] ' >Assets Expiring in 7 Days</div>
-                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
+                {/* 2nd card */}
+                <div className="col-span-12 sm:col-span-6  lg:col-span-4 xl:col-span-1 ">
+                  <div
+                    className="shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC]  bg-[#fff] px-[16px] py-[12px] lg:py-[16px] lg:px-[12px] 3xl:py-[0.833vw] 
+                    3xl:px-[0.625vw]"
+                  >
+                    <div className="text-[#20232E] xl:text-[12px]  3xl:text-[0.866vw] 3xl:mb-[0.729vw] lg:mb-[14px] mb-[14px]">
+                    Assets Expiring in 7 Days
+                    </div>
+                    <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
                             Short-Term
                         </div>
-                        <div className='flex justify-between items-center'>
-                            <div className='my-[12px] 3xl:my-[0.625vw]'>
-                                <div className='text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium '>102</div>
-                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Expiring</div>
-                            </div>
-                            <div className='m-[16px] 3xl:m-[0.866vw]'>
-                                <div className='flex items-center justify-end  '>
-                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
-                                    <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
-                                </div>
-
-                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] '>by last period</div>
-                                <div className=''>
-
-                                </div>
-                            </div>
+                    <div className="flex justify-between items-center">
+                      <div className="">
+                        <div className="text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium ">
+                          102
+                        
                         </div>
+                        <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Expiring</div>
+                      </div>
+                      <div className="3xl:mt-[0.729vw] lg:mt-[14px] mt-[14px]">
+                        <div className="flex items-center  justify-end gap-2">
+                          <div className="text-[#20232E] text-[16px] font-medium">
+                            2%
+                          </div>
+                          <div>
+                            <i className="asetsmng-arrow-up-circle-fill text-[20px]  text-[#057A55]"></i>
+                          </div>
+                        </div>
+                        <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
+                          by last period
+                        </div>
+                        <div className=""></div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <div className='col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-1 '>
-                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] 3xl:pl-[0.833vw]'>
-                        <div className='text-[#20232E] xl:text-[12px]  3xl:text-[0.866vw] py-[12px]  3xl:py-[0.625vw] ' >Total Cost of Replacement</div>
-                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
+                {/* 3rd card */}
+                <div className="col-span-12 sm:col-span-6  lg:col-span-4 xl:col-span-1 ">
+                  <div
+                    className="shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC]  bg-[#fff] px-[16px] py-[12px] lg:py-[16px] lg:px-[12px] 3xl:py-[0.833vw] 
+                    3xl:px-[0.625vw]"
+                  >
+                    <div className="text-[#20232E] xl:text-[12px]  3xl:text-[0.866vw] 3xl:mb-[0.729vw] lg:mb-[14px] mb-[14px]">
+                    Total Cost of Replacement
+                    </div>
+                    <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
                             Short-Term Expiring Assets
                         </div>
-                        <div className='flex justify-between items-center'>
-                            <div className='my-[12px] 3xl:my-[0.625vw]'>
-                                <div className='text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium '>$340M</div>
-                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Cost</div>
-                            </div>
-                            <div className='m-[16px] 3xl:m-[0.866vw]'>
-                                <div className='flex items-center justify-end '>
-                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
-                                    <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
-                                </div>
-
-                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] '>by last period</div>
-                                <div className=''>
-
-                                </div>
-                            </div>
+                    <div className="flex justify-between items-center">
+                      <div className="">
+                        <div className="text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium ">
+                         $340M
+                        
                         </div>
+                        <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Cost</div>
+                      </div>
+                      <div className="3xl:mt-[0.729vw] lg:mt-[14px] mt-[14px]">
+                        <div className="flex items-center  justify-end gap-2">
+                          <div className="text-[#20232E] text-[16px] font-medium ">
+                            2%
+                          </div>
+                          <div>
+                            <i className="asetsmng-arrow-up-circle-fill text-[20px]  text-[#057A55]"></i>
+                          </div>
+                        </div>
+                        <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
+                          by last period
+                        </div>
+                        <div className=""></div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <div className='col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-1 '>
-                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] 3xl:pl-[0.833vw]'>
-                        <div className='text-[#20232E] xl:text-[12px]  3xl:text-[0.866vw] py-[12px]  3xl:py-[0.625vw] ' >Assets Expiring in Current Quarter</div>
-                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
-                            Long-Term
-                        </div>
-                        <div className='flex justify-between items-center'>
-                            <div className='my-[12px] 3xl:my-[0.625vw]'>
-                                <div className='text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium '>230</div>
-                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Expiring</div>
-                            </div>
-                            <div className='m-[16px] 3xl:m-[0.866vw]'>
-                                <div className='flex items-center justify-end '>
-                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
-                                    <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
-                                </div>
-
-                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] '>by last period</div>
-                                <div className=''>
-
-                                </div>
-                            </div>
-                        </div>
+                {/* 4th card */}
+                <div className="col-span-12 sm:col-span-6  lg:col-span-4 xl:col-span-1 ">
+                  <div
+                    className="shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC]  bg-[#fff] px-[16px] py-[12px] lg:py-[16px] lg:px-[12px] 3xl:py-[0.833vw] 
+                    3xl:px-[0.625vw]"
+                  >
+                    <div className="text-[#20232E] xl:text-[12px]  3xl:text-[0.866vw] 3xl:mb-[0.729vw] lg:mb-[14px] mb-[14px]">
+                    Assets Expiring in Current Quarter
                     </div>
-                </div>
-                <div className='col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-1 '>
-                    <div className='shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC] pl-[16px] 3xl:pl-[0.833vw]'>
-                        <div className='text-[#20232E] xl:text-[12px]  3xl:text-[0.866vw] py-[12px]  3xl:py-[0.625vw] ' >Total Cost of Replacement</div>
-                        <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
-                            Long-Term Expiring Assets
+                    <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
+                            Long-Term                                                                     
                         </div>
-                        <div className='flex justify-between items-center'>
-                            <div className='my-[12px] 3xl:my-[0.625vw]'>
-                                <div className='text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium '>$560M</div>
-                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Cost</div>
-                            </div>
-                            <div className='m-[16px] 3xl:m-[0.866vw]'>
-                                <div className='flex items-center justify-end '>
-                                    <div className='text-[#20232E] text-[16px] font-medium 3xl:text-[0.866vw] mr-[6px] 3xl:mr-[0.313vw]'>2%</div>
-                                    <div><i className='asetsmng-arrow-up-circle-fill text-[16px]  text-[#057A55]'></i></div>
-                                </div>
-
-                                <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw] '>by last period</div>
-                                <div className=''>
-
-                                </div>
-                            </div>
+                    <div className="flex justify-between items-center">
+                      <div className="">
+                        <div className="text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium ">
+                          230
+                        
                         </div>
+                        <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Expiring</div>
+                      </div>
+                      <div className="3xl:mt-[0.729vw] lg:mt-[14px] mt-[14px]">
+                        <div className="flex items-center  justify-end gap-2">
+                          <div className="text-[#20232E] text-[16px] font-medium ">
+                            2%
+                          </div>
+                          <div>
+                            <i className="asetsmng-arrow-up-circle-fill text-[20px]  text-[#057A55]"></i>
+                          </div>
+                        </div>
+                        <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
+                          by last period
+                        </div>
+                        <div className=""></div>
+                      </div>
                     </div>
+                  </div>
                 </div>
 
-
-            </div>
+                {/* 5th card */}
+                <div className="col-span-12 sm:col-span-6  lg:col-span-4 xl:col-span-1 ">
+                  <div
+                    className="shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC]  bg-[#fff] px-[16px] py-[12px] lg:py-[16px] lg:px-[12px] 3xl:py-[0.833vw] 
+                    3xl:px-[0.625vw]"
+                  >
+                    <div className="text-[#20232E] xl:text-[12px]  3xl:text-[0.866vw] 3xl:mb-[0.729vw] lg:mb-[14px] mb-[14px]">
+                    Total Cost of Replacement
+                    </div>
+                    <div className='border border-[#E4E7EC] px-[12px] py-[6px] 3xl:px-[0.625vw] 3xl:py-[0.313vw] text-[#20232E] text-[10px] 3xl:text-[0.625vw] font-medium bg-[#E4E7EC] rounded-[6px] inline-block'>
+                    Long-Term Expiring Assets                                                                     
+                        </div>
+                    <div className="flex justify-between items-center">
+                      <div className="">
+                        <div className="text-[#3A3E49] xl:text-[28px] text-[22px] 3xl:text-[1.875vw] font-medium ">
+                          $560M
+                        </div>
+                        <div className='text-[#84878D] text-[12px] 3xl:text-[0.625vw]  '>Total Cost</div>
+                      </div>
+                      <div className="3xl:mt-[0.729vw] lg:mt-[14px] mt-[14px]">
+                        <div className="flex items-center  justify-end gap-2">
+                          <div className="text-[#20232E] text-[16px] font-medium ">
+                            2%
+                          </div>
+                          <div>
+                            <i className="asetsmng-arrow-up-circle-fill text-[20px]  text-[#057A55]"></i>
+                          </div>
+                        </div>
+                        <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
+                          by last period
+                        </div>
+                        <div className=""></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         
 
 
   <div className="bg-white dark:bg-[#13161B] mt-[25px] xl:mt-[1.302vw] border border-[#F2EEEE] dark:border-[#1F2A37] rounded-lg 3xl:rounded-[0.521vw]">
