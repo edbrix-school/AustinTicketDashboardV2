@@ -91,14 +91,18 @@ const ElibraryPage = () => {
             <div className="text-[#84878d] text-[14px] 3xl:text-[0.729vw]">
               Home
             </div>
+
             <i className="asetsmng-arrow-right text-[12px] 3xl:text-[0.625vw] text-[#84878d]"></i>
-            <div className="text-[#3a3e49] text-[14px] 3xl:text-[0.729vw]">
-              District 1
-            </div>
+            <Link href="/technician/elibrary">
+              <div className="text-[#3a3e49] text-[14px] 3xl:text-[0.729vw]">
+                District 1
+              </div></Link>
+
             <i className="asetsmng-arrow-right text-[12px] 3xl:text-[0.625vw] text-[#84878d]"></i>
-            <div className="text-[#3a3e49] text-[14px] 3xl:text-[0.729vw]">
-              Allison
-            </div>
+            <Link href="" >
+              <div className="text-[#3a3e49] text-[14px] 3xl:text-[0.729vw]">
+                Allison
+              </div></Link>
           </div>
           <div className="flex gap-[16px] 3xl:gap-[0.833vw]">
             <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
