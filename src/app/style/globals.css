@@ -137,7 +137,8 @@ body {
 .custTavbview .marketAlertCharttabs .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {background: #91A5C3; border-color: #91A5C3; border-radius: 4px; }
 .marketAlertSidebar { width: 800px; transition: all 0.3s ease-in-out; }
 .expandDiv .marketAlertSidebar { width: 1200px; transition: all 0.3s ease-in-out; }
-.expandDiv .expandHide { display: none; }
+.expandDiv .expandHide, .expandRightTabs { display: none; }
+.expandDiv .expandRightTabs { display: inline-block; }
 .expandShow { display: none; }
 .expandDiv .expandShow { display: inline-block; }
 .p-sidebar-content .gridBlock .grid { display: block; }
