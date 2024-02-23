@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function MarketAlerts() {
   return (
     <>
-      <div className="marketAlertsListpage">
+      <div className="marketAlertsListpage hidden">
         <div className="w-full max-w-[1144px] 3xl:max-w-[59.583vw] mx-auto ">
           <Productlist />
           <div className="mt-[15px] lg:mt-[24px] xl:mt-[32px] 3xl:mt-[1.667vw]">
@@ -33,7 +33,7 @@ export default function MarketAlerts() {
         </div>
       </div>
 
-      <div className="hidden">
+      <div className="">
         <div className="grid grid-cols-12 gap-[50px] 3xl:gap-[2.604vw]">
           <div className="col-span-8">
             <div className="flex items-center justify-between">

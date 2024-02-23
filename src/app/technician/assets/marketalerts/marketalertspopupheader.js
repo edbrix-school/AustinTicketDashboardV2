@@ -81,7 +81,7 @@ function marketalertspopupHeader() {
   return (
     <div onClick={() => dropwonClick("bodyclick")}>
       {/* Header */}
-      <div className="rounded-tl-2xl 3xl:rounded-tl-2xl-[0.833vw] p-[24px] 3xl:p-[1.25vw] z-10 relative border-b border-[#E4E7EC]">
+      {/* <div className="rounded-tl-2xl 3xl:rounded-tl-2xl-[0.833vw] p-[24px] 3xl:p-[1.25vw] z-10 relative border-b border-[#E4E7EC]">
         <div className="space-y-2xl 3xl:space-y-[1.25vw]">
           <div className="flex justify-between">
             <div className="text-[#20232E] font-medium leading-7 3xl:leading-[1.458vw] text-2xl 3xl:text-[1.25vw]">
@@ -109,8 +109,8 @@ function marketalertspopupHeader() {
                 />
               </div>
             </div>
-
-            <div className="col w-full ExpandHeader1">
+            
+            <div className="col w-full ExpandHeader1 hidden">
               <div className="text-[#20232E] text-[20px] 3xl:-[1.042vw] font-medium ">
                 Aspire 5 A515-56-51EV Notebook
               </div>
@@ -138,7 +138,7 @@ function marketalertspopupHeader() {
                 </div>
               </div>
             </div>
-
+            
             <div className="col w-full ExpandHeader2">
               <div className="flex items-center justify-between">
                 <div className="col space-y-[6px] 3xl:space-y-[0.313vw]">
@@ -173,17 +173,36 @@ function marketalertspopupHeader() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div> */}
+      {/* Header */}
 
-            {/* <div className="col w-full header3">
+      {/* Header */}
+      <div className="rounded-tl-2xl 3xl:rounded-tl-2xl-[0.833vw] p-[24px] 3xl:p-[1.25vw] z-10 relative border-b border-[#E4E7EC]">
+        <div className="">
+          <div className="gap-[24px] 3xl:gap-[1.25vw] flex items-center expandHide">
+            <div className="col min-w-[150px] 3xl:min-w-[7.813vw] expandProductImg">
+              <div className="border border-[#E4E7EC] rounded-lg 3xl:rounded-[0.417vw] py-[18px] px-[12px] 3xl:px-[0.625vw] 3xl:py-[0.838vw]">
+                <Image
+                  src={"/assets/images/laptop4.png"}
+                  width={150}
+                  height={140}
+                />
+              </div>
+            </div>
+
+            {/* header Three */}
+            <div className="col w-full header3">
               <div className="flex items-center justify-between">
                 <div className="col">
                   <div className="space-y-[6px] 3xl:space-y-[0.313vw]">
-                  <div className="text-[#20232E] text-[20px] 3xl:-[1.042vw] font-medium ">
-                    Aspire 5 A515-56-51EV Notebook
-                  </div>
-                  <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw]">
-                    Model: A515-56-51EV
-                  </div>
+                    <div className="text-[#20232E] text-[20px] 3xl:-[1.042vw] font-medium ">
+                      Aspire 5 A515-56-51EV Notebook
+                    </div>
+                    <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw]">
+                      Model: A515-56-51EV
+                    </div>
                   </div>
                   <div className="mt-[16px] 3xl:mt-[0.833vw]">
                     <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
@@ -237,8 +256,7 @@ function marketalertspopupHeader() {
                   </div>
                 </div>
               </div>
-            </div> */}
-
+            </div>
           </div>
         </div>
       </div>
