@@ -110,7 +110,7 @@ function marketalertspopupHeader() {
               </div>
             </div>
 
-            <div className="col w-full ExpandHeader1 hidden">
+            <div className="col w-full ExpandHeader1">
               <div className="text-[#20232E] text-[20px] 3xl:-[1.042vw] font-medium ">
                 Aspire 5 A515-56-51EV Notebook
               </div>
@@ -173,7 +173,8 @@ function marketalertspopupHeader() {
                 </div>
               </div>
             </div>
-            <div className="col w-full header3">
+
+            {/* <div className="col w-full header3">
               <div className="flex items-center justify-between">
                 <div className="col">
                   <div className="space-y-[6px] 3xl:space-y-[0.313vw]">
@@ -236,7 +237,8 @@ function marketalertspopupHeader() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+
           </div>
         </div>
       </div>
