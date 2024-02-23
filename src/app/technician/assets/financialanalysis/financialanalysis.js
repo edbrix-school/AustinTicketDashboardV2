@@ -551,7 +551,7 @@ function Finacialanalysis() {
                 >
                   <i className="asetsmng-grid-outline"></i>
                 </Link>
-                <Link
+                {/* <Link
                   href={""}
                   className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.421vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
                 >
@@ -564,7 +564,7 @@ function Finacialanalysis() {
                 >
                  <i className='asetsmng-arrow-right-think '></i>
 
-                </Link>
+                </Link> */}
                 </div>
                 </div>
               
