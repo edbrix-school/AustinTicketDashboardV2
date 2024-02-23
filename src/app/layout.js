@@ -21,7 +21,7 @@ const inter = Inter({
 
 
 export const metadata = {
-  title: "Assets",
+  title: "Welcome to Austin Asset Management",
   description: "Welcome to Austin Asset Management",
   icons:{
     icon: [

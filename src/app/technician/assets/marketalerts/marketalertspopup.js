@@ -7,7 +7,7 @@ import Marketalertspopupheader from "./marketalertspopupheader"
 import Marketalertspopupbody from "./marketalertspopupbody"
 
 
-function marketalertspopup(probs) {
+function marketalertspopup(props) {
   const [visible, setVisible] = useState(false);
   const [selectedCity, setSelectedCity] = useState(null);
   const [selectedDistrict, setSelectedDistrict] = useState(null);
@@ -28,8 +28,8 @@ function marketalertspopup(probs) {
     { name: "District 3" },
   ];
 
-  useEffect(()=>{
-    if(probs.isAlertPopupVisible){
+  useEffect(()=>{    
+    if(props.isAlertPopupVisible){
       setVisible(true)
     }
   }),[]
@@ -71,7 +71,7 @@ function marketalertspopup(probs) {
         visible={visible}
         onHide={() => {
           setVisible(false)
-          probs.setAlertPopupVisible(false)
+          props.setAlertPopupVisible(false)
         }}
       >
         <Marketalertspopupheader />
