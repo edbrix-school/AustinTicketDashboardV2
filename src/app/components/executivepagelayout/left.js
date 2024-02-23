@@ -58,7 +58,7 @@ export default function Left(props) {
                       <span>Dashboard</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('') ? 'active' : ''} ico-assets`}>
+                  <li className={`${isLinkActive('/executive/assets') ? 'active' : ''} ico-assets`}>
                     <Link href=''>
                       <span>Assets</span>
                     </Link>
@@ -98,13 +98,13 @@ export default function Left(props) {
                       <span>Settings</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('') ? 'active' : ''} ico-reports`}>
-                    <Link href=''>
+                  <li className={`${isLinkActive('/executive/reports') ? 'active' : ''} ico-reports`}>
+                    <Link href='/executive/reports'>
                       <span>Reports</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('') ? 'active' : ''} ico-eliabrary`}>
-                    <Link href=''>
+                  <li className={`${isLinkActive('/executive/elibrary') ? 'active' : ''} ico-eliabrary`}>
+                    <Link href='/executive/elibrary'>
                       <span>E- Library</span>
                     </Link>
                   </li>

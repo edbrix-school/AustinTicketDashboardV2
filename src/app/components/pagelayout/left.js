@@ -93,8 +93,8 @@ export default function Left(props) {
                       <span>Invoices</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('/csjpod') ? 'active' : ''} settings`}>
-                    <Link href='/csjpod'>
+                  <li className={`${isLinkActive('') ? 'active' : ''} settings`}>
+                    <Link href=''>
                       <span>Settings</span>
                     </Link>
                   </li>

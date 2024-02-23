@@ -58,8 +58,8 @@ export default function Left(props) {
                       <span>Dashboard</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('') ? 'active' : ''} ico-assets`}>
-                    <Link href=''>
+                  <li className={`${isLinkActive('/lead/assets') ? 'active' : ''} ico-assets`}>
+                    <Link href='/lead/assets'>
                       <span>Assets</span>
                     </Link>
                   </li>
@@ -98,13 +98,13 @@ export default function Left(props) {
                       <span>Settings</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('') ? 'active' : ''} ico-reports`}>
-                    <Link href=''>
+                  <li className={`${isLinkActive('/lead/reports') ? 'active' : ''} ico-reports`}>
+                    <Link href='/lead/reports'>
                       <span>Reports</span>
                     </Link>
                   </li>
-                  <li className={`${isLinkActive('') ? 'active' : ''} ico-eliabrary`}>
-                    <Link href=''>
+                  <li className={`${isLinkActive('/lead/elibrary') ? 'active' : ''} ico-eliabrary`}>
+                    <Link href='/lead/elibrary'>
                       <span>E- Library</span>
                     </Link>
                   </li>
