@@ -474,7 +474,6 @@ export default function ManageAssets() {
                 style={{ minWidth: "5rem" }}
                 align="center"
                 body={actionBodyTemplate}
-                sortable
                 frozen
                 alignFrozen="right"
               ></Column>
