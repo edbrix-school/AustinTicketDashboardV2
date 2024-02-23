@@ -79,13 +79,13 @@ export default function LineChartwithShadow({ }) {
               color: currentTheme == "dark" ? "#818181" : "#EDEEF1",
             },
           },
-          // splitLine: {
-          //   show: true,
-          //   lineStyle: {
-          //     type: "dashed",
-          //     color: currentTheme == "dark" ? "#2A2C32" : "#F2EEEE",
-          //   },
-          // },
+          splitLine: {
+            show: true,
+            lineStyle: {
+              type: "dashed",
+              color: currentTheme == "dark" ? "#2A2C32" : "#F2EEEE",
+            },
+          },
         },
       
       ],
