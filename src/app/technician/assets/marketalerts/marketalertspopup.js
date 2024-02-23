@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Dropdown } from "primereact/dropdown";
 import { Sidebar } from "primereact/sidebar";
 import { useRouter } from "next/navigation";
@@ -7,7 +7,7 @@ import Marketalertspopupheader from "./marketalertspopupheader"
 import Marketalertspopupbody from "./marketalertspopupbody"
 
 
-function marketalertspopup() {
+function marketalertspopup(probs) {
   const [visible, setVisible] = useState(false);
   const [selectedCity, setSelectedCity] = useState(null);
   const [selectedDistrict, setSelectedDistrict] = useState(null);
@@ -28,6 +28,11 @@ function marketalertspopup() {
     { name: "District 3" },
   ];
 
+  useEffect(()=>{
+    if(probs.isAlertPopupVisible){
+      setVisible(true)
+    }
+  }),[]
 
   const router = useRouter();
 
@@ -64,7 +69,10 @@ function marketalertspopup() {
         className="custmSidebar marketAlertSidebar"
         Sidebar
         visible={visible}
-        onHide={() => setVisible(false)}
+        onHide={() => {
+          setVisible(false)
+          probs.setAlertPopupVisible(false)
+        }}
       >
         <Marketalertspopupheader />
         <Marketalertspopupbody />

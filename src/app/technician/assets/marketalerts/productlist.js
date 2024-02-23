@@ -5,7 +5,7 @@ import Image from "next/image";
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
 
-export default function MarketAlerts() {
+export default function MarketAlerts(probs) {
   const [inputText, setInputText] = useState("");
   let inputHandler = (e) => {
     //convert input text to lower case
@@ -32,7 +32,7 @@ export default function MarketAlerts() {
              
             </div>
             <div className="col min-h-full">
-              <Button type="submit" label="Search" />
+              <Button type="submit" label="Search" onClick={()=>probs.setSearchShow(true)} />
             </div>
           </div>
           {/* row */}
