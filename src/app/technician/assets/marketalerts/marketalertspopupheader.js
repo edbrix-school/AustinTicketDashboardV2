@@ -109,8 +109,8 @@ function marketalertspopupHeader() {
                 />
               </div>
             </div>
-                         
-            <div className="col w-full ExpandHeader1">
+
+            <div className="col w-full ExpandHeader1 hidden">
               <div className="text-[#20232E] text-[20px] 3xl:-[1.042vw] font-medium ">
                 Aspire 5 A515-56-51EV Notebook
               </div>
@@ -142,34 +142,98 @@ function marketalertspopupHeader() {
             <div className="col w-full ExpandHeader2">
               <div className="flex items-center justify-between">
                 <div className="col space-y-[6px] 3xl:space-y-[0.313vw]">
-                <div className="text-[#20232E] text-[20px] 3xl:-[1.042vw] font-medium ">
-                Aspire 5 A515-56-51EV Notebook
-              </div>
-              <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw]">
-                Model: A515-56-51EV
-              </div>
+                  <div className="text-[#20232E] text-[20px] 3xl:-[1.042vw] font-medium ">
+                    Aspire 5 A515-56-51EV Notebook
+                  </div>
+                  <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw]">
+                    Model: A515-56-51EV
+                  </div>
                 </div>
                 <div className="col flex items-start gap-[20px] 3xl:gap-[1.042vw]">
-                <div className="min-w-[200px] 3xl:min-w-[10.417vw]">
-                  <ReactEcharts
-                    option={linechartdata}
-                    style={{ height: "80%", width: "100%" }}
-                  />
-                </div>
-                <div>
-                  <div className="text-end">
-                    <div className="text-[20px] 3xl:text-[1.042vw] text-[#000000] font-medium ">
-                      $3450
-                    </div>{" "}
-                    <div className="text-[#6D9636] text-[14px] 3xl:text-[0.729vw] font-semibold">
-                      20.4% Increased{" "}
-                      <i className="asetsmng-arrow-up-line mx-[5px] 3xl:mx-[0.26vw]"></i>
-                    </div>
-                    <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw]">
-                      Current Price, at 2 PM. On 30th Nov
+                  <div className="min-w-[200px] 3xl:min-w-[10.417vw]">
+                    <ReactEcharts
+                      option={linechartdata}
+                      style={{ height: "80%", width: "100%" }}
+                    />
+                  </div>
+                  <div>
+                    <div className="text-end">
+                      <div className="text-[20px] 3xl:text-[1.042vw] text-[#000000] font-medium ">
+                        $3450
+                      </div>{" "}
+                      <div className="text-[#6D9636] text-[14px] 3xl:text-[0.729vw] font-semibold">
+                        20.4% Increased{" "}
+                        <i className="asetsmng-arrow-up-line mx-[5px] 3xl:mx-[0.26vw]"></i>
+                      </div>
+                      <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw]">
+                        Current Price, at 2 PM. On 30th Nov
+                      </div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className="col w-full header3">
+              <div className="flex items-center justify-between">
+                <div className="col">
+                  <div className="space-y-[6px] 3xl:space-y-[0.313vw]">
+                  <div className="text-[#20232E] text-[20px] 3xl:-[1.042vw] font-medium ">
+                    Aspire 5 A515-56-51EV Notebook
+                  </div>
+                  <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw]">
+                    Model: A515-56-51EV
+                  </div>
+                  </div>
+                  <div className="mt-[16px] 3xl:mt-[0.833vw]">
+                    <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
+                      <div className="col">
+                        <Link
+                          href={""}
+                          className="inline-block bg-white border border-[#BECDE3] rounded-[8px] 3xl:rounded-[0.417vw] px-[12px] 3xl:px-[0.625vw] py-[10px] 3xl:py-[0.521vw]"
+                        >
+                          Manage Alert
+                        </Link>
+                      </div>
+                      <div className="col">
+                        <Link
+                          href={""}
+                          className="inline-block bg-white border border-[#BECDE3] rounded-[8px] 3xl:rounded-[0.417vw] px-[12px] 3xl:px-[0.625vw] py-[10px] 3xl:py-[0.521vw]"
+                        >
+                          Check Price Trend
+                        </Link>
+                      </div>
+                      <div className="col">
+                        <Link
+                          href={""}
+                          className="inline-block bg-white border border-[#BECDE3] rounded-[8px] 3xl:rounded-[0.417vw] px-[12px] 3xl:px-[0.625vw] py-[10px] 3xl:py-[0.521vw]"
+                        >
+                          Product Information
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div>
+                    <div className="text-end">
+                      <div className="text-[20px] 3xl:text-[1.042vw] text-[#000000] font-medium ">
+                        $3450
+                      </div>{" "}
+                      <div className="text-[#6D9636] text-[14px] 3xl:text-[0.729vw] font-semibold">
+                        20.4% Increased{" "}
+                        <i className="asetsmng-arrow-up-line mx-[5px] 3xl:mx-[0.26vw]"></i>
+                      </div>
+                      <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw]">
+                        Current Price, at 2 PM. On 30th Nov
+                      </div>
+                    </div>
+                  </div>
+                  <div className="min-w-[200px] 3xl:min-w-[10.417vw] mt-[20px] 3xl:mt-[1.042vw]">
+                    <ReactEcharts
+                      option={linechartdata}
+                      style={{ height: "80%", width: "100%" }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>

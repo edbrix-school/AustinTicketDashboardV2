@@ -6,6 +6,12 @@ import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
 
 export default function MarketAlerts() {
+  const [inputText, setInputText] = useState("");
+  let inputHandler = (e) => {
+    //convert input text to lower case
+    var lowerCase = e.target.value.toLowerCase();
+    setInputText(lowerCase);
+  };
   
   return (
     <>
@@ -19,6 +25,7 @@ export default function MarketAlerts() {
               <i className="asetsmng-search-big text-[20px] 3xl:text-[1.042vw] text-[#4B586E]" />
               <i className="asetsmng-microphone text-[20px] 3xl:text-[1.042vw] text-[#4B586E] leading-none" />
               <InputText
+              onChange={inputHandler}
                 className="placeholder:text-[#84878D] placeholder:text-[16px] 3xl:placeholder:text-[0.833vw]"
                 placeholder="Search products by name, brand, etc.,"
               />
