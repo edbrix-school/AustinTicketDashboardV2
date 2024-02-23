@@ -2,7 +2,7 @@
 
 import FilterComponent from "@/app/components/filtercomponent";
 import React, { useState } from "react";
-import PageLayout from "@/app/components/pagelayout/pagelayout";
+import ExecutiveLayout from "@/app/components/executivepagelayout/pagelayout";
 import { InputText } from "primereact/inputtext";
 import { Dropdown } from "primereact/dropdown";
 import Link from "next/link";
@@ -33,7 +33,7 @@ const ElibraryPage = () => {
   ];
 
   return (
-    <PageLayout topTab={true} pageTitle="E-Library" pageName={pageName}>
+    <ExecutiveLayout topTab={true} pageTitle="E-Library" pageName={pageName}>
       <FilterComponent />
       <div className="grid gap-[12px] 3xl:gap-[0.625vw]">
         <div className="flex justify-between items-start">
@@ -611,7 +611,7 @@ const ElibraryPage = () => {
         visible={advancedSearch}
         onHides={() => setAdvancedSearch(false)}
       />
-    </PageLayout>
+    </ExecutiveLayout>
   );
 };
 

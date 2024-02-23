@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import PageLayout from '@/app/components/pagelayout/pagelayout';
+import LeadLayout from '@/app/components/leadpagelayout/pagelayout';
 import Image from 'next/image';
 import AssetPopup from '@/app/components/popup/assetspopup';
 
@@ -10,7 +10,7 @@ function Index() {
 
     return (
         <>
-            <PageLayout topTab={true} pageTitle="Reports" parentPageName={["Reports"]} >
+            <LeadLayout topTab={true} pageTitle="Reports" parentPageName={["Reports"]} >
                 <div className=''>
                     {/* <div className='text-[#131D32] text-[24px] font-medium xl:text-[1.25vw] pb-[42px] xl:pb-[2.188vw]  '>Standard Reports</div> */}
                     <div className='grid grid-cols-12 gap-[45px] xl:gap-[2.344vw] mt-[32px] xl:mt-[1.667vw]'>
@@ -138,7 +138,7 @@ function Index() {
                 </div>
 
                 <AssetPopup visible={assetsPopupShow} onHide={() => setAssetsPopupShow(false)} />
-            </PageLayout>
+            </LeadLayout>
 
         </>
     )

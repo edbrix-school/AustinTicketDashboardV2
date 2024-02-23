@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { InputText } from "primereact/inputtext";
-import PageLayout from '@/app/components/pagelayout/pagelayout';
+import LeadLayout from '@/app/components/leadpagelayout/pagelayout';
 import ManageAssets from './manageassets/manageassets';
 import Quickadd from './quickadd/quickadd';
 import CheckoutTansfer from './checkouttansfer/checkouttansfer';
@@ -26,7 +26,7 @@ export default function Index() {
   };
 
   return (
-    <PageLayout topTab={true} pageTitle={pageTitle} parentPageName={["Assets"]} pageName={pageName}>
+    <LeadLayout topTab={true} pageTitle={pageTitle} parentPageName={["Assets"]} pageName={pageName}>
      <div className="xl:mt-[1.198vw] mt-5">
      <Tabs className={'custTavbview'}>
       <div className='flex flex-wrap items-center justify-between gap-y-3'>
@@ -78,6 +78,6 @@ export default function Index() {
     </div>
   </Tabs>
      </div>
-    </PageLayout>
+    </LeadLayout>
   )
 }
