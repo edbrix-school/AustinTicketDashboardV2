@@ -90,8 +90,8 @@ export default function ChartWrapper(props) {
                   {
                     expand == true ?
                       <div className='text-[#4169E1] text-[14px] 3xl:text-[0.729vw] font-medium bothTitleHide'>
-                        <Link href={""} onClick={()=>{dropwonClick("dropwonClick"),setDroDownvalueClick(true)}} className='expandHide'>Expand</Link>
-                        <Link href={""} onClick={()=>{dropwonClick("dropwonClick"),setDroDownvalueClick(true)}} className='expandShow'>Collapse</Link>
+                        <div onClick={()=>{dropwonClick("dropwonClick"),setDroDownvalueClick(true)}} className='expandHide cursor-pointer'>Expand</div>
+                        <div onClick={()=>{dropwonClick("dropwonClick"),setDroDownvalueClick(true)}} className='expandShow cursor-pointer'>Collapse</div>
                       </div>
                       : null
                   }

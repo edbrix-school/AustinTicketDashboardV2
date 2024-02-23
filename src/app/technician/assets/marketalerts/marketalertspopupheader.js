@@ -88,14 +88,14 @@ function marketalertspopupHeader() {
               Market Alert
             </div>
             <div className="text-[#4169E1] text-[14px] 3xl:text-[0.729vw] font-medium expandHide ExpandTitle">
-              <Link
-                href={""}
+              <div
+                className="cursor-pointer"
                 onClick={() => {
                   dropwonClick("dropwonClick"), setDroDownvalueClick(true);
                 }}
               >
                 Expand
-              </Link>
+              </div>
             </div>
           </div>
 
