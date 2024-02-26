@@ -218,7 +218,7 @@ export default function InventoryAudit() {
   const actionBodyTemplate = (rowData) => {
     return (
       <>
-        <div className="flex justify-start text-[16px] gap-[10px] xl:gap-[1.042vw] w-full">
+        <div className="flex justify-center text-[16px] gap-[10px] xl:gap-[1.042vw] w-full">
           <button
             onClick={() => {
               setVisibleRight(true)
@@ -235,10 +235,6 @@ export default function InventoryAudit() {
           <button onClick={() => setDeleteuserpopup(true)}>
             {" "}
             <i className="asetsmng-trash"></i>
-          </button>
-          <button onClick={() => setResetpassowrdpopup(true)}>
-            {" "}
-            <i className="cgupod-security-safe"></i>
           </button>
         </div>
       </>
