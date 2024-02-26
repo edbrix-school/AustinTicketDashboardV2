@@ -83,7 +83,7 @@ export default function ChartWrapper(props) {
                 <div className='flex items-center justify-between'>
                 <div className='flex items-center 3xl:gap-[0.625vw] gap-[12px]'>
                   {/* <div><i className='asetsmng-folder text-[20px] 3xl:text-[1.042vw]'></i></div> */}
-                  <div className={`text-[#000000] dark:text-[#FFF] text-[16px] 3xl:text-[0.833vw] font-semibold  ${props.text}`}>
+                  <div className={`text-[#000000] text-[16px] 3xl:text-[0.833vw] font-semibold  ${props.text}`}>
                     <p>{props.title}</p>
                   </div>
 
@@ -98,7 +98,7 @@ export default function ChartWrapper(props) {
                  
                   <div className={`text-[#6C768B] text-[14px] 3xl:text-[0.729vw] font-normal  ${props.text}`}><p>{props.subtitle}</p></div>
                 </div>
-                <div className='space-x-[8px] 3xl:space-x-[0.417vw] optionbtn flex items-center wrapper_icons items-center custm_dropdwon text-[#6C768B] dark:text-[#B3B9C6]'>
+                <div className='space-x-[8px] 3xl:space-x-[0.417vw] optionbtn flex items-center wrapper_icons items-center custm_dropdwon text-[#6C768B]'>
                   {
                     dropdown1 == true ?
                       <Dropdown
@@ -168,12 +168,12 @@ export default function ChartWrapper(props) {
                           </button>
                           
                           <OverlayPanel ref={op} className="dropdownList">
-                            <div className='flex flex-col text-left gap-y-2 wrapperOption text-[14px] 3xl:text-[0.730vw] text-[#363A44] dark:text-[#B3B9C6]'>
-                              <button className='flex gap-2 items-center hover:text-[#4FB155] dark:hover:text-[#4FB155] ease-linear duration-200' href='' onClick={() => { handlePrintBots(); onExit(); }}>
+                            <div className='flex flex-col text-left gap-y-2 wrapperOption text-[14px] 3xl:text-[0.730vw] text-[#363A44]'>
+                              <button className='flex gap-2 items-center hover:text-[#4FB155] ease-linear duration-200' href='' onClick={() => { handlePrintBots(); onExit(); }}>
                                 <i className='pi pi-print '></i>
                                 <span>Print to pdf</span>
                               </button>
-                              <button className='flex gap-2 items-center hover:text-[#4FB155] dark:hover:text-[#4FB155] ease-linear duration-200'>
+                              <button className='flex gap-2 items-center hover:text-[#4FB155] ease-linear duration-200'>
                                 <i className='pi pi-download '></i>
                                 <CSVLink {...csvReport}>Export to CSV</CSVLink>
                               </button>
