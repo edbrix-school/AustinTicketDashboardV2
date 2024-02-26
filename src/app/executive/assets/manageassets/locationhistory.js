@@ -176,10 +176,10 @@ export default function LocationHistoryTable() {
 
   return (
     <>
-    <div className="bg-white dark:bg-[#13161B] border border-[#F2EEEE] dark:border-[#1F2A37] rounded-lg 3xl:rounded-[0.521vw]">
+    <div className="bg-white border border-[#F2EEEE] rounded-lg 3xl:rounded-[0.521vw]">
             <div className="flex flex-wrap items-center justify-between 3xl:px-[1.042vw] px-4 3xl:pt-[1.042vw] pt-4 3xl:pb-[0.990vw] pb-4">
               <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
-                <div className="text-[#3A3E49] dark:text-white 3xl:text-[0.833vw] text-sm font-medium 3xl:leading-[1.042vw] leading-5">
+                <div className="text-[#3A3E49] 3xl:text-[0.833vw] text-sm font-medium 3xl:leading-[1.042vw] leading-5">
                 Location History
                 </div>
               </div>

@@ -28,7 +28,7 @@ export default function FilterAddPopup(props) {
           <div className="grid p-[16px] 3xl:p-[0.833vw] h-full">
             <div className="px-[16px] 3xl:px-[0.833vw] py-[12px] 3xl:py-[0.625vw] bg-[#F9FAFB] grid gap-[16px] 3xl:gap-[0.833vw] h-[100%]">
               <div className="flex flex-col w-full gap-[8px] 3xl:gap-[0.429vw] custDropdownBox">
-                <label className="block text-[#20232E] text-[14px] xl:text-[0.729vw] font-medium leading-5 dark:text-[#fff]">
+                <label className="block text-[#20232E] text-[14px] xl:text-[0.729vw] font-medium leading-5 ">
                   District
                 </label>
                 <Dropdown
@@ -41,7 +41,7 @@ export default function FilterAddPopup(props) {
                 />
               </div>
               <div className="flex flex-col w-full gap-[8px] 3xl:gap-[0.429vw] custDropdownBox">
-                <label className="block text-[#20232E] text-[14px] xl:text-[0.729vw] font-medium leading-5 dark:text-[#fff]">
+                <label className="block text-[#20232E] text-[14px] xl:text-[0.729vw] font-medium leading-5 ">
                   Campus
                 </label>
                 <Dropdown
@@ -54,7 +54,7 @@ export default function FilterAddPopup(props) {
                 />
               </div>
               <div className="flex flex-col w-full gap-[8px] 3xl:gap-[0.429vw] custDropdownBox">
-                <label className="block text-[#20232E] text-[14px] xl:text-[0.729vw] font-medium leading-5 dark:text-[#fff]">
+                <label className="block text-[#20232E] text-[14px] xl:text-[0.729vw] font-medium leading-5 ">
                   Category
                 </label>
                 <Dropdown
@@ -67,7 +67,7 @@ export default function FilterAddPopup(props) {
                 />
               </div>
               <div className="flex flex-col w-full gap-[8px] 3xl:gap-[0.429vw] custDropdownBox">
-                <label className="block text-[#20232E] text-[14px] xl:text-[0.729vw] font-medium leading-5 dark:text-[#fff]">
+                <label className="block text-[#20232E] text-[14px] xl:text-[0.729vw] font-medium leading-5 ">
                   Asset SR
                 </label>
                 <Dropdown

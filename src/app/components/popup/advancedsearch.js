@@ -165,8 +165,8 @@ export default function AdvancedSearchPopup(props) {
                     <div
                       className={`flex items-center font-normal text-[14px] xl:text-[0.729vw] xl:py-[0.521vw] py-[12px] xl:px-[1.042vw] px-[18px] rounded-l-lg cursor-pointer ${
                         activeTab === 0
-                          ? "bg-[#4169E1] dark:bg-[#4169E1] text-white active border border-[#4169E1] dark:border-[#4169E1]"
-                          : "bg-[#FFFFFFD9] hover:bg-[#F0E9EA] dark:bg-[#13161B] text-[#424242] dark:text-[#AAAAAA] border border-[#EAE0E] dark:border-[#374151]"
+                          ? "bg-[#4169E1] text-white active border border-[#4169E1]"
+                          : "bg-[#FFFFFFD9] hover:bg-[#F0E9EA] text-[#424242] border border-[#EAE0E] "
                       }`}
                     >
                       First
@@ -176,8 +176,8 @@ export default function AdvancedSearchPopup(props) {
                     <div
                       className={`flex items-center font-normal text-[14px] xl:text-[0.729vw] xl:py-[0.521vw] py-[12px] xl:px-[1.042vw] px-[18px] cursor-pointer ${
                         activeTab === 1
-                          ? "bg-[#4169E1] dark:bg-[#4169E1] text-white active border border-[#4169E1] dark:border-[#4169E1]"
-                          : "bg-[#FFFFFFD9] hover:bg-[#F0E9EA] dark:bg-[#13161B] text-[#424242] dark:text-[#AAAAAA] border border-[#EAE0E] dark:border-[#374151]"
+                          ? "bg-[#4169E1] text-white active border border-[#4169E1]"
+                          : "bg-[#FFFFFFD9] hover:bg-[#F0E9EA] text-[#424242] border border-[#EAE0E] "
                       }`}
                     >
                       Second
@@ -187,8 +187,8 @@ export default function AdvancedSearchPopup(props) {
                     <div
                       className={`flex items-center font-normal text-[14px] xl:text-[0.729vw] xl:py-[0.521vw] py-[12px] xl:px-[1.042vw] px-[18px] rounded-r-lg cursor-pointer ${
                         activeTab === 2
-                          ? "bg-[#4169E1] dark:bg-[#4169E1] text-white active border border-[#4169E1] dark:border-[#4169E1]"
-                          : "bg-[#FFFFFFD9] hover:bg-[#F0E9EA] dark:bg-[#13161B] text-[#424242] dark:text-[#AAAAAA] border border-[#EAE0E] dark:border-[#374151]"
+                          ? "bg-[#4169E1] text-white active border border-[#4169E1]"
+                          : "bg-[#FFFFFFD9] hover:bg-[#F0E9EA] text-[#424242] border border-[#EAE0E] "
                       }`}
                     >
                       Third
@@ -340,7 +340,7 @@ export default function AdvancedSearchPopup(props) {
                     </div>
                     <div className="grid grid-cols-2 gap-[8px] 3xl:gap-[0.417vw]">
                       <div className="custInput  customCalendar">
-                        <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
+                        <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 ">
                           From
                         </label>
                         <Calendar
@@ -352,7 +352,7 @@ export default function AdvancedSearchPopup(props) {
                         />
                       </div>
                       <div className="custInput  customCalendar">
-                        <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
+                        <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 ">
                           To
                         </label>
                         <Calendar
@@ -403,7 +403,7 @@ export default function AdvancedSearchPopup(props) {
                         </div>
                       </div>
                       <div className="flex flex-col w-full custDropdownBox">
-                        <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
+                        <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 ">
                           Select
                         </label>
                         <Dropdown

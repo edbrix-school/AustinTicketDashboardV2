@@ -131,7 +131,7 @@ export default function Viewpopup(props) {
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 xl:gap-[1.67vw] gap-y-4 xl:gap-y-[0.689vw]">
 
             <div className="custInput custInputBox">
-              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
+              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 ">
                 Audit Title<span className="text-[#FF0000]">*</span>
               </label>
               <InputText
@@ -143,7 +143,7 @@ export default function Viewpopup(props) {
             </div>
 
             <div className="flex flex-col  w-full custDropdownBox">
-              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
+              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 ">
                 District<span className="text-[#FF0000]">*</span>
               </label>
               <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name"
@@ -152,7 +152,7 @@ export default function Viewpopup(props) {
             </div>
 
             <div className="flex flex-col  w-full custDropdownBox">
-              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
+              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 ">
                 School<span className="text-[#FF0000]">*</span>
               </label>
               <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name"
@@ -163,7 +163,7 @@ export default function Viewpopup(props) {
 
 
             <div className="custInput custInputBox">
-              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
+              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 ">
                 Location
               </label>
               <InputText
@@ -175,7 +175,7 @@ export default function Viewpopup(props) {
             </div>
 
             <div className="custInput  customCalendar">
-              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
+              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 ">
                 Start Date
               </label>
               <Calendar
@@ -187,7 +187,7 @@ export default function Viewpopup(props) {
               />
             </div>
             <div className="custInput customCalendar ">
-              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
+              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 ">
                 End Date
               </label>
               <Calendar
@@ -199,7 +199,7 @@ export default function Viewpopup(props) {
               />
             </div>
             <div className="custInput custInputBox">
-              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
+              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 ">
                 Assigned To<span className="text-[#FF0000]">*</span>
               </label>
               <InputText
@@ -211,7 +211,7 @@ export default function Viewpopup(props) {
             </div>
 
             <div className="flex flex-col  w-full custDropdownBox">
-              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
+              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 ">
                 Status<span className="text-[#FF0000]">*</span>
               </label>
               <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name"
@@ -221,7 +221,7 @@ export default function Viewpopup(props) {
 
 
             <div className="custInput custInputBox">
-              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
+              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 ">
                 Actual Start Date<span className="text-[#FF0000]">*</span>
               </label>
               <InputText
@@ -233,7 +233,7 @@ export default function Viewpopup(props) {
             </div>
 
             <div className="custInput custInputBox">
-              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 dark:text-[#fff]">
+              <label className="block text-[#262626] text-[14px] xl:text-[0.729vw] font-medium leading-8 ">
                 Actual End Date<span className="text-[#FF0000]">*</span>
               </label>
               <InputText

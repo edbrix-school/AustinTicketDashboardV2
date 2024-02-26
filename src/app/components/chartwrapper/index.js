@@ -177,11 +177,11 @@ export default function ChartWrapper(props) {
                                 <i className='pi pi-download '></i>
                                 <CSVLink {...csvReport}>Export to CSV</CSVLink>
                               </button>
-                              {/* <div className='flex gap-2 items-center cursor-pointer hover:text-[#4FB155] dark:hover:text-[#4FB155] ease-linear duration-200'>
+                              {/* <div className='flex gap-2 items-center cursor-pointer hover:text-[#4FB155] ease-linear duration-200'>
                                 <i className='pi pi-download '></i>
                                 <ExcelDownloader data={formatDownloadedData} />
                               </div> */}
-                              {/* <div className='flex gap-2 items-center cursor-pointer hover:text-[#4FB155] dark:hover:text-[#4FB155] ease-linear duration-200'>
+                              {/* <div className='flex gap-2 items-center cursor-pointer hover:text-[#4FB155] ease-linear duration-200'>
                                 <i className='pi pi-download '></i>
                                 <PdfDownloader
                                   title={formatFileName}
