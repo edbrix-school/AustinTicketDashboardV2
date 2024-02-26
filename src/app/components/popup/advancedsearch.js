@@ -673,7 +673,20 @@ export default function AdvancedSearchPopup(props) {
                       </div>
                     </div>
                   </div>
+                  <div className="flex justify-end w-full items-center py-[16px] 3xl:py-[0.833vw]">
+              <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw] xl:gap-[0.417vw]">
+                <div className="w-full text-[#84878D] text-[16px] xl:text-[0.833vw] 3xl:text-[0.833vw]  cursor-pointer
+                rounded-lg border border-[#D3D3CE] px-[12px] xl:px-[0.625vw] 3xl:px-[0.625vw] py-[8px] xl:py-[0.427vw] 3xl:py-[0.427vw]">
+                  Reset
                 </div>
+                <div className="w-full bg-[#4169E1] text-[#FFFFFF] text-[16px] xl:text-[0.833vw] 3xl:text-[0.833vw] cursor-pointer
+                 rounded-lg border border-[#4169E1] px-[12px] xl:px-[0.625vw] 3xl:px-[0.625vw] py-[8px] xl:py-[0.427vw] 3xl:py-[0.427vw]">
+                  Apply
+                </div>
+              </div>
+            </div>
+                </div>
+
               </TabPanel>
               <TabPanel>
                 <div>Second</div>
@@ -682,7 +695,9 @@ export default function AdvancedSearchPopup(props) {
                 <div>Third</div>
               </TabPanel>
             </div>
+            
           </Tabs>
+     
         </div>
       </Sidebar>
     </div>
