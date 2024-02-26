@@ -3,81 +3,81 @@ import ChartWrapper from "@/app/components/chartwrapper";
 import ReactEcharts from "echarts-for-react";
 import { Dropdown } from "primereact/dropdown";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-
+import Link from "next/link";
 
 function checkpricetrendtab() {
   const [selectedTeams, setSelectedTeams] = useState(null);
-  var echarts = require("echarts")
+  var echarts = require("echarts");
   const Teams = [
     { name: "Team 1", code: "NY" },
     { name: "Team 2", code: "RM" },
     { name: "Team 3", code: "LDN" },
   ];
-  const upColor = '#9BC463';
-  const upBorderColor = '#9BC463';
-  const downColor = '#FF0006';
-  const downBorderColor = '#FF0006';
+  const upColor = "#9BC463";
+  const upBorderColor = "#9BC463";
+  const downColor = "#FF0006";
+  const downBorderColor = "#FF0006";
   const dataCount = 100;
   const data = generateOHLC(dataCount);
   const stackbarwithline = {
     dataset: {
-      source: data
+      source: data,
     },
-   
+
     tooltip: {
-      trigger: 'axis',
+      trigger: "axis",
       axisPointer: {
-        type: 'line'
-      }
+        type: "line",
+      },
     },
     toolbox: {
       feature: {
         dataZoom: {
-          yAxisIndex: false
-        }
-      }
+          yAxisIndex: false,
+        },
+      },
     },
     grid: [
       {
-        left: '0%',
-        right: '0%',
-        bottom: 200
+        left: "0%",
+        right: "0%",
+        bottom: 200,
       },
       {
-        left: '0%',
-        right: '0%',
+        left: "0%",
+        right: "0%",
         height: 80,
-        bottom: 80
-      }
+        bottom: 80,
+      },
     ],
     xAxis: [
       {
-        type: 'category',
+        type: "category",
         boundaryGap: false,
         // inverse: true,
         axisLine: { onZero: false },
         splitLine: { show: false },
-        min: 'dataMin',
-        max: 'dataMax'
+        min: "dataMin",
+        max: "dataMax",
       },
       {
-        type: 'category',
+        type: "category",
         gridIndex: 1,
         boundaryGap: false,
         axisLine: { onZero: false },
         axisTick: { show: false },
         splitLine: { show: false },
         axisLabel: { show: true },
-        min: 'dataMin',
-        max: 'dataMax'
-      }
+        min: "dataMin",
+        max: "dataMax",
+      },
     ],
     yAxis: [
       {
         scale: true,
         splitArea: {
-          show: true
-        }
+          show: true,
+        },
       },
       {
         scale: true,
@@ -86,24 +86,24 @@ function checkpricetrendtab() {
         axisLabel: { show: true },
         axisLine: { show: false },
         axisTick: { show: false },
-        splitLine: { show: false }
-      }
+        splitLine: { show: false },
+      },
     ],
     dataZoom: [
       {
-        type: 'inside',
+        type: "inside",
         xAxisIndex: [0, 1],
         start: 10,
-        end: 100
+        end: 100,
       },
       {
         show: true,
         xAxisIndex: [0, 1],
-        type: 'slider',
+        type: "slider",
         bottom: 10,
         start: 10,
-        end: 100
-      }
+        end: 100,
+      },
     ],
     visualMap: {
       show: false,
@@ -112,46 +112,45 @@ function checkpricetrendtab() {
       pieces: [
         {
           value: 1,
-          color: upColor
+          color: upColor,
         },
         {
           value: -1,
-          color: downColor
-        }
-      ]
+          color: downColor,
+        },
+      ],
     },
     series: [
       {
-        type: 'candlestick',
+        type: "candlestick",
         itemStyle: {
           color: upColor,
           color0: downColor,
           borderColor: upBorderColor,
-          borderColor0: downBorderColor
+          borderColor0: downBorderColor,
         },
         encode: {
           x: 0,
-          y: [1, 4, 3, 2]
-        }
+          y: [1, 4, 3, 2],
+        },
       },
       {
-        name: 'Volumn',
-        type: 'bar',
+        name: "Volumn",
+        type: "bar",
         xAxisIndex: 1,
         yAxisIndex: 1,
         itemStyle: {
-          color: '#7fbe9e'
+          color: "#7fbe9e",
         },
         large: true,
         encode: {
           x: 0,
-          y: 5
-        }
-      }
-    ]
+          y: 5,
+        },
+      },
+    ],
   };
   function generateOHLC(count) {
-  
     let data = [];
     let xValue = +new Date("November 25, 2023");
     let minute = 60 * 1000;
@@ -173,15 +172,15 @@ function checkpricetrendtab() {
       // ['open', 'close', 'lowest', 'highest', 'volumn']
       // [1, 4, 3, 2]
       data[i] = [
-  // console.log("echarts",  echarts?.format?.formatTime('yyyy-MM-dd\nhh:mm:ss', (xValue += minute))),
+        // console.log("echarts",  echarts?.format?.formatTime('yyyy-MM-dd\nhh:mm:ss', (xValue += minute))),
 
-          echarts?.format?.formatTime('yyyy-MM-dd\nhh:mm:ss', (xValue += minute)),
+        echarts?.format?.formatTime("yyyy-MM-dd\nhh:mm:ss", (xValue += minute)),
         +boxVals[openIdx].toFixed(2),
         +boxVals[3].toFixed(2),
         +boxVals[0].toFixed(2),
         +boxVals[closeIdx].toFixed(2),
         +volumn.toFixed(0),
-        getSign(data, i, +boxVals[openIdx], +boxVals[closeIdx], 4) // sign
+        getSign(data, i, +boxVals[openIdx], +boxVals[closeIdx], 4), // sign
       ];
     }
     return data;
@@ -220,13 +219,29 @@ function checkpricetrendtab() {
           data={
             <div>
               <Tabs className={"marketAlertCharttabs"}>
-                <div className="px-[20px] pt-[16px] 3xl:px-[1.042vw] 3xl:pt-[0.833vw]">
-                <TabList>
-                  <Tab>Daily</Tab>
-                  <Tab>Weekly</Tab>
-                  <Tab>Monthly</Tab>
-                </TabList>
+                <div className="px-[20px] pt-[16px] 3xl:px-[1.042vw] 3xl:pt-[0.833vw] flex items-center justify-between">
+                  <div className="col">
+                    <TabList>
+                      <Tab>Daily</Tab>
+                      <Tab>Weekly</Tab>
+                      <Tab>Monthly</Tab>
+                    </TabList>
+                  </div>
+                  <div className="col expandRightTabs">
+                    <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
+                      <div className="text-[#000000]">Last</div>
+                      <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
+                        <Link href={""} className="text-[#4B586E] text-[12px] 3xl:text-[0.625vw] font-medium border border-[#BECDE3] bg-white rounded-[4px] 3xl:rounded-[0.208vw] px-[8px] py-[4px] 3xl:px-[0.417vw] 3xl:py-[0.208vw]">1 Hr</Link>
+                        <Link href={""} className="text-[#4B586E] text-[12px] 3xl:text-[0.625vw] font-medium border border-[#BECDE3] bg-white rounded-[4px] 3xl:rounded-[0.208vw] px-[8px] py-[4px] 3xl:px-[0.417vw] 3xl:py-[0.208vw]">2 Hrs</Link>
+                        <Link href={""} className="text-[#4B586E] text-[12px] 3xl:text-[0.625vw] font-medium border border-[#BECDE3] bg-white rounded-[4px] 3xl:rounded-[0.208vw] px-[8px] py-[4px] 3xl:px-[0.417vw] 3xl:py-[0.208vw]">4 Hrs</Link>
+                        <Link href={""} className="text-[#4B586E] text-[12px] 3xl:text-[0.625vw] font-medium border border-[#BECDE3] bg-white rounded-[4px] 3xl:rounded-[0.208vw] px-[8px] py-[4px] 3xl:px-[0.417vw] 3xl:py-[0.208vw]">8 Hrs</Link>
+                        <Link href={""} className="text-[#4B586E] text-[12px] 3xl:text-[0.625vw] font-medium border border-[#BECDE3] bg-white rounded-[4px] 3xl:rounded-[0.208vw] px-[8px] py-[4px] 3xl:px-[0.417vw] 3xl:py-[0.208vw]">12 Hrs</Link>
+                        <Link href={""} className="text-[#4B586E] text-[12px] 3xl:text-[0.625vw] font-medium border border-[#BECDE3] bg-white rounded-[4px] 3xl:rounded-[0.208vw] px-[8px] py-[4px] 3xl:px-[0.417vw] 3xl:py-[0.208vw]">24 Hrs</Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
                 <TabPanel>
                   <div className="w-full h-[421px] 3xl:h-[21.927vw]">
                     <ReactEcharts

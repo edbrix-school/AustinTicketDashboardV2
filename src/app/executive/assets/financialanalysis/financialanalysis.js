@@ -262,7 +262,7 @@ function Finacialanalysis() {
       const actionBodyTemplate = (rowData) => {
         return (
           <>
-            <div className="flex  items-center 3xl:gap-[0.833vw] gap-3 text-[#888888] 3xl:text-[0.938vw] text-sm">
+            <div className="flex justify-center items-center 3xl:gap-[0.833vw] gap-3 text-[#888888] 3xl:text-[0.938vw] text-sm">
               <Link href={""}>
                 <i className="cgupod-user-tick"></i>
               </Link>
@@ -602,7 +602,7 @@ function Finacialanalysis() {
               field="code"
               header="Asset Code"
           
-              style={{ minWidth: "6rem" }}
+              style={{ minWidth: "8rem" }}
             ></Column>
             <Column
               field="id"
@@ -715,7 +715,6 @@ function Finacialanalysis() {
               style={{ minWidth: "4rem" }}
               align="center"
               body={actionBodyTemplate}
-              sortable
               frozen
               alignFrozen="right"
             ></Column>
