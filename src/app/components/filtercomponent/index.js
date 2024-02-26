@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { Work_Sans } from "next/font/google";
 import { Dropdown } from "primereact/dropdown";
+import FilterAddPopup from "../popup/filteraddpopup";
 
 const myworksans = Work_Sans({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -11,7 +12,7 @@ const myworksans = Work_Sans({
 });
 
 export default function FilterComponent(props) {  
-
+  const [filterAddPopup, setFilterAddPopup] = useState(false);
   const [selectedType, setSelectedType] = useState(null);
   const [selectedYear, setSelectedYear] = useState(null);
   const type = [
@@ -74,6 +75,7 @@ export default function FilterComponent(props) {
             </div>
             <Link
               href=""
+              onClick={()=>setFilterAddPopup(true)}
               className="text-[#3A3E49] text-[12px] font-medium border border-[#E8E8E5] rounded-[8px] xl:rounded-[0.417vw] px-2 py-1.5 dark:text-white dark:border-[#363A44] hover:bg-[#F5F6F8] dark:hover:text-[black] dark:bg-[#24262D] dark:hover:bg-[#c3c3c6] "
               title="Add"
             >
@@ -106,7 +108,10 @@ export default function FilterComponent(props) {
           </div>
         </div>
       </div>
-
+<FilterAddPopup
+visible={filterAddPopup}
+onHides={()=>setFilterAddPopup(false)}
+/>
 
     </div>
   );

@@ -12,6 +12,9 @@
   .sidebarwidth{
   width: 922px;
   }
+  .addPopupwidth{
+    width: 500px;
+    }
   
   /* .sidebarwidth .p-sidebar-close{
     display: none;
