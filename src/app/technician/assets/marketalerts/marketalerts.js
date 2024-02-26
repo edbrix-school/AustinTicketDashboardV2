@@ -442,7 +442,7 @@ export default function MarketAlerts() {
         :
         <div className="marketAlertsListpage">
           <div className="w-full max-w-[1144px] 3xl:max-w-[59.583vw] mx-auto ">
-            <Productlist setSearchShow={setSearchShow} />
+            <Productlist setSearchShow={setSearchShow} setAlertPopupVisible={setAlertPopupVisible} />
             <div className="mt-[15px] lg:mt-[24px] xl:mt-[32px] 3xl:mt-[1.667vw]">
               <Recentsearches />
             </div>
