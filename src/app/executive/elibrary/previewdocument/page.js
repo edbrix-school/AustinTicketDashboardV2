@@ -38,7 +38,7 @@ const page = () => {
                 Save
               </span>
             </div>
-            <Link  href={"/technician/elibrary/adddocument"}
+            <Link href={"/technician/elibrary"}
             className="bg-[#FFF] rounded-lg text-[#4b586e] border border-[#becde3]/[0.3] hover:bg-[#AAA]/[0.3] flex items-center gap-[8px] 3xl:gap-[0.417vw] px-[12px] 3xl:px-[0.6vw] py-[8px] 3xl:py-[0.429vw]">
               <span className="3xl:text-[0.729vw] text-[14px] font-normal leading-4 cursor-pointer">
                 Cancel

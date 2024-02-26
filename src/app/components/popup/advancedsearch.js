@@ -108,18 +108,18 @@ export default function AdvancedSearchPopup(props) {
         </div>
 
         {showChildTemplates && option?.code === expandedItem?.code && (
-          <ul>
+          <ul className="pl-3 pt-2">
             {option.template.map((child, index) => (
-              <li key={index}>
-                <button onClick={() => handleSelectValues(child)}>
+              <li key={index} className="">
+                <button onClick={() => handleSelectValues(child)} className="flex gap-2 items-center">
                   <RadioButton
-                    className="pr-[3px] conditionbtn"
+                    className="conditionbtn "
                     inputId="ingredient1"
                     value={child.name}
                     onChange={(e) => setIngredient(e.value)}
                     checked={ingredient === child.name}
                   />
-                  {child.name}
+                 <div className="text-[14px] xl:text-[0.729vw] font-medium"> {child.name}</div>
                 </button>
               </li>
             ))}
