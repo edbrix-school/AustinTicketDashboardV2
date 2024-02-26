@@ -91,7 +91,7 @@ export default function AssetsRefreshPopup(props) {
                                     onChange={(e) => setSelectedDistrict(e.value)}
                                     options={District}
                                     optionLabel="name"
-                                    placeholder="--Select--"
+                                    placeholder="-- Select --"
                                     className="w-full md:w-14rem "
                                 />
                             </div>
@@ -104,7 +104,7 @@ export default function AssetsRefreshPopup(props) {
                                     onChange={(e) => setSelectedCampus(e.value)}
                                     options={Campus}
                                     optionLabel="name"
-                                    placeholder="--Select--"
+                                    placeholder="-- Select --"
                                     className="w-full md:w-14rem border"
                                 />
                             </div>
@@ -119,7 +119,7 @@ export default function AssetsRefreshPopup(props) {
                                     onChange={(e) => setSelectedAssetCategory(e.value)}
                                     options={AssetCategory}
                                     optionLabel="name"
-                                    placeholder="--Select--"
+                                    placeholder="-- Select --"
                                     className="w-full md:w-14rem border"
                                 />
                             </div>
@@ -132,7 +132,7 @@ export default function AssetsRefreshPopup(props) {
                                     onChange={(e) => setSelectedAssetType(e.value)}
                                     options={AssetType}
                                     optionLabel="name"
-                                    placeholder="--Select--"
+                                    placeholder="-- Select --"
                                     className="w-full md:w-14rem border"
                                 />
                             </div>
@@ -147,7 +147,7 @@ export default function AssetsRefreshPopup(props) {
                                     onChange={(e) => setSelectedAssetStatus(e.value)}
                                     options={AssetStatus}
                                     optionLabel="name"
-                                    placeholder="--Select--"
+                                    placeholder="-- Select --"
                                     className="w-full md:w-14rem border"
                                 />
                             </div>
