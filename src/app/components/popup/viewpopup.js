@@ -113,10 +113,12 @@ export default function Viewpopup(props) {
     <>
       <Sidebar visible={props.visible}
         position="right"
+        blockScroll={true}
         onHide={() => props.onHides(false)}
         className="sidebarwidth custmSidebar rounded-l-xl "
         title={props.title}>
-
+          <div className="relative">
+        <div className="px-6 3xl:px-[1.25vw]">
         <div className="">
 
           <div className="py-[24px] xl:py-[1.25vw] text-[24px] text-[#20232E]">
@@ -369,16 +371,17 @@ export default function Viewpopup(props) {
             Add
           </div>
         </div>
+        </div>
 
-        <div className="flex justify-end mt-[32px] xl:mt-[1.667vw] gap-[8px]">
-          <div className="border py-[10px] px-[12px]  3xl:py-[0.521vw] 3xl:px-[0.625vw] text-[14px] 3xl:text-[0.729vw] rounded-lg">
+        <div className="absolute left-0 right-0 flex justify-end mt-[32px] xl:mt-[1.667vw] gap-[8px] bg-[#F9F9FC] px-6 3xl:px-[1.25vw] py-[18px] 3xl:py-[0.938vw]">
+          <div className="border py-[10px] px-[12px]  3xl:py-[0.521vw] 3xl:px-[0.625vw] text-[14px] 3xl:text-[0.729vw] rounded-lg cursor-pointer">
             Cancel
           </div>
-          <div className="border py-[10px] px-[12px] 3xl:py-[0.521vw] 3xl:px-[0.625vw] bg-[#1570EF] text-[#fff] text-[14px] 3xl:text-[0.729vw] rounded-lg">
+          <div className="border py-[10px] px-[12px] 3xl:py-[0.521vw] 3xl:px-[0.625vw] bg-[#1570EF] text-[#fff] text-[14px] 3xl:text-[0.729vw] rounded-lg cursor-pointer">
             Save
           </div>
         </div>
-
+        </div>
       </Sidebar>
     </>
   )
