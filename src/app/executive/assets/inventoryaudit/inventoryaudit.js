@@ -247,28 +247,25 @@ export default function InventoryAudit() {
   };
 
   const statusBodyTemplate = (rowData) => {
-    console.log("rowData.Status",rowData.Status );
     if (rowData.Status === "Complete") {
       return (
-        <div className="inline-flex items-center rounded-lg  border-[#18B557] bg-[#D1FAE4] dark:bg-[#18B557] text-[#18B557] dark:text-white text-[12px] font-medium py-[4px] xl:py-[0.208vw] px-[12px] xl:px-[0.625vw]">
+        <div className="inline-flex items-center rounded-lg  border-[#18B557] bg-[#D1FAE4] text-[#075E43] text-[12px] font-medium py-[4px] xl:py-[0.208vw] px-[12px] xl:px-[0.625vw]">
           completed
         </div>
       );
     } else if (rowData.Status === "Sheduled") {
       return (
-        <div className="inline-flex items-center rounded-lg  bg-[#FDE8E8] dark:bg-[#18B557] text-[#18B557] dark:text-white text-[12px] font-medium py-[4px] xl:py-[0.208vw] px-[12px] xl:px-[0.625vw]">
+        <div className="inline-flex items-center rounded-lg  bg-[#FDE8E8] text-[#C81E1E] text-[12px] font-medium py-[4px] xl:py-[0.208vw] px-[12px] xl:px-[0.625vw]">
           Scheduled
         </div>
       );
     } else if (rowData.Status === "In Progress") {
       return (
-        <div className="inline-flex items-center rounded-lg  bg-[#FDF2C8] dark:bg-[#18B557] text-[#18B557] dark:text-white text-[12px] font-medium py-[4px] xl:py-[0.208vw] px-[12px] xl:px-[0.625vw]">
+        <div className="inline-flex items-center rounded-lg  bg-[#FDF2C8] text-[#D67309] text-[12px] font-medium py-[4px] xl:py-[0.208vw] px-[12px] xl:px-[0.625vw]">
           In Progress
         </div>
       );
     } 
-  
-    
   }
 
   const categories = [
