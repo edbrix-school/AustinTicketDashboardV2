@@ -604,7 +604,7 @@ background: var(--surface-page, #F9F9FC);
     color: white;
 }
 .custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icons .p-sidebar-close::after {
-    content: 'close';
+    content: 'Close';
     display: block;
     color: white;
     font-size: 14px;
@@ -1036,7 +1036,7 @@ background: var(--surface-page, #F9F9FC);
         color: white;
     }
     .custmSidebar.p-sidebar .p-sidebar-header .p-sidebar-icons .p-sidebar-close::after {
-        content: 'close';
+        content: 'Close';
         display: block;
         color: white;
         font-size: 0.729vw;

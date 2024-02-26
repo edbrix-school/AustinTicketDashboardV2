@@ -96,8 +96,8 @@ export default function AdvancedSearchPopup(props) {
   const customOptionTemplate = (option) => {
     return (
       <div>
-        <div className="flex items-center gap-2 justify-between">
-          <div onClick={() => handleExpandClick(option)}>
+        <div className="flex items-center">
+          <div onClick={() => handleExpandClick(option)} className="mr-1"> 
             {expandedItem?.code === option?.code ? (
               <i className="asetsmng-arrow-up-circle-outline"></i>
             ) : (
