@@ -222,25 +222,25 @@ export default function InventoryAudit() {
           <Link
             href="#"
             onClick={() => {
-              setVisibleRight(true), setShow(true);
+              setVisibleRight(true)
             }}
             
           >
             {" "}
             <i className="asetsmng-eye"></i>
           </Link>
-          <Link href="" onClick={() => setVisibleRight(true)}>
+          <div onClick={() => setVisibleRight(true)}>
             {" "}
             <i className="asetsmng-edit-rounded-box"></i>
-          </Link>
-          <Link href="" onClick={() => setDeleteuserpopup(true)}>
+          </div>
+          <div onClick={() => setDeleteuserpopup(true)}>
             {" "}
             <i className="asetsmng-trash"></i>
-          </Link>
-          <Link href="" onClick={() => setResetpassowrdpopup(true)}>
+          </div>
+          <div onClick={() => setResetpassowrdpopup(true)}>
             {" "}
             <i className="cgupod-security-safe"></i>
-          </Link>
+          </div>
         </div>
       </>
     );
@@ -322,44 +322,39 @@ export default function InventoryAudit() {
                   </span>
                 </div>
                 <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
-                <Link
-                    href={""}
+                <div
                     onClick={()=>setAddInventory(true)}
-                    className="text-[#4169E1] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#4169E1] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw]"
+                    className="text-[#4169E1] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#4169E1] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] cursor-pointer"
                   >
                     <i className="asetsmng-plus-rounded-box"></i>
                     <span>Add Inventory Audit </span>
                     
-                  </Link>
-                  <Link
-                    href={""}
-                    className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
+                  </div>
+                  <div
+                    className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1] cursor-pointer"
                   >
                     <i className="asetsmng-import"></i>
                     <span>Import</span>
-                  </Link>
-                  <Link
-                    href={""}
-                    className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
+                  </div>
+                  <div
+                    className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1] cursor-pointer"
                   >
                     <i className="asetsmng-export"></i>
                     <span>Export</span>
-                  </Link>
+                  </div>
                 </div>
                 </div>
                 <div className="flex items-center 3xl:gap-[0.417vw] gap-1.5">
-                <Link
-                  href={""}
-                  className="bg-white rounded border border-[#D3D3CE] text-[#84878D] 3xl:text-[1.042vw] flex items-center justify-center text-base 3xl:p-[0.417vw] p-2 3xl:h-[1.875vw] h-[33px] 3xl:rounded-[0.417vw] hover:bg-[#4169E1] hover:text-white hover:border-[#4169E1]"
+                <div
+                  className="bg-white rounded border border-[#D3D3CE] text-[#84878D] 3xl:text-[1.042vw] flex items-center justify-center text-base 3xl:p-[0.417vw] p-2 3xl:h-[1.875vw] h-[33px] 3xl:rounded-[0.417vw] hover:bg-[#4169E1] hover:text-white hover:border-[#4169E1] cursor-pointer"
                 >
                   <i className="asetsmng-map-view"></i>
-                </Link>
-                <Link
-                  href={""}
-                  className="bg-[#4169E1] rounded border text-white 3xl:text-[1.042vw] flex items-center justify-center text-base 3xl:p-[0.417vw] p-2 3xl:h-[1.875vw] h-[33px] 3xl:rounded-[0.417vw]"
+                </div>
+                <div
+                  className="bg-[#4169E1] rounded border text-white 3xl:text-[1.042vw] flex items-center justify-center text-base 3xl:p-[0.417vw] p-2 3xl:h-[1.875vw] h-[33px] 3xl:rounded-[0.417vw] cursor-pointer"
                 >
                   <i className="asetsmng-grid-outline"></i>
-                </Link>
+                </div>
                 </div>
               </div>
             </div>
