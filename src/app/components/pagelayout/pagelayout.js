@@ -22,7 +22,7 @@ export default function Layout({ children, ...pageProps }) {
       <>
         <Top topTab={pageProps.topTab} pageTitle={pageProps.pageTitle} pageName={pageProps.pageName} parentPageName={pageProps.parentPageName} />         
         <Left />
-        <div className={`${myInter.className} pl-[118px] xl:pl-[128px] pr-[32px] xl:pr-[1.667vw] pb-6 xl:pb-[1.25vw] dark:bg-[#1C2026]`}>
+        <div className={`${myInter.className} pl-[118px] xl:pl-[128px] pr-[32px] xl:pr-[1.667vw] pb-6 xl:pb-[1.25vw] `}>
           <main>
             {children}
           </main>

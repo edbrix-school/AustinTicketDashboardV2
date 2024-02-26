@@ -29,13 +29,13 @@ export default function FilterComponent(props) {
   return (
     <div className="z-[4]">
       <div className="flex gap-4 items-center mt-[16px] xl:mt-[0.833vw] mb-[24px] xl:mb-[1.25vw]">
-        <div className="w-full min-h-[65px] xl:min-h-[2.5vw] bg-white flex flex-wrap justify-between rounded-[8px] xl:rounded-[0.417vw] dark:bg-[#191A1E] pl-2 xl:pl-[0.833vw] shadow">
+        <div className="w-full min-h-[65px] xl:min-h-[2.5vw] bg-white flex flex-wrap justify-between rounded-[8px] xl:rounded-[0.417vw] pl-2 xl:pl-[0.833vw] shadow">
           <div className="flex flex-wrap justify-start items-center gap-1 pt-2 pb-1 xl:py-1">
             <div className=" lg:w-auto w-full">
               <div className="flex flex-wrap gap-[4px] items-center">
               
-                <div className="rounded pb-[4px] px-[12px] space-y-0 cursor-pointer max-w-[100px] hover:max-w-[125px] ease-in duration-300 overflow-hidden bg-[#F9F9FC] dark:bg-[#24262D]">
-                  <span className="text-[#84878D] dark:text-[#B3B9C6] text-[10px] font-normal">
+                <div className="rounded pb-[4px] px-[12px] space-y-0 cursor-pointer max-w-[100px] hover:max-w-[125px] ease-in duration-300 overflow-hidden bg-[#F9F9FC] ">
+                  <span className="text-[#84878D] text-[10px] font-normal">
                   District
                   </span>
                   <div className="custDropdown">
@@ -49,8 +49,8 @@ export default function FilterComponent(props) {
                     />
                   </div>
                 </div>
-                <div className="rounded pb-[4px] px-[12px] space-y-0 cursor-pointer max-w-[100px] hover:max-w-[125px] ease-in duration-300 overflow-hidden bg-[#F9F9FC] dark:bg-[#24262D]">
-                  <span className="text-[#84878D] dark:text-[#B3B9C6] text-[10px] font-normal">
+                <div className="rounded pb-[4px] px-[12px] space-y-0 cursor-pointer max-w-[100px] hover:max-w-[125px] ease-in duration-300 overflow-hidden bg-[#F9F9FC] ">
+                  <span className="text-[#84878D] text-[10px] font-normal">
                   School
                   </span>
                   <div className="custDropdown">
@@ -70,13 +70,13 @@ export default function FilterComponent(props) {
               </div>
             </div>
 
-            <div className="text-[#84878D] text-[14px] font-normal px-[12px] dark:text-[#B3B9C6]">
+            <div className="text-[#84878D] text-[14px] font-normal px-[12px] ">
               <div className={myworksans.className}>No filter applied yet</div>
             </div>
             <Link
               href=""
               onClick={()=>setFilterAddPopup(true)}
-              className="text-[#3A3E49] text-[12px] font-medium border border-[#E8E8E5] rounded-[8px] xl:rounded-[0.417vw] px-2 py-1.5 dark:text-white dark:border-[#363A44] hover:bg-[#F5F6F8] dark:hover:text-[black] dark:bg-[#24262D] dark:hover:bg-[#c3c3c6] "
+              className="text-[#3A3E49] text-[12px] font-medium border border-[#E8E8E5] rounded-[8px] xl:rounded-[0.417vw] px-2 py-1.5 hover:bg-[#F5F6F8] "
               title="Add"
             >
               Add <i className="asetsmng-plus ml-1"></i>
@@ -88,8 +88,8 @@ export default function FilterComponent(props) {
               className="p-2 xl:text-end text-center self-center xl:w-auto w-1/2 group"
               title="Applied Filters"
             >
-              <i className="asetsmng-arrow-left-line text-[12px] xl:text-[0.625vw] text-[#84878D] dark:text-[#B3B9C6] group-hover:text-[#4169E1]"></i>
-              <div className="text-[#84878D] dark:text-[#B3B9C6] group-hover:text-[#4169E1] text-[12px] xl:text-[0.625vw] font-normal leading-tight">
+              <i className="asetsmng-arrow-left-line text-[12px] xl:text-[0.625vw] text-[#84878D]  group-hover:text-[#4169E1]"></i>
+              <div className="text-[#84878D]  group-hover:text-[#4169E1] text-[12px] xl:text-[0.625vw] font-normal leading-tight">
                 <div className={myworksans.className}>
                   Applied <br /> Filters
                 </div>

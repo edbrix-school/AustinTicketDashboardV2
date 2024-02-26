@@ -22,7 +22,7 @@ export default function Left(props) {
   return (
     <>
       <div className={` fixed top-0 left-0 z-[9] max-md:h-full left-menu-sec`}>
-        <div className="w-[96px] hover:w-[328px] bg-white left-menu-h py-5 xl:py-[1.04vw] px-5 border-r border-[#E5E7EB] dark:border-[#191A1E] overflow-hidden max-md:h-full dark:bg-[#191A1E]">
+        <div className="w-[96px] hover:w-[328px] bg-white left-menu-h py-5 xl:py-[1.04vw] px-5 border-r border-[#E5E7EB] overflow-hidden max-md:h-full ">
           <div className="relative h-full">
             <div className='logo-block h-[89px] mb-[16px]'>
               <div className="logo_icon flex justify-center" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
@@ -31,20 +31,15 @@ export default function Left(props) {
               </div>
               <div className="logo min-w-[200px] xl:min-w-[10vw]">
                 <Link href='/' className='block text-center w-[280px]'>
-
-
-                  {currentTheme === 'dark' ?
-                    <div>    <Image src="/assets/images/left-menu-icons/logo_dark.svg" width={280} height={23} alt='logo icon' /></div>
-                    :
                     <div>      <Image src="/assets/images/left-menu-icons/logo.svg" width={280} height={23} className='w-[280px] xl:w-[22.583vw]' alt='logo icon' /></div>
-                  }
+      
                 </Link>
               </div>
               <div className="lock_icon mt-4" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
-                <i className='leftmenu-lock dark:bg-[#191A1E] px-5 xl:px-[1.04vw]'></i>
+                <i className='leftmenu-lock  px-5 xl:px-[1.04vw]'></i>
               </div>
-              <div className="logo min-w-[150px] mt-4 mr-[15px] border-b-2 border-[#E5E7EB] dark:border-[#2A2C32] text-right relative">
-                <i className='leftmenu-unlock absolute top-[-20px] right-[-15px] bg-[#fff] dark:bg-[#191A1E]' ></i>
+              <div className="logo min-w-[150px] mt-4 mr-[15px] border-b-2 border-[#E5E7EB] text-right relative">
+                <i className='leftmenu-unlock absolute top-[-20px] right-[-15px] bg-[#fff] ' ></i>
               </div>
             </div>
 
@@ -115,10 +110,8 @@ export default function Left(props) {
               <ul className="left-menu hoverNone">
                 <li className="settings"><Link href='/setting'><span>Settings</span></Link></li>
                 <li className='dark-mode'>
-                  <Link href=""> {currentTheme === "dark" ?
-                    <span onClick={() => setTheme("light")}>Dark Theme</span>
-                    :
-                    <span onClick={() => setTheme("dark")}>Light Theme</span>} </Link>
+                  <Link href=""> 
+                    <span >Dark Theme</span> </Link>
                 </li>
                 <li className="support mt-[12px] xl:mt-[0.625vw]"><Link href='' className="supportBg"><span>Support Tickets</span></Link></li>
                 <li className="userProfile relative mt-[24px] xl:mt-[1.250vw] -ml-[3px]">
@@ -129,8 +122,8 @@ export default function Left(props) {
                     <div>
 
                       <Link href=''>
-                        <span className="text-[#4C525F] dark:text-[#FFFFFF] text-[16px] xl:text-[0.833vw] font-semibold block">Jese Leos</span>
-                        <span className="text-[#6B7280] dark:text-[#B3B9C6] text-[14px] xl:text-[0.729vw] block">Joined in August 2014</span>
+                        <span className="text-[#4C525F] text-[16px] xl:text-[0.833vw] font-semibold block">Jese Leos</span>
+                        <span className="text-[#6B7280] text-[14px] xl:text-[0.729vw] block">Joined in August 2014</span>
                       </Link>
                     </div>
                     
