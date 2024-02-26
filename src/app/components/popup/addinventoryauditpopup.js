@@ -122,15 +122,15 @@ export default function Addinventoryauditpopup(props) {
                 </div>
 
             <div className="absolute bottom-5 right-5 flex justify-end gap-2">
-                <div><Link href="#" onClick={()=> props.onHides(false)} className="text-[#4B586E] border border-[#BECDE3] font-normal leading-[18px] xl:leading-[0.938vw] text-[14px] xl:text-[0.729vw] py-[10px] xl:py-[0.521vw] px-[12px] xl:px-[0.625vw] rounded-lg">Cancel</Link></div>
-                <div><Link href="#" onClick={()=>setCreate(true)} className="text-[#FFFFFF] font-normal leading-[18px] xl:leading-[0.938vw] text-[14px] xl:text-[0.729vw] py-[10px] xl:py-[0.521vw] px-[12px] xl:px-[0.625vw] bg-[#1570EF] rounded-lg">Create</Link></div>
+                <div><div onClick={()=> props.onHides(false)} className="text-[#4B586E] border border-[#BECDE3] font-normal leading-[18px] xl:leading-[0.938vw] text-[14px] xl:text-[0.729vw] py-[10px] xl:py-[0.521vw] px-[12px] xl:px-[0.625vw] rounded-lg cursor-pointer">Cancel</div></div>
+                <div><div onClick={()=>setCreate(true)} className="text-[#FFFFFF] font-normal leading-[18px] xl:leading-[0.938vw] text-[14px] xl:text-[0.729vw] py-[10px] xl:py-[0.521vw] px-[12px] xl:px-[0.625vw] bg-[#1570EF] rounded-lg cursor-pointer">Create</div></div>
             </div>
 </Sidebar>
 
  <Successfullypopup
  visible={create}
  position="right"
- onHides={()=> setCreate(false)}
+ onHides={()=>{ setCreate(false),props.onHides(false)}}
  />
    </div>
    </>
