@@ -99,14 +99,14 @@ const ElibraryPage = () => {
             <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
               <Link
                 href="/technician/elibrary/adddocument"
-                className="text-[#4169E1] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#4169E1] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw]"
+                className="text-[#4169E1] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#4169E1] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2   h-[33px] 3xl:h-[1.875vw]"
               >
                 <i className="asetsmng-text-doc"></i>
                 <span>Add Documents</span>
               </Link>
               <Link
                 href={""}
-                className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
+                className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#D3D3CE] 3xl:py-[0.521vw] py-2 3xl:px-[0.833vw] px-3 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2  h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
               >
                 <i className="asetsmng-export"></i>
                 <span>Export</span>
@@ -130,7 +130,7 @@ const ElibraryPage = () => {
         </div>
       </div>
       <div className="grid grid-cols-4 xl:mt-[1.250vw] mt-6 xl:gap-[1.250vw] gap-5">
-      <Link href={"/technician/elibrary/allison"} className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+      <Link href={"/technician/elibrary/allison"} className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative ">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
@@ -138,7 +138,7 @@ const ElibraryPage = () => {
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
                 <div
-                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                  className={`text-[#000000] text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
                   Allison
                 </div>
@@ -189,7 +189,7 @@ const ElibraryPage = () => {
             </div>
           </div>
         </Link>
-        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
@@ -197,7 +197,7 @@ const ElibraryPage = () => {
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
                 <div
-                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                  className={`text-[#000000] text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
                   Baldwin 
                 </div>
@@ -248,7 +248,7 @@ const ElibraryPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
@@ -256,7 +256,7 @@ const ElibraryPage = () => {
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
                 <div
-                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                  className={`text-[#000000]  text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
                   Woodword 
                 </div>
@@ -307,7 +307,7 @@ const ElibraryPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative ">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
@@ -315,7 +315,7 @@ const ElibraryPage = () => {
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
                 <div
-                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                  className={`text-[#000000]  text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
                   Arkinson 
                 </div>
@@ -366,7 +366,7 @@ const ElibraryPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative ">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
@@ -374,7 +374,7 @@ const ElibraryPage = () => {
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
                 <div
-                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                  className={`text-[#000000] text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
                   Justin 
                 </div>
@@ -425,7 +425,7 @@ const ElibraryPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
@@ -433,7 +433,7 @@ const ElibraryPage = () => {
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
                 <div
-                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                  className={`text-[#000000] text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
                  Casa 
                 </div>
@@ -484,7 +484,7 @@ const ElibraryPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
@@ -492,7 +492,7 @@ const ElibraryPage = () => {
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
                 <div
-                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                  className={`text-[#000000] text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
                  City Lab
                 </div>
@@ -543,7 +543,7 @@ const ElibraryPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative dark:bg-[#13161B]">
+        <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
@@ -551,7 +551,7 @@ const ElibraryPage = () => {
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
                 </div>
                 <div
-                  className={`text-[#000000] dark:text-[#FFF] text-[16px] xl:text-[0.833vw] font-semibold`}
+                  className={`text-[#000000] text-[16px] xl:text-[0.833vw] font-semibold`}
                 >
                   HEC
                 </div>
