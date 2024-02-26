@@ -22,3 +22,8 @@ padding: 5px !important;
     /* padding: 0 !important; */
     padding: 0rem 0.25rem !important;
 }
+
+.p-multiselect-header
+{
+    display: none;
+}

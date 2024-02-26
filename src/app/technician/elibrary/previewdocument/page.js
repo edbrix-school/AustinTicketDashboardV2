@@ -108,7 +108,7 @@ const page = () => {
               <div className="text-[20px] 3xl:text-[1.042vw] font-medium leading-5">
                 Preview Document
               </div>
-              <div className="border border-[#E4E7EC] rounded-lg">
+              <div className="border border-[#E4E7EC] rounded-lg bg-[#fff]">
                 <div className="p-[24px] 3xl:p-[1.25vw]">
                   <Image
                     src={"/assets/images/previewdoc.svg"}
@@ -125,7 +125,7 @@ const page = () => {
               <div className="text-[20px] 3xl:text-[1.042vw] font-medium leading-5">
                 Key Fields
               </div>
-              <div className="border border-[#E4E7EC] rounded-lg">
+              <div className="border border-[#E4E7EC] rounded-lg bg-[#fff]">
                 <div className="p-[24px] 3xl:p-[1.25vw] grid">
                   <div className="text-[24px] 3xl:text-[1.25vw] font-medium leading-8">
                     Key Fields

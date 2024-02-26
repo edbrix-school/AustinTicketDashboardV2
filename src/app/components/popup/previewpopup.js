@@ -57,16 +57,20 @@ export default function PreviewPopup(props) {
             </div>
             <div>
             <TabPanel>
+                     <div className="h-[400px] 3xl:h-[41.667vw] xl:h-[800px]  lg:h-[600px] ">
                       <PreviewTable/>
+                      </div>
               </TabPanel>
               <TabPanel>
+              <div className="h-[400px] 3xl:h-[41.667vw] xl:h-[800px] lg:h-[600px]">
                       <MetadataPage/>
+                      </div>
               </TabPanel>
             </div>
         
           </Tabs>
-          <div className="flex w-full justify-end items-end  pr-[24px] 3xl:pr-[1.25vw] p-[24px] 3xl:p-[1.25vw]">
-              <Link href={""} className="text-[16px] 3xl:text-[0.833vw] text-[#FFF] bg-[#4169E1] rounded-lg leading-5 px-[12px] py-[8px] absolute bottom-2">
+          <div className="flex w-full justify-end items-end  xl:px-[20px]  px-[24px] 3xl:px-[1.25vw] xl:py-[30px]  py-[24px] 3xl:py-[1.25vw] bg-[#fff]">
+              <Link href={""} className="text-[16px] 3xl:text-[0.833vw] text-[#FFF] bg-[#4169E1] rounded-lg leading-5 px-[12px] py-[8px] ">
               Open this Folder
               </Link>
             </div>
