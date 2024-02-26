@@ -219,8 +219,7 @@ export default function InventoryAudit() {
     return (
       <>
         <div className="flex justify-start text-[16px] gap-[10px] xl:gap-[1.042vw] w-full">
-          <Link
-            href="#"
+          <button
             onClick={() => {
               setVisibleRight(true)
             }}
@@ -228,19 +227,19 @@ export default function InventoryAudit() {
           >
             {" "}
             <i className="asetsmng-eye"></i>
-          </Link>
-          <div onClick={() => setVisibleRight(true)}>
+          </button>
+          <button onClick={() => setVisibleRight(true)}>
             {" "}
             <i className="asetsmng-edit-rounded-box"></i>
-          </div>
-          <div onClick={() => setDeleteuserpopup(true)}>
+          </button>
+          <button onClick={() => setDeleteuserpopup(true)}>
             {" "}
             <i className="asetsmng-trash"></i>
-          </div>
-          <div onClick={() => setResetpassowrdpopup(true)}>
+          </button>
+          <button onClick={() => setResetpassowrdpopup(true)}>
             {" "}
             <i className="cgupod-security-safe"></i>
-          </div>
+          </button>
         </div>
       </>
     );
