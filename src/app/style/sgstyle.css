@@ -40,6 +40,11 @@
     font-size: 14px;
     padding: 10px 16px;
 }
+.custDropdownBox .p-multiselect .p-multiselect-label 
+{
+    font-size: 14px;
+    padding: 10px 16px;
+}
 
 .custDropdownBox .p-dropdown {
     color: #888888;
@@ -138,6 +143,11 @@
     }
     
     .custDropdownBox .p-inputtext {
+        font-size: 0.729vw;
+        padding: 0.521vw 0.833vw;
+    }
+    .custDropdownBox .p-multiselect .p-multiselect-label 
+    {
         font-size: 0.729vw;
         padding: 0.521vw 0.833vw;
     }

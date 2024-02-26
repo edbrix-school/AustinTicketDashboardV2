@@ -139,7 +139,7 @@ export default function AdvancedSearchPopup(props) {
   };
 
   const ConditionList = [
-    { name: "Between", code: "vr" },
+    // { name: "Between", code: "vr" },
     { name: "And", code: "er" },
     { name: "Or", code: "vr" },
     { name: "Not", code: "er" },
@@ -153,7 +153,7 @@ export default function AdvancedSearchPopup(props) {
         className="sidebarwidth custmSidebar rounded-l-xl "
         title={props.title}
       >
-        <div className="">
+        <div className="3xl:px-[1.25vw] xl:px-[24px] xl:py-[0.521vw] py-[12px]">
           <div className="py-[24px] xl:py-[1.25vw] text-[24px] text-[#20232E]">
             Advanced Search
           </div>
@@ -436,7 +436,8 @@ export default function AdvancedSearchPopup(props) {
                     </div>
                     <div className="bg-[#FFF]  p-[12px] 3xl:p-[0.625vw] grid w-full gap-[8px] 3xl:gap-[0.417vw]">
                       <div className="grid w-full ">
-                        <div className="flex gap-[8px] 3xl:gap-[0.417vw] ">
+                        <div className="flex gap-[8px] 3xl:gap-[0.417vw]  w-full ">
+                        <div className="custDropdownBox grow">
                           <MultiSelect
                             value={selectedOption}
                             options={ParameterList}
@@ -444,23 +445,29 @@ export default function AdvancedSearchPopup(props) {
                             placeholder="Name"
                             maxSelectedLabels={3}
                             itemTemplate={customOptionTemplate}
-                            className="w-full md:w-20rem"
+                            className="w-full border"
                           />
+                          </div>
+                            <div className="custDropdownBox grow">
                           <Dropdown
                             value={conditionTwo}
                             onChange={(e) => setConditionTwo(e.value)}
                             options={ConditionList}
                             optionLabel="name"
                             placeholder="And"
-                            className="w-full md:w-14rem border"
+                            className="w-full border"
                           />
+                         </div>
+
+                          <div className="custInputBox grow">
                           <InputText
                             value={nameText}
                             onChange={(e) => setNameText(e.value)}
                             optionLabel="name"
                             placeholder="Alex Smith - SC1001"
-                            className="w-full md:w-14rem border"
+                            className="w-full border"
                           />
+                          </div>
                           <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
                             <div className="bg-[#dfe7fa] rounded-3xl p-[4px] 3xl:p-[0.208vw] flex items-center gap-[4px] 3xl:gap-[0.208vw] px-[8px] 3xl:px-[0.417vw]">
                               <div>And</div>
@@ -473,7 +480,8 @@ export default function AdvancedSearchPopup(props) {
                         </div>
                       </div>
                       <div className="grid w-full">
-                        <div className="flex gap-[8px] 3xl:gap-[0.417vw]">
+                        <div className="flex gap-[8px] 3xl:gap-[0.417vw]  w-full ">
+                        <div className="custDropdownBox grow">
                         <MultiSelect
                             value={selectedOptionTwo}
                             options={ParameterList}
@@ -483,14 +491,18 @@ export default function AdvancedSearchPopup(props) {
                             itemTemplate={customOptionTemplate}
                             className="w-full md:w-20rem expandeble"
                           />
+                          </div>
+                          <div className="custDropdownBox grow">
                           <Dropdown
                             value={conditionFour}
                             onChange={(e) => setConditionFour(e.value)}
                             options={ConditionList}
                             optionLabel="name"
-                            placeholder="condition"
+                            placeholder="And"
                             className="w-full md:w-14rem border"
                           />
+                          </div>
+                          <div className="custInputBox grow">
                           <InputText
                             value={nameTextOne}
                             onChange={(e) => setNameTextOne(e.value)}
@@ -498,6 +510,7 @@ export default function AdvancedSearchPopup(props) {
                             placeholder="Value"
                             className="w-full md:w-14rem border"
                           />
+                          </div>
                           <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
                             <div className="border rounded-3xl p-[4px] 3xl:p-[0.208vw] flex items-center gap-[4px] 3xl:gap-[0.208vw] px-[8px] 3xl:px-[0.417vw]">
                               <div>
@@ -519,9 +532,10 @@ export default function AdvancedSearchPopup(props) {
                         <Divider className="absolute" />
                       </div>
                       <div className="grid w-full">
-                        <div className="flex gap-[8px] 3xl:gap-[0.417vw]">
+                        <div className="flex gap-[8px] 3xl:gap-[0.417vw]  w-full ">
+                        <div className="custDropdownBox grow">
                         <MultiSelect
-                            value={selectedOptionThree}
+                            value={selectedOptionTwo}
                             options={ParameterList}
                             optionLabel="name"
                             placeholder="Name"
@@ -529,21 +543,26 @@ export default function AdvancedSearchPopup(props) {
                             itemTemplate={customOptionTemplate}
                             className="w-full md:w-20rem expandeble"
                           />
+                          </div>
+                          <div className="custDropdownBox grow">
                           <Dropdown
-                            value={conditionSix}
-                            onChange={(e) => setConditionSix(e.value)}
+                            value={conditionFour}
+                            onChange={(e) => setConditionFour(e.value)}
                             options={ConditionList}
                             optionLabel="name"
-                            placeholder="And"
+                            placeholder="condition"
                             className="w-full md:w-14rem border"
                           />
+                          </div>
+                          <div className="custInputBox grow">
                           <InputText
-                            value={nameTextTwo}
-                            onChange={(e) => setNameTextTwo(e.value)}
+                            value={nameTextOne}
+                            onChange={(e) => setNameTextOne(e.value)}
                             optionLabel="name"
-                            placeholder="Alex Smith - SC1001"
+                            placeholder="Value"
                             className="w-full md:w-14rem border"
                           />
+                          </div>
                           <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
                             <div className="bg-[#dfe7fa] rounded-3xl p-[4px] 3xl:p-[0.208vw] flex items-center gap-[4px] 3xl:gap-[0.208vw] px-[8px] 3xl:px-[0.417vw]">
                               <div>And</div>
@@ -556,9 +575,10 @@ export default function AdvancedSearchPopup(props) {
                         </div>
                       </div>
                       <div className="grid w-full">
-                        <div className="flex gap-[8px] 3xl:gap-[0.417vw]">
+                        <div className="flex gap-[8px] 3xl:gap-[0.417vw]  w-full ">
+                        <div className="custDropdownBox grow">
                         <MultiSelect
-                            value={selectedOptionFour}
+                            value={selectedOptionTwo}
                             options={ParameterList}
                             optionLabel="name"
                             placeholder="Name"
@@ -566,21 +586,26 @@ export default function AdvancedSearchPopup(props) {
                             itemTemplate={customOptionTemplate}
                             className="w-full md:w-20rem expandeble"
                           />
+                          </div>
+                          <div className="custDropdownBox grow">
                           <Dropdown
-                            value={conditionEight}
-                            onChange={(e) => setConditionEight(e.value)}
+                            value={conditionFour}
+                            onChange={(e) => setConditionFour(e.value)}
                             options={ConditionList}
                             optionLabel="name"
                             placeholder="condition"
                             className="w-full md:w-14rem border"
                           />
+                          </div>
+                          <div className="custInputBox grow">
                           <InputText
-                            value={nameTextThree}
-                            onChange={(e) => setNameTextThree(e.value)}
+                            value={nameTextOne}
+                            onChange={(e) => setNameTextOne(e.value)}
                             optionLabel="name"
                             placeholder="Value"
                             className="w-full md:w-14rem border"
                           />
+                          </div>
                           <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
                             <div className="border rounded-3xl p-[4px] 3xl:p-[0.208vw] flex items-center gap-[4px] 3xl:gap-[0.208vw] px-[8px] 3xl:px-[0.417vw]">
                               <div>
@@ -603,8 +628,9 @@ export default function AdvancedSearchPopup(props) {
                       </div>
                       <div className="grid w-full">
                         <div className="flex gap-[8px] 3xl:gap-[0.417vw]">
+                        <div className="custDropdownBox grow">
                         <MultiSelect
-                            value={selectedOptionFive}
+                            value={selectedOptionTwo}
                             options={ParameterList}
                             optionLabel="name"
                             placeholder="Name"
@@ -612,21 +638,26 @@ export default function AdvancedSearchPopup(props) {
                             itemTemplate={customOptionTemplate}
                             className="w-full md:w-20rem expandeble"
                           />
+                          </div>
+                          <div className="custDropdownBox grow">
                           <Dropdown
-                            value={conditionTen}
-                            onChange={(e) => setConditionTen(e.value)}
+                            value={conditionFour}
+                            onChange={(e) => setConditionFour(e.value)}
                             options={ConditionList}
                             optionLabel="name"
-                            placeholder="And"
+                            placeholder="condition"
                             className="w-full md:w-14rem border"
                           />
+                          </div>
+                          <div className="custInputBox grow">
                           <InputText
-                            value={nameTextFour}
-                            onChange={(e) => setNameTextFour(e.value)}
+                            value={nameTextOne}
+                            onChange={(e) => setNameTextOne(e.value)}
                             optionLabel="name"
-                            placeholder="Alex Smith - SC1001"
+                            placeholder="Value"
                             className="w-full md:w-14rem border"
                           />
+                          </div>
                           <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
                             <div className="border rounded-3xl p-[4px] 3xl:p-[0.208vw] flex items-center gap-[4px] 3xl:gap-[0.208vw] px-[8px] 3xl:px-[0.417vw]">
                               <div>
