@@ -156,6 +156,7 @@
     height: 16px;
     color: #4169E1;
     border-radius: 4px;
+    border: 2px solid #d1d5db;
 }
 
 .custumCheckbox.p-checkbox {
