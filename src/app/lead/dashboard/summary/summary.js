@@ -341,6 +341,13 @@ export default function summary() {
     { name: "By Tickets Resolved", code: "RM" },
     { name: "By Tickets Resolved", code: "LDN" },
   ];
+  const ticketsbysubcategory =[
+    { name: "New Tickets", code: "NY" },
+    { name: "Total Tickets Resolved", code: "RM" },
+    { name: "Resolved Within SLA", code: "LDN" },
+    { name: "Resolved Outside SLA", code: "LDN" },
+    { name: "Re Assigned Tickets", code: "LDN" },
+  ]
   const employeeData = [
     {
       id: 1,
@@ -647,7 +654,18 @@ export default function summary() {
             graphIcon={true}
             data={
               <>
-                
+                <div className="flex justify-end ">
+                  <div className="chartdropdown mr-[16px] 3xl:mr-[0.833vw]">
+                    <Dropdown
+                      value={selectedCluster}
+                      onChange={(e) => setSelectedCluster(e.value)}
+                      options={ticketsbysubcategory}
+                      optionLabel="name"
+                      placeholder="New Tickets"
+                      className="w-full"
+                    />
+                  </div>
+                </div>
                 <div className="w-full xl:h-[19.90vw] px-[16px] 3xl:px-[0.833vw] ">
                   
                   <Heatmapchart/>
