@@ -9,9 +9,7 @@
     @tailwind components;
     @tailwind utilities;
 }
-body{
-  background: blue;
-}
+
 @font-face {
   font-family: 'assetsmanage';
   src:  url('/assets/fonts/assetsmanage.eot?ibrc4u');

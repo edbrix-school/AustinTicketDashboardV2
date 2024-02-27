@@ -13,10 +13,6 @@ import "./style/nstyle.css";
 import "./style/atstyle.css";
 import "./style/pkstyle.css";
 
-import React from "react";
-import { PrimeReactProvider } from "primereact/api";
-import Tailwind from 'primereact/passthrough/tailwind';
-
 const inter = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
@@ -42,9 +38,7 @@ export default function RootLayout({ children }) {
     <>
       <html lang="en">
         <body className={inter.className}>
-          <PrimeReactProvider value={{ unstyled: true, pt: Tailwind }}>
-            {children}
-          </PrimeReactProvider>
+          {children}
         </body>
       </html>
     </>
