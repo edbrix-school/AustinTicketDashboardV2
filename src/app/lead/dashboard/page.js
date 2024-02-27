@@ -14,7 +14,7 @@ import LeadLayout from '@/app/components/leadpagelayout/pagelayout';
 
 export default function Index() {
     const [pageName, setPageName] = useState('Dashboard');
-    const [pageTitle, setPageTitle] = useState('DrillDown');
+    const [pageTitle, setPageTitle] = useState('Summary');
     
 
   return (
