@@ -130,9 +130,9 @@ const ElibraryPage = () => {
         </div>
       </div>
       <div className="grid grid-cols-4 xl:mt-[1.250vw] mt-6 xl:gap-[1.250vw] gap-5">
-      <Link href={"/technician/elibrary/allison"} className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative">
+      <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-            <div className="flex justify-between items-center">
+            <Link href={"/technician/elibrary/allison"} className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
                 <div className="">
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
@@ -149,7 +149,7 @@ const ElibraryPage = () => {
                   title="Click here for multiple option"
                 ></i>
               </div>
-            </div>
+            </Link>
             <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
               <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
                 File Size : 1.5 GB
@@ -188,10 +188,10 @@ const ElibraryPage = () => {
               </div>
             </div>
           </div>
-        </Link>
+        </div>
         <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-            <div className="flex justify-between items-center">
+            <Link href={"/technician/elibrary/allison"} className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
                 <div className="">
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
@@ -208,7 +208,7 @@ const ElibraryPage = () => {
                   title="Click here for multiple option"
                 ></i>
               </div>
-            </div>
+            </Link>
             <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
               <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
                 File Size : 1.5 GB
@@ -250,7 +250,7 @@ const ElibraryPage = () => {
         </div>
         <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-            <div className="flex justify-between items-center">
+            <Link href={"/technician/elibrary/allison"} className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
                 <div className="">
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
@@ -267,7 +267,7 @@ const ElibraryPage = () => {
                   title="Click here for multiple option"
                 ></i>
               </div>
-            </div>
+            </Link>
             <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
               <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
                 File Size : 1.5 GB
@@ -309,7 +309,7 @@ const ElibraryPage = () => {
         </div>
         <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-            <div className="flex justify-between items-center">
+            <Link href={"/technician/elibrary/allison"} className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
                 <div className="">
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
@@ -326,7 +326,7 @@ const ElibraryPage = () => {
                   title="Click here for multiple option"
                 ></i>
               </div>
-            </div>
+            </Link>
             <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
               <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
                 File Size : 1.5 GB
@@ -368,7 +368,7 @@ const ElibraryPage = () => {
         </div>
         <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-            <div className="flex justify-between items-center">
+            <Link href={"/technician/elibrary/allison"} className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
                 <div className="">
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
@@ -385,7 +385,7 @@ const ElibraryPage = () => {
                   title="Click here for multiple option"
                 ></i>
               </div>
-            </div>
+            </Link>
             <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
               <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
                 File Size : 1.5 GB
@@ -427,7 +427,7 @@ const ElibraryPage = () => {
         </div>
         <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-            <div className="flex justify-between items-center">
+            <Link href={"/technician/elibrary/allison"} className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
                 <div className="">
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
@@ -444,7 +444,7 @@ const ElibraryPage = () => {
                   title="Click here for multiple option"
                 ></i>
               </div>
-            </div>
+            </Link>
             <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
               <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
                 File Size : 1.5 GB
@@ -486,7 +486,7 @@ const ElibraryPage = () => {
         </div>
         <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-            <div className="flex justify-between items-center">
+            <Link href={"/technician/elibrary/allison"} className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
                 <div className="">
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
@@ -503,7 +503,7 @@ const ElibraryPage = () => {
                   title="Click here for multiple option"
                 ></i>
               </div>
-            </div>
+            </Link>
             <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
               <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
                 File Size : 1.5 GB
@@ -545,7 +545,7 @@ const ElibraryPage = () => {
         </div>
         <div className="bg-white shadow-[0px 1px 2px 0px] shadow-[rgba(0,0,0,0.08)] rounded-lg xl:rounded-[0.521vw] xl:p-[1.042vw] p-5 relative">
           <div className="gap-[8px] 3xl:gap-[0.417vw] grid">
-            <div className="flex justify-between items-center">
+            <Link href={"/technician/elibrary/allison"} className="flex justify-between items-center">
               <div className="flex items-center gap-[4px] 3xl:gap-[0.208vw]">
                 <div className="">
                   <i className="asetsmng-folder text-[24px] 3xl:text-[1.25vw]"></i>
@@ -562,7 +562,7 @@ const ElibraryPage = () => {
                   title="Click here for multiple option"
                 ></i>
               </div>
-            </div>
+            </Link>
             <div className="flex flex-col justify-start items-start gap-[4px] 3xl:gap-[0.208vw]">
               <div className="text-[14px] 3xl:text-[0.729vw] font-normal leading-4">
                 File Size : 1.5 GB
