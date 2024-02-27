@@ -314,13 +314,13 @@ export default function detailedview() {
 
   return (
     <>
-      <div className="bg-white dark:bg-[#13161B] border border-[#F2EEEE] dark:border-[#1F2A37] rounded-lg 3xl:rounded-[0.521vw]">
+      <div className="bg-white border border-[#F2EEEE] rounded-lg 3xl:rounded-[0.521vw]">
         <div className="flex flex-wrap items-center justify-between 3xl:px-[1.042vw] px-4 3xl:pt-[1.042vw] pt-4 3xl:pb-[0.990vw] pb-4">
           <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
-            <div className="text-[#3A3E49] dark:text-white 3xl:text-[0.833vw] text-sm font-medium 3xl:leading-[1.042vw] leading-5">
+            <div className="text-[#3A3E49] 3xl:text-[0.833vw] text-sm font-medium 3xl:leading-[1.042vw] leading-5">
               Detailed View
             </div>
-            <div className="text-[#84878D] 3xl:text-[0.625vw] text-xs font-medium 3xl:leading-[0.938vw] leading-5 bg-[#F9F9FC] dark:bg-[#1C2026] 3xl:rounded-[0.938vw] rounded-2xl 3xl:px-[0.729vw] px-3 3xl:py-[0.313vw] py-1">
+            <div className="text-[#84878D] 3xl:text-[0.625vw] text-xs font-medium 3xl:leading-[0.938vw] leading-5 bg-[#F9F9FC] 3xl:rounded-[0.938vw] rounded-2xl 3xl:px-[0.729vw] px-3 3xl:py-[0.313vw] py-1">
               Display 1 to 10 of 150
             </div>
           </div>
@@ -343,7 +343,7 @@ export default function detailedview() {
               <div className="flex flex-wrap items-center 3xl:gap-[0.521vw] gap-2">
                 <Link
                   href={""}
-                  className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#EAE0E0] p-[9px] xl:p-[0.469vw] 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 dark:bg-[#13161B] dark:border-[#374151] dark:text-[#818181] h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
+                  className="text-[#84878D] font-normal 3xl:text-[0.729vw] text-xs bg-white border border-[#EAE0E0] p-[9px] xl:p-[0.469vw] 3xl:rounded-[0.521vw] rounded-lg flex items-center 3xl:gap-[0.521vw] gap-2 h-[33px] 3xl:h-[1.875vw] hover:text-[#4169E1] hover:border-[#4169E1]"
                 >
                   <i className="asetsmng-export"></i>
                   <span>Export</span>

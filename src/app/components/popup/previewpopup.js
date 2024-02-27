@@ -22,7 +22,7 @@ export default function PreviewPopup(props) {
         className="sidebarwidth custmSidebar rounded-l-xl "
         title={props.title}
       >
-        <div className="">
+        <div className="pl-[20px] xl:pl-[1.042vw] 3xl:pl-[1.042vw]">
           <div className="py-[24px] xl:py-[1.25vw] text-[24px] text-[#20232E]">
             SR - 113
           </div>
