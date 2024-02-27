@@ -109,10 +109,10 @@ export default function Left(props) {
             <div className="absolute left-0 right-0 bottom-0">
               <ul className="left-menu hoverNone">
                 <li className="settings"><Link href='/setting'><span>Settings</span></Link></li>
-                <li className='dark-mode'>
+                {/* <li className='dark-mode'>
                   <Link href=""> 
                     <span >Dark Theme</span> </Link>
-                </li>
+                </li> */}
                 <li className="support mt-[12px] xl:mt-[0.625vw]"><Link href='' className="supportBg"><span>Support Tickets</span></Link></li>
                 <li className="userProfile relative mt-[24px] xl:mt-[1.250vw] -ml-[3px]">
                   <div className="flex items-center" >
