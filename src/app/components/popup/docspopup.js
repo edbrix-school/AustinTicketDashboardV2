@@ -180,62 +180,73 @@ const [notes , setNotes] =useState("");
                       <div className="text-[#3A3E49] text-[12px] 3xl:text-[0.729vw] mt-[28px] 3xl:mt-[1.458vw] pl-[15px] 3xl:pl-[1.083vw] ">
                         Document Name
                       </div>
+                      <div className="custInputBox">
                       <InputText
                         placeholder="Doc 1"
                         value={docValue}
                         onChange={(e) => setDocValue(e.target.value)}
                         className="w-full  mx-[14px] 3xl:mx-[0.729vw] mt-[8px] text-[12px] 3xl:text-[0.729vw] docinputbox placeholder:text-[14px] xl:placeholder:text-[0.729vw] 3xl:placeholder:text-[0.729vw]"
                       />
+                      </div>
                     </div>
 
                     <div>
                       <div className="text-[#3A3E49] text-[12px] 3xl:text-[0.729vw] mt-[24px] 3xl:mt-[1.25vw] pl-[15px] 3xl:pl-[1.083vw] ">
                         Description
                       </div>
+                      <div className="custInputBox">
                       <InputText
                         placeholder="Asset Lost"
                         value={description}
                         onChange={(e) => setDiscription(e.target.value)}
                         className="w-full  mx-[14px] 3xl:mx-[0.729vw] mt-[8px] text-[14px] 3xl:text-[0.729vw] docinputbox placeholder:text-[14px] xl:placeholder:text-[0.729vw] 3xl:placeholder:text-[0.729vw]"
                       />
+                      </div>
                     </div>
                     <div>
                       <div className="text-[#3A3E49] text-[12px] 3xl:text-[0.729vw] mt-[24px] 3xl:mt-[1.25vw] pl-[15px] 3xl:pl-[1.083vw] ">
                         Document Type
                       </div>
+                      <div className="custInputBox">
                       <InputText
                         placeholder="PDF"
                         value={docType}
                         onChange={(e) => setDocType(e.target.value)}
                         className="w-full  mx-[14px] 3xl:mx-[0.729vw] mt-[8px] text-[14px] 3xl:text-[0.729vw] docinputbox placeholder:text-[14px] xl:placeholder:text-[0.729vw] 3xl:placeholder:text-[0.729vw]"
                       />
+                      </div>
                     </div>
                     <div>
                       <div className="text-[#3A3E49] text-[12px] 3xl:text-[0.729vw] mt-[24px] 3xl:mt-[1.25vw] pl-[15px] 3xl:pl-[1.083vw] ">
                         Asset ID
                       </div>
+                      <div className="custInputBox">
                       <InputText
                         placeholder="AC-1111"
                         value={asset}
                         onChange={(e) => setAsset(e.target.value)}
                         className="w-full  mx-[14px] 3xl:mx-[0.729vw] mt-[8px] text-[14px] 3xl:text-[0.729vw] docinputbox placeholder:text-[14px] xl:placeholder:text-[0.729vw] 3xl:placeholder:text-[0.729vw]"
                       />
+                      </div>
                     </div>
                     <div>
                       <div className="text-[#3A3E49] text-[12px] 3xl:text-[0.729vw] mt-[24px] 3xl:mt-[1.25vw] pl-[15px] 3xl:pl-[1.083vw] ">
                         Campus
                       </div>
+                      <div className="custInputBox">
                       <InputText
                         placeholder="Allison Elementary"
                         value={campus}
                         onChange={(e) => setCampus(e.target.value)}
                         className="w-full  mx-[14px] 3xl:mx-[0.729vw] mt-[8px] text-[14px] 3xl:text-[0.729vw] docinputbox placeholder:text-[14px] xl:placeholder:text-[0.729vw] 3xl:placeholder:text-[0.729vw]"
                       />
+                      </div>
                     </div>
                     <div>
                       <div className="text-[#3A3E49] text-[12px] 3xl:text-[0.729vw] mt-[24px] 3xl:mt-[1.25vw] pl-[15px] 3xl:pl-[1.083vw] ">
                         Notes
                       </div>
+                      <div className="custInputBox">
                       <InputTextarea
                         autoResize
                         value={notes}
@@ -247,6 +258,7 @@ const [notes , setNotes] =useState("");
                         Strategy (Virtual)"
                         className="w-full docinputbox  mx-[14px] 3xl:mx-[0.729vw] mt-[8px] text-[14px] 3xl:text-[0.729vw] placeholder:text-[14px] xl:placeholder:text-[0.729vw] 3xl:placeholder:text-[0.729vw]"
                       />
+                      </div>
                     </div>
                   </div>
                 </div>

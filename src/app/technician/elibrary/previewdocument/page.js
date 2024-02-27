@@ -135,79 +135,90 @@ const page = () => {
                       <span className="text-[14px] 3xl:text-[0.729vw] font-medium leading-5">
                         Document Name
                       </span>
+                      <div className="custInputBox">
                       <InputText
                         placeholder="Doc 1"
-                        className="xl:h-[2.083vw] h-[36px] placeholder:text-[0.729vw]"
+                        className="xl:h-[2.083vw] h-[36px] placeholder:text-[0.729vw] w-full"
                         style={{
                           background: "#F5F6F8",
                           border: "1px solid #BECDE3",
                           borderRadius: "8px",
                         }}
                       />
+                      </div>
                     </div>
                     <div className="grid gap-[8px] 3xl:gap-[0.417vw]">
                       <span className="text-[14px] 3xl:text-[0.729vw] font-medium leading-5">
                       Description
                       </span>
+                      <div className="custInputBox">
                       <InputText
                         placeholder="Asset Lost"
-                        className="xl:h-[2.083vw] h-[36px] placeholder:text-[0.729vw]"
+                        className="xl:h-[2.083vw] h-[36px] placeholder:text-[0.729vw]  w-full"
                         style={{
                           background: "#F5F6F8",
                           border: "1px solid #BECDE3",
                           borderRadius: "8px",
                         }}
                       />
+                      </div>
                     </div>
                     <div className="grid gap-[8px] 3xl:gap-[0.417vw]">
                       <span className="text-[14px] 3xl:text-[0.729vw] font-medium leading-5">
                       Document Type
                       </span>
+                      <div className="custInputBox">
                       <InputText
                         placeholder="PDF"
-                        className="xl:h-[2.083vw] h-[36px] placeholder:text-[0.729vw]"
+                        className="xl:h-[2.083vw] h-[36px] placeholder:text-[0.729vw]  w-full"
                         style={{
                           background: "#F5F6F8",
                           border: "1px solid #BECDE3",
                           borderRadius: "8px",
                         }}
                       />
+                      </div>
                     </div>
                     <div className="grid gap-[8px] 3xl:gap-[0.417vw]">
                       <span className="text-[14px] 3xl:text-[0.729vw] font-medium leading-5">
                       Asset ID
                       </span>
+                      <div className="custInputBox">
                       <InputText
                         placeholder="AC-1111"
-                        className="xl:h-[2.083vw] h-[36px] placeholder:text-[0.729vw]"
+                        className="xl:h-[2.083vw] h-[36px] placeholder:text-[0.729vw]  w-full"
                         style={{
                           background: "#F5F6F8",
                           border: "1px solid #BECDE3",
                           borderRadius: "8px",
                         }}
                       />
+                      </div>
                     </div>
                     <div className="grid gap-[8px] 3xl:gap-[0.417vw]">
                       <span className="text-[14px] 3xl:text-[0.729vw] font-medium leading-5">
                       Campus
                       </span>
+                      <div className="custInputBox">
                       <InputText
                         placeholder="Allison Elementary"
-                        className="xl:h-[2.083vw] h-[36px] placeholder:text-[0.729vw]"
+                        className="xl:h-[2.083vw] h-[36px] placeholder:text-[0.729vw]  w-full"
                         style={{
                           background: "#F5F6F8",
                           border: "1px solid #BECDE3",
                           borderRadius: "8px",
                         }}
                       />
+                      </div>
                     </div>
                     <div className="grid gap-[8px] 3xl:gap-[0.417vw]">
                       <span className="text-[14px] 3xl:text-[0.729vw] font-medium leading-5">
                       Notes
                       </span>
+                      <div className="custInputBox">
                       <InputTextarea
                         placeholder="Notes on letter of recommendation for Alex Smith"
-                        className="placeholder:text-[0.729vw]"
+                        className="placeholder:text-[0.729vw]  w-full"
                         rows={5} cols={30}
                         autoResize 
                         style={{
@@ -216,6 +227,7 @@ const page = () => {
                           borderRadius: "8px",
                         }}
                       />
+                      </div>
                     </div>
                   </div>
                 </div>
