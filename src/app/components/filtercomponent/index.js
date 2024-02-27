@@ -76,7 +76,7 @@ export default function FilterComponent(props) {
             <div
               href=""
               onClick={()=>setFilterAddPopup(true)}
-              className="text-[#3A3E49] text-[12px] font-medium border border-[#E8E8E5] rounded-[8px] xl:rounded-[0.417vw] px-2 py-1.5 hover:bg-[#F5F6F8] "
+              className="text-[#3A3E49] text-[12px] cursor-pointer font-medium border border-[#E8E8E5] rounded-[8px] xl:rounded-[0.417vw] px-2 py-1.5 hover:bg-[#F5F6F8] "
               title="Add"
             >
               Add <i className="asetsmng-plus ml-1"></i>
