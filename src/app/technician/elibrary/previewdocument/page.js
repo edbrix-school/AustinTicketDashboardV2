@@ -47,14 +47,14 @@ const page = () => {
           </div>
         </div>
         <div className="w-full grid grid-cols-12 mt-[30px] 3xl:mt-[1.563vw] gap-[24px] 3xl:gap-[1.25vw]">
-          <div className="col-span-3">
-            <div className="grid gap-[30px] 3xl:gap-[1.563vw]">
+          <div className="col-span-3 ">
+            <div className="grid gap-[30px] 3xl:gap-[1.563vw] ">
               <div className="text-[20px] 3xl:text-[1.042vw] font-medium leading-5">
                 Add Document
               </div>
-              <div className="border-2 border-dashed border-[#E4E7EC] rounded-lg h-full">
+              <div className="border-2 border-dashed border-[#E4E7EC] rounded-lg xl:h-[42vw] 3xl:h-[40vw] h-[800px]  bg-[#FFFFFF]">
                 <div className="p-[16px] 3xl:p-[0.833vw] ">
-                  <div className="p-[16px] 3xl:p-[0.833vw] border rounded-lg grid grid-cols-12 gap-[16px] 3xl:gap-[0.833vw]">
+                  <div className="p-[16px] 3xl:p-[0.833vw] border rounded-lg grid grid-cols-12 gap-[16px] 3xl:gap-[0.833vw] shadow-lg shadow-[#000000]/10">
                     <div className="col-span-4">
                       <Image
                         src={"/assets/images/pdfreport.svg"}
