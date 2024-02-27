@@ -37,13 +37,13 @@ return (
             {teamVisible  &&
             <>
             <div className="flex items-center gap-3 3xl:gap-[0.625vw]">
-            <Link href={''} className="3xl:py-[0.417vw] py-2 3xl:pl-[0.833vw] pl-4 text-[#4B586E] flex items-center gap-1 3xl:gap-[0.208vw]"><i className="asetsmng-home"></i><span>Team</span></Link>
-            <Link href={''} className="text-[#9CA1AB] text-xs"><i className="asetsmng-arrow-right"></i></Link>
-            <Link href={''} className="text-[#9CA1AB]"><span>Team 1</span></Link>
-            <Link href={''} className="text-[#9CA1AB] text-xs"><i className="asetsmng-arrow-right"></i></Link>
-            <Link href={''} className="text-[#9CA1AB]"><span>Category</span></Link>
-            <Link href={''} className="text-[#9CA1AB] text-xs"><i className="asetsmng-arrow-right"></i></Link>
-            <Link href={''} className="text-[#1570EF]"><span>Sub Category</span></Link>
+            <div className="3xl:py-[0.417vw] py-2 3xl:pl-[0.833vw] pl-4 text-[#4B586E] flex items-center gap-1 3xl:gap-[0.208vw] cursor-pointer"><i className="asetsmng-home"></i><span>Team</span></div>
+            <div className="text-[#9CA1AB] text-xs"><i className="asetsmng-arrow-right"></i></div>
+            <div className="text-[#9CA1AB] cursor-pointer"><span>Team 1</span></div>
+            <div className="text-[#9CA1AB] text-xs"><i className="asetsmng-arrow-right"></i></div>
+            <div className="text-[#9CA1AB] cursor-pointer"><span>Category</span></div>
+            <div className="text-[#9CA1AB] text-xs"><i className="asetsmng-arrow-right"></i></div>
+            <div className="text-[#1570EF]"><span>Sub Category</span></div>
             </div>            
             </>
             }
