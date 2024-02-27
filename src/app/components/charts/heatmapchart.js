@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import ReactEcharts from 'echarts-for-react';
 import * as echarts from 'echarts';
 import { graphic } from "echarts";
-import { useTheme } from "next-themes";
 
 export default function Heatmapchart() {
     const Assetschart = {

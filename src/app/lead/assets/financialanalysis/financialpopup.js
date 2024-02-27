@@ -1,12 +1,8 @@
 import React from 'react'
 import ReactEcharts from 'echarts-for-react';
-import * as echarts from 'echarts';
-import { useTheme } from "next-themes";
+import * as echarts from 'echarts'
 function Financialpopup({
     labelShow, data, grid, yAxisName, yAxisNameGap, yAxisNamePosition, areaStyle, color1, fillcolor, lineColor, lineType, xAxisName, xAxisNameGap, xAxisNamePosition, borderColor, name1, legend }) {
-    const { systemTheme, theme, setTheme } = useTheme();
-
-    const currentTheme = theme === 'system' ? systemTheme : theme;
     const options = {
         tooltip: {
             trigger: 'axis'
@@ -35,7 +31,7 @@ function Financialpopup({
             axisLine: {
                 show: true,
                 lineStyle: {
-                  color: currentTheme == "dark" ? "#818181" : "#E4E7EC",
+                  color: "#E4E7EC",
                 },
           
             },
@@ -53,7 +49,7 @@ function Financialpopup({
                 show: true,
                 lineStyle: {
                     type: 'dashed',
-                    color: currentTheme == "dark" ? "#BECDE3" : "#E4E7EC",
+                    color: "#E4E7EC",
 
                 }
             },
@@ -65,14 +61,14 @@ function Financialpopup({
             nameGap: xAxisNameGap,
             nameGap: 50,
             nameTextStyle: {
-                color: currentTheme === "dark" ? "#B3B9C6" : "#84878D",
+                color: "#84878D",
 
                 fontWeight: 600,
                 fontSize: 12,
             },
 
             axisLabel: {
-                color: currentTheme === "dark" ? "#B3B9C6" : "#84878D",
+                color: "#84878D",
                 fontSize: 12,
                 fontWeight: 600,
                 formatter: '{value}',

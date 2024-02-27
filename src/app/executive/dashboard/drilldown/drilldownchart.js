@@ -38,8 +38,8 @@ export const DrillDownChart = () => {
               
             },
             itemStyle: {
-              color: currentTheme == "dark" ? "#70639E" : "#309DC1",
-              borderColor: currentTheme == "dark" ? "#70639E" : "#256D85",
+              color: "#309DC1",
+              borderColor: "#256D85",
               emphasis: false,
               borderRadius: 3,
             },
@@ -69,8 +69,8 @@ export const DrillDownChart = () => {
                     padding: [8, 4, 8, 4],
                 },
                 itemStyle: {
-                  color: currentTheme == "dark" ? "#312C49" : "#F7F7FB",
-                  borderColor: currentTheme == "dark" ? "#312C49" : "#E0E0EF",
+                  color:"#F7F7FB",
+                  borderColor: "#E0E0EF",
                 },
               },
               {
@@ -79,7 +79,7 @@ export const DrillDownChart = () => {
                 })(),
                 lineStyle: {
                   width: 20,
-                  color: currentTheme == "dark" ? "#413b35" : "#cbc3ba",
+                  color:"#cbc3ba",
                 },
                 label: {
                     show: true,
@@ -87,7 +87,7 @@ export const DrillDownChart = () => {
                     fontSize: "14",
                     fontWeight: "500",
                     lineHeight: 20,
-                    color: currentTheme == "dark" ? "#fff" : "#262626",
+                    color: "#262626",
                     width: 80,
                       height: 40,
                       backgroundColor: "#E8E8E5",
@@ -99,14 +99,14 @@ export const DrillDownChart = () => {
                   
                 },
                 itemStyle: {
-                  color: currentTheme == "dark" ? "#312C49" : "#F7F7FB",
-                  borderColor: currentTheme == "dark" ? "#312C49" : "#E0E0EF",
+                  color: "#F7F7FB",
+                  borderColor: "#E0E0EF",
                 },
               },
               {
                 lineStyle: {
                   width: 20,
-                  color: currentTheme == "dark" ? "#323047" : "#cbc3ba",
+                  color: "#cbc3ba",
                 },
                 label: {
                     show: true,
@@ -114,7 +114,7 @@ export const DrillDownChart = () => {
                   fontSize: "14",
                   fontWeight: "500",
                   lineHeight: 20,
-                  color: currentTheme == "dark" ? "#fff" : "#FFFF",
+                  color: "#FFFF",
                   width: 80,
                     height: 40,
                     backgroundColor: "#309DC1",
@@ -125,8 +125,8 @@ export const DrillDownChart = () => {
                     padding: [8, 4, 8, 4],
                 },
                 itemStyle: {
-                  color: currentTheme == "dark" ? "#968FC3" : "#4E456D",
-                  borderColor: currentTheme == "dark" ? "#968FC3" : "#312C49",
+                  color: "#4E456D",
+                  borderColor: "#312C49",
                   borderRadius: 8,
                 },
                 name: "Team 3 \n 40",
@@ -137,7 +137,7 @@ export const DrillDownChart = () => {
                     })(),
                     lineStyle: {
                       width: 20,
-                      color: currentTheme == "dark" ? "#413b35" : "#cbc3ba",
+                      color: "#cbc3ba",
                     },
                     label: {
                         show: true,
@@ -145,7 +145,7 @@ export const DrillDownChart = () => {
                         fontSize: "14",
                         fontWeight: "500",
                         lineHeight: 20,
-                        color: currentTheme == "dark" ? "#fff" : "#262626",
+                        color: "#262626",
                         width: 80,
                           height: 40,
                           backgroundColor: "#E8E8E5",
@@ -156,8 +156,8 @@ export const DrillDownChart = () => {
                           padding: [8, 4, 8, 4],
                     },
                     itemStyle: {
-                      color: currentTheme == "dark" ? "#312C49" : "#F7F7FB",
-                      borderColor: currentTheme == "dark" ? "#312C49" : "#E0E0EF",
+                      color: "#F7F7FB",
+                      borderColor: "#E0E0EF",
                     },
                   },
                   {
@@ -166,7 +166,7 @@ export const DrillDownChart = () => {
                     })(),
                     lineStyle: {
                       width: 20,
-                      color: currentTheme == "dark" ? "#413b35" : "#cbc3ba",
+                      color: "#cbc3ba",
                     },
                     label: {
                         show: true,
@@ -174,7 +174,7 @@ export const DrillDownChart = () => {
                         fontSize: "14",
                         fontWeight: "500",
                         lineHeight: 20,
-                        color: currentTheme == "dark" ? "#fff" : "#262626",
+                        color: "#262626",
                         width: 80,
                           height: 40,
                           backgroundColor: "#E8E8E5",
@@ -185,8 +185,8 @@ export const DrillDownChart = () => {
                           padding: [8, 4, 8, 4],
                     },
                     itemStyle: {
-                      color: currentTheme == "dark" ? "#312C49" : "#F7F7FB",
-                      borderColor: currentTheme == "dark" ? "#312C49" : "#E0E0EF",
+                      color: "#F7F7FB",
+                      borderColor: "#E0E0EF",
                     },
                   },
                   {
@@ -195,7 +195,7 @@ export const DrillDownChart = () => {
                     })(),
                     lineStyle: {
                       width: 20,
-                      color: currentTheme == "dark" ? "#413b35" : "#cbc3ba",
+                      color: "#cbc3ba",
                     },
                     label: {
                         show: true,
@@ -203,7 +203,7 @@ export const DrillDownChart = () => {
                         fontSize: "14",
                         fontWeight: "500",
                         lineHeight: 20,
-                        color: currentTheme == "dark" ? "#fff" : "#262626",
+                        color: "#262626",
                         width: 80,
                           height: 40,
                           backgroundColor: "#E8E8E5",
@@ -214,8 +214,8 @@ export const DrillDownChart = () => {
                           padding: [8, 4, 8, 4],
                     },
                     itemStyle: {
-                      color: currentTheme == "dark" ? "#312C49" : "#F7F7FB",
-                      borderColor: currentTheme == "dark" ? "#312C49" : "#E0E0EF",
+                      color: "#F7F7FB",
+                      borderColor: "#E0E0EF",
                     },
                   },
                 ],
@@ -226,7 +226,7 @@ export const DrillDownChart = () => {
                 })(),
                 lineStyle: {
                   width: 20,
-                  color: currentTheme == "dark" ? "#413b35" : "#cbc3ba",
+                  color: "#cbc3ba",
                 },
                 label: {
                     show: true,
@@ -234,7 +234,7 @@ export const DrillDownChart = () => {
                     fontSize: "14",
                     fontWeight: "500",
                     lineHeight: 20,
-                    color: currentTheme == "dark" ? "#fff" : "#262626",
+                    color: "#262626",
                     width: 80,
                       height: 40,
                       backgroundColor: "#E8E8E5",
@@ -245,8 +245,8 @@ export const DrillDownChart = () => {
                       padding: [8, 4, 8, 4],
                 },
                 itemStyle: {
-                  color: currentTheme == "dark" ? "#312C49" : "#F7F7FB",
-                  borderColor: currentTheme == "dark" ? "#312C49" : "#E0E0EF",
+                  color: "#F7F7FB",
+                  borderColor: "#E0E0EF",
                 },
               },
             ],
@@ -261,7 +261,7 @@ export const DrillDownChart = () => {
           position: "right",
           color: "#fff",
           lineHeight: 15,
-          color: currentTheme == "dark" ? "#fff" : "#363A44",
+          color: "#363A44",
         },
         lineStyle: {
           width: 30,
