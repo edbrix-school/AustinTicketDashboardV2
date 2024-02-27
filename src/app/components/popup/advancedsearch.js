@@ -489,7 +489,7 @@ export default function AdvancedSearchPopup(props) {
                             placeholder="Name"
                             maxSelectedLabels={3}
                             itemTemplate={customOptionTemplate}
-                            className="w-full md:w-20rem expandeble"
+                            className="w-full md:w-20rem expandeble border"
                           />
                           </div>
                           <div className="custDropdownBox grow">
@@ -541,7 +541,7 @@ export default function AdvancedSearchPopup(props) {
                             placeholder="Name"
                             maxSelectedLabels={3}
                             itemTemplate={customOptionTemplate}
-                            className="w-full md:w-20rem expandeble"
+                            className="w-full md:w-20rem expandeble border"
                           />
                           </div>
                           <div className="custDropdownBox grow">
@@ -584,7 +584,7 @@ export default function AdvancedSearchPopup(props) {
                             placeholder="Name"
                             maxSelectedLabels={3}
                             itemTemplate={customOptionTemplate}
-                            className="w-full md:w-20rem expandeble"
+                            className="w-full md:w-20rem expandeble border"
                           />
                           </div>
                           <div className="custDropdownBox grow">
@@ -636,7 +636,7 @@ export default function AdvancedSearchPopup(props) {
                             placeholder="Name"
                             maxSelectedLabels={3}
                             itemTemplate={customOptionTemplate}
-                            className="w-full md:w-20rem expandeble"
+                            className="w-full md:w-20rem expandeble border"
                           />
                           </div>
                           <div className="custDropdownBox grow">
