@@ -32,16 +32,16 @@ export default function dailydashboard() {
       bottom: "15",
       left: "10",
       icon: "roundRect",
-      itemWidth: 10,
-      itemHeight: 10,
+      itemWidth: 15,
+      itemHeight: 1,
     },
     grid: {
       left:'5%',
-      right:'8%',
-      top:'10%',
-      bottom:'18%',
+      right:'5%',
+      top:'5%',
+      bottom:'20%',
       containLabel: true,
-    },
+  },
     xAxis: [
       {
         type: "category",
@@ -126,7 +126,7 @@ export default function dailydashboard() {
             show: true,
             color: currentTheme == 'dark' ? '#FFFFFF' : '#24262D',
             position: 'top',
-            formatter: "${c}",
+            formatter: "{c}",
             // formatter: '{@[n]} %',
             backgroundColor: "#EEF8F4",
             padding: [4, 8, 4, 8],
@@ -166,8 +166,8 @@ export default function dailydashboard() {
           label: {
             show: true,
             color: currentTheme == 'dark' ? '#FFFFFF' : '#24262D',
-            position: 'bottom',
-            formatter: "${c}",
+            position: 'top',
+            formatter: "{c}",
             // formatter: '{@[n]} %',
             backgroundColor: "#EEF8F4",
             padding: [4, 8, 4, 8],
@@ -1243,16 +1243,12 @@ series: [
           graphIcon={true}
           data={
             <>
-              <div className="flex gap-2 pb-2">
-                
-              </div>
-              <div className="w-full xl:h-[19.90vw] relative">
-                {/* <ReactEcharts
-                  option={LineChartwithShadow}
-                  style={{ height: "100%", width: "100%" }}
-                /> */}
-
-                <Assignedticketshourlytrend/>
+              <div className="w-full h-[359px] 3xl:h-[22.90vw]">
+              <ReactEcharts
+              echarts={echarts}
+              option={LineChartwithShadow}
+              style={{ width: '100%', height: '100%' }}
+              />
 
               </div>
             </>
