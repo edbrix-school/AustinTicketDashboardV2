@@ -21,7 +21,7 @@ export default function PerformanceTrend({ }) {
     itemHeight: 14,
     borderRadius: [4, 4, 0, 0],
     textStyle: {
-      color: currentTheme == "dark" ? "#fff" : "#6C768B",
+      color: "#6C768B",
       fontSize: 12,
     },
   },
@@ -46,7 +46,7 @@ export default function PerformanceTrend({ }) {
       axisTick: { show: false },
       axisLine: { show: false },
       axisLabel: {
-        color: currentTheme == "dark" ? "#fff" : "#363A44",
+        color: "#363A44",
         fontSize: 10,
         lineHeight: 16
       },
@@ -58,7 +58,7 @@ export default function PerformanceTrend({ }) {
       axisTick: { show: false },
       axisLine: { show: false },
       axisLabel: {
-        color: currentTheme == "dark" ? "#fff" : "#363A44",
+        color: "#363A44",
         fontSize: 13,
         backgroundColor: "#EEF8F4",
         padding: 5,
@@ -80,19 +80,19 @@ export default function PerformanceTrend({ }) {
       max: 16,
       interval: 2,
       axisLabel: {
-        color: currentTheme == "dark" ? "#B3B9C6" : "#6C768B",
+        color: "#6C768B",
         fontSize: 10,
        
       },
       axisLine: {
         show: true,
-        lineStyle: { color: currentTheme == "dark" ? "#2A2C32" : "#EAEDF3" },
+        lineStyle:"#EAEDF3",
       },
       splitLine: {
         show: true,
         lineStyle: {
           type: "dashed",
-          color: currentTheme == "dark" ? "#2A2C32" : "#EAEDF3",
+          color: "#EAEDF3",
         },
       },
     },
@@ -109,19 +109,19 @@ export default function PerformanceTrend({ }) {
       max: 5,
       interval: 1,
       axisLabel: {
-        color: currentTheme == "dark" ? "#B3B9C6" : "#6C768B",
+        color: "#6C768B",
         fontSize: 10,
     
       },
       axisLine: {
         show: true,
-        lineStyle: { color: currentTheme == "dark" ? "#2A2C32" : "#EAEDF3" },
+        lineStyle: "#EAEDF3",
       },
       splitLine: {
         show: true,
         lineStyle: {
           type: "dashed",
-          color: currentTheme == "dark" ? "#2A2C32" : "#EAEDF3",
+          color: "#EAEDF3",
         },
       },
     },
@@ -132,7 +132,7 @@ export default function PerformanceTrend({ }) {
       type: "bar",
       barWidth: 70,
       itemStyle: {
-        color: currentTheme == "dark" ? "#4169E1" : "#4169E1",
+        color: "#4169E1",
         borderRadius: [4, 4, 0, 0],
       },
       label: {

@@ -35,7 +35,7 @@ function Financialpopup({
             axisLine: {
                 show: true,
                 lineStyle: {
-                  color: currentTheme == "dark" ? "#818181" : "#E4E7EC",
+                  color: "#E4E7EC",
                 },
           
             },
@@ -53,7 +53,7 @@ function Financialpopup({
                 show: true,
                 lineStyle: {
                     type: 'dashed',
-                    color: currentTheme == "dark" ? "#BECDE3" : "#E4E7EC",
+                    color: "#E4E7EC",
 
                 }
             },
@@ -65,14 +65,14 @@ function Financialpopup({
             nameGap: xAxisNameGap,
             nameGap: 50,
             nameTextStyle: {
-                color: currentTheme === "dark" ? "#B3B9C6" : "#84878D",
+                color:"#84878D",
 
                 fontWeight: 600,
                 fontSize: 12,
             },
 
             axisLabel: {
-                color: currentTheme === "dark" ? "#B3B9C6" : "#84878D",
+                color: "#84878D",
                 fontSize: 12,
                 fontWeight: 600,
                 formatter: '{value}',

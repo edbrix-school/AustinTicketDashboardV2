@@ -50,7 +50,7 @@ export const DrillDownChart = () => {
                 })(),
                 lineStyle: {
                   width: 20,
-                  color: currentTheme == "dark" ? "#413b35" : "#cbc3ba",
+                  color:"#cbc3ba",
                 },
                 label: {
                   show: true,
@@ -58,7 +58,7 @@ export const DrillDownChart = () => {
                   fontSize: "14",
                   fontWeight: "500",
                   lineHeight: 20,
-                  color: currentTheme == "dark" ? "#fff" : "#262626",
+                  color: "#262626",
                   width: 80,
                     height: 40,
                     backgroundColor: "#E8E8E5",

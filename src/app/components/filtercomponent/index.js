@@ -73,14 +73,14 @@ export default function FilterComponent(props) {
             <div className="text-[#84878D] text-[14px] font-normal px-[12px] ">
               <div className={myworksans.className}>No filter applied yet</div>
             </div>
-            <Link
+            <div
               href=""
               onClick={()=>setFilterAddPopup(true)}
               className="text-[#3A3E49] text-[12px] font-medium border border-[#E8E8E5] rounded-[8px] xl:rounded-[0.417vw] px-2 py-1.5 hover:bg-[#F5F6F8] "
               title="Add"
             >
               Add <i className="asetsmng-plus ml-1"></i>
-            </Link>
+            </div>
           </div>
           <div className="flex xl:justify-end gap-2 xl:py-0 pt-1 pb-2 xl:w-auto w-full items-center">
             <Link

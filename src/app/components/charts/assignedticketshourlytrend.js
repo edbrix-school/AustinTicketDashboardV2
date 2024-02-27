@@ -33,7 +33,7 @@ export default function Assignedticketshourlytrend({seclinecirclecolor,seclineco
             nameGap: 40, // Adjust the gap between the x-axis name and the axis
             interval:0,
             nameTextStyle: {
-              color: currentTheme == "dark" ? "#818181" : "#888888", // Set title text color
+              color: "#888888", // Set title text color
               fontSize: 10, // Set title font size
             },
             splitLine: { show: false },
@@ -41,11 +41,11 @@ export default function Assignedticketshourlytrend({seclinecirclecolor,seclineco
             axisLine: {
               show: true,
               lineStyle: {
-                color: currentTheme == "dark" ? "#818181" : "#EDEEF1",
+                color: "#EDEEF1",
               },
             },
             axisLabel: {
-              color: currentTheme == "dark" ? "#20232E" : "#6C768B",
+              color:"#6C768B",
               fontSize: 11,
               lineHeight: 14,
               interval:0
@@ -60,28 +60,28 @@ export default function Assignedticketshourlytrend({seclinecirclecolor,seclineco
             nameLocation: "center", // Set the position of the y-axis name to the center
             nameGap: 30, // Adjust the gap between the y-axis name and the axis
             nameTextStyle: {
-              color: currentTheme == "dark" ? "#818181" : "#84878D", // Set title text color
+              color: "#84878D", // Set title text color
               fontSize: 10, // Set title font size
             },
             min: 0,
             max: 80,
             interval: 10,
             axisLabel: {
-              color: currentTheme == "dark" ? "#818181" : "#6C768B",
+              color: "#6C768B",
               fontSize: 10,
               formatter: '{value}',
             },
             axisLine: {
               show: true,
               lineStyle: {
-                color: currentTheme == "dark" ? "#818181" : "#EDEEF1",
+                color:"#EDEEF1",
               },
             },
             splitLine: {
               show: true,
               lineStyle: {
                 type: "dashed",
-                color: currentTheme == "dark" ? "#2A2C32" : "#F2EEEE",
+                color:"#F2EEEE",
               },
             },
           },
@@ -107,7 +107,7 @@ export default function Assignedticketshourlytrend({seclinecirclecolor,seclineco
               },
               label: {
                 show: true,
-                color: currentTheme == 'dark' ? '#FFFFFF' : '#24262D',
+                color:'#24262D',
                 position: 'top',
                 formatter: "${c}",
                 // formatter: '{@[n]} %',
@@ -154,7 +154,7 @@ export default function Assignedticketshourlytrend({seclinecirclecolor,seclineco
               },
               label: {
                 show: true,
-                color: currentTheme == 'dark' ? '#FFFFFF' : '#24262D',
+                color:'#24262D',
                 position: 'top',
                 formatter: "${c}",
                 // formatter: '{@[n]} %',

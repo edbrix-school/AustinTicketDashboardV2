@@ -20,7 +20,7 @@ export default function Piechart({ }) {
       itemWidth: 10,
       itemHeight: 10,
       textStyle: {
-        color: currentTheme == 'dark' ? '#CACED1' : '#84878D',
+        color: '#84878D',
       },
     },
 
@@ -44,7 +44,7 @@ export default function Piechart({ }) {
         ],
         roseType: "radius",
         label: {
-          color: currentTheme == 'dark' ? '#CACED1' : '#222222',
+          color: '#222222',
           lineHeight: 20,
           textStyle: {
             fontSize: 15,

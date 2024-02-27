@@ -46,7 +46,7 @@ export default function StackBarwithLine({ }) {
         axisTick: { show: false },
         axisLine: { show: false },
         axisLabel: {
-          color: currentTheme == "dark" ? "#fff" : "#363A44",
+          color: "#363A44",
           fontSize: 10,
           lineHeight: 16
         },
@@ -67,19 +67,19 @@ export default function StackBarwithLine({ }) {
         max: 5000,
         interval: 500,
         axisLabel: {
-          color: currentTheme == "dark" ? "#B3B9C6" : "#6C768B",
+          color:"#6C768B",
           fontSize: 10,
           formatter: "{value}$",
         },
         axisLine: {
           show: true,
-          lineStyle: { color: currentTheme == "dark" ? "#2A2C32" : "#EAEDF3" },
+          lineStyle: "#EAEDF3",
         },
         splitLine: {
           show: true,
           lineStyle: {
             type: "dashed",
-            color: currentTheme == "dark" ? "#2A2C32" : "#EAEDF3",
+            color:"#EAEDF3",
           },
         },
       },
@@ -96,19 +96,19 @@ export default function StackBarwithLine({ }) {
         max: 100,
         interval: 10,
         axisLabel: {
-          color: currentTheme == "dark" ? "#B3B9C6" : "#6C768B",
+          color: "#6C768B",
           fontSize: 10,
           formatter: "{value}%",
         },
         axisLine: {
           show: true,
-          lineStyle: { color: currentTheme == "dark" ? "#2A2C32" : "#EAEDF3" },
+          lineStyle: "#EAEDF3",
         },
         splitLine: {
           show: true,
           lineStyle: {
             type: "dashed",
-            color: currentTheme == "dark" ? "#2A2C32" : "#EAEDF3",
+            color: "#EAEDF3",
           },
         },
       },

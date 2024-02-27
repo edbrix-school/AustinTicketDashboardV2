@@ -33,7 +33,7 @@ export default function DoublebarLinechart({ legend, grid, data, xAxisName, xAxi
                     interval:0,
                     textStyle: {
                         fontSize: 10,
-                        color: currentTheme == "dark" ? "#ffff" : '#363A44' // set text color to red
+                        color: '#363A44' // set text color to red
                     }
                 },
                 axisTick: {
@@ -42,7 +42,7 @@ export default function DoublebarLinechart({ legend, grid, data, xAxisName, xAxi
                 nameGap: xAxisNameGap,
                 nameLocation: xAxisNamePosition,
                 nameTextStyle: {
-                    color: currentTheme == "dark" ? "#ffff" : '#84878D',
+                    color: '#84878D',
                     fontSize: 12,
                 },
             },
@@ -56,26 +56,26 @@ export default function DoublebarLinechart({ legend, grid, data, xAxisName, xAxi
                 nameGap: yAxisNameGap,
                 nameTextStyle: {
                     // color: "#6C768B",
-                    color: currentTheme == "dark" ? "#ffff" : '#6C768B',
+                    color:'#6C768B',
                     fontSize: 12,
                 },
                 min: minBar1,
                 max: maxBar1,
                 interval: interval1,
                 axisLabel: {
-                    color: currentTheme == "dark" ? "#ffff" : "#6C768B",
+                    color:"#6C768B",
                     fontSize: 10,
                     formatter: yAxisLabelFormmater1,
                 },
                 axisLine: {
                     show: true,
-                    lineStyle: { color: currentTheme == "dark" ? "#2A2C32" : "#EDEEF1" },
+                    lineStyle: "#EDEEF1" ,
                 },
                 splitLine: {
                     show: false,
                     lineStyle: {
                         type: "dashed",
-                        color: currentTheme == "dark" ? "#2A2C32" : "#EAEDF3",
+                        color: "#EAEDF3",
                     },
                 },
             },
@@ -85,7 +85,7 @@ export default function DoublebarLinechart({ legend, grid, data, xAxisName, xAxi
                 nameLocation: "center",
                 nameGap: yAxisNameGap1,
                 nameTextStyle: {
-                    color: currentTheme == "dark" ? "#ffff" : '#84878D',
+                    color: '#84878D',
                     fontSize: 12,
                 },
                 min: minBar2,
@@ -93,19 +93,19 @@ export default function DoublebarLinechart({ legend, grid, data, xAxisName, xAxi
                 interval: interval2,
                 axisLabel: {
                     show: axisLabel2,
-                    color: currentTheme == "dark" ? "#ffff" : "#6C768B",
+                    color:"#6C768B",
                     fontSize: 10,
                     formatter: yAxisLabelFormmater2,
                 },
                 axisLine: {
                     show: true,
-                    lineStyle: { color: currentTheme == "dark" ? "#2A2C32" : "#EDEEF1" },
+                    lineStyle: "#EDEEF1",
                 },
                 splitLine: {
                     show: true,
                     lineStyle: {
                         type: "dashed",
-                        color: currentTheme == "dark" ? "#2A2C32" : "#EAEDF3",
+                        color: "#EAEDF3",
                     },
                 },
             },

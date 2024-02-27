@@ -39,7 +39,7 @@ export const DrillDownChart = () => {
          symbolSize: 85,
         itemStyle: {
           color: '#24262d',
-          // color: currentTheme == 'dark' ? '#272f31' : '#24262D',
+          // color: '#24262D',
           emphasis: false
         },
         children: [{
@@ -49,7 +49,7 @@ export const DrillDownChart = () => {
           },
           itemStyle: {
             background:"#000",
-             // color: currentTheme == 'dark' ? '#272f31' : '#24262D',
+             // color: '#24262D',
              emphasis: false
            },
           symbolSize: 0,
@@ -58,7 +58,7 @@ export const DrillDownChart = () => {
             position: "right",
             lineHeight: 15,
             background:"#F6F7F9",
-            color: currentTheme == 'dark' ? '#fff' : '#24262D',
+            color: '#24262D',
             backgroundColor:"#F6F7F9",
             padding: [8, 20, 8, 8]
           },
@@ -80,7 +80,7 @@ export const DrillDownChart = () => {
             show: true,
             position: "right",
             lineHeight: 15,
-            color: currentTheme == 'dark' ? '#fff' : '#363A44',
+            color: '#363A44',
             backgroundColor:"#F6F7F9",
             padding: [8, 20, 8, 8]
           },
@@ -98,7 +98,7 @@ export const DrillDownChart = () => {
             show: true,
             position: "right",
             lineHeight: 15,
-            color: currentTheme == 'dark' ? '#fff' : '#363A44',
+            color:'#363A44',
             backgroundColor:"#F6F7F9",
             padding: [8, 20, 8, 8]
           },
@@ -155,7 +155,7 @@ export const DrillDownChart = () => {
                 show: true,
                 position: "right",
                 lineHeight: 15,
-                color: currentTheme == 'dark' ? '#fff' : '#363A44',
+                color: '#363A44',
                 backgroundColor:"#F6F7F9",
                 padding: [8, 20, 8, 8]
               },
@@ -175,7 +175,7 @@ export const DrillDownChart = () => {
                   show: true,
                   position: "right",
                   lineHeight: 15,
-                  color: currentTheme == 'dark' ? '#fff' : '#363A44',
+                  color: '#363A44',
                   backgroundColor:"#F6F7F9",
                   padding: [8, 20, 8, 8]
                 },
@@ -191,7 +191,7 @@ export const DrillDownChart = () => {
                   show: true,
                   position: "right",
                   lineHeight: 15,
-                  color: currentTheme == 'dark' ? '#fff' : '#363A44',
+                  color: '#363A44',
                   backgroundColor:"#F6F7F9",
                   padding: [8, 20, 8, 8]
                 },
@@ -207,7 +207,7 @@ export const DrillDownChart = () => {
                   show: true,
                   position: "right",
                   lineHeight: 15,
-                  color: currentTheme == 'dark' ? '#fff' : '#363A44',
+                  color: '#363A44',
                   backgroundColor:"#F6F7F9",
                   padding: [8, 20, 8, 8]
                 },
@@ -223,7 +223,7 @@ export const DrillDownChart = () => {
                   show: true,
                   position: "right",
                   lineHeight: 15,
-                  color: currentTheme == 'dark' ? '#fff' : '#363A44',
+                  color: '#363A44',
                   backgroundColor:"#F6F7F9",
                   padding: [8, 20, 8, 8]
                 },
@@ -239,7 +239,7 @@ export const DrillDownChart = () => {
                   show: true,
                   position: "right",
                   lineHeight: 15,
-                  color: currentTheme == 'dark' ? '#fff' : '#363A44',
+                  color: '#363A44',
                   backgroundColor:"#F6F7F9",
                   padding: [8, 20, 8, 8]
                 },
@@ -289,7 +289,7 @@ export const DrillDownChart = () => {
             show: true,
             position: "right",
             lineHeight: 15,
-            color: currentTheme == 'dark' ? '#fff' : '#363A44',
+            color: '#363A44',
             backgroundColor:"#F6F7F9",
             padding: [8, 20, 8, 8]
           },
@@ -306,7 +306,7 @@ export const DrillDownChart = () => {
             show: true,
             position: "right",
             lineHeight: 15,
-            color: currentTheme == 'dark' ? '#fff' : '#363A44',
+            color: '#363A44',
             backgroundColor:"#F6F7F9",
             padding: [8, 20, 8, 8]
           },
@@ -322,7 +322,7 @@ export const DrillDownChart = () => {
             show: true,
             position: "right",
             lineHeight: 15,
-            color: currentTheme == 'dark' ? '#fff' : '#363A44',
+            color: '#363A44',
             backgroundColor:"#F6F7F9",
             padding: [8, 20, 8, 8]
           },
@@ -339,7 +339,7 @@ export const DrillDownChart = () => {
             show: true,
             position: "right",
             lineHeight: 15,
-            color: currentTheme == 'dark' ? '#fff' : '#363A44',
+            color: '#363A44',
             backgroundColor:"#F6F7F9",
             padding: [8, 20, 8, 8]
           },
@@ -355,7 +355,7 @@ export const DrillDownChart = () => {
             show: true,
             position: "right",
             lineHeight: 15,
-            color: currentTheme == 'dark' ? '#fff' : '#363A44',
+            color: '#363A44',
             backgroundColor:"#F6F7F9",
             padding: [8, 20, 8, 8]
           },
@@ -373,7 +373,7 @@ export const DrillDownChart = () => {
         position: "right",
         color: '#fff',
         lineHeight: 15,
-        color: currentTheme == 'dark' ? '#fff' : '#363A44',
+        color: '#363A44',
       },
       lineStyle: {
         width: 30,
