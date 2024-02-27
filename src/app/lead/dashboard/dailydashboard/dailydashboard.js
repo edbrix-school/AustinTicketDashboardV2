@@ -2,7 +2,6 @@ import ChartWrapper from '@/app/components/chartwrapper'
 import React, { useEffect, useState, } from "react";
 import { Dropdown } from "primereact/dropdown";
 import ReactEcharts from "echarts-for-react";
-import { useTheme } from "next-themes";
 import DoublebarLinechart from '@/app/components/charts/techicianbarchart';
 import { ProgressBar } from 'primereact/progressbar';
 import Image from 'next/image';
@@ -13,9 +12,6 @@ import Newticketsbyagebarchart from '@/app/components/charts/newticketsbtagebarc
 
 export default function dailydashboard() {
   const [top, setTop] = useState(true)
-  const { systemTheme, theme, setTheme } = useTheme();
-
-  const currentTheme = theme === "system" ? systemTheme : theme;
 
   const [selectedCluster, setSelectedCluster] = useState(null);
   const cluster = [
@@ -50,7 +46,7 @@ export default function dailydashboard() {
         nameGap: 40, // Adjust the gap between the x-axis name and the axis
         interval:0,
         nameTextStyle: {
-          color: currentTheme == "dark" ? "#818181" : "#888888", // Set title text color
+          color: "#888888", // Set title text color
           fontSize: 10, // Set title font size
         },
         splitLine: { show: false },
@@ -58,11 +54,11 @@ export default function dailydashboard() {
         axisLine: {
           show: true,
           lineStyle: {
-            color: currentTheme == "dark" ? "#818181" : "#EDEEF1",
+            color: "#EDEEF1",
           },
         },
         axisLabel: {
-          color: currentTheme == "dark" ? "#20232E" : "#6C768B",
+          color: "#6C768B",
           fontSize: 11,
           lineHeight: 14,
           interval:0
@@ -77,28 +73,28 @@ export default function dailydashboard() {
         nameLocation: "center", // Set the position of the y-axis name to the center
         nameGap: 30, // Adjust the gap between the y-axis name and the axis
         nameTextStyle: {
-          color: currentTheme == "dark" ? "#818181" : "#84878D", // Set title text color
+          color: "#84878D", // Set title text color
           fontSize: 10, // Set title font size
         },
         min: 0,
         max: 80,
         interval: 10,
         axisLabel: {
-          color: currentTheme == "dark" ? "#818181" : "#6C768B",
+          color:"#6C768B",
           fontSize: 10,
           formatter: '{value}',
         },
         axisLine: {
           show: true,
           lineStyle: {
-            color: currentTheme == "dark" ? "#818181" : "#EDEEF1",
+            color:"#EDEEF1",
           },
         },
         splitLine: {
           show: true,
           lineStyle: {
             type: "dashed",
-            color: currentTheme == "dark" ? "#2A2C32" : "#F2EEEE",
+            color:"#F2EEEE",
           },
         },
       },
@@ -124,7 +120,7 @@ export default function dailydashboard() {
           },
           label: {
             show: true,
-            color: currentTheme == 'dark' ? '#FFFFFF' : '#24262D',
+            color:'#24262D',
             position: 'top',
             formatter: "{c}",
             // formatter: '{@[n]} %',
@@ -165,7 +161,7 @@ export default function dailydashboard() {
           },
           label: {
             show: true,
-            color: currentTheme == 'dark' ? '#FFFFFF' : '#24262D',
+            color:'#24262D',
             position: 'top',
             formatter: "{c}",
             // formatter: '{@[n]} %',
@@ -368,7 +364,7 @@ export default function dailydashboard() {
       itemHeight: 8,
       borderRadius: [4, 4, 0, 0],
       textStyle: {
-        color: currentTheme == "dark" ? "#fff" : "#6C768B",
+        color: "#6C768B",
         fontSize: 12,
       },
     },
@@ -394,7 +390,7 @@ export default function dailydashboard() {
         axisTick: { show: false },
         axisLine: { show: false },
         axisLabel: {
-          color: currentTheme == "dark" ? "#fff" : "#363A44",
+          color:"#363A44",
           fontSize: 10,
 
         },
@@ -416,19 +412,19 @@ export default function dailydashboard() {
         max: 600,
         interval: 100,
         axisLabel: {
-          color: currentTheme == "dark" ? "#B3B9C6" : "#6C768B",
+          color: "#6C768B",
           fontSize: 10,
           formatter: "{value}$",
         },
         axisLine: {
           show: true,
-          lineStyle: { color: currentTheme == "dark" ? "#2A2C32" : "#EAEDF3" },
+          lineStyle:  "#EAEDF3",
         },
         splitLine: {
           show: true,
           lineStyle: {
             type: "dashed",
-            color: currentTheme == "dark" ? "#2A2C32" : "#EAEDF3",
+            color: "#EAEDF3",
           },
         },
       },
@@ -442,7 +438,7 @@ export default function dailydashboard() {
 
         stack: "Ad",
         itemStyle: {
-          color: currentTheme == "dark" ? "#96BF0D" : "#96BF0D",
+          color:  "#96BF0D",
         },
         label: {
           show: true,
@@ -459,7 +455,7 @@ export default function dailydashboard() {
         stack: "Ad",
         itemStyle: {
           borderRadius: [0, 0, 0, 0],
-          color: currentTheme == "dark" ? "#009CDA" : "#009CDA",
+          color:  "#009CDA",
         },
         label: {
           show: true,
@@ -476,7 +472,7 @@ export default function dailydashboard() {
         stack: "Ad",
         itemStyle: {
           borderRadius: [4, 4, 0, 0],
-          color: currentTheme == "dark" ? "#256D85" : "#256D85",
+          color:"#256D85",
         },
         label: {
           show: true,
@@ -1151,7 +1147,7 @@ series: [
                     
                   ],
                   textStyle: {
-                    color: currentTheme == "dark" ? "#ffff" : "#344054",
+                    color:  "#344054",
                   },
                 }}
                 grid={{

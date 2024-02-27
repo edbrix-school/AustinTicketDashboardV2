@@ -1,12 +1,9 @@
 import React from 'react'
 import ReactEcharts from "echarts-for-react";
 import { color } from 'echarts';
-import { useTheme } from 'next-themes';
 
 
 export const DrillDownChart = () => {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === 'system' ? systemTheme : theme;
   const drillDownCharts = {
 
     series: [{

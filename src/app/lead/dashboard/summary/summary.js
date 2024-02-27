@@ -2,7 +2,6 @@ import ChartWrapper from '@/app/components/chartwrapper'
 import React, { useEffect, useState, } from "react";
 import { Dropdown } from "primereact/dropdown";
 import ReactEcharts from "echarts-for-react";
-import { useTheme } from "next-themes";
 import DoublebarLinechart from '@/app/components/charts/techicianbarchart';
 import { ProgressBar } from 'primereact/progressbar';
 import Image from 'next/image';
@@ -11,9 +10,6 @@ import Heatmapchart from '@/app/components/charts/heatmapchart';
 
 export default function summary() {
   const [top, setTop] = useState(true)
-  const { systemTheme, theme, setTheme } = useTheme();
-
-  const currentTheme = theme === "system" ? systemTheme : theme;
 
   const [selectedCluster, setSelectedCluster] = useState(null);
   const cluster = [
@@ -200,7 +196,7 @@ export default function summary() {
       itemHeight: 8,
       borderRadius: [4, 4, 0, 0],
       textStyle: {
-        color: currentTheme == "dark" ? "#fff" : "#6C768B",
+        color: "#6C768B",
         fontSize: 12,
       },
     },
@@ -226,7 +222,7 @@ export default function summary() {
         axisTick: { show: false },
         axisLine: { show: false },
         axisLabel: {
-          color: currentTheme == "dark" ? "#fff" : "#363A44",
+          color: "#363A44",
           fontSize: 10,
 
         },
@@ -248,19 +244,19 @@ export default function summary() {
         max: 600,
         interval: 100,
         axisLabel: {
-          color: currentTheme == "dark" ? "#B3B9C6" : "#6C768B",
+          color: "#6C768B",
           fontSize: 10,
           formatter: "{value}$",
         },
         axisLine: {
           show: true,
-          lineStyle: { color: currentTheme == "dark" ? "#2A2C32" : "#EAEDF3" },
+          lineStyle:  "#EAEDF3",
         },
         splitLine: {
           show: true,
           lineStyle: {
             type: "dashed",
-            color: currentTheme == "dark" ? "#2A2C32" : "#EAEDF3",
+            color: "#EAEDF3",
           },
         },
       },
@@ -274,7 +270,7 @@ export default function summary() {
 
         stack: "Ad",
         itemStyle: {
-          color: currentTheme == "dark" ? "#96BF0D" : "#96BF0D",
+          color:"#96BF0D",
         },
         label: {
           show: true,
@@ -291,7 +287,7 @@ export default function summary() {
         stack: "Ad",
         itemStyle: {
           borderRadius: [0, 0, 0, 0],
-          color: currentTheme == "dark" ? "#009CDA" : "#009CDA",
+          color: "#009CDA",
         },
         label: {
           show: true,
@@ -308,7 +304,7 @@ export default function summary() {
         stack: "Ad",
         itemStyle: {
           borderRadius: [4, 4, 0, 0],
-          color: currentTheme == "dark" ? "#256D85" : "#256D85",
+          color: "#256D85",
         },
         label: {
           show: true,
@@ -507,7 +503,7 @@ export default function summary() {
                       { name: 'PAT%', icon: 'image:///assets/images/profit-3rd-legends.svg' },
                     ],
                     textStyle: {
-                      color: currentTheme == "dark" ? "#ffff" : "#344054",
+                      color: "#344054",
                     },
                   }}
                   grid={{
