@@ -10,7 +10,7 @@
     @tailwind utilities;
 }
 body{
-  background: red;
+  background: blue;
 }
 @font-face {
   font-family: 'assetsmanage';
