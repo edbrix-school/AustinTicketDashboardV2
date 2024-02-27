@@ -64,9 +64,9 @@ export default function Index() {
               </div>
             </div>
           </div>
-          <FilterComponent />
           <div>
             <TabPanel>
+          <FilterComponent />
               <div className="grid grid-cols-12 xl:grid-cols-5 gap-[20px] 3xl:gap-[1.042vw] mt-[24px] 3xl:mt-[1.25vw]">
                 <div className="col-span-12 sm:col-span-6  lg:col-span-4 xl:col-span-1 ">
                   <div
