@@ -15,7 +15,7 @@ export const DrillDownChart = () => {
         data: [
           {
             name: (() => {
-              return "Re Routed Tickets\n540";
+              return "New Ticket\n540";
             })(),
 
             label: {
@@ -46,7 +46,7 @@ export const DrillDownChart = () => {
             children: [
               {
                 name: (() => {
-                  return "Team 1 \n 100";
+                  return "School 1 \n 100";
                 })(),
                 lineStyle: {
                   width: 20,
@@ -75,7 +75,7 @@ export const DrillDownChart = () => {
               },
               {
                 name: (() => {
-                  return "Team 2 \n 120";
+                  return "School 2 \n 120";
                 })(),
                 lineStyle: {
                   width: 20,
@@ -129,7 +129,7 @@ export const DrillDownChart = () => {
                   borderColor: currentTheme == "dark" ? "#968FC3" : "#312C49",
                   borderRadius: 8,
                 },
-                name: "Team 3 \n 40",
+                name: "School 3 \n 40",
                 children: [
                   {
                     name: (() => {
@@ -311,7 +311,7 @@ export const DrillDownChart = () => {
               },              
               {
                 name: (() => {
-                  return "Team 4 \n 340";
+                  return "School 4 \n 340";
                 })(),
                 lineStyle: {
                   width: 20,

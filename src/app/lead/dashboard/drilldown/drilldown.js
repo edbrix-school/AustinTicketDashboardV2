@@ -40,7 +40,7 @@ export default function drilldown() {
               <label className="text-[#3A3E49] text-[14px] xl:text-[0.729vw] font-medium ">Select Metric</label>
               <div className="custdropdown custinput">
                 <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={SelectMetric} optionLabel="name"
-                  placeholder="Re-Routed Tickets Path" className="custdropdown w-full md:w-14rem mt-[8px] 3xl:mt-[0.417vw]" />
+                  placeholder="New Tickets" className="custdropdown w-full md:w-14rem mt-[8px] 3xl:mt-[0.417vw]" />
               </div>
             </div>
 
@@ -48,7 +48,7 @@ export default function drilldown() {
               <label className="text-[#3A3E49] text-[14px] xl:text-[0.729vw] font-medium">Level 1</label>
 
               <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={Level} optionLabel="name"
-                placeholder="Initial Team" className="custdropdown custinput w-full md:w-14rem mt-[8px] 3xl:mt-[0.417vw]" />
+                placeholder="Schools/Offices" className="custdropdown custinput w-full md:w-14rem mt-[8px] 3xl:mt-[0.417vw]" />
             </div>
 
 
@@ -56,7 +56,13 @@ export default function drilldown() {
               <label className="text-[#3A3E49] text-[14px] xl:text-[0.729vw] font-medium">Level 2</label>
 
               <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={Level} optionLabel="name"
-                placeholder="Final Team" className="custdropdown custinput w-full md:w-14rem mt-[8px] 3xl:mt-[0.417vw]" />
+                placeholder="Teams" className="custdropdown custinput w-full md:w-14rem mt-[8px] 3xl:mt-[0.417vw]" />
+            </div>
+            <div>
+              <label className="text-[#3A3E49] text-[14px] xl:text-[0.729vw] font-medium">Level 3</label>
+
+              <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={Level} optionLabel="name"
+                placeholder="Technician" className="custdropdown custinput w-full md:w-14rem mt-[8px] 3xl:mt-[0.417vw]" />
             </div>
           </div>
 
