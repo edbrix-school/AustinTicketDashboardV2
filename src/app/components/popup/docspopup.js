@@ -242,7 +242,9 @@ const [notes , setNotes] =useState("");
                         onChange={(e) => setNotes(e.target.value)}
                         rows={5}
                         cols={15}
-                        placeholder="Notes on letter of recommendation for Alex Smith"
+                        placeholder="Director of Digital Services,
+                        Interim Exec Dir.of Digital
+                        Strategy (Virtual)"
                         className="w-full docinputbox  mx-[14px] 3xl:mx-[0.729vw] mt-[8px] text-[14px] 3xl:text-[0.729vw] placeholder:text-[14px] xl:placeholder:text-[0.729vw] 3xl:placeholder:text-[0.729vw]"
                       />
                     </div>
