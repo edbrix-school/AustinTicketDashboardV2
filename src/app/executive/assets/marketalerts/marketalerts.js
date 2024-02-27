@@ -101,7 +101,7 @@ export default function MarketAlerts() {
               </div>
             </div>
             <div className="space-y-[20px] 3xl:space-y-[1.042vw]">
-              <div className="bg-white rounded-[8px] 3xl:rounded-[0.417vw] boxShadow1 mt-[32px] 3xl:mt-[1.667vw]" onClick={()=>setAlertPopupVisible(true)}>
+              <div className="bg-white rounded-[8px] 3xl:rounded-[0.417vw] boxShadow1 mt-[32px] 3xl:mt-[1.667vw] cursor-pointer" onClick={()=>setAlertPopupVisible(true)}>
                 <div className="rounded-tl-2xl 3xl:rounded-tl-2xl-[0.833vw] p-[24px] 3xl:p-[1.25vw] z-10 relative border-b border-[#E4E7EC] ">
                   <div className="">
                     <div className="gap-[24px] 3xl:gap-[1.25vw] flex items-center expandHide">
@@ -182,7 +182,7 @@ export default function MarketAlerts() {
                   </div>
                 </div>
               </div>
-              <div className="bg-white rounded-[8px] 3xl:rounded-[0.417vw] boxShadow1 mt-[32px] 3xl:mt-[1.667vw]" onClick={()=>setAlertPopupVisible(true)}>
+              <div className="bg-white rounded-[8px] 3xl:rounded-[0.417vw] boxShadow1 mt-[32px] 3xl:mt-[1.667vw] cursor-pointer" onClick={()=>setAlertPopupVisible(true)}>
                 <div className="rounded-tl-2xl 3xl:rounded-tl-2xl-[0.833vw] p-[24px] 3xl:p-[1.25vw] z-10 relative border-b border-[#E4E7EC] ">
                   <div className="">
                     <div className="gap-[24px] 3xl:gap-[1.25vw] flex items-center expandHide">
@@ -262,7 +262,7 @@ export default function MarketAlerts() {
                   </div>
                 </div>
               </div>
-              <div className="bg-white rounded-[8px] 3xl:rounded-[0.417vw] boxShadow1 mt-[32px] 3xl:mt-[1.667vw]" onClick={()=>setAlertPopupVisible(true)}>
+              <div className="bg-white rounded-[8px] 3xl:rounded-[0.417vw] boxShadow1 mt-[32px] 3xl:mt-[1.667vw] cursor-pointer" onClick={()=>setAlertPopupVisible(true)}>
                 <div className="rounded-tl-2xl 3xl:rounded-tl-2xl-[0.833vw] p-[24px] 3xl:p-[1.25vw] z-10 relative border-b border-[#E4E7EC] ">
                     <div className="">
                       <div className="gap-[24px] 3xl:gap-[1.25vw] flex items-center expandHide">
@@ -342,7 +342,7 @@ export default function MarketAlerts() {
                     </div>
                   </div>
                 </div>
-              <div className="bg-white rounded-[8px] 3xl:rounded-[0.417vw] boxShadow1 mt-[32px] 3xl:mt-[1.667vw]" onClick={()=>setAlertPopupVisible(true)}>
+              <div className="bg-white rounded-[8px] 3xl:rounded-[0.417vw] boxShadow1 mt-[32px] 3xl:mt-[1.667vw] cursor-pointer" onClick={()=>setAlertPopupVisible(true)}>
                 <div className="rounded-tl-2xl 3xl:rounded-tl-2xl-[0.833vw] p-[24px] 3xl:p-[1.25vw] z-10 relative border-b border-[#E4E7EC] ">
                     <div className="">
                       <div className="gap-[24px] 3xl:gap-[1.25vw] flex items-center expandHide">
