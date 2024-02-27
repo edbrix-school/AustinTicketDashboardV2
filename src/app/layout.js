@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./style/globals.css";
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+import "primereact/resources/primereact.min.css";
 import "./style/leftmenu.css";
 import "./style/systyle.css";
 import "./style/skstyle.css";
@@ -10,8 +12,6 @@ import "./style/ppstyle.css";
 import "./style/nstyle.css";
 import "./style/atstyle.css";
 import "./style/pkstyle.css";
-import "primereact/resources/themes/lara-light-indigo/theme.css";
-import "primereact/resources/primereact.min.css";
 
 const inter = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
