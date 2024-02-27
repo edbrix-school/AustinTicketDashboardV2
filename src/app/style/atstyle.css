@@ -41,3 +41,19 @@ padding: 5px !important;
 {
     padding: 0.2rem 1.25rem;
 }
+.conditionbtn 
+{
+    border: 2px solid #d1d5db;
+    background: #ffffff;
+    color: #4b5563;
+    border-radius: 50%;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+.custRadioButton .p-radiobutton
+{
+    border: 2px solid #d1d5db;
+    background: #ffffff;
+    color: #4b5563;
+    border-radius: 50%;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
