@@ -3,6 +3,8 @@ import Top from "./top";
 import Left from "./left";
 import Head from "next/head";
 import { Inter } from 'next/font/google'
+import { PrimeReactProvider } from "primereact/api";
+import Tailwind from 'primereact/passthrough/tailwind';
 
 const myInter = Inter({
     weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -20,13 +22,15 @@ export default function Layout({ children, ...pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <Top topTab={pageProps.topTab} pageTitle={pageProps.pageTitle} pageName={pageProps.pageName} parentPageName={pageProps.parentPageName} />         
-        <Left />
-        <div className={`${myInter.className} pl-[118px] xl:pl-[128px] pr-[32px] xl:pr-[1.667vw] pb-6 xl:pb-[1.25vw] `}>
-          <main>
-            {children}
-          </main>
-        </div>
+        <PrimeReactProvider value={{ pt: Tailwind }}>
+          <Top topTab={pageProps.topTab} pageTitle={pageProps.pageTitle} pageName={pageProps.pageName} parentPageName={pageProps.parentPageName} />         
+          <Left />
+          <div className={`${myInter.className} pl-[118px] xl:pl-[128px] pr-[32px] xl:pr-[1.667vw] pb-6 xl:pb-[1.25vw] `}>
+            <main>
+              {children}
+            </main>
+          </div>
+        </PrimeReactProvider>
       </>
     </>
   );
