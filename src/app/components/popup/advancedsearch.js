@@ -503,7 +503,7 @@ export default function AdvancedSearchPopup(props) {
                             value={selectedOption}
                             options={ParameterList}
                             optionLabel="name"
-                            placeholder="Name"
+                            placeholder="Parameter"
                             filter
                             showSelectAll={false}
                             filterPlaceholder="Search parameter"
@@ -518,7 +518,7 @@ export default function AdvancedSearchPopup(props) {
                             onChange={(e) => setConditionTwo(e.value)}
                             options={ConditionList}
                             optionLabel="name"
-                            placeholder="And"
+                            placeholder="condition"
                             className="w-full "
                           />
                             </div>
@@ -528,7 +528,7 @@ export default function AdvancedSearchPopup(props) {
                             value={nameText}
                             onChange={(e) => setNameText(e.value)}
                             optionLabel="name"
-                            placeholder="Alex Smith - SC1001"
+                            placeholder="value"
                             className="w-full border"
                           />
                           </div>
@@ -633,7 +633,7 @@ export default function AdvancedSearchPopup(props) {
                             value={selectedOption}
                             options={ParameterList}
                             optionLabel="name"
-                            placeholder="Name"
+                            placeholder="Parameter"
                             filter
                             showSelectAll={false}
                             filterPlaceholder="Search parameter"
@@ -648,7 +648,7 @@ export default function AdvancedSearchPopup(props) {
                             onChange={(e) => setConditionTwo(e.value)}
                             options={ConditionList}
                             optionLabel="name"
-                            placeholder="And"
+                            placeholder="condition"
                             className="w-full "
                           />
                             </div>
@@ -658,7 +658,7 @@ export default function AdvancedSearchPopup(props) {
                             value={nameText}
                             onChange={(e) => setNameText(e.value)}
                             optionLabel="name"
-                            placeholder="Alex Smith - SC1001"
+                            placeholder="value"
                             className="w-full border"
                           />
                           </div>
@@ -669,7 +669,7 @@ export default function AdvancedSearchPopup(props) {
                             <Link href='' className="border border-[#E4E7EC] rounded-xl p-[4px] 3xl:p-[0.208vw] px-[8px] 3xl:px-[0.417vw] flex justify-between items-center w-auto shadow-md gap-[4px] 3xl:gap-[0.208vw] text-[13px] text-[#3A3E49]">
                        
                             <Image src="/assets/images/add-circle.svg" width={14} height={14} alt='delete' />
-                            And
+                            Add
                              
                          
                               </Link>
