@@ -33,6 +33,16 @@
     padding: 10px 16px;
     border-radius: 8px;
 }
+.p-multiselect-header .p-checkbox,
+.p-multiselect-select-all,
+.p-multiselect-panel .p-multiselect-header .p-multiselect-close
+{
+    display: none !important;
+}
+.p-multiselect-panel .p-multiselect-header .p-multiselect-filter-container .p-multiselect-filter-icon {
+    left: 0.75rem  !important;
+    color: #6b7280;
+}
 
 .custDropdownBox .p-inputtext {
     border-radius: 8px 0px 0px 8px !important;

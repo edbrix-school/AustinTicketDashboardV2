@@ -1407,11 +1407,44 @@ padding: 0.25rem !important;
     font-size: 14px;
     padding: 10px 16px;
 }
+.p-multiselect-panel .p-multiselect-header .p-multiselect-filter-container .p-inputtext 
+{
+    padding-left: 1.9rem;
+}
 .custDropdownBox .p-multiselect .p-multiselect-label 
 {
     font-size: 14px;
     padding: 10px 16px;
 }
+.p-multiselect-panel .p-multiselect-header 
+{
+    background-color: #fff;
+}
+.p-multiselect-filter 
+{
+    background-color: #F9FAFB;
+    border: 1px solid #D1D5DB;
+    border-radius: 10px;
+}
+.p-multiselect-panel .p-multiselect-header .p-multiselect-filter-container .p-inputtext::placeholder
+{
+    font-size: 14px;
+    color: #6B7280;
+}
+.p-multiselect-filter-container .p-inputtext
+{
+    padding: 0.4rem 0.75rem;
+}
+
+.p-multiselect-panel .p-multiselect-header .p-multiselect-close
+{
+    display: none !important;
+}
+.p-multiselect-panel .p-multiselect-header .p-multiselect-filter-container .p-multiselect-filter-icon {
+    left: 0.75rem  !important;
+    color: #6b7280;
+}
+
 
 .custDropdownBox .p-dropdown {
     color: #888888;

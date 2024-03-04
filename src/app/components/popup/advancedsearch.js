@@ -443,9 +443,12 @@ export default function AdvancedSearchPopup(props) {
                             options={ParameterList}
                             optionLabel="name"
                             placeholder="Name"
+                            filter
+                            showSelectAll={false}
+                            filterPlaceholder="Search parameter"
                             maxSelectedLabels={3}
                             itemTemplate={customOptionTemplate}
-                            className="w-full border"
+                            className="w-full border "
                           />
                           </div>
                             <div className="custDropdownBox grow">
@@ -455,7 +458,7 @@ export default function AdvancedSearchPopup(props) {
                             options={ConditionList}
                             optionLabel="name"
                             placeholder="And"
-                            className="w-full border"
+                            className="w-full "
                           />
                          </div>
 
@@ -486,7 +489,7 @@ export default function AdvancedSearchPopup(props) {
                             value={selectedOptionTwo}
                             options={ParameterList}
                             optionLabel="name"
-                            placeholder="Name"
+                            placeholder="Parameter"
                             maxSelectedLabels={3}
                             itemTemplate={customOptionTemplate}
                             className="w-full md:w-20rem expandeble border"
