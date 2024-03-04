@@ -108,7 +108,7 @@ export default function AdvancedSearchPopup(props) {
         </div>
 
         {showChildTemplates && option?.code === expandedItem?.code && (
-          <ul className="pl-3 pt-2">
+          <ul className="pl-3 pt-2 space-y-2">
             {option.template.map((child, index) => (
               <li key={index} className="">
                 <button onClick={() => handleSelectValues(child)} className="flex gap-2 items-center">
