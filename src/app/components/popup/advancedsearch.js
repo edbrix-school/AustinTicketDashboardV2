@@ -10,6 +10,8 @@ import { Divider } from "primereact/divider";
 import { Accordion, AccordionTab } from "primereact/accordion";
 import { Button } from "primereact/button";
 import { MultiSelect } from "primereact/multiselect";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function AdvancedSearchPopup(props) {
   const [activeTab, setActiveTab] = useState(0);
@@ -150,7 +152,7 @@ export default function AdvancedSearchPopup(props) {
         visible={props.visible}
         position="right"
         onHide={() => props.onHides(false)}
-        className="sidebarwidth custmSidebar rounded-l-xl "
+        className="sidebarwidth1 custmSidebar rounded-l-xl "
         title={props.title}
       >
         <div className="3xl:px-[1.25vw] xl:px-[24px] xl:py-[0.521vw] py-[12px]">
@@ -434,10 +436,12 @@ export default function AdvancedSearchPopup(props) {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-[#FFF]  p-[12px] 3xl:p-[0.625vw] grid w-full gap-[8px] 3xl:gap-[0.417vw]">
-                      <div className="grid w-full ">
-                        <div className="flex gap-[8px] 3xl:gap-[0.417vw]  w-full ">
-                        <div className="custDropdownBox grow">
+                    <div className="bg-[#FFF]  p-[12px] 3xl:p-[0.625vw] grid w-full gap-[8px] 3xl:gap-[0.417vw] ">
+                      <div className="grid w-full  relative">
+                        <div className="grid grid-cols-12 xl:gap-[1vw] gap-2 w-full  flex items-center mb-2">
+                        <div className="col-span-10">
+                          <div className="grid grid-cols-3 gap-[8px] 3xl:gap-[0.417vw]  w-full">
+                        <div className="custDropdownBox  ">
                           <MultiSelect
                             value={selectedOption}
                             options={ParameterList}
@@ -451,7 +455,7 @@ export default function AdvancedSearchPopup(props) {
                             className="w-full border "
                           />
                           </div>
-                            <div className="custDropdownBox grow">
+                            <div className="custDropdownBox">
                           <Dropdown
                             value={conditionTwo}
                             onChange={(e) => setConditionTwo(e.value)}
@@ -460,9 +464,9 @@ export default function AdvancedSearchPopup(props) {
                             placeholder="And"
                             className="w-full "
                           />
-                         </div>
+                            </div>
 
-                          <div className="custInputBox grow">
+                          <div className="custInputBox ">
                           <InputText
                             value={nameText}
                             onChange={(e) => setNameText(e.value)}
@@ -471,18 +475,291 @@ export default function AdvancedSearchPopup(props) {
                             className="w-full border"
                           />
                           </div>
-                          <div className="flex items-center gap-[8px] 3xl:gap-[0.417vw]">
-                            <div className="bg-[#dfe7fa] rounded-3xl p-[4px] 3xl:p-[0.208vw] flex items-center gap-[4px] 3xl:gap-[0.208vw] px-[8px] 3xl:px-[0.417vw]">
-                              <div>And</div>
-                              <div className="h-[12px] w-[12px] rounded-full border border-[#4169e1] bg-[#4169e1]"></div>
-                            </div>
-                            <div>
-                              <i className="asetsmng-close-circle text-[16px] 3xl:text-[0.833vw]"></i>
+                          </div>
+                          </div>
+                          <div className="col-span-2">
+                          <div className="flex items-center grid grid-cols-2 gap-[8px] 3xl:gap-[0.417vw]">
+                            <Link href='' className="bg-[#dfe7fa] text-[12px] rounded-3xl 3xl:p-[0.308vw] xl:p-[10px] p-[8px] 3xl:px-[0.417vw] flex justify-between items-center w-auto shadow-md gap-[4px] 3xl:gap-[0.208vw]">
+                              And
+                             
+                              <div className="h-[14px] w-[14px] rounded-full border border-[#4169e1] bg-[#4169e1]"></div>
+                              </Link>
+                            <div className="text-center">
+                             <Link href=''> <i className="asetsmng-close-circle text-[16px] 3xl:text-[0.833vw]"></i>
+                             </Link>
                             </div>
                           </div>
+                          </div>
+                      
+                       
+
+                         
                         </div>
+                        <div className="grid grid-cols-12 xl:gap-[1vw] gap-2 w-full  flex items-center mb-2">
+                        <div className="col-span-10">
+                          <div className="grid grid-cols-3 gap-[8px] 3xl:gap-[0.417vw]  w-full">
+                        <div className="custDropdownBox  ">
+                          <MultiSelect
+                            value={selectedOption}
+                            options={ParameterList}
+                            optionLabel="name"
+                            placeholder="Name"
+                            filter
+                            showSelectAll={false}
+                            filterPlaceholder="Search parameter"
+                            maxSelectedLabels={3}
+                            itemTemplate={customOptionTemplate}
+                            className="w-full border "
+                          />
+                          </div>
+                            <div className="custDropdownBox">
+                          <Dropdown
+                            value={conditionTwo}
+                            onChange={(e) => setConditionTwo(e.value)}
+                            options={ConditionList}
+                            optionLabel="name"
+                            placeholder="And"
+                            className="w-full "
+                          />
+                            </div>
+
+                          <div className="custInputBox ">
+                          <InputText
+                            value={nameText}
+                            onChange={(e) => setNameText(e.value)}
+                            optionLabel="name"
+                            placeholder="Alex Smith - SC1001"
+                            className="w-full border"
+                          />
+                          </div>
+                          </div>
+                          </div>
+                          <div className="col-span-2">
+                          <div className="flex items-center grid grid-cols-2 gap-[8px] 3xl:gap-[0.417vw]">
+                          <Link href='' className="border border-[#E4E7EC] rounded-xl p-[4px] 3xl:p-[0.208vw] px-[8px] 3xl:px-[0.417vw] flex justify-between items-center w-auto shadow-md gap-[4px] 3xl:gap-[0.208vw] text-[13px] text-[#3A3E49]">
+                            <Image src="/assets/images/add-circle.svg" width={14} height={14} alt='delete' />
+                             Add
+                         </Link>
+                            <div className="text-center">
+                               <Link href=''> <i className="asetsmng-close-circle text-[16px] 3xl:text-[0.833vw]"></i>
+                              </Link>
+                            </div>
+                          </div>
+                          </div>
+                      
+                       
+
+                         
+                        </div>
+                        <div className="absolute top-[35px] right-[-15px]">
+                          <div className="bg-[#fff] w-[25px] h-[25px] shadow-md rounded-full text-center flex justify-center items-center">
+                              <div  className="cursor-pointer">
+                                 <Image src="/assets/images/trash.svg" width={14} height={14} alt='delete' />
+                              </div>
+                          </div>
+                        </div>
+                        <div className="relative">
+                        <Divider className="" />
+                        <div className="absolute top-[6px] bg-[#dfe7fa] text-[12px] rounded-3xl 3xl:p-[0.308vw] xl:p-[10px] p-[8px] 3xl:px-[0.417vw] w-[60px] shadow-md gap-[4px] 3xl:gap-[0.208vw] flex">
+                              And
+                             
+                              <div className="h-[14px] w-[14px] rounded-full border border-[#4169e1] bg-[#4169e1]"></div>
+                              </div>
+                        </div>
+                        
                       </div>
-                      <div className="grid w-full">
+                      {/* 2nd line */}
+                      <div className="grid w-full  relative">
+                        <div className="grid grid-cols-12 xl:gap-[1vw] gap-2 w-full  flex items-center mb-2">
+                        <div className="col-span-10">
+                          <div className="grid grid-cols-3 gap-[8px] 3xl:gap-[0.417vw]  w-full">
+                        <div className="custDropdownBox  ">
+                          <MultiSelect
+                            value={selectedOption}
+                            options={ParameterList}
+                            optionLabel="name"
+                            placeholder="Name"
+                            filter
+                            showSelectAll={false}
+                            filterPlaceholder="Search parameter"
+                            maxSelectedLabels={3}
+                            itemTemplate={customOptionTemplate}
+                            className="w-full border "
+                          />
+                          </div>
+                            <div className="custDropdownBox">
+                          <Dropdown
+                            value={conditionTwo}
+                            onChange={(e) => setConditionTwo(e.value)}
+                            options={ConditionList}
+                            optionLabel="name"
+                            placeholder="And"
+                            className="w-full "
+                          />
+                            </div>
+
+                          <div className="custInputBox ">
+                          <InputText
+                            value={nameText}
+                            onChange={(e) => setNameText(e.value)}
+                            optionLabel="name"
+                            placeholder="Alex Smith - SC1001"
+                            className="w-full border"
+                          />
+                          </div>
+                          </div>
+                          </div>
+                          <div className="col-span-2">
+                          <div className="flex items-center grid grid-cols-2 gap-[8px] 3xl:gap-[0.417vw]">
+                            <Link href='' className="bg-[#ECFDF4] text-[12px] rounded-3xl 3xl:p-[0.308vw] xl:p-[10px] p-[8px] 3xl:px-[0.417vw] flex justify-between items-center w-auto shadow-md gap-[4px] 3xl:gap-[0.208vw] text-[#11B87C]">
+                            <div className="h-[14px] w-[14px] rounded-full border border-[#11B87C] bg-[#11B87C]"></div> Or
+                              </Link>
+                            <div className="text-center">
+                             <Link href=''> <i className="asetsmng-close-circle text-[16px] 3xl:text-[0.833vw]"></i>
+                             </Link>
+                            </div>
+                          </div>
+                          </div>
+                      
+                       
+
+                         
+                        </div>
+                        <div className="grid grid-cols-12 xl:gap-[1vw] gap-2 w-full  flex items-center mb-2">
+                        <div className="col-span-10">
+                          <div className="grid grid-cols-3 gap-[8px] 3xl:gap-[0.417vw]  w-full">
+                        <div className="custDropdownBox  ">
+                          <MultiSelect
+                            value={selectedOption}
+                            options={ParameterList}
+                            optionLabel="name"
+                            placeholder="Name"
+                            filter
+                            showSelectAll={false}
+                            filterPlaceholder="Search parameter"
+                            maxSelectedLabels={3}
+                            itemTemplate={customOptionTemplate}
+                            className="w-full border "
+                          />
+                          </div>
+                            <div className="custDropdownBox">
+                          <Dropdown
+                            value={conditionTwo}
+                            onChange={(e) => setConditionTwo(e.value)}
+                            options={ConditionList}
+                            optionLabel="name"
+                            placeholder="And"
+                            className="w-full "
+                          />
+                            </div>
+
+                          <div className="custInputBox ">
+                          <InputText
+                            value={nameText}
+                            onChange={(e) => setNameText(e.value)}
+                            optionLabel="name"
+                            placeholder="Alex Smith - SC1001"
+                            className="w-full border"
+                          />
+                          </div>
+                          </div>
+                          </div>
+                          <div className="col-span-2">
+                          <div className="flex items-center grid grid-cols-2 gap-[8px] 3xl:gap-[0.417vw]">
+                            <Link href='' className="border border-[#E4E7EC] rounded-xl p-[4px] 3xl:p-[0.208vw] px-[8px] 3xl:px-[0.417vw] flex justify-between items-center w-auto shadow-md gap-[4px] 3xl:gap-[0.208vw] text-[13px] text-[#3A3E49]">
+                       
+                            <Image src="/assets/images/add-circle.svg" width={14} height={14} alt='delete' />
+                            And
+                             
+                         
+                              </Link>
+                            <div className="text-center">
+                               <Link href=''> <i className="asetsmng-close-circle text-[16px] 3xl:text-[0.833vw]"></i>
+                              </Link>
+                            </div>
+                          </div>
+                          </div>
+                      
+                       
+
+                         
+                        </div>
+                        <div className="absolute top-[35px] right-[-15px]">
+                          <div className="bg-[#fff] w-[25px] h-[25px] shadow-md rounded-full text-center flex justify-center items-center">
+                              <div  className="cursor-pointer">
+                                 <Image src="/assets/images/trash.svg" width={14} height={14} alt='delete' />
+                              </div>
+                          </div>
+                        </div>
+                        <div className="relative">
+                        <Divider className="" />
+                        <div className="absolute top-[6px] bg-[#dfe7fa] text-[12px] rounded-3xl 3xl:p-[0.308vw] xl:p-[10px] p-[8px] 3xl:px-[0.417vw] w-[60px] shadow-md gap-[4px] 3xl:gap-[0.208vw] flex">
+                              And
+                             
+                              <div className="h-[14px] w-[14px] rounded-full border border-[#4169e1] bg-[#4169e1]"></div>
+                              </div>
+                        </div>
+                        
+                      </div>
+                      <div className="grid w-full  relative">
+                        <div className="grid grid-cols-12 xl:gap-[1vw] gap-2 w-full  flex items-center mb-2">
+                        <div className="col-span-10">
+                          <div className="grid grid-cols-3 gap-[8px] 3xl:gap-[0.417vw]  w-full">
+                        <div className="custDropdownBox  ">
+                          <MultiSelect
+                            value={selectedOption}
+                            options={ParameterList}
+                            optionLabel="name"
+                            placeholder="Name"
+                            filter
+                            showSelectAll={false}
+                            filterPlaceholder="Search parameter"
+                            maxSelectedLabels={3}
+                            itemTemplate={customOptionTemplate}
+                            className="w-full border "
+                          />
+                          </div>
+                            <div className="custDropdownBox">
+                          <Dropdown
+                            value={conditionTwo}
+                            onChange={(e) => setConditionTwo(e.value)}
+                            options={ConditionList}
+                            optionLabel="name"
+                            placeholder="And"
+                            className="w-full "
+                          />
+                            </div>
+
+                          <div className="custInputBox ">
+                          <InputText
+                            value={nameText}
+                            onChange={(e) => setNameText(e.value)}
+                            optionLabel="name"
+                            placeholder="Alex Smith - SC1001"
+                            className="w-full border"
+                          />
+                          </div>
+                          </div>
+                          </div>
+                          <div className="col-span-2">
+                          <div className="flex items-center grid grid-cols-2 gap-[8px] 3xl:gap-[0.417vw]">
+                          <Link href='' className="border border-[#E4E7EC] rounded-xl p-[4px] 3xl:p-[0.208vw] px-[8px] 3xl:px-[0.417vw] flex justify-between items-center w-auto shadow-md gap-[4px] 3xl:gap-[0.208vw] text-[13px] text-[#3A3E49]">
+                            <Image src="/assets/images/add-circle.svg" width={14} height={14} alt='delete' />
+                             Add
+                         </Link>
+                            <div className="text-center">
+                             <Link href=''> <i className="asetsmng-close-circle text-[16px] 3xl:text-[0.833vw]"></i>
+                             </Link>
+                            </div>
+                          </div>
+                          </div>
+                      
+                       
+
+                         
+                        </div>
+                        </div>
+                      {/* <div className="grid w-full">
                         <div className="flex gap-[8px] 3xl:gap-[0.417vw]  w-full ">
                         <div className="custDropdownBox grow">
                         <MultiSelect
@@ -673,7 +950,7 @@ export default function AdvancedSearchPopup(props) {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div className="flex justify-end w-full items-center py-[16px] 3xl:py-[0.833vw]">
