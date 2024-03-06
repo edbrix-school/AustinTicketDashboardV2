@@ -1925,10 +1925,12 @@ padding: 0.25rem !important;
 .conditionbtn .p-radiobutton .p-radiobutton-box{
     height: 15px !important;
     width: 15px !important;
-    border: 2px solid #d1d5db;
+
 }
 
-
+.p-radiobutton .p-radiobutton-box {
+    border: 2px solid #d1d5db;
+}
 
 /* cust table end */
 
@@ -2024,6 +2026,7 @@ padding: 5px !important;
 }
 .custRadioButton .p-radiobutton
 {
+    background: white;
     color: #4b5563;
     border-radius: 50%;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
