@@ -1239,12 +1239,22 @@ series: [
           graphIcon={true}
           data={
             <>
-              <div className="w-full h-[359px] 3xl:h-[22.90vw]">
-              <ReactEcharts
-              echarts={echarts}
-              option={LineChartwithShadow}
-              style={{ width: '100%', height: '100%' }}
-              />
+              <div className="flex gap-2 pb-2">
+                
+              </div>
+              <div className="w-full xl:h-[19.90vw] relative">
+                {/* <ReactEcharts
+                  option={LineChartwithShadow}
+                  style={{ height: "100%", width: "100%" }}
+                /> */}
+
+                <Assignedticketshourlytrend
+                seclinecirclecolor="#2C9999"
+                seclinecolor="#2C9999"
+                chartshadow="#2C9999"
+                linechartgradientcolor="#2C9999"
+                
+                />
 
               </div>
             </>
