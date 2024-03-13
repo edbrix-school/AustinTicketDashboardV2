@@ -66,10 +66,18 @@ export default function TicketsbyPriority({ }) {
     // Tickets by Priority Data
   const TicketsbyPriority = {
     tooltip: {
-      position: 'top'
+      position: 'top',
+      trigger:'item',
+      axisPOinter:{
+        type: 'line',
+        axis:"auto"
+      },
+      backgroundColor: '#000000',
+      textStyle:{
+        color:"#FFF"
+      }
     },
     grid: {
-     
       top: 10,
       right:20,
       left:20,
@@ -108,18 +116,19 @@ export default function TicketsbyPriority({ }) {
         color: ['#4169E1', '#256d85', '#2C9999'] // specify your desired colors here
       },
        pieces: [
-        { min: 8, label: 'High', color: '#2C9999'},
-        { min: 4, max: 8, label: 'Medium', color: '#256d85' },
-        { max: 4, label: 'Low', color: '#4169E1' , borderColor: '#fff'}
+        { min: 8, label: 'High', color: '#2C9999',name: 'High',},
+        { min: 4, max: 8, label: 'Medium', color: '#256d85',name: 'Medium', },
+        { max: 4, label: 'Low', color: '#4169E1' , borderColor: '#fff',name: 'Low', }
       ]
     },
     series: [
       {
-        name: 'Punch Card',
+        name: 'High',
         type: 'heatmap',
         data: data,
         label: {
-          show: false
+          show: false,
+       
         },
         itemStyle:{
            borderColor:"#fff",
@@ -133,7 +142,7 @@ export default function TicketsbyPriority({ }) {
            
           }
         }
-      }
+      },
     ]
     };
 

@@ -25,6 +25,8 @@ export default function Index() {
   const [performance, setPerformance] = useState(null);
   const [incorrectTickets, setIncorrectTickets] = useState(null);
   const [ticketsSchool, setTicketsSchool] = useState(null);
+  const [ticketsPriority, setTicketsPriority] = useState(null);
+  const [newTickets, setNewTickets] = useState(null);
 
   const cluster = [
     { name: "All", code: "RM" },
@@ -642,9 +644,9 @@ export default function Index() {
                           <div className="flex justify-end  px-[16px]">
                             <div className="chartdropdown">
                               <Dropdown
-                                value={selectedCluster}
-                                onChange={(e) => setSelectedCluster(e.value)}
-                                options={cluster}
+                                value={ticketsPriority}
+                                onChange={(e) => setTicketsPriority(e.value)}
+                                options={TicketsSchoolData}
                                 optionLabel="name"
                                 placeholder="All"
                                 className="w-full"
@@ -673,9 +675,9 @@ export default function Index() {
                           <div className="flex justify-end  px-[16px]">
                             <div className="chartdropdown">
                               <Dropdown
-                                value={selectedCluster}
-                                onChange={(e) => setSelectedCluster(e.value)}
-                                options={cluster}
+                                value={newTickets}
+                                onChange={(e) => setNewTickets(e.value)}
+                                options={clusterData}
                                 optionLabel="name"
                                 placeholder="All"
                                 className="w-full"
@@ -706,17 +708,8 @@ export default function Index() {
                       graphIcon={true}
                       data={
                         <div className="w-full">
-                          <div className="flex justify-end  px-[16px]">
-                            <div className="chartdropdown">
-                              <Dropdown
-                                value={selectedCluster}
-                                onChange={(e) => setSelectedCluster(e.value)}
-                                options={cluster}
-                                optionLabel="name"
-                                placeholder="All"
-                                className="w-full"
-                              />
-                            </div>
+                          <div className="flex justify-end  py-[16px]">
+                     
                           </div>
                           <div className=" 3xl:h-[19.531vw] xl:h-[375px] lg:h-[360px] px-5">
                             <Newticketsbyagebarchart />
