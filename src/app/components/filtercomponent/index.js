@@ -36,7 +36,7 @@ export default function FilterComponent(props) {
               
                 <div className="rounded pb-[4px] px-[12px] space-y-0 cursor-pointer max-w-[100px] hover:max-w-[125px] ease-in duration-300 overflow-hidden bg-[#F9F9FC] ">
                   <span className="text-[#84878D] text-[10px] font-normal">
-                  District
+                  Time Period
                   </span>
                   <div className="custDropdown">
                     <Dropdown
@@ -51,7 +51,7 @@ export default function FilterComponent(props) {
                 </div>
                 <div className="rounded pb-[4px] px-[12px] space-y-0 cursor-pointer max-w-[100px] hover:max-w-[125px] ease-in duration-300 overflow-hidden bg-[#F9F9FC] ">
                   <span className="text-[#84878D] text-[10px] font-normal">
-                  School
+                  School/Office
                   </span>
                   <div className="custDropdown">
                     <Dropdown

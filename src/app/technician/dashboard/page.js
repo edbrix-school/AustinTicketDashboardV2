@@ -21,9 +21,35 @@ export default function Index() {
   const [pageTitle, setPageTitle] = useState("Summary");
 
   const [selectedCluster, setSelectedCluster] = useState(null);
+  const [selectedClusterData, setSelectedClusterData] = useState(null);
+  const [performance, setPerformance] = useState(null);
+  const [incorrectTickets, setIncorrectTickets] = useState(null);
+  const [ticketsSchool, setTicketsSchool] = useState(null);
+
   const cluster = [
+    { name: "All", code: "RM" },
     { name: "With in SLA", code: "NY" },
-    { name: "With Out SLA", code: "RM" },
+    { name: "Outside SLA", code: "RM" },
+  ];
+  const clusterData = [
+    { name: "All", code: "RM" },
+    { name: "High", code: "NY" },
+    { name: "Medium", code: "RM" },
+    { name: "Low", code: "MC" },
+  ];
+  const TicketsData = [
+    { name: "New Tickets", code: "RM" },
+    { name: "Tickets Resolved", code: "NY" },
+    { name: "Re Assigned Tickets", code: "RM" },
+  ];
+  const TicketsSchoolData = [
+    { name: "New", code: "RM" },
+    { name: "Assigned", code: "NY" },
+    { name: "In Progress", code: "RM" },
+    { name: "Awaiting Parts/Updates", code: "RM" },
+    { name: "Awaiting User Input", code: "RM" },
+    { name: "Resolved", code: "RM" },
+    { name: "Closed", code: "RM" },
   ];
 
   return (
@@ -66,7 +92,7 @@ export default function Index() {
           </div>
           <div>
             <TabPanel>
-          <FilterComponent />
+              <FilterComponent />
               <div className="grid grid-cols-12 xl:grid-cols-5 gap-[20px] 3xl:gap-[1.042vw] mt-[24px] 3xl:mt-[1.25vw]">
                 <div className="col-span-12 sm:col-span-6  lg:col-span-4 xl:col-span-1 ">
                   <div
@@ -286,9 +312,11 @@ export default function Index() {
                           <div className="flex justify-end  px-[16px]">
                             <div className="chartdropdown">
                               <Dropdown
-                                value={selectedCluster}
-                                onChange={(e) => setSelectedCluster(e.value)}
-                                options={cluster}
+                                value={selectedClusterData}
+                                onChange={(e) =>
+                                  setSelectedClusterData(e.value)
+                                }
+                                options={clusterData}
                                 optionLabel="name"
                                 placeholder="All"
                                 className="w-full"
@@ -317,9 +345,9 @@ export default function Index() {
                           <div className="flex justify-end  px-[16px]">
                             <div className="chartdropdown">
                               <Dropdown
-                                value={selectedCluster}
-                                onChange={(e) => setSelectedCluster(e.value)}
-                                options={cluster}
+                                value={performance}
+                                onChange={(e) => setPerformance(e.value)}
+                                options={clusterData}
                                 optionLabel="name"
                                 placeholder="All"
                                 className="w-full"
@@ -348,9 +376,9 @@ export default function Index() {
                           <div className="flex justify-end  px-[16px]">
                             <div className="chartdropdown">
                               <Dropdown
-                                value={selectedCluster}
-                                onChange={(e) => setSelectedCluster(e.value)}
-                                options={cluster}
+                                value={incorrectTickets}
+                                onChange={(e) => setIncorrectTickets(e.value)}
+                                options={TicketsData}
                                 optionLabel="name"
                                 placeholder="All"
                                 className="w-full"
@@ -374,8 +402,6 @@ export default function Index() {
                     className="shadow-md shadow-[#0000000D] rounded-lg border border-[#E4E7EC]  bg-[#fff] px-[16px] py-[12px] lg:py-[16px] lg:px-[12px] 3xl:py-[0.833vw] 
                             3xl:px-[0.625vw]"
                   >
-                   
-
                     <div className="flex items-center gap-[16px] 3xl:gap-[0.833vw]">
                       <div>
                         <Image
@@ -424,148 +450,146 @@ export default function Index() {
                       Number of Tickets in each Status Today
                     </div>
                     <div className="flex flex-wrap  mt-[20px] xl:mt-[20px] lg:mt-[20px] 3xl:mt-[0.890vw] w-full ">
-                                        <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw]  rounded-l-lg bg-[#FAFAFA] grow">
-                                            <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
-                                            New
-                                            </div>
-                                            <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
-                                            <div className="flex items-center   xl:gap-[2px] lg:gap-1 3xl:gap-2">
-                                                <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
-                                                10
-                                                </div>
-                                                <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw] text-[#057A55]"></i>{" "}
-                                                <div className="text-[#057A55] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
-                                                2%
-                                                </div>
-                                                <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
-                                                by yesterday
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>
-                                    {/* 2nd */}
-                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
-                                        <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
-                                        Assigned
-                                        </div>
-                                        <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
-                                        <div className="flex items-center     xl:gap-[2px] lg:gap-1 3xl:gap-2">
-                                            <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
-                                            12
-                                            </div>
-                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw] text-[#057A55]"></i>{" "}
-                                            <div className="text-[#057A55] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
-                                            2%
-                                            </div>
-                                            <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
-                                            by yesterday
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                   {/* 3rd */}
-                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
-                                        <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
-                                        In-Progress
-                                        </div>
-                                        <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
-                                        <div className="flex items-center    xl:gap-[2px] lg:gap-1 3xl:gap-2">
-                                            <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
-                                            2
-                                            </div>
-                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw] text-[#B21E4B]"></i>{" "}
-                                            <div className="text-[#B21E4B] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
-                                            2%
-                                            </div>
-                                            <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
-                                            by yesterday
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
+                      <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw]  rounded-l-lg bg-[#FAFAFA] grow">
+                        <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
+                          New
+                        </div>
+                        <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
+                          <div className="flex items-center   xl:gap-[2px] lg:gap-1 3xl:gap-2">
+                            <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
+                              10
+                            </div>
+                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw] text-[#057A55]"></i>{" "}
+                            <div className="text-[#057A55] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
+                              2%
+                            </div>
+                            <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
+                              by yesterday
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {/* 2nd */}
+                      <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
+                        <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
+                          Assigned
+                        </div>
+                        <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
+                          <div className="flex items-center     xl:gap-[2px] lg:gap-1 3xl:gap-2">
+                            <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
+                              12
+                            </div>
+                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw] text-[#057A55]"></i>{" "}
+                            <div className="text-[#057A55] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
+                              2%
+                            </div>
+                            <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
+                              by yesterday
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {/* 3rd */}
+                      <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
+                        <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
+                          In-Progress
+                        </div>
+                        <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
+                          <div className="flex items-center    xl:gap-[2px] lg:gap-1 3xl:gap-2">
+                            <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
+                              2
+                            </div>
+                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw] text-[#B21E4B]"></i>{" "}
+                            <div className="text-[#B21E4B] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
+                              2%
+                            </div>
+                            <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
+                              by yesterday
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
-                                    {/* 4th */}
-                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
-                                        <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
-                                        Awaiting Parts/Updates
-                                        </div>
-                                        <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
-                                        <div className="flex items-center   xl:gap-[2px] lg:gap-1 3xl:gap-2">
-                                            <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
-                                            5
-                                            </div>
-                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw]  text-[#B21E4B]"></i>{" "}
-                                            <div className="text-[#B21E4B] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
-                                            2%
-                                            </div>
-                                            <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
-                                            by yesterday
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    {/* 5th */}
-                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
-                                        <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
-                                        Awaiting User Input
-                                        </div>
-                                        <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
-                                        <div className="flex items-center    xl:gap-[2px] lg:gap-1 3xl:gap-2">
-                                            <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
-                                            4
-                                            </div>
-                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw]  text-[#057A55]"></i>{" "}
-                                            <div className="text-[#057A55] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
-                                            2%
-                                            </div>
-                                            <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
-                                            by yesterday
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                     {/* 6th */}
-                                   <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
-                                        <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
-                                        Resolved
-                                        </div>
-                                        <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
-                                        <div className="flex items-center    xl:gap-[2px] lg:gap-1 3xl:gap-2">
-                                            <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
-                                            20
-                                            </div>
-                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw]  text-[#B21E4B]"></i>{" "}
-                                            <div className="text-[#B21E4B] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
-                                            2%
-                                            </div>
-                                            <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
-                                            by yesterday
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    {/* 7th */}
-                                    <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] rounded-r-lg bg-[#FAFAFA] grow">
-                                        <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
-                                        Closed
-                                        </div>
-                                        <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
-                                        <div className="flex items-center    xl:gap-[2px] lg:gap-1 3xl:gap-2">
-                                            <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
-                                            7
-                                            </div>
-                                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw]  text-[#057A55]"></i>{" "}
-                                            <div className="text-[#057A55] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
-                                            2%
-                                            </div>
-                                            <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
-                                            by yesterday
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-
-
+                      {/* 4th */}
+                      <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
+                        <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
+                          Awaiting Parts/Updates
+                        </div>
+                        <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
+                          <div className="flex items-center   xl:gap-[2px] lg:gap-1 3xl:gap-2">
+                            <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
+                              5
+                            </div>
+                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw]  text-[#B21E4B]"></i>{" "}
+                            <div className="text-[#B21E4B] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
+                              2%
+                            </div>
+                            <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
+                              by yesterday
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {/* 5th */}
+                      <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
+                        <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
+                          Awaiting User Input
+                        </div>
+                        <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
+                          <div className="flex items-center    xl:gap-[2px] lg:gap-1 3xl:gap-2">
+                            <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
+                              4
+                            </div>
+                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw]  text-[#057A55]"></i>{" "}
+                            <div className="text-[#057A55] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
+                              2%
+                            </div>
+                            <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
+                              by yesterday
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {/* 6th */}
+                      <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] bg-[#FAFAFA] grow">
+                        <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
+                          Resolved
+                        </div>
+                        <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
+                          <div className="flex items-center    xl:gap-[2px] lg:gap-1 3xl:gap-2">
+                            <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
+                              20
+                            </div>
+                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw]  text-[#B21E4B]"></i>{" "}
+                            <div className="text-[#B21E4B] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
+                              2%
+                            </div>
+                            <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
+                              by yesterday
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {/* 7th */}
+                      <div className="border border-[#E4E7EC] p-[16px] xl:p-[10px] lg:p-[16px] 3xl:p-[0.633vw] rounded-r-lg bg-[#FAFAFA] grow">
+                        <div className="text-[#20232E] text-[14px] lg:text-[14px]  3xl:text-[0.729vw] font-light ">
+                          Closed
+                        </div>
+                        <div className="3xl:mt-[0.417vw] lg:mt-[8px] mt-[8px]">
+                          <div className="flex items-center    xl:gap-[2px] lg:gap-1 3xl:gap-2">
+                            <div className="text-[#20232E] text-[20px] lg:text-[20px]  3xl:text-[1.25vw] font-semibold ">
+                              7
+                            </div>
+                            <i className="asetsmng-arrow-up-circle-fill text-[16px]  lg:text-[16px]  3xl:text-[0.833vw]  text-[#057A55]"></i>{" "}
+                            <div className="text-[#057A55] text-[12px] 3xl:text-[0.625vw] text-right font-medium">
+                              2%
+                            </div>
+                            <div className="text-[#84878D] text-[12px] 3xl:text-[0.625vw] text-right font-light">
+                              by yesterday
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -587,9 +611,9 @@ export default function Index() {
                           <div className="flex justify-end  px-[16px]">
                             <div className="chartdropdown">
                               <Dropdown
-                                value={selectedCluster}
-                                onChange={(e) => setSelectedCluster(e.value)}
-                                options={cluster}
+                                value={ticketsSchool}
+                                onChange={(e) => setTicketsSchool(e.value)}
+                                options={TicketsSchoolData}
                                 optionLabel="name"
                                 placeholder="All"
                                 className="w-full"
@@ -597,7 +621,7 @@ export default function Index() {
                             </div>
                           </div>
                           <div className=" 3xl:h-[19.531vw] xl:h-[375px] lg:h-[360px]">
-                            <Piechart/>
+                            <Piechart />
                           </div>
                         </div>
                       }
@@ -628,7 +652,7 @@ export default function Index() {
                             </div>
                           </div>
                           <div className=" 3xl:h-[19.531vw] xl:h-[375px] lg:h-[360px]">
-                            <TicketsbyPriority/>
+                            <TicketsbyPriority />
                           </div>
                         </div>
                       }
@@ -659,12 +683,12 @@ export default function Index() {
                             </div>
                           </div>
                           <div className=" 3xl:h-[19.531vw] xl:h-[375px] lg:h-[360px]">
-                          <Assignedticketshourlytrend
-                          seclinecirclecolor={'#E04177'}
-                          seclinecolor={'#E04177'}
-                          chartshadow={'#E04177'}
-                          linechartgradientcolor={'#E04177'}
-                          />
+                            <Assignedticketshourlytrend
+                              seclinecirclecolor={"#E04177"}
+                              seclinecolor={"#E04177"}
+                              chartshadow={"#E04177"}
+                              linechartgradientcolor={"#E04177"}
+                            />
                           </div>
                         </div>
                       }
@@ -695,7 +719,7 @@ export default function Index() {
                             </div>
                           </div>
                           <div className=" 3xl:h-[19.531vw] xl:h-[375px] lg:h-[360px] px-5">
-                          <Newticketsbyagebarchart/>
+                            <Newticketsbyagebarchart />
                           </div>
                         </div>
                       }
