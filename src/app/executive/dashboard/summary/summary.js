@@ -439,7 +439,7 @@ export default function Summary() {
                         onChange={(e) => setSelectedTeams(e.value)}
                         options={Teams}
                         optionLabel="name"
-                        placeholder="Teams 1"
+                        placeholder="All"
                         className="w-full"
                       />
                     </div>
