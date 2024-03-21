@@ -24,10 +24,10 @@ export default function Summary() {
 
   const [selectedTeams, setSelectedTeams] = useState(null);
   const Teams = [
+    { name: "All", code: "LDN" },
     { name: "Team 1", code: "NY" },
     { name: "Team 2", code: "RM" },
-    { name: "Team 3", code: "LDN" },
-    { name: "All", code: "LDN" },
+    { name: "Team 3", code: "LDN" }
   ];
 
   const [selectedResolvedRequests, setSelectedResolvedRequests] = useState(null);
