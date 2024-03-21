@@ -14,9 +14,12 @@ export default function Summary() {
 
   const [selectedCluster, setSelectedCluster] = useState(null);
   const cluster = [
-    { name: "Medium 1", code: "NY" },
-    { name: "Medium 2", code: "RM" },
-    { name: "Medium 3", code: "LDN" },
+    { name: "All", code: "NY" },
+    { name: "High", code: "RM" },
+    { name: "Medium", code: "LDN" },
+    { name: "Low", code: "LDN" },
+    
+ 
   ];
 
   const [selectedTeams, setSelectedTeams] = useState(null);
@@ -24,20 +27,21 @@ export default function Summary() {
     { name: "Team 1", code: "NY" },
     { name: "Team 2", code: "RM" },
     { name: "Team 3", code: "LDN" },
+    { name: "All", code: "LDN" },
   ];
 
   const [selectedResolvedRequests, setSelectedResolvedRequests] = useState(null);
   const ResolvedRequests = [
-    { name: "Within SLA%", code: "NY" },
-    { name: "Within SLA%", code: "RM" },
-    { name: "Within SLA%", code: "LDN" },
+    { name: "Within SLA", code: "NY" },
+    { name: "Outside SLA", code: "RM" },
+    
   ];
 
   const [selectedEmployeePerformance, setSelectedEmployeePerformance] = useState(null);
   const EmployeePerformance = [
-    { name: "By Tickets Resolved", code: "NY" },
-    { name: "By Tickets Resolved", code: "RM" },
-    { name: "By Tickets Resolved", code: "LDN" },
+    { name: "By tickets resolved", code: "NY" },
+    { name: "By Avg. Ratings", code: "RM" },
+    
   ];
 
 
@@ -360,7 +364,7 @@ export default function Summary() {
                         onChange={(e) => setSelectedCluster(e.value)}
                         options={cluster}
                         optionLabel="name"
-                        placeholder="Medium"
+                        placeholder="All"
                         className="w-full"
                       />
                     </div>
@@ -471,7 +475,7 @@ export default function Summary() {
                         onChange={(e) => setSelectedResolvedRequests(e.value)}
                         options={ResolvedRequests}
                         optionLabel="name"
-                        placeholder="Within SLA%"
+                        placeholder="Within SLA"
                         className="w-full"
                       />
                     </div>
@@ -509,7 +513,7 @@ export default function Summary() {
                         onChange={(e) => setSelectedEmployeePerformance(e.value)}
                         options={EmployeePerformance}
                         optionLabel="name"
-                        placeholder="By Tickets Resolved"
+                        placeholder="By tickets resolved"
                         className="w-full"
                       />
                     </div>

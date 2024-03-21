@@ -65,7 +65,7 @@ export default function Newticketsbyagebarchart() {
             axisLabel: {
               color: "#6C768B",
               fontSize: 10,
-              formatter: "{value}$",
+              formatter: "{value}",
             },
             axisLine: {
               show: true,

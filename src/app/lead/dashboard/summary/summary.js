@@ -333,9 +333,10 @@ export default function summary() {
 
   const [selectedEmployeePerformance, setSelectedEmployeePerformance] = useState(null);
   const EmployeePerformance = [
-    { name: "By Tickets Resolved", code: "NY" },
     { name: "By Tickets Resolved", code: "RM" },
-    { name: "By Tickets Resolved", code: "LDN" },
+    { name: "By Avg. Ratings", code: "RM" },
+
+    
   ];
   const ticketsbysubcategory =[
     { name: "New Tickets", code: "NY" },

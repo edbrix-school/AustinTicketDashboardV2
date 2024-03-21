@@ -600,9 +600,17 @@ export default function dailydashboard() {
 
   const [selectedEmployeePerformance, setSelectedEmployeePerformance] = useState(null);
   const EmployeePerformance = [
-    { name: "By Tickets Resolved", code: "NY" },
-    { name: "By Tickets Resolved", code: "RM" },
-    { name: "By Tickets Resolved", code: "LDN" },
+    { name: "New", code: "NY" },
+    { name: "Assigned", code: "RM" },
+    { name: "In Progress", code: "LDN" },
+    { name: "Awaiting Parts/Updates", code: "APU" },
+    { name: "Awaiting User Input", code: "ASI" },
+    { name: "Resolved", code: "RSL" },
+    { name: "Closed", code: "CLS" },
+    
+    
+    
+    
   ];
   const employeeData = [
     {
@@ -837,7 +845,7 @@ grid: {
   top: 10,
   right:20,
   left:20,
-  bottom:40
+  bottom:50
 },
 
 xAxis: {
@@ -865,7 +873,7 @@ visualMap: {
   orient: 'horizontal',
   
   left: 20,
-  bottom: 0,
+  bottom: 10,
     itemWidth:15,
   inRange: {
     color: ['#4169E1', '#256d85', '#2C9999'] // specify your desired colors here
@@ -1208,7 +1216,7 @@ series: [
                       onChange={(e) => setSelectedEmployeePerformance(e.value)}
                       options={EmployeePerformance}
                       optionLabel="name"
-                      placeholder="By Tickets Resolved"
+                      placeholder="New"
                       className="w-full"
                     />
                   </div>
@@ -1216,7 +1224,7 @@ series: [
                 <div className="w-full xl:h-[20.229vw] ">
                 <ReactEcharts
                   option={Heatmap}
-                  style={{ height: "120%", width: "100%" }}
+                  style={{ height: "100%", width: "100%" }}
                 />
 
               </div>
